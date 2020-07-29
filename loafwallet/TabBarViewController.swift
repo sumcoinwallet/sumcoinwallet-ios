@@ -1,6 +1,7 @@
 import Foundation
 import SwiftyJSON
 import UIKit
+import KeychainAccess
 
 enum TabViewControllerIndex: Int {
     case transactions = 0
@@ -10,11 +11,12 @@ enum TabViewControllerIndex: Int {
     case buy = 4
 }
 
-protocol MainTabBarControllerDelegate {
+protocol MainTabBarControllerDelegate: AnyObject {
     func alertViewShouldDismiss()
+    func refreshTabViews()
 }
 
-class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDelegate, LitecoinCardRegistrationViewDelegate, LitecoinCardLoginViewDelegate {
+class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDelegate, LitecoinCardLoginViewDelegate {
     let kInitialChildViewControllerIndex = 0 // History  VC
     @IBOutlet var headerView: UIView!
     @IBOutlet var containerView: UIView!
@@ -70,10 +72,8 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if userHasLitecoinCard(), litecoinCardAccessTokenIsValid() {
-            // Switch VC to CardViewController
+        if userHasLitecoinCard() {
             storyboardIDs = ["TransactionsViewController", "SendLTCViewController", "CardViewController", "ReceiveLTCViewController", "BuyTableViewController"]
-            loadViewControllers()
         } else {
             storyboardIDs = ["TransactionsViewController", "SendLTCViewController", "CardLoginViewController", "ReceiveLTCViewController", "BuyTableViewController"]
         }
@@ -154,7 +154,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         headerView.addSubview(currencyTapView)
 
         secondaryLabel.constrain([
-            secondaryLabel.constraint(.firstBaseline, toView: primaryLabel, constant: 0.0)
+            secondaryLabel.constraint(.firstBaseline, toView: primaryLabel, constant: 0.0),
         ])
 
         equalsLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -164,7 +164,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             primaryLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: C.padding[1] * 1.25),
             equalsLabel.firstBaselineAnchor.constraint(equalTo: primaryLabel.firstBaselineAnchor, constant: 0),
             equalsLabel.leadingAnchor.constraint(equalTo: primaryLabel.trailingAnchor, constant: C.padding[1] / 2.0),
-            secondaryLabel.leadingAnchor.constraint(equalTo: equalsLabel.trailingAnchor, constant: C.padding[1] / 2.0)
+            secondaryLabel.leadingAnchor.constraint(equalTo: equalsLabel.trailingAnchor, constant: C.padding[1] / 2.0),
         ]
 
         swappedConstraints = [
@@ -172,7 +172,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             secondaryLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: C.padding[1] * 1.25),
             equalsLabel.firstBaselineAnchor.constraint(equalTo: secondaryLabel.firstBaselineAnchor, constant: 0),
             equalsLabel.leadingAnchor.constraint(equalTo: secondaryLabel.trailingAnchor, constant: C.padding[1] / 2.0),
-            primaryLabel.leadingAnchor.constraint(equalTo: equalsLabel.trailingAnchor, constant: C.padding[1] / 2.0)
+            primaryLabel.leadingAnchor.constraint(equalTo: equalsLabel.trailingAnchor, constant: C.padding[1] / 2.0),
         ]
 
         if let isLTCSwapped = isLtcSwapped {
@@ -183,7 +183,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             currencyTapView.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 0),
             currencyTapView.trailingAnchor.constraint(equalTo: timeStampStackView.leadingAnchor, constant: 0),
             currencyTapView.topAnchor.constraint(equalTo: primaryLabel.topAnchor, constant: 0),
-            currencyTapView.bottomAnchor.constraint(equalTo: primaryLabel.bottomAnchor, constant: C.padding[1])
+            currencyTapView.bottomAnchor.constraint(equalTo: primaryLabel.bottomAnchor, constant: C.padding[1]),
         ])
 
         let gr = UITapGestureRecognizer(target: self, action: #selector(currencySwitchTapped))
@@ -365,25 +365,10 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         displayContentController(contentController: viewControllers[2])
     }
 
-    func didReceiveOpenLitecoinCardAccount(account _: Data) {
-        storyboardIDs = ["TransactionsViewController", "SendLTCViewController", "CardViewController", "ReceiveLTCViewController", "BuyTableViewController"]
-        loadViewControllers()
-        displayContentController(contentController: viewControllers[2])
-    }
+    func didReceiveOpenLitecoinCardAccount(account _: Data) {}
 
     func litecoinCardAccountExists(error _: Error) {
         //
-    }
-
-    private func litecoinCardAccessTokenIsValid() -> Bool {
-        // DEV Code: This is set to the opposite until the endpoints work
-        // Secure keychain to get the token
-        if let _ = UserDefaults.standard.string(forKey: tokenDoesExistAndIsValid) {
-            return true
-        } else {
-            return false
-        }
-        return false
     }
 
     private func userHasLitecoinCard() -> Bool {
@@ -421,7 +406,6 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             guard let spendVC = contentController as? SpendViewController else {
                 return
             }
-            spendVC.delegate = self
 
         case "loafwallet.CardLoginViewController":
             guard let cardLoginVC = contentController as? CardLoginViewController else {
