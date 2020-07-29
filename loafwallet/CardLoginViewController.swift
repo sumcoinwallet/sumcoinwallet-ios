@@ -50,7 +50,7 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
     }
 
     @IBAction func forgotPasswordAction(_: Any) {
-        
+        //TODO: Add forgot password funct
         manager.forgotPassword(email:"g") { (message) in
             let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -133,6 +133,10 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
         super.viewDidLoad()
         setupSubviews()
 
+        
+        //TODO: Enable when Forgot password is functional
+        forgotPasswordButton.isHidden = true
+        
         NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
