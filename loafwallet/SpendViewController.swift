@@ -1,17 +1,11 @@
+import KeychainAccess
 import LitewalletPartnerAPI
 import Security
 import UIKit
-
-@objc protocol LitecoinCardRegistrationViewDelegate {
-    func didReceiveOpenLitecoinCardAccount(account: Data)
-    func litecoinCardAccountExists(error: Error)
-    func floatingRegistrationHeader(shouldHide: Bool)
-    func shouldReturnToLoginView()
-}
-
+  
 class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIScrollViewDelegate, LFAlertViewDelegate {
     static let serviceName = "com.litewallet.litecoincard.service"
-    
+
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var headerLabel: UILabel!
 
@@ -29,7 +23,7 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet var mobileTextField: UITextField!
 
     @IBOutlet var registerButton: UIButton!
-    @IBOutlet var loginButton: UIButton!
+    @IBOutlet var registrationActivity: UIActivityIndicatorView!
 
     var currentTextField: UITextField?
     var isRegistered: Bool?
@@ -42,9 +36,10 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
     var alertModal: LFAlertViewController?
     var userNotRegistered = true
-    weak var delegate: LitecoinCardRegistrationViewDelegate?
 
     var manager = PartnerAPIManager()
+
+    var dismissRegistrationAction: (() -> Void)?
 
     override func viewDidLoad() {
         setupModelData()
@@ -99,58 +94,58 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         registerButton.layer.cornerRadius = 5.0
         registerButton.clipsToBounds = true
 
-        loginButton.layer.borderWidth = 1.0
-        loginButton.layer.borderColor = #colorLiteral(red: 0.2053973377, green: 0.3632233143, blue: 0.6166344285, alpha: 1)
-
-        loginButton.layer.cornerRadius = 5.0
-        loginButton.clipsToBounds = true
+        registrationActivity.alpha = 0
     }
 
     @IBAction func registerAction(_: Any) {
         // Validate registration data
-        // TODO: Uncomment
-        /*if let registeredParams = didValidateRegistrationParams() { } */
-        
-        let mockUserData = manager.randomAddressDict()
-        manager.createUser(userDataParams: mockUserData) { newUser in
-               
-            
-            guard newUser != nil else {
-                print("Error newUser")
+
+        var params: [String: Any]
+
+        #if DEBUG
+            params = manager.randomAddressDict()
+        #else
+            params = didValidateRegistrationParams()
+        #endif
+
+        registerButton.setTitle(" ", for: .normal)
+
+        registerButton.isEnabled = false
+
+        registrationActivity.alpha = 1
+
+        registrationActivity.startAnimating()
+
+        manager.createUser(userDataParams: params) { newUser in
+
+            guard newUser != nil,
+                let id = newUser?.userID,
+                let email = newUser?.email else {
+                print("Error in newUser")
                 return
             }
-            print(newUser?.userID)
-            
 
-//                let jsonEncoder = JSONEncoder()
-//                do {
-//                    let jsonData = try jsonEncoder.encode(newUser)
-//                    let jsonString = String(data: jsonData, encoding: .utf8)
-//                    print("JSON String : " + jsonString!)
-//                    self.delegate?.didReceiveOpenLitecoinCardAccount(account: jsonData)
-//
-//                } catch {
-//                    print("Error: Cannot encode JSON")
-//                }
+            let keychain: Keychain
+            keychain = Keychain(service: "com.litewallet.card-service")
+            keychain["userID"] = id
+            keychain["email"] = email
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.dismissRegistrationAction?()
+            }
         }
-        
-     }
-
-    @IBAction func returnToLoginView(_: Any) {
-        delegate?.shouldReturnToLoginView()
     }
 
-    private func didValidateRegistrationParams() -> [String: Any]? {
-
-         do {
+    private func didValidateRegistrationParams() -> [String: Any] {
+        do {
             let email = try emailTextField.validatedText(validationType: ValidatorType.email)
             let password = try passwordTextField.validatedText(validationType: ValidatorType.password)
             let confirmPassword = try confirmPasswordTextField.validatedText(validationType: ValidatorType.password)
             if password != confirmPassword {
-               throw ValidationError("Password and Confirm password must match")
+                throw ValidationError("Password and Confirm password must match")
             }
             let firstName = try firstNameTextField.validatedText(validationType: ValidatorType.firstName)
-            let lastname = try self.lastNameTextField.validatedText(validationType: ValidatorType.lastName)
+            let lastname = try lastNameTextField.validatedText(validationType: ValidatorType.lastName)
             let address1 = try address1TextField.validatedText(validationType: ValidatorType.address)
             let address2 = try address2TextField.validatedText(validationType: ValidatorType.address)
 
@@ -172,21 +167,18 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 "state": state,
                 "zip_code": postalCode,
                 "country": country,
-                "phone": mobile
+                "phone": mobile,
             ]
 
-           } catch let error {
-
+        } catch {
             let message = (error as! ValidationError).message
-            showErrorAlert(for: message)
-
-           }
-        return nil
+            showAlert(for: message)
+        }
+        return [:]
     }
 
-    func showErrorAlert(for alert: String) {
-        // TODO: Refactor whenTernio OAUTH is ready
-
+    func showAlert(for alert: String) {
+ 
         let alertController = UIAlertController(title: nil, message: alert, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(alertAction)
@@ -269,7 +261,7 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         return 0
     }
 
-    func pickerView(_: UIPickerView, titleForRow row: Int, forComponent _: Int) -> String? {
+    func pickerView(_: UIPickerView, titleForRow _: Int, forComponent _: Int) -> String? {
         return ""
     }
 
