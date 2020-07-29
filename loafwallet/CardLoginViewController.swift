@@ -51,12 +51,12 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
 
     @IBAction func forgotPasswordAction(_: Any) {
         //TODO: Add forgot password funct
-        manager.forgotPassword(email:"g") { (message) in
-            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(alertAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
+//        manager.forgotPassword(email:"g") { (message) in
+//            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+//            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//            alertController.addAction(alertAction)
+//            self.present(alertController, animated: true, completion: nil)
+//        }
     }
 
     @IBAction func loginAction(_: Any) {
