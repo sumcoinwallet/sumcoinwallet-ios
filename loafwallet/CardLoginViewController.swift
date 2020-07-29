@@ -1,7 +1,8 @@
+import KeychainAccess
+import LitewalletPartnerAPI
 import UIKit
 
 @objc protocol LitecoinCardLoginViewDelegate {
-    func shouldShowRegistrationView()
     func shouldShowLoginView()
     func didLoginLitecoinCardAccount()
     func didForgetPassword()
@@ -12,7 +13,7 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
 
     @IBOutlet var scrollView: UIScrollView!
 
-    @IBOutlet var placerholderImageView: UIImageView!
+    @IBOutlet var cardImageView: UIImageView!
 
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -23,6 +24,9 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
 
     @IBOutlet var emailUnderlineView: UIView!
     @IBOutlet var passwordUnderlineView: UIView!
+    @IBOutlet weak var loginActivity: UIActivityIndicatorView!
+    
+    
 
     var currentTextField: UITextField?
     var isShowingPassword = false
@@ -30,6 +34,10 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
     weak var delegate: LitecoinCardLoginViewDelegate?
 
     var alertModal: LFAlertViewController?
+
+    var manager = PartnerAPIManager()
+
+    private var keychain = Keychain(service: "com.litewallet.card-service")
 
     @IBAction func toggleSecureEntry(_: Any) {
         passwordTextField.isSecureTextEntry = isShowingPassword
@@ -42,50 +50,83 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
     }
 
     @IBAction func forgotPasswordAction(_: Any) {
-        // TODO: Show Username/Email field and OK ...check for email acccount
-        delegate?.didForgetPassword()
+        
+        manager.forgotPassword(email:"g") { (message) in
+            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 
     @IBAction func loginAction(_: Any) {
         // Mock Login Success
-        delegate?.didLoginLitecoinCardAccount()
+        // delegate?.didLoginLitecoinCardAccount()
 
-//        do {
-//         let email = try emailTextField.validatedText(validationType: ValidatorType.email)
-//         let password = try passwordTextField.validatedText(validationType: ValidatorType.password)
-//            print(email)
-//            print(password)
-//
-//        } catch ValidationError {
-//
-//        }
+        var verifiedEmail: String
+        var verifiedPassword: String
+        
+        self.loginActivity.startAnimating()
+        self.loginButton.setTitle("", for: .normal)
+        self.loginButton.isEnabled = false
 
-//       self.alertModal = UIStoryboard.init(name: "Alerts", bundle: nil).instantiateViewController(withIdentifier: "LFAlertViewController") as? LFAlertViewController
-//
-//       guard let alertModal = self.alertModal else {
-//            NSLog("ERROR: Alert object not initialized")
-//            return
-//
-//       }
-//        alertModal.providesPresentationContextTransitionStyle = true
-//        alertModal.definesPresentationContext = true
-//        alertModal.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-//        alertModal.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-//
-//        if self.loginFailMessage != nil,
-//             let message = loginFailMessage {
-//            alertModal.dynamicLabel.text =  message
-//        } else {
-//           alertModal.dynamicLabel.text = ""
-//
-//        }
-//        alertModal.delegate = self
-//        self.present(alertModal, animated: true)
+        do {
+            verifiedEmail = try emailTextField.validatedText(validationType: ValidatorType.email)
+            verifiedPassword = try passwordTextField.validatedText(validationType: ValidatorType.password)
+            let creds = ["email": verifiedEmail,
+                         "password": verifiedPassword]
+            
+            manager.loginUser(credentials: creds) { (token, error) in
+                
+                if error != nil {
+                    self.showAlert(for: "Login Fail: \(String(describing:error)) ")
+                    self.loginActivity.stopAnimating()
+                    self.loginButton.setTitle("Login", for: .normal)
+                    self.loginButton.isEnabled = true
+                } else if let token = token {
+                    self.keychain[string:"token"] = token
+                    
+                }
+            }
+             
+        } catch {
+            let message = (error as! ValidationError).message
+            self.loginActivity.stopAnimating()
+            self.loginButton.setTitle("Login", for: .normal)
+            showAlert(for: message)
+        }
+    }
+
+    func showAlert(for alert: String) {
+        
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: nil, message: alert, preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 
     @IBAction func registrationAction(_: Any) {
         // Mock New User no LitecoinCard  - Show Registration View
-        delegate?.shouldShowRegistrationView()
+        guard let registrationModal = UIStoryboard(name: "Spend", bundle: nil).instantiateViewController(withIdentifier: "SpendViewController") as? SpendViewController else {
+            NSLog("ERROR: Alert object not initialized")
+            return
+        }
+        
+        registrationModal.dismissRegistrationAction = { [unowned self] in
+            DispatchQueue.main.async {
+                
+                let keychain: Keychain
+                keychain = Keychain(service: "com.litewallet.card-service")
+                if keychain["userID"] != nil {
+                    self.registrationButton.isHidden = true
+                    self.emailTextField.text = keychain["email"]
+                }
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        present(registrationModal, animated: true) {}
     }
 
     override func viewDidLoad() {
@@ -118,6 +159,12 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
         scrollView.contentSize = CGSize(width: view.frame.width, height: 2000)
         scrollView.delegate = self
         scrollView.isScrollEnabled = true
+
+        // Check if user has registered and hide the registration button accordingly
+        if keychain["userID"] != nil &&
+            keychain["token"] != nil {
+            registrationButton.isHidden = true
+        }
     }
 
     // MARK: UI Keyboard Methods
@@ -150,6 +197,13 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
         // TODO: Adjust keyboard dismissal. Currently is does not reset
         scrollView.contentInset = UIEdgeInsets(top: insetConstant, left: 0, bottom: insetBottom, right: 0)
         scrollView.scrollIndicatorInsets = scrollView.contentInset
+    }
+
+    private func setupCardImage() {
+        if let id = keychain[string: "userID"] {
+            manager.getCardImageData(userID: id) { _ in
+            }
+        }
     }
 
     // MARK: AlertView
