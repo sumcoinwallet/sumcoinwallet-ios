@@ -50,7 +50,7 @@ class MainViewController: UIViewController, Subscriber, LoginViewControllerDeleg
         navigationController?.navigationBar.tintColor = .liteWalletBlue
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.darkText,
-            NSAttributedString.Key.font: UIFont.customBold(size: 17.0)
+            NSAttributedString.Key.font: UIFont.customBold(size: 17.0),
         ]
 
         navigationController?.navigationBar.isTranslucent = false

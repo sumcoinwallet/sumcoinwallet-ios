@@ -10,7 +10,7 @@ extension UIFont {
     }
 
     static func customBody(size: CGFloat) -> UIFont {
-        return UIFont(name: "BarlowSemiCondensed-Regular", size: size)  ?? UIFont.preferredFont(forTextStyle: .subheadline)
+        return UIFont(name: "BarlowSemiCondensed-Regular", size: size) ?? UIFont.preferredFont(forTextStyle: .subheadline)
     }
 
     static func customMedium(size: CGFloat) -> UIFont {
@@ -44,14 +44,14 @@ extension UIFont {
     static var regularAttributes: [NSAttributedString.Key: Any] {
         return [
             .font: UIFont.customBody(size: 14.0),
-            .foregroundColor: UIColor.darkText
+            .foregroundColor: UIColor.darkText,
         ]
     }
 
     static var boldAttributes: [NSAttributedString.Key: Any] {
         return [
             .font: UIFont.customBold(size: 14.0),
-            .foregroundColor: UIColor.darkText
+            .foregroundColor: UIColor.darkText,
         ]
     }
 }

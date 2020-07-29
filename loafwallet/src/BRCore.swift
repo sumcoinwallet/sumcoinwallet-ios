@@ -344,22 +344,22 @@ class BRWallet {
         self.cPtr = cPtr
 
         BRWalletSetCallbacks(cPtr, Unmanaged.passUnretained(self).toOpaque(), { info, balance in // balanceChanged
-                                 guard let info = info else { return }
-                                 Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.balanceChanged(balance)
-                             }, { info, tx in // txAdded
-                                 guard let info = info, let tx = tx else { return }
-                                 Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.txAdded(tx)
-                             }, { info, txHashes, txCount, blockHeight, timestamp in // txUpdated
-                                 guard let info = info else { return }
-                                 let hashes = [UInt256](UnsafeBufferPointer(start: txHashes, count: txCount))
-                                 Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.txUpdated(hashes,
-                                                                                                               blockHeight: blockHeight,
-                                                                                                               timestamp: timestamp)
-                             }, { info, txHash, notify, rescan in // txDeleted
-                                 guard let info = info else { return }
-                                 Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.txDeleted(txHash,
-                                                                                                               notifyUser: notify != 0,
-                                                                                                               recommendRescan: rescan != 0)
+            guard let info = info else { return }
+            Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.balanceChanged(balance)
+        }, { info, tx in // txAdded
+            guard let info = info, let tx = tx else { return }
+            Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.txAdded(tx)
+        }, { info, txHashes, txCount, blockHeight, timestamp in // txUpdated
+            guard let info = info else { return }
+            let hashes = [UInt256](UnsafeBufferPointer(start: txHashes, count: txCount))
+            Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.txUpdated(hashes,
+                                                                                          blockHeight: blockHeight,
+                                                                                          timestamp: timestamp)
+        }, { info, txHash, notify, rescan in // txDeleted
+            guard let info = info else { return }
+            Unmanaged<BRWallet>.fromOpaque(info).takeUnretainedValue().listener.txDeleted(txHash,
+                                                                                          notifyUser: notify != 0,
+                                                                                          recommendRescan: rescan != 0)
         })
     }
 
@@ -512,27 +512,27 @@ class BRPeerManager {
         self.cPtr = cPtr
 
         BRPeerManagerSetCallbacks(cPtr, Unmanaged.passUnretained(self).toOpaque(), { info in // syncStarted
-                                      guard let info = info else { return }
-                                      Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.syncStarted()
-                                  }, { info, error in // syncStopped
-                                      guard let info = info else { return }
-                                      let err = BRPeerManagerError.posixError(errorCode: error, description: String(cString: strerror(error)))
-                                      Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.syncStopped(error != 0 ? err : nil)
-                                  }, { info in // txStatusUpdate
-                                      guard let info = info else { return }
-                                      Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.txStatusUpdate()
-                                  }, { info, replace, blocks, blocksCount in // saveBlocks
-                                      guard let info = info else { return }
-                                      let blockRefs = [BRBlockRef?](UnsafeBufferPointer(start: blocks, count: blocksCount))
-                                      Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.saveBlocks(replace != 0, blockRefs)
-                                  }, { info, replace, peers, peersCount in // savePeers
-                                      guard let info = info else { return }
-                                      let peerList = [BRPeer](UnsafeBufferPointer(start: peers, count: peersCount))
-                                      Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.savePeers(replace != 0, peerList)
-                                  }, { (info) -> Int32 in // networkIsReachable
-                                      guard let info = info else { return 0 }
-                                      return Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.networkIsReachable() ? 1 : 0
-                                  },
+            guard let info = info else { return }
+            Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.syncStarted()
+        }, { info, error in // syncStopped
+            guard let info = info else { return }
+            let err = BRPeerManagerError.posixError(errorCode: error, description: String(cString: strerror(error)))
+            Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.syncStopped(error != 0 ? err : nil)
+        }, { info in // txStatusUpdate
+            guard let info = info else { return }
+            Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.txStatusUpdate()
+        }, { info, replace, blocks, blocksCount in // saveBlocks
+            guard let info = info else { return }
+            let blockRefs = [BRBlockRef?](UnsafeBufferPointer(start: blocks, count: blocksCount))
+            Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.saveBlocks(replace != 0, blockRefs)
+        }, { info, replace, peers, peersCount in // savePeers
+            guard let info = info else { return }
+            let peerList = [BRPeer](UnsafeBufferPointer(start: peers, count: peersCount))
+            Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.savePeers(replace != 0, peerList)
+        }, { (info) -> Int32 in // networkIsReachable
+            guard let info = info else { return 0 }
+            return Unmanaged<BRPeerManager>.fromOpaque(info).takeUnretainedValue().listener.networkIsReachable() ? 1 : 0
+        },
                                   nil) // threadCleanup
     }
 

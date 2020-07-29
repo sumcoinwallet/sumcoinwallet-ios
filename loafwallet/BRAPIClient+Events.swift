@@ -9,14 +9,14 @@ public protocol Trackable {
 extension Trackable {
     func saveEvent(_ eventName: String) {
         NotificationCenter.default.post(name: EventManager.eventNotification, object: nil, userInfo: [
-            EventManager.eventNameKey: eventName
+            EventManager.eventNameKey: eventName,
         ])
     }
 
     func saveEvent(_ eventName: String, attributes: [String: String]) {
         NotificationCenter.default.post(name: EventManager.eventNotification, object: nil, userInfo: [
             EventManager.eventNameKey: eventName,
-            EventManager.eventAttributesKey: attributes
+            EventManager.eventAttributesKey: attributes,
         ])
     }
 }
@@ -25,7 +25,7 @@ private var emKey: UInt8 = 1
 
 // EventManager is attached to BRAPIClient
 
-//TODO: Refactor to remove this client that connects to a a BRD Server
+// TODO: Refactor to remove this client that connects to a a BRD Server
 extension BRAPIClient {
     var events: EventManager? {
         return lazyAssociatedObject(self, key: &emKey) {
@@ -75,11 +75,9 @@ class EventManager {
         queue.maxConcurrentOperationCount = 1
     }
 
-    func saveEvent(_ eventName: String) {
-     }
+    func saveEvent(_: String) {}
 
-    func saveEvent(_ eventName: String, attributes: [String: String]) {
-    }
+    func saveEvent(_: String, attributes _: [String: String]) {}
 
     private func removeData() {
         queue.addOperation { [weak self] in

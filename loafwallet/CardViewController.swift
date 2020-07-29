@@ -107,7 +107,7 @@ class CardViewController: UIViewController, UITextFieldDelegate, UIScrollViewDel
             litecoinCardDepositStatusLabel.text = S.LitecoinCard.transferToLitewallet
         }
         // TODO: Build out later
-        //let maxButton = UIButton.textFieldMaxAmount(height: transferTextField.frame.height)
+        // let maxButton = UIButton.textFieldMaxAmount(height: transferTextField.frame.height)
 
         view.layoutIfNeeded()
     }

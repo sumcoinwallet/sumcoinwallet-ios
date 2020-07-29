@@ -143,7 +143,7 @@ open class BRReplicatedKVStore: NSObject {
                     "   thetime         BIGINT  NOT NULL, " + // server unix timestamp in MS
                     "   deleted         BOOL    NOT NULL, " +
                     "   PRIMARY KEY (key, version) " +
-                    ");"
+                    ");",
             ]
             for cmd in commands {
                 var stmt: OpaquePointer?

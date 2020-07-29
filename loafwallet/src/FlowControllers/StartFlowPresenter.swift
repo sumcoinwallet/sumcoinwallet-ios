@@ -140,7 +140,7 @@ class StartFlowPresenter: Subscriber {
 
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.font: UIFont.customBold(size: 17.0)
+            NSAttributedString.Key.font: UIFont.customBold(size: 17.0),
         ]
         navigationController?.pushViewController(paperPhraseViewController, animated: true)
     }

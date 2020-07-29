@@ -334,8 +334,7 @@ class ApplicationController: Subscriber, Trackable {
 
         group.enter()
         LWAnalytics.logEventWithParameters(itemName: ._20200111_DEDG)
-        Async.parallel(callbacks: [ { self.exchangeUpdater?.refresh(completion: $0) }, { self.feeUpdater?.refresh(completion: $0) }
-        ], completion: {
+        Async.parallel(callbacks: [{ self.exchangeUpdater?.refresh(completion: $0) }, { self.feeUpdater?.refresh(completion: $0) }], completion: {
             LWAnalytics.logEventWithParameters(itemName: ._20200111_DLDG)
             group.leave()
             })

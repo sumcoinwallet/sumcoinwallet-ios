@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -221,26 +221,16 @@
                                             <action selector="registerAction:" destination="wNG-O7-NAJ" eventType="touchUpInside" id="7hk-LG-tyj"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cUd-5B-9ak">
+                                        <rect key="frame" x="169" y="460" width="37" height="50"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your LitecoinCard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAj-1I-Jan">
                                         <rect key="frame" x="70.5" y="18" width="234" height="31.5"/>
                                         <fontDescription key="fontDescription" name="BarlowSemiCondensed-Bold" family="Barlow Semi Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.20539733769999999" green="0.36322331429999999" blue="0.61663442850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gx-aY-txM">
-                                        <rect key="frame" x="30" y="538" width="315" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="GC8-Qv-dCI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed SemiBold" pointSize="19"/>
-                                        <state key="normal" title="Login">
-                                            <color key="titleColor" red="0.20539733769999999" green="0.36322331429999999" blue="0.61663442850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="returnToLoginView:" destination="wNG-O7-NAJ" eventType="touchUpInside" id="nwa-Eu-qed"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URz-ps-wJs">
                                         <rect key="frame" x="30" y="211.5" width="315" height="21"/>
                                         <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="16"/>
@@ -262,15 +252,16 @@
                                     <constraint firstItem="Awc-SM-eZg" firstAttribute="trailing" secondItem="TCa-d2-Qpw" secondAttribute="trailing" id="3nl-65-cQ8"/>
                                     <constraint firstItem="6xd-ML-a85" firstAttribute="top" secondItem="URz-ps-wJs" secondAttribute="bottom" constant="8" id="47C-GW-ofJ"/>
                                     <constraint firstItem="WbL-6T-a1k" firstAttribute="top" secondItem="FSp-QQ-BzQ" secondAttribute="bottom" constant="8" id="5CA-4B-kFV"/>
-                                    <constraint firstItem="8gx-aY-txM" firstAttribute="top" secondItem="uzl-R1-t2A" secondAttribute="bottom" constant="28" id="5UW-Ds-3lE"/>
                                     <constraint firstItem="URz-ps-wJs" firstAttribute="top" secondItem="Bui-wZ-eR4" secondAttribute="bottom" constant="25" id="6TL-p4-Zda"/>
                                     <constraint firstItem="Cp0-mW-AT8" firstAttribute="leading" secondItem="EuW-PF-Vvj" secondAttribute="leading" constant="30" id="6io-Sl-kmn"/>
                                     <constraint firstItem="jsn-9K-bZN" firstAttribute="leading" secondItem="EuW-PF-Vvj" secondAttribute="leading" constant="30" id="6y5-ol-j1x"/>
                                     <constraint firstItem="BAj-1I-Jan" firstAttribute="centerX" secondItem="EuW-PF-Vvj" secondAttribute="centerX" id="76s-fO-HVQ"/>
                                     <constraint firstItem="TCa-d2-Qpw" firstAttribute="top" secondItem="XgX-P0-zTz" secondAttribute="bottom" constant="25" id="89H-gb-7Sm"/>
                                     <constraint firstItem="tcC-LC-dgN" firstAttribute="leading" secondItem="TCa-d2-Qpw" secondAttribute="trailing" constant="30" id="8Mg-n1-pEg"/>
+                                    <constraint firstItem="cUd-5B-9ak" firstAttribute="top" secondItem="uzl-R1-t2A" secondAttribute="top" id="9H8-nN-2Nm"/>
                                     <constraint firstItem="GxE-21-El1" firstAttribute="trailing" secondItem="fKS-fG-fzJ" secondAttribute="trailing" id="9Ox-9m-BUz"/>
                                     <constraint firstAttribute="trailing" secondItem="tcC-LC-dgN" secondAttribute="trailing" constant="30" id="9qi-jJ-vTw"/>
+                                    <constraint firstItem="cUd-5B-9ak" firstAttribute="centerX" secondItem="EuW-PF-Vvj" secondAttribute="centerX" id="ACL-hF-Jfd"/>
                                     <constraint firstItem="Bui-wZ-eR4" firstAttribute="leading" secondItem="EuW-PF-Vvj" secondAttribute="leading" priority="750" constant="30" id="Aci-De-OWd"/>
                                     <constraint firstItem="GxE-21-El1" firstAttribute="top" secondItem="fKS-fG-fzJ" secondAttribute="bottom" constant="8" id="BuI-pW-WLf"/>
                                     <constraint firstItem="WbL-6T-a1k" firstAttribute="trailing" secondItem="FSp-QQ-BzQ" secondAttribute="trailing" id="CHV-h1-R3B"/>
@@ -286,7 +277,6 @@
                                     <constraint firstItem="fxu-bJ-SIu" firstAttribute="trailing" secondItem="jsn-9K-bZN" secondAttribute="trailing" id="OnE-TT-NXU"/>
                                     <constraint firstItem="1mq-gh-Z3N" firstAttribute="top" secondItem="Cp0-mW-AT8" secondAttribute="bottom" constant="8" id="PVG-3D-722"/>
                                     <constraint firstItem="uzl-R1-t2A" firstAttribute="top" secondItem="1mq-gh-Z3N" secondAttribute="bottom" constant="35" id="Pl3-XV-yhD"/>
-                                    <constraint firstItem="8gx-aY-txM" firstAttribute="leading" secondItem="EuW-PF-Vvj" secondAttribute="leading" constant="30" id="QZm-Tw-JVx"/>
                                     <constraint firstItem="fKS-fG-fzJ" firstAttribute="leading" secondItem="Bui-wZ-eR4" secondAttribute="trailing" constant="30" id="RZ5-rL-Uki"/>
                                     <constraint firstItem="qG9-pQ-fH2" firstAttribute="trailing" secondItem="Q1R-md-CUS" secondAttribute="trailing" id="S1J-US-4GP"/>
                                     <constraint firstItem="0T0-ij-HxB" firstAttribute="leading" secondItem="tcC-LC-dgN" secondAttribute="leading" id="SKG-YU-JaX"/>
@@ -314,7 +304,6 @@
                                     <constraint firstItem="SDg-dH-MwL" firstAttribute="trailing" secondItem="go2-we-YWY" secondAttribute="trailing" id="fgb-ft-t0z"/>
                                     <constraint firstItem="TCa-d2-Qpw" firstAttribute="leading" secondItem="EuW-PF-Vvj" secondAttribute="leading" constant="30" id="gas-0X-KK7"/>
                                     <constraint firstItem="0T0-ij-HxB" firstAttribute="trailing" secondItem="tcC-LC-dgN" secondAttribute="trailing" id="hEE-cA-BcY"/>
-                                    <constraint firstAttribute="trailing" secondItem="8gx-aY-txM" secondAttribute="trailing" constant="30" id="hKg-TS-iRE"/>
                                     <constraint firstItem="go2-we-YWY" firstAttribute="top" secondItem="PE1-to-zlJ" secondAttribute="bottom" constant="25" id="imM-U1-ql8"/>
                                     <constraint firstItem="PE1-to-zlJ" firstAttribute="width" secondItem="Uw5-5P-msa" secondAttribute="width" id="j1G-yi-vsx"/>
                                     <constraint firstItem="PE1-to-zlJ" firstAttribute="centerX" secondItem="EuW-PF-Vvj" secondAttribute="centerX" id="jFf-1W-irm"/>
@@ -325,6 +314,7 @@
                                     <constraint firstAttribute="trailing" secondItem="fKS-fG-fzJ" secondAttribute="trailing" priority="750" constant="30" id="lja-eg-yIs"/>
                                     <constraint firstAttribute="trailing" secondItem="Q1R-md-CUS" secondAttribute="trailing" priority="750" constant="30" id="n4b-Wo-yFP"/>
                                     <constraint firstItem="SDg-dH-MwL" firstAttribute="leading" secondItem="go2-we-YWY" secondAttribute="leading" id="nhS-TO-KUP"/>
+                                    <constraint firstItem="cUd-5B-9ak" firstAttribute="bottom" secondItem="uzl-R1-t2A" secondAttribute="bottom" id="o0m-V0-bcX"/>
                                     <constraint firstItem="WbL-6T-a1k" firstAttribute="leading" secondItem="FSp-QQ-BzQ" secondAttribute="leading" id="o9k-SH-H9u"/>
                                     <constraint firstItem="XgX-P0-zTz" firstAttribute="top" secondItem="URz-ps-wJs" secondAttribute="bottom" constant="25" id="p08-wF-uCw"/>
                                     <constraint firstItem="Cp0-mW-AT8" firstAttribute="top" secondItem="jsn-9K-bZN" secondAttribute="bottom" constant="25" id="pci-gw-C5h"/>
@@ -362,11 +352,11 @@
                         <outlet property="firstNameTextField" destination="Bui-wZ-eR4" id="F4w-0j-EMt"/>
                         <outlet property="headerLabel" destination="BAj-1I-Jan" id="SSB-Ai-4rU"/>
                         <outlet property="lastNameTextField" destination="fKS-fG-fzJ" id="DIY-Js-VZY"/>
-                        <outlet property="loginButton" destination="8gx-aY-txM" id="Bxr-Mc-cPF"/>
                         <outlet property="mobileTextField" destination="Cp0-mW-AT8" id="khD-JV-j2O"/>
                         <outlet property="passwordTextField" destination="go2-we-YWY" id="rFd-Ti-ZvY"/>
                         <outlet property="postalCodeTextField" destination="FSp-QQ-BzQ" id="Nsb-CR-weq"/>
                         <outlet property="registerButton" destination="uzl-R1-t2A" id="Vja-6k-pBJ"/>
+                        <outlet property="registrationActivity" destination="cUd-5B-9ak" id="huW-mr-ChB"/>
                         <outlet property="scrollView" destination="EuW-PF-Vvj" id="9Vz-Oi-ee9"/>
                         <outlet property="stateTextField" destination="tcC-LC-dgN" id="EzM-Xn-8Iz"/>
                     </connections>
@@ -400,6 +390,10 @@
                                             <action selector="loginAction:" destination="OTf-Lp-rPj" eventType="touchUpInside" id="G1G-Z5-14d"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cZS-f8-32f">
+                                        <rect key="frame" x="169" y="440" width="37" height="50"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-ph-8XL">
                                         <rect key="frame" x="30" y="251" width="315" height="25"/>
                                         <constraints>
@@ -482,12 +476,14 @@
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="cZS-f8-32f" firstAttribute="top" secondItem="ky5-cR-VA4" secondAttribute="top" id="4C9-dG-vmS"/>
                                     <constraint firstItem="2Js-m9-S92" firstAttribute="leading" secondItem="PYW-As-TTX" secondAttribute="leading" id="4Gg-pr-lLS"/>
                                     <constraint firstItem="mxj-Rx-VOQ" firstAttribute="top" secondItem="mmL-ph-8XL" secondAttribute="bottom" constant="8" id="5fG-cT-5Bo"/>
                                     <constraint firstItem="5DI-CD-e7X" firstAttribute="leading" secondItem="PYW-As-TTX" secondAttribute="leading" constant="30" id="6uP-h2-E4H"/>
                                     <constraint firstItem="mxj-Rx-VOQ" firstAttribute="leading" secondItem="PYW-As-TTX" secondAttribute="leading" constant="30" id="71N-Zo-vHP"/>
                                     <constraint firstItem="ky5-cR-VA4" firstAttribute="centerX" secondItem="PYW-As-TTX" secondAttribute="centerX" id="CVx-K4-Got"/>
                                     <constraint firstItem="7f4-hS-2aE" firstAttribute="top" secondItem="mmL-ph-8XL" secondAttribute="bottom" constant="40" id="Ewu-Ot-ah3"/>
+                                    <constraint firstItem="cZS-f8-32f" firstAttribute="bottom" secondItem="ky5-cR-VA4" secondAttribute="bottom" id="Fa9-6x-TWa"/>
                                     <constraint firstItem="ky5-cR-VA4" firstAttribute="top" secondItem="BGj-Ul-Dqm" secondAttribute="bottom" constant="30" id="Ipd-2G-xvM"/>
                                     <constraint firstItem="5DI-CD-e7X" firstAttribute="centerX" secondItem="PYW-As-TTX" secondAttribute="centerX" id="NFD-3y-cet"/>
                                     <constraint firstAttribute="trailing" secondItem="mmL-ph-8XL" secondAttribute="trailing" constant="30" id="QOV-bu-Hde"/>
@@ -501,6 +497,7 @@
                                     <constraint firstItem="gN0-Pa-9G5" firstAttribute="trailing" secondItem="fYM-LR-XKR" secondAttribute="trailing" id="aMV-Xr-Toy"/>
                                     <constraint firstItem="ky5-cR-VA4" firstAttribute="leading" secondItem="PYW-As-TTX" secondAttribute="leading" constant="30" id="ayz-EH-uKm"/>
                                     <constraint firstItem="7f4-hS-2aE" firstAttribute="leading" secondItem="PYW-As-TTX" secondAttribute="leading" constant="30" id="dkg-n8-Tig"/>
+                                    <constraint firstItem="cZS-f8-32f" firstAttribute="centerX" secondItem="PYW-As-TTX" secondAttribute="centerX" id="fhO-Qf-y83"/>
                                     <constraint firstItem="BGj-Ul-Dqm" firstAttribute="centerX" secondItem="PYW-As-TTX" secondAttribute="centerX" id="gYt-ms-FdI"/>
                                     <constraint firstAttribute="trailing" secondItem="2Js-m9-S92" secondAttribute="trailing" id="iGi-mO-EDA"/>
                                     <constraint firstAttribute="trailing" secondItem="fYM-LR-XKR" secondAttribute="trailing" constant="30" id="l8Z-rX-pmh"/>
@@ -527,13 +524,14 @@
                         <viewLayoutGuide key="safeArea" id="bet-lg-Zuz"/>
                     </view>
                     <connections>
+                        <outlet property="cardImageView" destination="2Js-m9-S92" id="4qL-W8-5Hk"/>
                         <outlet property="emailTextField" destination="mmL-ph-8XL" id="bLu-f4-m3Z"/>
                         <outlet property="emailUnderlineView" destination="mxj-Rx-VOQ" id="Plu-aM-UIL"/>
                         <outlet property="forgotPasswordButton" destination="BGj-Ul-Dqm" id="wf8-kO-R8h"/>
+                        <outlet property="loginActivity" destination="cZS-f8-32f" id="2hG-Af-hpO"/>
                         <outlet property="loginButton" destination="ky5-cR-VA4" id="LXe-Gw-aWj"/>
                         <outlet property="passwordTextField" destination="7f4-hS-2aE" id="kJL-1V-Gvc"/>
                         <outlet property="passwordUnderlineView" destination="fYM-LR-XKR" id="MGI-CW-o5S"/>
-                        <outlet property="placerholderImageView" destination="2Js-m9-S92" id="3W7-3Y-diq"/>
                         <outlet property="registrationButton" destination="5DI-CD-e7X" id="Vw1-lX-zVw"/>
                         <outlet property="scrollView" destination="PYW-As-TTX" id="0LR-hR-Htw"/>
                         <outlet property="secureEntryToggleButton" destination="gN0-Pa-9G5" id="vKU-Vz-xLY"/>
@@ -571,9 +569,6 @@
                                         <state key="normal" title="Transfer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="registerAction:" destination="wNG-O7-NAJ" eventType="touchUpInside" id="icx-kL-g68"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit to LitecoinCard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEc-1I-ZWE">
                                         <rect key="frame" x="104.5" y="215" width="166" height="22"/>

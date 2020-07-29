@@ -200,7 +200,7 @@ class ModalPresenter: Subscriber, Trackable {
             alertView.constraint(.width, constant: size.width),
             alertView.constraint(.height, constant: alertHeight + 25.0),
             alertView.constraint(.leading, toView: window, constant: nil),
-            topConstraint
+            topConstraint,
         ])
         window.layoutIfNeeded()
 
@@ -451,12 +451,12 @@ class ModalPresenter: Subscriber, Trackable {
                 Setting(title: S.UpdatePin.updateTitle, callback: strongify(self) { myself in
                     let updatePin = UpdatePinViewController(store: myself.store, walletManager: walletManager, type: .update)
                     settingsNav.pushViewController(updatePin, animated: true)
-                })
+                }),
             ],
             "Support": [
                 Setting(title: S.Settings.shareData, callback: {
                     settingsNav.pushViewController(ShareDataViewController(store: self.store), animated: true)
-                })
+                }),
             ],
             "Blockchain": [
                 Setting(title: S.Settings.advancedTitle, callback: { [weak self] in
@@ -481,8 +481,8 @@ class ModalPresenter: Subscriber, Trackable {
                     let advancedSettings = ["Network": networkRows]
                     let advancedSettingsVC = SettingsViewController(sections: sections, rows: advancedSettings, optionalTitle: S.Settings.advancedTitle)
                     settingsNav.pushViewController(advancedSettingsVC, animated: true)
-                })
-            ]
+                }),
+            ],
         ]
 
         let settings = SettingsViewController(sections: sections, rows: rows)
@@ -825,7 +825,7 @@ class ModalPresenter: Subscriber, Trackable {
             alert.constraint(.width, constant: size.width),
             alert.constraint(.height, constant: InAppAlert.height),
             alert.constraint(.leading, toView: window, constant: nil),
-            bottomConstraint
+            bottomConstraint,
         ])
         window.layoutIfNeeded()
         alert.bottomConstraint = bottomConstraint
@@ -854,7 +854,7 @@ class ModalPresenter: Subscriber, Trackable {
         view.addSubview(alert)
         alert.constrain([
             alert.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            alert.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            alert.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
         alert.background.effect = nil
         UIView.animate(withDuration: 0.6, animations: {
