@@ -172,12 +172,12 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
         } catch {
             let message = (error as! ValidationError).message
-            showAlert(for: message)
+            showGenericAlert(for: message)
         }
         return [:]
     }
 
-    func showAlert(for alert: String) {
+    func showGenericAlert(for alert: String) {
  
         let alertController = UIAlertController(title: nil, message: alert, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)

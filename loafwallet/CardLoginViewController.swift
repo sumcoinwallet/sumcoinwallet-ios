@@ -51,12 +51,12 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
 
     @IBAction func forgotPasswordAction(_: Any) {
         //TODO: Add forgot password funct
-//        manager.forgotPassword(email:"g") { (message) in
-//            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-//            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//            alertController.addAction(alertAction)
-//            self.present(alertController, animated: true, completion: nil)
-//        }
+        //        manager.forgotPassword(email:"g") { (message) in
+        //            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        //            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        //            alertController.addAction(alertAction)
+        //            self.present(alertController, animated: true, completion: nil)
+        //        }
     }
 
     @IBAction func loginAction(_: Any) {
@@ -69,6 +69,7 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
         self.loginActivity.startAnimating()
         self.loginButton.setTitle("", for: .normal)
         self.loginButton.isEnabled = false
+        let message = "Error: Login incorrect"
 
         do {
             verifiedEmail = try emailTextField.validatedText(validationType: ValidatorType.email)
@@ -76,21 +77,17 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
             let creds = ["email": verifiedEmail,
                          "password": verifiedPassword]
             
-            manager.loginUser(credentials: creds) { (token, error) in
-                
-                if error != nil {
-                    self.showAlert(for: "Login Fail: \(String(describing:error)) ")
-                    self.loginActivity.stopAnimating()
-                    self.loginButton.setTitle("Login", for: .normal)
-                    self.loginButton.isEnabled = true
-                } else if let token = token {
-                    self.keychain[string:"token"] = token
-                    
-                }
+            manager.loginUser(credentials: creds) { (token) in
+                 if let token = token {
+                    if token.components(separatedBy: ".").count == 3 {
+                     self.keychain[string:"token"] = token
+                     self.loginActivity.stopAnimating()
+                     self.loginButton.setTitle("Success", for: .normal)
+                    }
+                 }
             }
              
         } catch {
-            let message = (error as! ValidationError).message
             self.loginActivity.stopAnimating()
             self.loginButton.setTitle("Login", for: .normal)
             showAlert(for: message)
