@@ -76,8 +76,8 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         confirmPasswordTextField.placeholder = S.LitecoinCard.confirmPasswordPlaceholder
         firstNameTextField.placeholder = S.LitecoinCard.firstNamePlaceholder
         lastNameTextField.placeholder = S.LitecoinCard.lastNamePlaceholder
-        address1TextField.placeholder = S.LitecoinCard.addressPlaceholder
-        address2TextField.placeholder = S.LitecoinCard.addressPlaceholder
+        address1TextField.placeholder = S.LitecoinCard.addressPlaceholder + " 1"
+        address2TextField.placeholder = S.LitecoinCard.addressPlaceholder + " 2"
         cityTextField.placeholder = S.LitecoinCard.cityPlaceholder
         stateTextField.placeholder = S.LitecoinCard.statePlaceholder
         postalCodeTextField.placeholder = S.LitecoinCard.postalPlaceholder
