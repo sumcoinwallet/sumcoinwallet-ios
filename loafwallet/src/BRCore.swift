@@ -23,8 +23,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import Foundation
 import BRCore
+import Foundation
 
 typealias BRTxRef = UnsafeMutablePointer<BRTransaction>
 typealias BRBlockRef = UnsafeMutablePointer<BRMerkleBlock>

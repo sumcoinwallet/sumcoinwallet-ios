@@ -1,7 +1,7 @@
 import Foundation
+import KeychainAccess
 import SwiftyJSON
 import UIKit
-import KeychainAccess
 
 enum TabViewControllerIndex: Int {
     case transactions = 0

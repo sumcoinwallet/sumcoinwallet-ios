@@ -6,8 +6,8 @@
 //  Copyright © 2016 breadwallet LLC. All rights reserved.
 //
 
-import UIKit
 import MessageUI
+import UIKit
 
 class MessageUIPresenter: NSObject, Trackable {
     weak var presenter: UIViewController?

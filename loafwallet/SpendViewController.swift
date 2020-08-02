@@ -2,7 +2,7 @@ import KeychainAccess
 import LitewalletPartnerAPI
 import Security
 import UIKit
-  
+
 class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIScrollViewDelegate, LFAlertViewDelegate {
     static let serviceName = "com.litewallet.litecoincard.service"
 
@@ -178,7 +178,6 @@ class SpendViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
 
     func showGenericAlert(for alert: String) {
- 
         let alertController = UIAlertController(title: nil, message: alert, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(alertAction)

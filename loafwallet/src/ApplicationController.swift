@@ -6,8 +6,8 @@
 //  Copyright © 2016 breadwallet LLC. All rights reserved.
 //
 
-import UIKit
 import StoreKit
+import UIKit
 
 private let timeSinceLastExitKey = "TimeSinceLastExit"
 private let shouldRequireLoginTimeoutKey = "ShouldRequireLoginTimeoutKey"

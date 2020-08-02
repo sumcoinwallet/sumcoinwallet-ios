@@ -6,7 +6,6 @@
 //  Copyright © 2019 Litecoin Foundation. All rights reserved.
 //
 
-import UIKit
 import BRCore
 import MachO
 import UIKit

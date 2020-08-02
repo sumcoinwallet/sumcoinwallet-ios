@@ -23,13 +23,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+import BRCore
+import FirebaseAnalytics
 import Foundation
 import LocalAuthentication
 import sqlite3
 import UIKit
-import FirebaseAnalytics
-import BRCore
-
 
 private let WalletSecAttrService = "com.litecoin.loafwallet"
 private let BIP39CreationTime = TimeInterval(BIP39_CREATION_TIME) - NSTimeIntervalSince1970

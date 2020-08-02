@@ -6,9 +6,9 @@
 //  Copyright © 2017 breadwallet LLC. All rights reserved.
 //
 
+import BRCore
 import Foundation
 import UIKit
-import BRCore
 
 enum SendResult {
     case success

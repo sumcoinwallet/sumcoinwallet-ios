@@ -6,9 +6,8 @@
 //  Copyright © 2017 breadwallet LLC. All rights reserved.
 //
 
-import UIKit
 import LocalAuthentication
-
+import UIKit
 
 typealias VerifyPinCallback = (String, UIViewController) -> Bool
 

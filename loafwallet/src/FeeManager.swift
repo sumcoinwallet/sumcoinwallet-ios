@@ -4,7 +4,7 @@
 //
 //  Created by Kerry Washington on 2/29/20.
 //  Copyright © 2020 Litecoin Foundation. All rights reserved.
- 
+
 import FirebaseAnalytics
 import Foundation
 

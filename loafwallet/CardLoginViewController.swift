@@ -24,9 +24,7 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
 
     @IBOutlet var emailUnderlineView: UIView!
     @IBOutlet var passwordUnderlineView: UIView!
-    @IBOutlet weak var loginActivity: UIActivityIndicatorView!
-    
-    
+    @IBOutlet var loginActivity: UIActivityIndicatorView!
 
     var currentTextField: UITextField?
     var isShowingPassword = false
@@ -50,7 +48,7 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
     }
 
     @IBAction func forgotPasswordAction(_: Any) {
-        //TODO: Add forgot password funct
+        // TODO: Add forgot password funct
         //        manager.forgotPassword(email:"g") { (message) in
         //            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         //            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -65,10 +63,10 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
 
         var verifiedEmail: String
         var verifiedPassword: String
-        
-        self.loginActivity.startAnimating()
-        self.loginButton.setTitle("", for: .normal)
-        self.loginButton.isEnabled = false
+
+        loginActivity.startAnimating()
+        loginButton.setTitle("", for: .normal)
+        loginButton.isEnabled = false
         let message = "Error: Login incorrect"
 
         do {
@@ -76,26 +74,25 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
             verifiedPassword = try passwordTextField.validatedText(validationType: ValidatorType.password)
             let creds = ["email": verifiedEmail,
                          "password": verifiedPassword]
-            
-            manager.loginUser(credentials: creds) { (token) in
-                 if let token = token {
+
+            manager.loginUser(credentials: creds) { token in
+                if let token = token {
                     if token.components(separatedBy: ".").count == 3 {
-                     self.keychain[string:"token"] = token
-                     self.loginActivity.stopAnimating()
-                     self.loginButton.setTitle("Success", for: .normal)
+                        self.keychain[string: "token"] = token
+                        self.loginActivity.stopAnimating()
+                        self.loginButton.setTitle("Success", for: .normal)
                     }
-                 }
+                }
             }
-             
+
         } catch {
-            self.loginActivity.stopAnimating()
-            self.loginButton.setTitle("Login", for: .normal)
+            loginActivity.stopAnimating()
+            loginButton.setTitle("Login", for: .normal)
             showAlert(for: message)
         }
     }
 
     func showAlert(for alert: String) {
-        
         DispatchQueue.main.async {
             let alertController = UIAlertController(title: nil, message: alert, preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -110,10 +107,9 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
             NSLog("ERROR: Alert object not initialized")
             return
         }
-        
+
         registrationModal.dismissRegistrationAction = { [unowned self] in
             DispatchQueue.main.async {
-                
                 let keychain: Keychain
                 keychain = Keychain(service: "com.litewallet.card-service")
                 if keychain["userID"] != nil {
@@ -130,10 +126,9 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
         super.viewDidLoad()
         setupSubviews()
 
-        
-        //TODO: Enable when Forgot password is functional
+        // TODO: Enable when Forgot password is functional
         forgotPasswordButton.isHidden = true
-        
+
         NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -162,7 +157,7 @@ class CardLoginViewController: UIViewController, UITextFieldDelegate, UIScrollVi
         scrollView.isScrollEnabled = true
 
         // Check if user has registered and hide the registration button accordingly
-        if keychain["userID"] != nil &&
+        if keychain["userID"] != nil,
             keychain["token"] != nil {
             registrationButton.isHidden = true
         }
