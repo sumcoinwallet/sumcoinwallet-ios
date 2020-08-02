@@ -1,5 +1,14 @@
-import LocalAuthentication
+//
+//  VerifyPinViewController.swift
+//  breadwallet
+//
+//  Created by Adrian Corscadden on 2017-01-17.
+//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//
+
 import UIKit
+import LocalAuthentication
+
 
 typealias VerifyPinCallback = (String, UIViewController) -> Bool
 

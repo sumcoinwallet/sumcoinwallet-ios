@@ -1,3 +1,11 @@
+//
+//  ExchangeUpdater.swift
+//  breadwallet
+//
+//  Created by Adrian Corscadden on 2017-01-27.
+//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//
+
 import Foundation
 
 class ExchangeUpdater: Subscriber {

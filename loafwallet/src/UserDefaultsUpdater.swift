@@ -1,3 +1,11 @@
+//
+//  UserDefaultsUpdater.swift
+//  breadwallet
+//
+//  Created by Adrian Corscadden on 2017-05-27.
+//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//
+
 import Foundation
 
 private enum AppGroup {

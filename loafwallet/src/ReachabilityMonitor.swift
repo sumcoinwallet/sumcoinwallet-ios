@@ -1,3 +1,11 @@
+//
+//  ReachabilityManager.swift
+//  breadwallet
+//
+//  Created by Adrian Corscadden on 2017-06-17.
+//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//
+
 import Foundation
 import SystemConfiguration
 

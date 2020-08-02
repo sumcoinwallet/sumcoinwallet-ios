@@ -1,6 +1,15 @@
-import AVFoundation
+//
+//  WalletCoordinator.swift
+//  breadwallet
+//
+//  Created by Adrian Corscadden on 2017-01-07.
+//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//
+
 import Foundation
 import UIKit
+import AVFoundation
+
 
 private let lastBlockHeightKey = "LastBlockHeightKey"
 private let progressUpdateInterval: TimeInterval = 0.5

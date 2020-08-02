@@ -1,5 +1,13 @@
-import MessageUI
+//
+//  MessageUIPresenter.swift
+//  breadwallet
+//
+//  Created by Adrian Corscadden on 2016-12-11.
+//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//
+
 import UIKit
+import MessageUI
 
 class MessageUIPresenter: NSObject, Trackable {
     weak var presenter: UIViewController?
