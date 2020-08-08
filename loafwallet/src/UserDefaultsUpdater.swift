@@ -15,7 +15,6 @@ private enum AppGroup {
 }
 
 class UserDefaultsUpdater {
-
     init(walletManager: WalletManager) {
         self.walletManager = walletManager
     }
@@ -27,9 +26,8 @@ class UserDefaultsUpdater {
     }
 
     private lazy var defaults: UserDefaults? = {
-        return UserDefaults(suiteName: AppGroup.id)
+        UserDefaults(suiteName: AppGroup.id)
     }()
 
     private let walletManager: WalletManager
-
 }

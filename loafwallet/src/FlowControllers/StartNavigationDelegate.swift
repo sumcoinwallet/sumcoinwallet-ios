@@ -8,21 +8,19 @@
 
 import UIKit
 
-class StartNavigationDelegate : NSObject, UINavigationControllerDelegate {
-
+class StartNavigationDelegate: NSObject, UINavigationControllerDelegate {
     let store: Store
 
     init(store: Store) {
         self.store = store
     }
 
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated _: Bool) {
         if viewController is RecoverWalletIntroViewController {
             navigationController.navigationBar.tintColor = .white
             navigationController.navigationBar.titleTextAttributes = [
-                NSAttributedStringKey.foregroundColor: UIColor.white,
-                NSAttributedStringKey.font: UIFont.customBold(size: 17.0)
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.font: UIFont.customBold(size: 17.0),
             ]
             navigationController.setClearNavbar()
             navigationController.navigationBar.barTintColor = .clear
@@ -31,8 +29,8 @@ class StartNavigationDelegate : NSObject, UINavigationControllerDelegate {
         if viewController is EnterPhraseViewController {
             navigationController.navigationBar.tintColor = .darkText
             navigationController.navigationBar.titleTextAttributes = [
-                NSAttributedStringKey.foregroundColor: UIColor.darkText,
-                NSAttributedStringKey.font: UIFont.customBold(size: 17.0)
+                NSAttributedString.Key.foregroundColor: UIColor.darkText,
+                NSAttributedString.Key.font: UIFont.customBold(size: 17.0),
             ]
             navigationController.setClearNavbar()
             navigationController.navigationBar.isTranslucent = false
@@ -42,8 +40,8 @@ class StartNavigationDelegate : NSObject, UINavigationControllerDelegate {
         if viewController is UpdatePinViewController {
             navigationController.navigationBar.tintColor = .darkText
             navigationController.navigationBar.titleTextAttributes = [
-                NSAttributedStringKey.foregroundColor: UIColor.darkText,
-                NSAttributedStringKey.font: UIFont.customBold(size: 17.0)
+                NSAttributedString.Key.foregroundColor: UIColor.darkText,
+                NSAttributedString.Key.font: UIFont.customBold(size: 17.0),
             ]
             navigationController.setClearNavbar()
         }

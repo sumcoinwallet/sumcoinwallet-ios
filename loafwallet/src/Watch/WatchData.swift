@@ -36,7 +36,7 @@ struct WatchData {
             Keys.latestTransaction: latestTransaction,
             Keys.qrCode: NSKeyedArchiver.archivedData(withRootObject: qrCode),
             Keys.transactions: [],
-            Keys.hasWallet: hasWallet
+            Keys.hasWallet: hasWallet,
         ]
     }
 
@@ -59,14 +59,14 @@ extension WatchData {
         self.localBalance = localBalance
         self.receiveAddress = receiveAddress
         self.latestTransaction = latestTransaction
-        self.qrCode = qrImage
+        qrCode = qrImage
         self.hasWallet = hasWallet
-        transactions = [] //TODO - add transactions here
+        transactions = [] // TODO: - add transactions here
     }
 }
 
-extension WatchData : Equatable {}
+extension WatchData: Equatable {}
 
-func ==(lhs: WatchData, rhs: WatchData) -> Bool {
+func == (lhs: WatchData, rhs: WatchData) -> Bool {
     return lhs.balance == rhs.balance && lhs.localBalance == rhs.localBalance && lhs.receiveAddress == rhs.receiveAddress && lhs.latestTransaction == rhs.latestTransaction && lhs.transactions == rhs.transactions && lhs.hasWallet == rhs.hasWallet
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum WatchTransactionType : Int32 {
+enum WatchTransactionType: Int32 {
     case sent = 0
     case receive
     case move
@@ -22,7 +22,7 @@ private enum Keys {
     static let type = "AW_TRANSACTION_DATA_TYPE_KEY"
 }
 
-class WatchTransaction : NSObject, NSCoding {
+class WatchTransaction: NSObject, NSCoding {
     let amount: String
     let localAmount: String
     let date: String
