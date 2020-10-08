@@ -276,12 +276,6 @@
 		75A2A7B91DA5934300A983D8 /* Litewallet WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 75A2A7B81DA5934300A983D8 /* Litewallet WatchKit App.app */; };
 		75A2A7BF1DA5934300A983D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7BD1DA5934300A983D8 /* Interface.storyboard */; };
 		75A2A7C11DA5934300A983D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7C01DA5934300A983D8 /* Assets.xcassets */; };
-		75A2A7C81DA5934300A983D8 /* Litewallet.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75A2A7C71DA5934300A983D8 /* Litewallet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		75A2A7CF1DA5934300A983D8 /* BalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7CE1DA5934300A983D8 /* BalanceInterfaceController.swift */; };
-		75A2A7D11DA5934300A983D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7D01DA5934300A983D8 /* ExtensionDelegate.swift */; };
-		75A2A7D31DA5934300A983D8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7D21DA5934300A983D8 /* NotificationController.swift */; };
-		75A2A7D51DA5934300A983D8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7D41DA5934300A983D8 /* ComplicationController.swift */; };
-		75A2A7D71DA5934400A983D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7D61DA5934300A983D8 /* Assets.xcassets */; };
 		75A2A80A1DA5936F00A983D8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A2A8091DA5936F00A983D8 /* NotificationCenter.framework */; };
 		75A2A8101DA5936F00A983D8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A80E1DA5936F00A983D8 /* MainInterface.storyboard */; };
 		75A2A8141DA5936F00A983D8 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75A2A8081DA5936F00A983D8 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -315,8 +309,6 @@
 		CE27F9591E2C8EA300F7F7F2 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27F9581E2C8EA300F7F7F2 /* Amount.swift */; };
 		CE29901A1EFD6DE50093A0F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE29901C1EFD6DE50093A0F2 /* Localizable.strings */; };
 		CE30F0E61EB27844004B8EE5 /* PhoneWCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30F0E51EB27844004B8EE5 /* PhoneWCSessionManager.swift */; };
-		CE30F0E81EB27FA2004B8EE5 /* WatchDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30F0E71EB27FA2004B8EE5 /* WatchDataManager.swift */; };
-		CE30F0EA1EB282C8004B8EE5 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30F0E91EB282C8004B8EE5 /* SharedConstants.swift */; };
 		CE36454C1E7B42850079D0CF /* PinPadCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36454B1E7B42850079D0CF /* PinPadCells.swift */; };
 		CE3754AD1DDE6E080045B0CB /* MaskedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3754AC1DDE6E080045B0CB /* MaskedShadow.swift */; };
 		CE3754AF1DDE6E2E0045B0CB /* RoundedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3754AE1DDE6E2E0045B0CB /* RoundedContainer.swift */; };
@@ -411,12 +403,8 @@
 		CECCE5B21E04B00D00D99448 /* SendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCE5B11E04B00D00D99448 /* SendCell.swift */; };
 		CED341331EF5A5C00014912A /* InAppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED341321EF5A5C00014912A /* InAppAlert.swift */; };
 		CED811AA1EB2B2D1003A8D1E /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30F0E91EB282C8004B8EE5 /* SharedConstants.swift */; };
-		CED811AC1EB2BCDE003A8D1E /* BRAWWeakTimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED811AB1EB2BCDE003A8D1E /* BRAWWeakTimerTarget.swift */; };
-		CED811E01EB302DA003A8D1E /* WatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30F0EB1EB28542004B8EE5 /* WatchData.swift */; };
 		CED811E11EB302DA003A8D1E /* WatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30F0EB1EB28542004B8EE5 /* WatchData.swift */; };
 		CED811E21EB302DD003A8D1E /* WatchTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED811A51EB29692003A8D1E /* WatchTransaction.swift */; };
-		CED811E31EB302E2003A8D1E /* WatchTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED811A51EB29692003A8D1E /* WatchTransaction.swift */; };
-		CED811E51EB30846003A8D1E /* ReceiveInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED811E41EB30846003A8D1E /* ReceiveInterfaceController.swift */; };
 		CED82D4E1E575A5500507A9B /* _main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED82D4D1E575A5500507A9B /* _main.swift */; };
 		CEE0EF521EBD14B60018DB36 /* PinTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0EF511EBD14B60018DB36 /* PinTransitioningDelegate.swift */; };
 		CEE1F5631DF13E5A00D733AD /* ModalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1F5621DF13E5A00D733AD /* ModalHeaderView.swift */; };
@@ -425,7 +413,6 @@
 		CEE20C341EA5B4550086F724 /* ArticleIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C331EA5B4550086F724 /* ArticleIds.swift */; };
 		CEE20C361EA5B4620086F724 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C351EA5B4620086F724 /* Constants.swift */; };
 		CEE20C381EA5B4680086F724 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C371EA5B4680086F724 /* Strings.swift */; };
-		CEE513EF1EB6A84800D6E4D7 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C371EA5B4680086F724 /* Strings.swift */; };
 		CEE6282A1EA98B6D001035AA /* DispatchQueue+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE628291EA98B6D001035AA /* DispatchQueue+Additions.swift */; };
 		CEE659E71F65A936001FF29D /* RetryTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE659E61F65A936001FF29D /* RetryTimer.swift */; };
 		CEE659E91F664C73001FF29D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE659E81F664C73001FF29D /* WelcomeViewController.swift */; };
@@ -512,13 +499,6 @@
 			remoteGlobalIDString = 75A2A7B71DA5934300A983D8;
 			remoteInfo = "breadwallet WatchKit App";
 		};
-		75A2A7C91DA5934300A983D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 75A2A7C61DA5934300A983D8;
-			remoteInfo = "breadwallet WatchKit Extension";
-		};
 		75A2A8121DA5936F00A983D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
@@ -572,7 +552,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				75A2A7C81DA5934300A983D8 /* Litewallet.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,16 +586,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CED811DF1EB30124003A8D1E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1478,7 +1447,6 @@
 		75A2A7BE1DA5934300A983D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		75A2A7C01DA5934300A983D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A2A7C21DA5934300A983D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75A2A7C71DA5934300A983D8 /* Litewallet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Litewallet.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2A7CD1DA5934300A983D8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		75A2A7CE1DA5934300A983D8 /* BalanceInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInterfaceController.swift; sourceTree = "<group>"; };
 		75A2A7D01DA5934300A983D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
@@ -1765,13 +1733,6 @@
 				752FB04D1DF8BF4B009086FB /* sqlite3.framework in Frameworks */,
 				759DA0BE1DAC36A3008CC49B /* libBRCore.a in Frameworks */,
 				000220CF859D11AE72DACE5D /* Pods_loafwallet.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75A2A7C41DA5934300A983D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3022,7 +2983,6 @@
 			children = (
 				75A2A7901DA5934300A983D8 /* Litewallet.app */,
 				75A2A7B81DA5934300A983D8 /* Litewallet WatchKit App.app */,
-				75A2A7C71DA5934300A983D8 /* Litewallet.appex */,
 				75A2A8081DA5936F00A983D8 /* TodayExtension.appex */,
 				75A2A81C1DA5938500A983D8 /* Litewallet.appex */,
 				755CD9C41DAA18420075898E /* libunbound.a */,
@@ -3706,30 +3666,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				75A2A7CA1DA5934300A983D8 /* PBXTargetDependency */,
 			);
 			name = "Litewallet WatchKit App";
 			productName = "breadwallet WatchKit App";
 			productReference = 75A2A7B81DA5934300A983D8 /* Litewallet WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
-		};
-		75A2A7C61DA5934300A983D8 /* Litewallet WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75A2A7DB1DA5934400A983D8 /* Build configuration list for PBXNativeTarget "Litewallet WatchKit Extension" */;
-			buildPhases = (
-				75A2A7C31DA5934300A983D8 /* Sources */,
-				75A2A7C41DA5934300A983D8 /* Frameworks */,
-				75A2A7C51DA5934300A983D8 /* Resources */,
-				CED811DF1EB30124003A8D1E /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Litewallet WatchKit Extension";
-			productName = "breadwallet WatchKit Extension";
-			productReference = 75A2A7C71DA5934300A983D8 /* Litewallet.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		75A2A8071DA5936F00A983D8 /* TodayExtension */ = {
 			isa = PBXNativeTarget;
@@ -3840,11 +3781,6 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
-					75A2A7C61DA5934300A983D8 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
 					75A2A8071DA5936F00A983D8 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -3895,7 +3831,6 @@
 				75A2A78F1DA5934300A983D8 /* Litewallet */,
 				75A2A7B71DA5934300A983D8 /* Litewallet WatchKit App */,
 				2465873523A5AAD000A32E9E /* LitewalletTests */,
-				75A2A7C61DA5934300A983D8 /* Litewallet WatchKit Extension */,
 				75A2A8071DA5936F00A983D8 /* TodayExtension */,
 				75A2A81B1DA5938500A983D8 /* NotificationServiceExtension */,
 				755CD9C31DAA18420075898E /* unbound */,
@@ -3981,14 +3916,6 @@
 				75A2A7C11DA5934300A983D8 /* Assets.xcassets in Resources */,
 				24D5F26022599C0B00225462 /* BarlowSemiCondensed-Regular.ttf in Resources */,
 				75A2A7BF1DA5934300A983D8 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75A2A7C51DA5934300A983D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75A2A7D71DA5934400A983D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4501,24 +4428,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75A2A7C31DA5934300A983D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CED811E51EB30846003A8D1E /* ReceiveInterfaceController.swift in Sources */,
-				CEE513EF1EB6A84800D6E4D7 /* Strings.swift in Sources */,
-				CED811AC1EB2BCDE003A8D1E /* BRAWWeakTimerTarget.swift in Sources */,
-				CE30F0E81EB27FA2004B8EE5 /* WatchDataManager.swift in Sources */,
-				75A2A7D31DA5934300A983D8 /* NotificationController.swift in Sources */,
-				CED811E01EB302DA003A8D1E /* WatchData.swift in Sources */,
-				75A2A7D51DA5934300A983D8 /* ComplicationController.swift in Sources */,
-				75A2A7D11DA5934300A983D8 /* ExtensionDelegate.swift in Sources */,
-				CE30F0EA1EB282C8004B8EE5 /* SharedConstants.swift in Sources */,
-				75A2A7CF1DA5934300A983D8 /* BalanceInterfaceController.swift in Sources */,
-				CED811E31EB302E2003A8D1E /* WatchTransaction.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75A2A8041DA5936F00A983D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4634,11 +4543,6 @@
 			isa = PBXTargetDependency;
 			target = 75A2A7B71DA5934300A983D8 /* Litewallet WatchKit App */;
 			targetProxy = 75A2A7BA1DA5934300A983D8 /* PBXContainerItemProxy */;
-		};
-		75A2A7CA1DA5934300A983D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 75A2A7C61DA5934300A983D8 /* Litewallet WatchKit Extension */;
-			targetProxy = 75A2A7C91DA5934300A983D8 /* PBXContainerItemProxy */;
 		};
 		75A2A8131DA5936F00A983D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4845,7 +4749,7 @@
 				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/loafwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/Litewallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -4860,7 +4764,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = loafwallet/loafwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Litewallet/Litewallet.entitlements;
 				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
@@ -4877,8 +4781,8 @@
 				);
 				MARKETING_VERSION = 2.7.1;
 				OTHER_SWIFT_FLAGS = "-DDebug $(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet;
-				PRODUCT_MODULE_NAME = loafwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet;
+				PRODUCT_MODULE_NAME = Litewallet;
 				PRODUCT_NAME = Litewallet;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4900,7 +4804,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -4984,31 +4888,6 @@
 			};
 			name = Debug;
 		};
-		24470E0523A5BF3C00ADDA27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CURRENT_PROJECT_VERSION = 5;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = ZV7987N2ZC;
-				INFOPLIST_FILE = "$(SRCROOT)/Litewallet WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.watchkitapp.watchkitextension;
-				PRODUCT_NAME = Litewallet;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Debug;
-		};
 		24470E0723A5BF3C00ADDA27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5024,7 +4903,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5046,7 +4925,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.NotificationServiceExtension;
 				PRODUCT_NAME = Litewallet;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5336,36 +5215,12 @@
 				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/loafwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/Litewallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		75A2A7DD1DA5934400A983D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = ZV7987N2ZC;
-				INFOPLIST_FILE = "$(SRCROOT)/Litewallet WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.watchkitapp.watchkitextension;
-				PRODUCT_NAME = Litewallet;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
@@ -5381,7 +5236,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -5396,7 +5251,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = loafwallet/loafwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Litewallet/Litewallet.entitlements;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5412,8 +5267,8 @@
 				);
 				MARKETING_VERSION = 2.7.1;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet;
-				PRODUCT_MODULE_NAME = loafwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet;
+				PRODUCT_MODULE_NAME = Litewallet;
 				PRODUCT_NAME = Litewallet;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 4.0;
@@ -5435,7 +5290,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5456,7 +5311,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.NotificationServiceExtension;
 				PRODUCT_NAME = Litewallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5537,7 +5392,7 @@
 				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/loafwallet/src/Platform";
+				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/Litewallet/src/Platform";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -5551,7 +5406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = loafwallet/loafwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Litewallet/Litewallet.entitlements;
 				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
@@ -5568,8 +5423,8 @@
 				);
 				MARKETING_VERSION = 2.7.1;
 				OTHER_SWIFT_FLAGS = "-DDebug -DTestnet $(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet;
-				PRODUCT_MODULE_NAME = loafwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet;
+				PRODUCT_MODULE_NAME = Litewallet;
 				PRODUCT_NAME = Litewallet;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -5590,35 +5445,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Litewallet WatchKit App/Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Testnet;
-		};
-		CEA7E6A01F0AAA84001F8C27 /* Testnet */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CURRENT_PROJECT_VERSION = 5;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = ZV7987N2ZC;
-				INFOPLIST_FILE = "$(SRCROOT)/Litewallet WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.watchkitapp.watchkitextension;
-				PRODUCT_NAME = Litewallet;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -5639,7 +5469,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -5661,7 +5491,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.Litewallet.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.litecoin.litewallet.NotificationServiceExtension;
 				PRODUCT_NAME = Litewallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5849,16 +5679,6 @@
 				24470E0023A5BF3C00ADDA27 /* Debug */,
 				CEA7E69B1F0AAA84001F8C27 /* Testnet */,
 				75A2A7DA1DA5934400A983D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75A2A7DB1DA5934400A983D8 /* Build configuration list for PBXNativeTarget "Litewallet WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24470E0523A5BF3C00ADDA27 /* Debug */,
-				CEA7E6A01F0AAA84001F8C27 /* Testnet */,
-				75A2A7DD1DA5934400A983D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
