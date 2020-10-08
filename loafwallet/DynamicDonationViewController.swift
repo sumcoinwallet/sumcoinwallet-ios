@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import LocalAuthentication
-import FirebaseAnalytics
 
 
 class DynamicDonationViewController: UIViewController, Subscriber {
@@ -126,7 +125,7 @@ class DynamicDonationViewController: UIViewController, Subscriber {
           
         cancelButton.tap = strongify(self) { myself in
           myself.cancelCallback?()
-          LWAnalytics.logEventWithParameters(itemName: ._20200225_DCD)
+          let _ = LWAnalytics(itemName: ._20200225_DCD)
         }
         donateButton.tap = strongify(self) { myself in
           myself.successCallback?()

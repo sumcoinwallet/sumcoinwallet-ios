@@ -8,8 +8,8 @@
 
 import UIKit
 import LocalAuthentication
-import BRCore 
-import FirebaseAnalytics
+import BRCore
+
 
 typealias PresentScan = ((@escaping ScanCompletion) -> Void)
 
@@ -208,7 +208,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
                                                                 "DONATION_ACCOUNT": dynamicDonate.finalDonationMemo,
                                                                 "DONATION_AMOUNT": String(describing: dynamicDonate.finalDonationAmount.rawValue)]
                             
-                             LWAnalytics.logEventWithParameters(itemName: ._20200223_DD, properties: properties)
+                             let _ = LWAnalytics(itemName: ._20200223_DD, properties: properties)
                         })
                     }
                 }
@@ -387,7 +387,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
                         myself.onPublishSuccess?()
                     })
                     self?.saveEvent("send.success")
-                    LWAnalytics.logEventWithParameters(itemName:._20191105_DSL)
+                    let _ = LWAnalytics(itemName:._20191105_DSL)
                     
                 case .creationError(let message):
                     self?.showAlert(title: S.Send.createTransactionError, message: message, buttonLabel: S.Button.ok)

@@ -27,8 +27,7 @@ import Foundation
 import UIKit
 import LocalAuthentication
 import BRCore
-import sqlite3
-import FirebaseAnalytics
+import sqlite3 
 
 
 private let WalletSecAttrService = "com.litecoin.loafwallet"
@@ -554,11 +553,11 @@ extension WalletManager : WalletAuthenticator {
                 var seed = UInt512()
                 defer { seed = UInt512() }
                 guard let wallet = wallet else {
-                    LWAnalytics.logEventWithParameters(itemName:._20200111_WNI)
+                    let _ = LWAnalytics(itemName:._20200111_WNI)
                     return false
                 }
                 guard let phrase: String = try keychainItem(key: KeychainKey.mnemonic) else {
-                    LWAnalytics.logEventWithParameters(itemName:._20200111_PNI)
+                    let _ = LWAnalytics(itemName:._20200111_PNI)
                     return false
                 }
                 
@@ -566,7 +565,7 @@ extension WalletManager : WalletAuthenticator {
                 return wallet.signTransaction(tx, forkId: forkId, seed: &seed)
             }
             catch {
-                LWAnalytics.logEventWithParameters(itemName:._20200111_UTST)
+                let _ = LWAnalytics(itemName:._20200111_UTST)
                 return false
             }
         }

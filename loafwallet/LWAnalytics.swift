@@ -9,15 +9,29 @@
 import Foundation
 import FirebaseAnalytics
 
-class LWAnalytics {
+/// Litewallet Analytics helper composes and sends analytics for research
+struct LWAnalytics {
     
-    class func logEventWithParameters(itemName: CustomEvent, properties:[String: String]? = nil) {
+    // MARK: - Private Properties
+    
+    /// Custom Event that is related to trending data
+    private var itemName: CustomEvent
+    
+    /// Custom Event parameters
+    private var properties = [String: String]()
+    
+    init(itemName: CustomEvent, properties: [String: String]? = nil) {
+        self.itemName = itemName
+        logEventWithParameters()
+    }
+    
+    private func logEventWithParameters() {
         var parameters = [
-        AnalyticsParameterItemID: "id-\(itemName.hashValue)",
-        AnalyticsParameterItemName: itemName.rawValue,
-        AnalyticsParameterContentType: "cont"]
+            AnalyticsParameterItemID: "id-\(itemName.hashValue)",
+            AnalyticsParameterItemName: itemName.rawValue,
+            AnalyticsParameterContentType: "cont"]
         
-        properties?.forEach { key, value in
+        properties.forEach { key, value in
             parameters[key] = value
         }
         
@@ -25,3 +39,4 @@ class LWAnalytics {
     }
     
 }
+

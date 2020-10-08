@@ -87,7 +87,7 @@ class FeeSelector : UIView {
                 myself.didUpdateFee?(.regular)
                 myself.subheader.text = S.FeeSelector.regularLabel
                 myself.feeMessageLabel.text = ""
-                LWAnalytics.logEventWithParameters(itemName: ._20200112_ERR, properties: ["FEE_MANAGER":"DID_USE_DEFAULT"])
+                let _ = LWAnalytics(itemName: ._20200112_ERR, properties: ["FEE_MANAGER":"DID_USE_DEFAULT"])
             }
         }
 

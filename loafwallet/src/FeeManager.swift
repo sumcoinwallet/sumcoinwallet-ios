@@ -5,8 +5,7 @@
 //  Created by Kerry Washington on 2/29/20.
 //  Copyright © 2020 Litecoin Foundation. All rights reserved.
 
-import Foundation
-import FirebaseAnalytics
+import Foundation 
  
 // this is the default that matches the mobile-api if the server is unavailable
 fileprivate let defaultEconomyFeePerKB: UInt64 = 2500 // From legacy minimum. default min is 1000 as Litecoin Core version v0.17.1 
@@ -57,13 +56,13 @@ class FeeUpdater : Trackable {
             
             guard error == nil else {
                 let properties: [String : String] = ["ERROR_MESSAGE":String(describing: error),"ERROR_TYPE":"FEE_PER_KB"]
-                LWAnalytics.logEventWithParameters(itemName: ._20200112_ERR, properties: properties)
+                let _ = LWAnalytics(itemName: ._20200112_ERR, properties: properties)
                 completion();
                 return
             }
             
             if newFees == Fees.usingDefaultValues {
-                LWAnalytics.logEventWithParameters(itemName: ._20200301_DUDFPK)
+                let _ = LWAnalytics(itemName: ._20200301_DUDFPK)
                 self.saveEvent("wallet.didUseDefaultFeePerKB")
             }
             

@@ -102,7 +102,7 @@ class Sender {
             let result = group.wait(timeout: .now() + 30.0)
             if result == .timedOut {
                 let properties: [String: String] = ["ERROR_TX":"\(tx.txHash)","ERROR_BLOCKHEIGHT": "\(tx.blockHeight)"]
-                LWAnalytics.logEventWithParameters(itemName:._20200112_ERR, properties: properties)
+                let _ = LWAnalytics(itemName:._20200112_ERR, properties: properties)
 
                 let alert = UIAlertController(title: S.Alert.corruptionError, message: S.Alert.corruptionMessage, preferredStyle: .alert)
           
@@ -145,15 +145,15 @@ class Sender {
     private func setMetaData() {
         
         guard let rate = rate else {
-            LWAnalytics.logEventWithParameters(itemName:._20200111_RNI)
+            let _ = LWAnalytics(itemName:._20200111_RNI)
             return
         }
         guard let tx = transaction else {
-            LWAnalytics.logEventWithParameters(itemName:._20200111_TNI)
+            let _ = LWAnalytics(itemName:._20200111_TNI)
             return
         }
         guard let feePerKb = feePerKb else {
-            LWAnalytics.logEventWithParameters(itemName:._20200111_FNI)
+            let _ = LWAnalytics(itemName:._20200111_FNI)
             return
         }
         
@@ -166,7 +166,7 @@ class Sender {
         do {
             let _ = try kvStore.set(metaData)
         } catch let error {
-            LWAnalytics.logEventWithParameters(itemName:._20200112_ERR, properties: ["error": String(describing: error)])
+            let _ = LWAnalytics(itemName:._20200112_ERR, properties: ["error": String(describing: error)])
         }
         store.trigger(name: .txMemoUpdated(tx.pointee.txHash.description))
     }

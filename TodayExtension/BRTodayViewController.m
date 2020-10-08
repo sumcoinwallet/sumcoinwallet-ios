@@ -54,7 +54,7 @@
    // [mixpanel track:@"Plan selected"
    // properties:@{ @"Plan": @"Premium" }];
    // Mixpanel
-   //  _ = LWAnalytics.init(itemName: ._20191105_VSC, properties: nil)
+   //  let _ = LWAnalytics(itemName: ._20191105_VSC, properties: nil)
     
     if ([[self.extensionContext class] instancesRespondToSelector:@selector(widgetLargestAvailableDisplayMode)]) {
         self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;

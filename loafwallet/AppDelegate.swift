@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setFirebaseConfiguration()
         UIView.swizzleSetFrame()
         applicationController.launch(application: application, window: self.window, options: launchOptions)
-        LWAnalytics.logEventWithParameters(itemName:._20191105_AL)
+        let _ = LWAnalytics(itemName:._20191105_AL)
         return true
     }
 

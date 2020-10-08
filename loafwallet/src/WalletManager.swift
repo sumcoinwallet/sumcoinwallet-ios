@@ -166,7 +166,7 @@ class WalletManager : BRWalletListener, BRPeerManagerListener {
             ) != SQLITE_OK {
             print(String(cString: sqlite3_errmsg(db)))
             let properties: [String : String] = ["ERROR_MESSAGE":String(cString: sqlite3_errmsg(db)),"ERROR_CODE": String(describing: sqlite3_errcode(db))]
-            LWAnalytics.logEventWithParameters(itemName:._20200112_ERR, properties: properties)
+            let _ = LWAnalytics(itemName:._20200112_ERR, properties: properties)
 
             #if DEBUG
                 throw WalletManagerError.sqliteError(errorCode: sqlite3_errcode(db),
@@ -319,7 +319,7 @@ class WalletManager : BRWalletListener, BRPeerManagerListener {
             guard sqlite3_errcode(self.db) == SQLITE_OK else {
                 print(String(cString: sqlite3_errmsg(self.db)))
                 let properties: [String : String] = ["ERROR_MESSAGE":String(cString: sqlite3_errmsg(self.db)),"ERROR_CODE": String(describing: sqlite3_errcode(self.db))]
-                LWAnalytics.logEventWithParameters(itemName:._20200112_ERR, properties: properties)
+                let _ = LWAnalytics(itemName:._20200112_ERR, properties: properties)
                 return
             }
             
