@@ -31,6 +31,11 @@ class DefaultCurrencyTests : XCTestCase {
         UserDefaults.defaultCurrencyCode = "JPY"
         XCTAssertTrue(UserDefaults.defaultCurrencyCode == "JPY", "Default currency should update.")
     }
+    
+    func testUpdateGBP() {
+        UserDefaults.defaultCurrencyCode = "GBP"
+        XCTAssertTrue(UserDefaults.defaultCurrencyCode == "GBP", "Default currency should update.")
+    }
 
     func testAction() {
         UserDefaults.defaultCurrencyCode = "USD"
