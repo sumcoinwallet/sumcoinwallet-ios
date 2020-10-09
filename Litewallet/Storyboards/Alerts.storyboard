@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,7 +23,7 @@
         <!--Alert View Controller-->
         <scene sceneID="JSq-9z-swI">
             <objects>
-                <viewController storyboardIdentifier="LFAlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SCW-vE-Bas" customClass="LFAlertViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LFAlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SCW-vE-Bas" customClass="LFAlertViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbk-sg-7Kj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +38,7 @@
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9n0-RK-Eh0">
                                                 <rect key="frame" x="100" y="90" width="20" height="20"/>
                                             </activityIndicatorView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxW-Qg-Jmh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxW-Qg-Jmh">
                                                 <rect key="frame" x="0.0" y="160" width="220" height="40"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -103,8 +104,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YnJ-Cq-qBF"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -123,7 +124,7 @@
         <!--Modal ReceiveQR View Controller-->
         <scene sceneID="dUe-97-gnl">
             <objects>
-                <viewController storyboardIdentifier="LFModalReceiveQRViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3tF-rI-LAg" customClass="LFModalReceiveQRViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LFModalReceiveQRViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3tF-rI-LAg" customClass="LFModalReceiveQRViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k5i-5b-4fH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +139,7 @@
                                             <constraint firstAttribute="width" constant="220" id="orh-Aa-9g9"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udq-Ym-0Cp">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udq-Ym-0Cp">
                                         <rect key="frame" x="0.0" y="340" width="280" height="40"/>
                                         <color key="backgroundColor" red="0.20539733769999999" green="0.36322331429999999" blue="0.61663442850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -171,7 +172,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="udq-Ym-0Cp" secondAttribute="trailing" id="0uA-J5-BKA"/>
                                     <constraint firstItem="wTI-Q5-Xjf" firstAttribute="top" secondItem="dqB-Yh-voE" secondAttribute="top" constant="10" id="8QX-Bv-Ix8"/>
@@ -190,12 +191,12 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="i0X-Hn-AgZ"/>
                         <constraints>
                             <constraint firstItem="dqB-Yh-voE" firstAttribute="centerX" secondItem="k5i-5b-4fH" secondAttribute="centerX" id="e1Z-hK-hrT"/>
                             <constraint firstItem="dqB-Yh-voE" firstAttribute="centerX" secondItem="k5i-5b-4fH" secondAttribute="centerX" id="kaX-9G-BLD"/>
                             <constraint firstItem="dqB-Yh-voE" firstAttribute="centerY" secondItem="k5i-5b-4fH" secondAttribute="centerY" id="qjS-Wm-3LV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="i0X-Hn-AgZ"/>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="3HP-6q-OZT" id="f72-JD-TQ2"/>
@@ -212,7 +213,7 @@
         <!--Prompt Modal View Controller-->
         <scene sceneID="K6H-yX-hNz">
             <objects>
-                <viewController storyboardIdentifier="PromptModalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d35-N6-2Y4" customClass="PromptModalViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PromptModalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d35-N6-2Y4" customClass="PromptModalViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mqq-5p-nVF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +221,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYn-lt-jgA">
                                 <rect key="frame" x="67" y="258" width="280" height="380"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-JH-cfI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-JH-cfI">
                                         <rect key="frame" x="0.0" y="340" width="280" height="40"/>
                                         <color key="backgroundColor" red="0.20539733769999999" green="0.36322331429999999" blue="0.61663442850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -231,7 +232,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-yd-KS3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-yd-KS3">
                                         <rect key="frame" x="0.0" y="300" width="280" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -239,7 +240,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="16"/>
                                         <state key="normal" title="CANCEL">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALERT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1b-y0-On1">
@@ -261,7 +262,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6Or-JH-cfI" secondAttribute="trailing" id="2nx-Dm-UXQ"/>
                                     <constraint firstItem="5Kk-YH-yJg" firstAttribute="top" secondItem="I1b-y0-On1" secondAttribute="bottom" constant="20" id="2pn-ep-9qd"/>
@@ -280,12 +281,12 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="iPa-47-zE0"/>
                         <constraints>
                             <constraint firstItem="YYn-lt-jgA" firstAttribute="centerX" secondItem="mqq-5p-nVF" secondAttribute="centerX" id="0CP-OM-wUy"/>
                             <constraint firstItem="YYn-lt-jgA" firstAttribute="centerX" secondItem="mqq-5p-nVF" secondAttribute="centerX" id="WTE-pP-xwf"/>
                             <constraint firstItem="YYn-lt-jgA" firstAttribute="centerY" secondItem="mqq-5p-nVF" secondAttribute="centerY" id="a2N-rv-4TX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iPa-47-zE0"/>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="8H5-yd-KS3" id="bza-9i-h4I"/>
@@ -299,4 +300,12 @@
             <point key="canvasLocation" x="1858" y="56"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

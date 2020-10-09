@@ -27,7 +27,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="pYK-Md-o1Y">
             <objects>
-                <viewController storyboardIdentifier="TabBarViewController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x3n-5i-KbR" customClass="TabBarViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabBarViewController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x3n-5i-KbR" customClass="TabBarViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7k-5g-fBr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,16 +62,16 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="RAg-vc-Wor">
-                                        <rect key="frame" x="325.66666666666669" y="12" width="44.333333333333314" height="36"/>
+                                        <rect key="frame" x="331.33333333333331" y="12" width="38.666666666666686" height="36"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dET-GI-JeX">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dET-GI-JeX">
+                                                <rect key="frame" x="0.0" y="0.0" width="38.666666666666664" height="21.666666666666668"/>
                                                 <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVZ-9F-hgM">
-                                                <rect key="frame" x="17.333333333333314" y="23" width="27" height="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVZ-9F-hgM">
+                                                <rect key="frame" x="15.666666666666686" y="22.666666666666664" width="23" height="13.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="BarlowSemiCondensed-Light" family="Barlow Semi Condensed Light" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
         <!--Login View Controller-->
         <scene sceneID="gKo-7Y-Hbh">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RRc-qP-qQy" customClass="LoginViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RRc-qP-qQy" customClass="LoginViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wk9-Gz-pJV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +171,7 @@
                                     <constraint firstAttribute="height" constant="80" id="S6N-i6-01L"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rj-zC-nyS" customClass="PinView" customModule="loafwallet" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rj-zC-nyS" customClass="PinView" customModule="Litewallet" customModuleProvider="target">
                                 <rect key="frame" x="117" y="348" width="180" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -287,7 +287,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best way yo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-LX-4kj">
-                                <rect key="frame" x="107" y="357.66666666666669" width="200" height="21"/>
+                                <rect key="frame" x="107" y="357.33333333333331" width="200" height="21.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="87s-l8-PVi"/>
                                 </constraints>
@@ -322,7 +322,7 @@
         <!--Pin Pad View Controller-->
         <scene sceneID="3tA-tx-al2">
             <objects>
-                <viewController storyboardIdentifier="PinPadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9NV-0e-EPL" customClass="PinPadViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PinPadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9NV-0e-EPL" customClass="PinPadViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQn-6m-PXg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

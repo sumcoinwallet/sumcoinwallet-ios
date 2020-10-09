@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,7 +26,7 @@
         <!--Dynamic Donation View Controller-->
         <scene sceneID="8mr-JU-DuD">
             <objects>
-                <viewController storyboardIdentifier="DynamicDonation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4L6-ri-0TJ" customClass="DynamicDonationViewController" customModule="loafwallet" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DynamicDonation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4L6-ri-0TJ" customClass="DynamicDonationViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1CG-eb-6fg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +44,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="RvI-0J-Lsy" firstAttribute="centerY" secondItem="pkQ-Ga-o4B" secondAttribute="centerY" id="XI1-L6-UEP"/>
                                             <constraint firstItem="RvI-0J-Lsy" firstAttribute="centerX" secondItem="pkQ-Ga-o4B" secondAttribute="centerX" id="a3O-Cw-8Q0"/>
@@ -82,7 +83,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-hA-9c0">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="BarlowSemiCondensed-Regular" family="Barlow Semi Condensed" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trx-2Q-JId">
@@ -105,7 +106,7 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J59-6C-7GM">
                                         <rect key="frame" x="10" y="340" width="315" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="j9J-Mu-77X"/>
                                         </constraints>
@@ -239,6 +240,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="rZp-QC-9DI"/>
                         <constraints>
                             <constraint firstItem="rZp-QC-9DI" firstAttribute="trailing" secondItem="yin-PI-eyn" secondAttribute="trailing" constant="20" id="CyJ-EF-YAf"/>
                             <constraint firstItem="1Fq-2P-OVy" firstAttribute="top" secondItem="yin-PI-eyn" secondAttribute="bottom" constant="20" id="JFD-9b-YsY"/>
@@ -253,7 +255,6 @@
                             <constraint firstItem="9Ag-cL-ia7" firstAttribute="leading" secondItem="rZp-QC-9DI" secondAttribute="leading" id="tX0-zl-tdN"/>
                             <constraint firstItem="9Ag-cL-ia7" firstAttribute="bottom" secondItem="rZp-QC-9DI" secondAttribute="bottom" constant="-10" id="xae-wX-iqO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rZp-QC-9DI"/>
                     </view>
                     <connections>
                         <outlet property="accountPickerView" destination="Yif-En-f5e" id="Ebz-b4-dFS"/>
@@ -284,5 +285,11 @@
     <resources>
         <image name="whiteDownArrowCutout" width="40" height="40"/>
         <image name="whiteUpArrowCutout" width="40" height="40"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

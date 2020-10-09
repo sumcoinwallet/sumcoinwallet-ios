@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,7 +26,7 @@
         <!--Transactions View Controller-->
         <scene sceneID="9uR-VG-jkV">
             <objects>
-                <viewController storyboardIdentifier="TransactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XfV-N2-tFK" customClass="TransactionsViewController" customModule="loafwallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XfV-N2-tFK" customClass="TransactionsViewController" customModule="Litewallet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjo-tv-BL1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -34,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.20539733769999999" green="0.36322331429999999" blue="0.61663442850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PromptTVC2" rowHeight="120" id="ILn-x0-c1R" customClass="PromptTableViewCell" customModule="loafwallet" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PromptTVC2" rowHeight="120" id="ILn-x0-c1R" customClass="PromptTableViewCell" customModule="Litewallet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ILn-x0-c1R" id="8nv-qj-8bj" userLabel="staticBackgroundView">
@@ -50,19 +51,19 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2a-mL-MNS">
-                                                    <rect key="frame" x="188" y="11" width="38" height="20.5"/>
+                                                    <rect key="frame" x="186" y="11" width="42" height="20"/>
                                                     <fontDescription key="fontDescription" name="BarlowSemiCondensed-Bold" family="Barlow Semi Condensed" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd9-xy-dVL">
-                                                    <rect key="frame" x="20" y="41.5" width="374" height="17"/>
+                                                    <rect key="frame" x="20" y="41" width="374" height="17"/>
                                                     <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXY-zL-JKa">
-                                                    <rect key="frame" x="0.0" y="41.5" width="414" height="78.5"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXY-zL-JKa">
+                                                    <rect key="frame" x="0.0" y="41" width="414" height="79"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title=" "/>
                                                     <connections>
@@ -118,7 +119,7 @@
                                             <outlet property="titleLabel" destination="Q2a-mL-MNS" id="ofX-fX-N1f"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionTVC2" rowHeight="220" id="vVq-Ru-eDs" customClass="TransactionTableViewCellv2" customModule="loafwallet" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionTVC2" rowHeight="220" id="vVq-Ru-eDs" customClass="TransactionTableViewCellv2" customModule="Litewallet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="414" height="220"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vVq-Ru-eDs" id="Hck-U6-xZS" userLabel="staticBackgroundView">
@@ -166,7 +167,7 @@
                                                                     <rect key="frame" x="0.0" y="106.5" width="180" height="16"/>
                                                                     <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="13"/>
                                                                     <nil key="textColor"/>
-                                                                    <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="highlightedColor" systemColor="darkTextColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Detail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coa-gK-FYe">
                                                                     <rect key="frame" x="0.0" y="71" width="180" height="16"/>
@@ -283,14 +284,14 @@
                                                                         <constraint firstAttribute="width" constant="120" id="1zL-oe-X2Z"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="13"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="textColor" systemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CircleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Hgh-Ru-H3R">
                                                             <rect key="frame" x="291" y="10" width="12" height="12"/>
-                                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="5YC-NT-ZwM"/>
                                                                 <constraint firstAttribute="width" constant="12" id="l0d-af-a0T"/>
@@ -329,7 +330,7 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="h64-ta-Kuw" firstAttribute="leading" secondItem="Hgh-Ru-H3R" secondAttribute="trailing" constant="4" id="1NU-PJ-2zC"/>
                                                         <constraint firstAttribute="trailing" secondItem="EfS-EO-DQ0" secondAttribute="trailing" constant="10" id="1V1-1Y-x0j"/>
@@ -393,6 +394,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="y8a-1z-ofq"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="p5w-09-ukX" firstAttribute="leading" secondItem="y8a-1z-ofq" secondAttribute="leading" id="CrV-aI-I37"/>
@@ -400,7 +402,6 @@
                             <constraint firstItem="p5w-09-ukX" firstAttribute="top" secondItem="y8a-1z-ofq" secondAttribute="top" id="hzp-sz-vxz"/>
                             <constraint firstItem="y8a-1z-ofq" firstAttribute="bottom" secondItem="p5w-09-ukX" secondAttribute="bottom" id="vaf-3E-h3T"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="y8a-1z-ofq"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="p5w-09-ukX" id="LL2-aK-OW0"/>
@@ -417,5 +418,17 @@
         <image name="dropArrow" width="40" height="40"/>
         <image name="genericqricon" width="170.66667175292969" height="170.66667175292969"/>
         <image name="whiteCross" width="25" height="25"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
