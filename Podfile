@@ -1,9 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
-workspace 'loafwallet.xcworkspace'
-project 'loafwallet.xcodeproj', 'Debug' => :debug,'Release' => :release
+workspace 'Litewallet.xcworkspace'
+project 'Litewallet.xcodeproj', 'Debug' => :debug,'Release' => :release
 use_frameworks!
-
+#Due to bug in firebase 
+#https://github.com/firebase/firebase-ios-sdk/issues/6682
+inhibit_all_warnings!
+#####
 
 #Shared Cocopods
 def shared_pods
@@ -16,11 +19,11 @@ end
 def shared_watchOS_pods
 end
 
-target 'loafwallet' do
+target 'Litewallet' do
   platform :ios, '13.0'
   shared_pods
   
-  target 'loafwalletTests' do
+  target 'LitewalletTests' do
     inherit! :search_paths
   end
 end
