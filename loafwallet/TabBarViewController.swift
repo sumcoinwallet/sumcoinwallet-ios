@@ -6,8 +6,8 @@
 //  Copyright © 2019 Litecoin Foundation. All rights reserved.
 
 import UIKit
-import Foundation 
-import SwiftyJSON
+import Foundation
+import SwiftUI
 
 enum TabViewControllerIndex: Int {
     case transactions = 0
@@ -67,11 +67,12 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     }
     
     @IBAction func showSettingsAction(_ sender: Any) {
-        guard let store = self.store else {
-            NSLog("ERROR: Store not set")
-            return
-        }
-        store.perform(action: RootModalActions.Present(modal: .menu))
+    
+        let genericVC = UIHostingController(rootView: SettingsView())
+        genericVC.providesPresentationContextTransitionStyle = true
+        genericVC.definesPresentationContext = true
+        genericVC.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        self.present(genericVC, animated: true)
     }
     
       
