@@ -830,6 +830,9 @@
 /* Blockchain settings section header */
 "Settings.blockchain" = "Blockchain";
 
+/* Header to contact Litewallet support */
+"Settings.contactSupport" = "Контактная поддержка";
+
 /* i.e. the currency which will be displayed */
 "Settings.currency" = "Отображать валюту";
 

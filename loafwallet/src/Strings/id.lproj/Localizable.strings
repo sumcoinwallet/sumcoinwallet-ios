@@ -830,6 +830,9 @@
 /* Blockchain settings section header */
 "Settings.blockchain" = "Blockchain";
 
+/* Header to contact Litewallet support */
+"Settings.contactSupport" = "Hubungi dukungan";
+
 /* Default currency label */
 "Settings.currency" = "Mata uang tampilan";
 

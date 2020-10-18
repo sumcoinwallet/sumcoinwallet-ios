@@ -831,6 +831,9 @@
 /* Blockchain settings section header */
 "Settings.blockchain" = "Cadena articulada";
 
+/* Header to contact Litewallet support */
+"Settings.contactSupport" = "Contacte con el soporte";
+
 /* i.e. the currency which will be displayed */
 "Settings.currency" = "Mostrar moneda";
 

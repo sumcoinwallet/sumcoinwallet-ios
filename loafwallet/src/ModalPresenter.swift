@@ -398,7 +398,7 @@ class ModalPresenter : Subscriber, Trackable {
                           settingsNav.pushViewController(AboutViewController(), animated: true)
                       })
             ],
-            "Wallet": [Setting(title: S.Settings.importTile, callback: { [weak self] in
+            "Wallet": [Setting(title: S.Settings.importTitle, callback: { [weak self] in
                     guard let myself = self else { return }
                     guard let walletManager = myself.walletManager else { return }
                     let importNav = ModalNavigationController()

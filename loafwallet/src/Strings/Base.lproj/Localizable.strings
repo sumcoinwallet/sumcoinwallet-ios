@@ -1266,3 +1266,6 @@
 
 /* Coming Soon */
 "BuyCenter.comingSoon" = "Coming soon...";
+
+/* Header to contact Litewallet support */
+"Settings.contactSupport" = "Contact support";

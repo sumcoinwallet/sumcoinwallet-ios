@@ -1256,6 +1256,9 @@
 /* Message for luxury fee */
 "FeeSelector.luxuryMessage" = "";
 
+/* Header to contact Litewallet support */
+"Settings.contactSupport" = "";
+
 /* Delete database title */
 "WipeWallet.alertDeleteTitle" = "";
 

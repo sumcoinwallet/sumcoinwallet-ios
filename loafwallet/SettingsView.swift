@@ -9,9 +9,27 @@
 import SwiftUI
 
 
-
 struct SettingsView: View {
     
+    /// View that carries all the elements into the Settings for the user
+    ///
+    /// - Parameters:
+    ///   - viewModel: Object that manages the view
+    ///   - edgeInsets: Save lines of code for the section row insets
+    ///   - environmentType: Save lines of code for the section row insets
+
+    
+    // MARK: - Properties
+
+    @ObservedObject
+    var viewModel: SettingsViewModel
+     
+    // MARK: - Private Properties
+    
+    /// Static edge insets for all  section headers
+    private let edgeInsets = EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+    
+    /// Environment is set for the view
     private func environmentType() -> String {
         var envName = "Release"
         #if Debug || Testflight
@@ -19,143 +37,161 @@ struct SettingsView: View {
         #endif
         return envName
     }
-      
+     
+    init(viewModel: SettingsViewModel) {
+        self.viewModel = viewModel
+    }
+     
     var body: some View {
         
-        List() {
-            Spacer()
-
-            Section() {
-                Text("About")
-                HStack {
-                    Text(S.Settings.litewalletVersion)
-                    Spacer()
-                    Text(AppVersion.string)
+        List {
+            Section(header:
+                        HStack {
+                            SettingsHeader(headerText: "About")
+                        }
+                        .listRowInsets(edgeInsets)
+            ) {
+                
+                SettingsRowWithDetails(
+                    headerText: S.Settings.litewalletVersion,
+                    infoText: AppVersion.string
+                )
+                
+                SettingsRowWithDetails(
+                    headerText: "Twitter",
+                    infoText: "@Litewallet_App"
+                )
+                
+                SettingsRowWithDetails(
+                    headerText: "Facebook",
+                    infoText: "litewallet.app.56"
+                )
+                
+                SettingsRowWithDetails(
+                    headerText: S.Settings.litewalletEnvironment,
+                    infoText: environmentType()
+                )
+            }
+            
+            Section(header:
+                        HStack {
+                            SettingsHeader(headerText: "Wallet")
+                        }
+                        .listRowInsets(edgeInsets)
+            ) {
+                Button(action: {
+                    
+                }) {
+                    SettingsRowWithImage(
+                        detailText: S.Settings.importTitle
+                    )
                 }
-                HStack {
-                    Text("Twitter")
-                    Spacer()
-                    Text("@Litewallet_App")
+                
+                Button(action: {
+                    
+                }) {
+                    SettingsRowWithImage(
+                        detailText: S.Settings.wipe
+                    )
                 }
-                HStack {
-                    Text("Facebook")
-                    Spacer()
-                    Text("litewallet.app.56")
+                
+            }
+            
+            Section(header:
+                        HStack {
+                            SettingsHeader(headerText: "Settings")
+                        }
+                        .listRowInsets(edgeInsets)
+            ) {
+                Button(action: {
+                    
+                }) {
+                    SettingsRowWithImage(
+                        detailText: S.MenuButton.lock,
+                        imageString: "Lock"
+                    )
                 }
-                HStack {
-                    Text(S.Settings.litewalletEnvironment)
-                    Spacer()
-                    Text(environmentType())
+                
+                SettingsRowWithDetails(
+                    headerText: S.Settings.languages,
+                    infoText: viewModel.preferredLanguage
+                )
+                
+                SettingsRowWithDetails(
+                    headerText: S.Settings.currency,
+                    infoText: viewModel.displayCurrency
+                )
+                
+            }
+            
+            Section(header:
+                        HStack {
+                            SettingsHeader(headerText: "Support")
+                        }
+                        .listRowInsets(edgeInsets)
+            ) {
+                Button(action: {
+                    
+                }) {
+                    SettingsRowWithImage(
+                        detailText: S.Settings.contactSupport,
+                        imageString: "FaqFill"
+                    )
+                }
+                
+                Button(action: {
+                    
+                }) {
+                    SettingsRowWithImage(
+                        detailText: S.Settings.shareData
+                    )
                 }
             }
-//            Section("Wallet") {
-//
-//                Text("eer")
-//
-//            }
             
-//            Section("Settings") {
-//
-//                Button(action: {
-//
-//                }) {
-//                    VStack {
-//                        HStack {
-//                            Text(S.MenuButton.lock)
-//                                .font(Font(UIFont.barlowSemiBold(size: 14)))
-//                                .fontWeight(.semibold)
-//                            Spacer()
-//                            Image("Lock")
-//                                .frame(width: 24, height: 24, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                                .padding(.trailing, 10)
-//                        }
-//                    }
-//                }
-//
-//                Text(S.Settings.languages)
-//
-//                HStack{
-//                    Text(S.Settings.currency)
-//                    Spacer()
-//                    Text("USD")
-//                }
-//            }
-            
-//            Section("Support") {
-//
-//                Button(action: {
-//
-//                }) {
-//                    VStack {
-//                        HStack {
-//                            Text(S.MenuButton.support)
-//                                .font(Font(UIFont.barlowSemiBold(size: 14)))
-//                                .fontWeight(.semibold)
-//                            Spacer()
-//                            Image("FaqFill")
-//                                .frame(width: 24, height: 24, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                                .padding(.trailing, 10)
-//                        }
-//                    }
-//                }
-//
-//                Button(action: {
-//
-//                }) {
-//                    VStack {
-//                        HStack {
-//                            Text(S.Settings.shareData)
-//                                .font(Font(UIFont.barlowSemiBold(size: 14)))
-//                                .fontWeight(.semibold)
-//                            Spacer()
-//                        }
-//                    }
-//                }
-//            }
-//
-//            Section("Blockchain") {
-//
-//                Text("eer")
-//            }
-             
-//            Section {
-//                Button(action: {
-//
-//                }) {
-//                    VStack{
-//                        HStack {
-//                            Text(S.MenuButton.security)
-//                                .font(Font(UIFont.barlowSemiBold(size: 14)))
-//                                .fontWeight(.semibold)
-//                            Spacer()
-//                            Image("Shield")
-//                                .frame(width: 24, height: 24, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                                .padding(.trailing, 10)
-//                        }
-//                    }
-//                }
-//
-//                Text("About")
-//                HStack {
-//                    Spacer()
-//                    Text(S.About.footer)
-//                        .font(Font(UIFont.barlowLight(size: 12)))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                    Spacer()
-//                }
-//            }
-        
+            Section(header:
+                        HStack {
+                            SettingsHeader(headerText: "Blockchain")
+                        }
+                        .listRowInsets(edgeInsets)
+            ) {
+                SettingsRowWithDetails(
+                    headerText: S.ReScan.alertTitle,
+                    infoText: "Chain"
+                )
+            }
         }
-        .listStyle(PlainListStyle())
-        .background(Color(.litecoinWhite))
+        
     }
 }
+
+struct SettingsHeader: View {
+    
+    private let headerText: String
+    
+    init(headerText:String) {
+        self.headerText = headerText
+    }
+    
+    var body: some View {
+        HStack {
+            Text(headerText)
+                .fontWeight(.semibold)
+                .font(Font(UIFont.barlowSemiBold(size: 14)))
+                .padding(.leading, 20)
+            Spacer()
+        }
+    }
+}
+
+
+
+
+
  
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
-}
+
+
+
+
+
 
 

@@ -68,7 +68,13 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     
     @IBAction func showSettingsAction(_ sender: Any) {
     
-        let genericHC = UIHostingController(rootView: SettingsView())
+        guard let store = self.store else {
+            print("ERROR: Store not initialized")
+            return
+        }
+        
+        let settingsViewModel = SettingsViewModel(store: store)
+        let genericHC = UIHostingController(rootView: SettingsView(viewModel: settingsViewModel))
         genericHC.providesPresentationContextTransitionStyle = true
         genericHC.definesPresentationContext = true
         genericHC.modalTransitionStyle = UIModalTransitionStyle.coverVertical
