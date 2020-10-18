@@ -68,11 +68,11 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     
     @IBAction func showSettingsAction(_ sender: Any) {
     
-        let genericVC = UIHostingController(rootView: SettingsView())
-        genericVC.providesPresentationContextTransitionStyle = true
-        genericVC.definesPresentationContext = true
-        genericVC.modalTransitionStyle = UIModalTransitionStyle.coverVertical
-        self.present(genericVC, animated: true)
+        let genericHC = UIHostingController(rootView: SettingsView())
+        genericHC.providesPresentationContextTransitionStyle = true
+        genericHC.definesPresentationContext = true
+        genericHC.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        self.present(genericHC, animated: true)
     }
     
       

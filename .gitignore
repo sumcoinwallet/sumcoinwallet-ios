@@ -65,5 +65,4 @@ fastlane/screenshots
 fastlane/test_output
 Screenshots/shots
 .DS_Store
-*.xcscheme
 loafwallet/GoogleService-Info.plist
