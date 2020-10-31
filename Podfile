@@ -9,7 +9,8 @@ platform :ios, '13.0'
 def shared_pods
   pod 'Firebase/Crashlytics' 
   pod 'Firebase/Analytics'
-
+  pod 'UnstoppableDomainsResolution', '~> 0.1.5'
+  
   # add after v2.6.0 pod 'SwiftLint'
 end
 
