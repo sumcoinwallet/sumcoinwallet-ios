@@ -102,7 +102,6 @@
 		24470E3C23A5FFD700ADDA27 /* TouchIdEnabledTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24470E3B23A5FFD700ADDA27 /* TouchIdEnabledTests.swift */; };
 		24470E3E23A6000900ADDA27 /* WalletAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24470E3D23A6000900ADDA27 /* WalletAuthenticationTests.swift */; };
 		24470E4023A6004800ADDA27 /* WalletCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24470E3F23A6004800ADDA27 /* WalletCreationTests.swift */; };
-		24470E4223A6007200ADDA27 /* WalletInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24470E4123A6007200ADDA27 /* WalletInfoTest.swift */; };
 		24470E4523A608A700ADDA27 /* AmountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24470E4423A608A700ADDA27 /* AmountTests.swift */; };
 		24470E4723A6B6E900ADDA27 /* MockSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24470E4623A6B6E900ADDA27 /* MockSeeds.swift */; };
 		2465873923A5AAD100A32E9E /* loafwalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2465873823A5AAD100A32E9E /* loafwalletTests.swift */; };
@@ -767,7 +766,6 @@
 		24470E3B23A5FFD700ADDA27 /* TouchIdEnabledTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdEnabledTests.swift; sourceTree = "<group>"; };
 		24470E3D23A6000900ADDA27 /* WalletAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAuthenticationTests.swift; sourceTree = "<group>"; };
 		24470E3F23A6004800ADDA27 /* WalletCreationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCreationTests.swift; sourceTree = "<group>"; };
-		24470E4123A6007200ADDA27 /* WalletInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInfoTest.swift; sourceTree = "<group>"; };
 		24470E4423A608A700ADDA27 /* AmountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTests.swift; sourceTree = "<group>"; };
 		24470E4623A6B6E900ADDA27 /* MockSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSeeds.swift; sourceTree = "<group>"; };
 		2464B6DA238A53FC00B2A2CB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/BIP39Words.plist"; sourceTree = "<group>"; };
@@ -2086,7 +2084,6 @@
 				24470E3B23A5FFD700ADDA27 /* TouchIdEnabledTests.swift */,
 				24470E3D23A6000900ADDA27 /* WalletAuthenticationTests.swift */,
 				24470E3F23A6004800ADDA27 /* WalletCreationTests.swift */,
-				24470E4123A6007200ADDA27 /* WalletInfoTest.swift */,
 				24470E3723A5FEF200ADDA27 /* SpendingLimitTests.swift */,
 			);
 			path = "Legacy BRTests";
@@ -3842,7 +3839,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24470E4223A6007200ADDA27 /* WalletInfoTest.swift in Sources */,
 				24470E2123A5DA9700ADDA27 /* APIManagerTests.swift in Sources */,
 				24470E3423A5F5E600ADDA27 /* PaymentRequestTests.swift in Sources */,
 				24470E2E23A5F4FF00ADDA27 /* BRCoderTests.swift in Sources */,
