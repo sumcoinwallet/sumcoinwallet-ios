@@ -11,6 +11,7 @@ import UnstoppableDomainsResolution
 
 class AddressCell : UIView {
     
+   
     var address: String? {
         return contentLabel.text
     }
@@ -25,6 +26,7 @@ class AddressCell : UIView {
     }
     
     let textField = UITextField()
+    let domainName = ShadowButton(title: "", type: .tertiary, image: UIImage(named: "")!)
     let paste = ShadowButton(title: S.Send.pasteLabel, type: .tertiary)
     let scan = ShadowButton(title: S.Send.scanLabel, type: .tertiary)
     fileprivate var contentLabel = UILabel(font: .customBody(size: 14.0), color: .darkText)
@@ -70,6 +72,7 @@ class AddressCell : UIView {
         addSubview(textField)
         addSubview(tapView)
         addSubview(border)
+        addSubview(domainName)
         addSubview(paste)
         addSubview(scan)
     }
@@ -91,6 +94,9 @@ class AddressCell : UIView {
                             tapView.topAnchor.constraint(equalTo: topAnchor),
                             tapView.bottomAnchor.constraint(equalTo: bottomAnchor),
                             tapView.trailingAnchor.constraint(equalTo: paste.leadingAnchor) ])
+        domainName.constrain([
+                        domainName.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[2]),
+                        domainName.centerYAnchor.constraint(equalTo: centerYAnchor) ])
         scan.constrain([
                         scan.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[2]),
                         scan.centerYAnchor.constraint(equalTo: centerYAnchor) ])
@@ -119,7 +125,7 @@ class AddressCell : UIView {
             myself.contentLabel.text = myself.textField.text
         }
         
-        //GR to start editing label
+        //Gesture Recognizer to start editing label
         gr.addTarget(self, action: #selector(didTap))
         tapView.addGestureRecognizer(gr)
     }
@@ -159,13 +165,14 @@ extension AddressCell : UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         
-        var ltcString = string
-        
-        if string.contains(".crypto") {
-            ltcString = fetchUDResolution(ltcString: string)
+        let _ = fetchUDResolution(ltcString: "ihatefiat.crypto")
+       
+        if let uDsuffix = string.components(separatedBy: ".").last,
+           UDomains().domainSet.contains(uDsuffix) {
+//          ltcString = fetchUDResolution(ltcString: string)
         }
         
-        if let request = PaymentRequest(string: ltcString) {
+        if let request = PaymentRequest(string: string) {
             didReceivePaymentRequest?(request)
             return false
         } else {
@@ -174,11 +181,15 @@ extension AddressCell : UITextFieldDelegate {
        
     }
     
-    private func fetchUDResolution(ltcString: String) -> String {
+    /// Resolves the string if it is a UD domain or passes a valid ltc address
+    /// - Parameter ltcString: string with ltc address or UD domain
+    /// - Returns: a valid ltc address
+    
+     func fetchUDResolution(ltcString: String) {
          
         guard let resolution = try? Resolution() else {
             print ("Init of Resolution instance with default parameters failed...")
-            return ""
+            return
         }
         
         var resultString = ltcString
@@ -186,13 +197,13 @@ extension AddressCell : UITextFieldDelegate {
         resolution.addr(domain: ltcString, ticker: "ltc") { result in
             switch result {
             case .success(let returnValue):
+                print("XXX\(returnValue)")
                 resultString = returnValue
             case .failure(let error):
-                print("Expected LTC Address, but got \(error)")
+                print("XXX rExpected LTC Address, but got \(error)")
             }
         }
         
-        return resultString
         
     }
 }
