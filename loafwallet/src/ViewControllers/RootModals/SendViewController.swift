@@ -182,9 +182,9 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
         
         unstoppableCell.rootView.viewModel.didResolveUDAddress = { resolvedUDAddress in
             ///Paste in Unstoppable Domain resolved LTC address to textField
-            self.addressCell.textField.text = resolvedUDAddress
-            self.addressCell.textField.resignFirstResponder()
+            self.addressCell.textField.becomeFirstResponder()
             self.addressCell.textField.isHidden = false
+            self.addressCell.textField.text = resolvedUDAddress
         }
     }
     
@@ -242,7 +242,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
     
     @objc private func sendTapped() {
         if addressCell.textField.isFirstResponder {
-            addressCell.textField.resignFirstResponder()
+             addressCell.textField.resignFirstResponder()
         }
         
         if sender.transaction == nil {
