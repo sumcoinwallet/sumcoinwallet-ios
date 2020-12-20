@@ -403,6 +403,9 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "초기화";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "카드";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "위치 서비스가 꺼졌습니다.";
 
@@ -1266,3 +1269,6 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d의 %1$d";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "조회";

@@ -404,6 +404,9 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Borrar";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "TARJETA";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Los servicios de ubicación están desactivados.";
 
@@ -1267,3 +1270,6 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d de %2$d";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Buscar";
