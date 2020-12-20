@@ -17,7 +17,6 @@ class SupportLitecoinFoundationViewModelTests: XCTestCase {
         super.setUp()
         viewModel = SupportLitecoinFoundationViewModel()
     }
-<<<<<<< HEAD
      
     /// Checks the user taps on the closure
     func testDidTapToDismiss() throws {
@@ -30,17 +29,3 @@ class SupportLitecoinFoundationViewModelTests: XCTestCase {
     }
     
 }
-=======
-    
-    func testDidGetLTCAddress() throws {
-                 
-    }
-    
-    func testDidUpdateAddressString() throws {
-         
-    }
-    
-}
-
- 
->>>>>>> origin/master

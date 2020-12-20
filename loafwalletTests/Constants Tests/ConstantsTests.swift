@@ -13,9 +13,5 @@ class ConstantsTests: XCTestCase {
  
     func testLFDonationAddressPage() throws {
         XCTAssertTrue(FoundationSupport.url.absoluteString == "https://lite-wallet.org/support_address.html" )
-    }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
+    } 
 }

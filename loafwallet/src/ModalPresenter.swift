@@ -349,7 +349,7 @@ class ModalPresenter : Subscriber, Trackable {
                 self?.presentSecurityCenter()
             }
         }
-        menu.didTapSupport = { [weak self, weak menu] in 
+        menu.didTapSupport = { [weak self, weak menu] in
             menu?.dismiss(animated: true, completion: {
                 self?.messagePresenter.presenter = self?.topViewController
                 self?.messagePresenter.presentSupportCompose()
@@ -544,40 +544,22 @@ class ModalPresenter : Subscriber, Trackable {
             parent?.present(vc, animated: true, completion: {})
         }
     }
-    // MARK: - Present Support LF View
-    private func presentSupportLF() {
-        
-        let supportLFView = UIHostingController(rootView: SupportLitecoinFoundationView(viewModel: SupportLitecoinFoundationViewModel()))
-            
-        supportLFView.rootView.viewModel.didCancel = {
-            supportLFView.dismiss(animated: true) {
-                //TODO: Track in Analytics
-            }
-        }
-        
-        supportLFView.rootView.viewModel.didCopyLTCAddress = {
-            supportLFView.dismiss(animated: true) {
-                //TODO: Track in Analytics
-            }
-        }
-         
-        window.rootViewController?.present(supportLFView, animated: true, completion: nil)
     
     // MARK: - Present Support LF View
     private func presentSupportLF() {
         
         let supportLFView = UIHostingController(rootView: SupportLitecoinFoundationView(viewModel: SupportLitecoinFoundationViewModel()))
-         
+        
         supportLFView.rootView.viewModel.didTapToDismiss = {
             supportLFView.dismiss(animated: true) {
                 //TODO: Track in Analytics
             }
         }
-         
-        window.rootViewController?.present(supportLFView, animated: true, completion: nil)
-
-    }
         
+        window.rootViewController?.present(supportLFView, animated: true, completion: nil)
+        
+    }
+    
     private func presentSecurityCenter() {
         guard let walletManager = walletManager else { return }
         let securityCenter = SecurityCenterViewController(store: store, walletManager: walletManager)
@@ -693,7 +675,6 @@ class ModalPresenter : Subscriber, Trackable {
         paperPhraseNavigationController.viewControllers = [start]
         vc.present(paperPhraseNavigationController, animated: true, completion: nil)
     }
-    
     
     private func wipeWallet() {
         let group = DispatchGroup()
@@ -963,4 +944,5 @@ class SecurityCenterNavigationDelegate : NSObject, UINavigationControllerDelegat
         }
     }
 }
+
 
