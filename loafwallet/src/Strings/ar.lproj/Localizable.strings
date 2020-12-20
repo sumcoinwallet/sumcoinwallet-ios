@@ -1243,11 +1243,17 @@
 /* Message for luxury fee */
 "FeeSelector.luxuryMessage" = "";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "";
+
 /* Menu button title */
 "MenuButton.customer.support" = "";
 
 /* Enter LTC Address */
 "Send.enterLTCAddress" = "";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "";
 
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "";

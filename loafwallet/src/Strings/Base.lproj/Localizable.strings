@@ -1281,3 +1281,9 @@
 
 /* Litewallet Partners */
 "Settings.litewallet.partners" = "Litewallet partners";
+
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "Card";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Lookup";
