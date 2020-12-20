@@ -403,6 +403,9 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Wipe";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "CARD";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Location services are disabled.";
 

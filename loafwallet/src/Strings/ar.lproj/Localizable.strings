@@ -1243,6 +1243,9 @@
 /* Message for luxury fee */
 "FeeSelector.luxuryMessage" = "";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "";
+
 /* Menu button title */
 "MenuButton.customer.support" = "";
 
