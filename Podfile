@@ -7,7 +7,6 @@ platform :ios, '13.0'
 
 #Shared Cocopods
 def shared_pods
-
   pod 'Firebase/Crashlytics' 
   pod 'Firebase/Analytics'
   pod 'UnstoppableDomainsResolution', '~> 0.1.6'

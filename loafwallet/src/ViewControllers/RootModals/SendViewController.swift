@@ -107,7 +107,6 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
                                     descriptionCell.topAnchor.constraint(equalTo: amountView.view.bottomAnchor),
                                     descriptionCell.leadingAnchor.constraint(equalTo: amountView.view.leadingAnchor),
                                     descriptionCell.heightAnchor.constraint(equalTo: descriptionCell.textView.heightAnchor, constant: C.padding[3]) ])
-        
         descriptionCell.accessoryView.constrain([
                                                     descriptionCell.accessoryView.constraint(.width, constant: 0.0) ])
         sendButton.constrain([
@@ -139,7 +138,6 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
         addressCell.paste.addTarget(self, action: #selector(SendViewController.pasteTapped), for: .touchUpInside)
         addressCell.scan.addTarget(self, action: #selector(SendViewController.scanTapped), for: .touchUpInside)
         sendButton.addTarget(self, action: #selector(sendTapped), for: .touchUpInside)
-        
         descriptionCell.didReturn = { textView in
             textView.resignFirstResponder()
         }

@@ -12,14 +12,12 @@ import WebKit
 
 /// This cell is under the amount view and above the Memo view in the Send VC
 struct SupportLitecoinFoundationView: View {
-    
     //MARK: - Combine Variables
     @ObservedObject
     var viewModel: SupportLitecoinFoundationViewModel
     
     @State
     private var showSupportLFPage: Bool = false
-     
     
     //MARK: - Public
     var supportSafariView = SupportSafariView(url: FoundationSupport.url,
@@ -30,13 +28,14 @@ struct SupportLitecoinFoundationView: View {
     }
     
     var body: some View {
-        VStack {
+         VStack {
             Spacer(minLength: 40)
 
             supportSafariView
                 .frame(height: 300,
                        alignment: .center)
                 .padding([.bottom, .top], 10)
+ 
             
             // Copy the LF Address and paste into the SendViewController
             Button(action: {
@@ -93,4 +92,3 @@ struct SupportLitecoinFoundationView_Previews: PreviewProvider {
         }
     }
 }
-
