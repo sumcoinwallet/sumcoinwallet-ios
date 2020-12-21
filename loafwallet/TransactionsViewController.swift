@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import SwiftUI
 import LocalAuthentication
 
 private let promptDelay: TimeInterval = 0.6
 private let qrImageSize = 120.0
-class TransactionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, Subscriber, Trackable {
+
+final class TransactionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, Subscriber, Trackable {
 
     @IBOutlet weak var tableView: UITableView!
       
+    
+    @ObservedObject
+    var viewModel: TransactionsViewModel
+    
     var store: Store?
     var walletManager: WalletManager?
     var selectedIndexes = [IndexPath: NSNumber]()
@@ -48,7 +54,17 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
     var isLtcSwapped: Bool? {
         didSet { reload() }
     }
-     
+    
+    init(viewModel: TransactionsViewModel) {
+        super.init()
+        self.viewModel = viewModel
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
       setup()
       addSubscriptions()
@@ -405,3 +421,21 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
     }
 }
  
+struct TransactionsSwiftUIView: UIViewControllerRepresentable {
+    
+     
+
+    typealias UIViewControllerType = TransactionsViewController
+    
+  
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<TransactionsSwiftUIView>) -> TransactionsSwiftUIView.UIViewControllerType {
+        let viewModel = TransactionsViewModel(store: Store(), walletManager: WalletManager(store: Store()))
+
+        return TransactionsViewController(viewModel: viewModel, store: )
+    }
+
+    func updateUIViewController(_ uiViewController: TransactionsSwiftUIView.UIViewControllerType, context: UIViewControllerRepresentableContext<TransactionsSwiftUIView>) {
+        //
+    }
+}

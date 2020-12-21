@@ -9,6 +9,7 @@
 import UIKit
 import BRCore
 import MachO
+import SwiftUI
 
 private let transactionsLoadingViewHeightConstant: CGFloat = 48.0
 
@@ -94,12 +95,12 @@ class MainViewController : UIViewController, Subscriber, LoginViewControllerDele
     }
    
     func didUnlockLogin() {
-        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
-           
+       /* if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+
             vc.store = self.store
             vc.isLtcSwapped = store.state.isLtcSwapped
             vc.walletManager = self.walletManager
-            
+
             if let rate = store.state.currentRate {
                 vc.exchangeRate = rate
                 let placeholderAmount = Amount(amount: 0, rate: rate, maxDigits: store.state.maxDigits)
@@ -110,25 +111,40 @@ class MainViewController : UIViewController, Subscriber, LoginViewControllerDele
                 vc.primaryBalanceLabel
                     = UpdatingLabel(formatter: NumberFormatter())
             }
-           
+
             addChildViewController(vc, layout:{
                 vc.view.constrain(toSuperviewEdges: nil)
                 vc.view.alpha = 0
                 vc.view.layoutIfNeeded()
             })
-           
+
             UIView.animate(withDuration: 0.3, delay: 0.1, options: .transitionCrossDissolve, animations: {
                 vc.view.alpha = 1
             }) { (finished) in
                 NSLog("MainView Controller presented")
             }
-           
+
         } else {
                NSLog("ERROR: MainView Controller Not presented")
         }
-      
+        
+        */
+        
+    /*DEV: SwiftUI version of TabBar */
+            let tabBarViewVC = UIHostingController(rootView: MainTabBarView(viewModel: MainTabBarViewModel()))
+            addChildViewController(tabBarViewVC, layout:{
+                tabBarViewVC.view.constrain(toSuperviewEdges: nil)
+                tabBarViewVC.view.alpha = 0
+                tabBarViewVC.view.layoutIfNeeded()
+            })
+
+            UIView.animate(withDuration: 0.3, delay: 0.1, options: .transitionCrossDissolve, animations: {
+                tabBarViewVC.view.alpha = 1
+                            }) { (finished) in
+                                NSLog("SwiftuI MainView Controller presented")
+                            }
     }
-     
+
     private func addTemporaryStartupViews() {
         guardProtected(queue: DispatchQueue.main) {
             if !WalletManager.staticNoWallet {
