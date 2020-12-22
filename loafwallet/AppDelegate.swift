@@ -101,23 +101,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             FirebaseApp.configure()
         }
     }
-}
-
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let appearance = UINavigationBarAppearance()
-        
-        //Background color of the navigation and status bar
-        appearance.backgroundColor = .liteWalletBlue
-        
-        //Cross set for Navigation bar
-        navigationBar.standardAppearance = appearance
-        navigationBar.scrollEdgeAppearance = appearance
-        navigationBar.compactAppearance = appearance
-        
-        // change color of navigationbar items
-        navigationBar.tintColor = UIColor.white
-    }
-}
+} 

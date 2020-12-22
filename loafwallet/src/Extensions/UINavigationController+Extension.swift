@@ -11,6 +11,10 @@ import SwiftUI
 
 extension UINavigationController {
     
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func setDefaultStyle() {
         setClearNavbar()
         setBlackBackArrow()
