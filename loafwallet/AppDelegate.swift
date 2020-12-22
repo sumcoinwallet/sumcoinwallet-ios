@@ -24,6 +24,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SwiftUI
 import LocalAuthentication 
 import Firebase
 
@@ -34,10 +35,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let applicationController = ApplicationController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         setFirebaseConfiguration()
+        
         UIView.swizzleSetFrame()
+        
         applicationController.launch(application: application, window: self.window, options: launchOptions)
+        
         LWAnalytics.logEventWithParameters(itemName:._20191105_AL)
+               
         return true
     }
 
@@ -94,5 +100,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") != nil {
             FirebaseApp.configure()
         }
+    }
+}
+
+extension UINavigationController {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let appearance = UINavigationBarAppearance()
+        //background color of the navigation and status bar
+        appearance.backgroundColor = .red
+        //color when the title is large
+        appearance.largeTitleTextAttributes.updateValue(UIColor.white, forKey: NSAttributedString.Key.foregroundColor)
+        //color when the title is small
+        appearance.titleTextAttributes.updateValue(UIColor.white, forKey: NSAttributedString.Key.foregroundColor)
+        
+        // change the background- and title foregroundcolor for navigationbar
+        navigationBar.standardAppearance = appearance
+        navigationBar.scrollEdgeAppearance = appearance
+        navigationBar.compactAppearance = appearance
+        // change color of navigationbar items
+        navigationBar.tintColor = UIColor.white
     }
 }

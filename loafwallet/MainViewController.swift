@@ -95,7 +95,7 @@ class MainViewController : UIViewController, Subscriber, LoginViewControllerDele
     }
    
     func didUnlockLogin() {
-       /* if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+     /* if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
 
             vc.store = self.store
             vc.isLtcSwapped = store.state.isLtcSwapped
@@ -128,7 +128,7 @@ class MainViewController : UIViewController, Subscriber, LoginViewControllerDele
                NSLog("ERROR: MainView Controller Not presented")
         }
         
-        */
+       */
         
     /*DEV: SwiftUI version of TabBar */
             let tabBarViewVC = UIHostingController(rootView: MainTabBarView(viewModel: MainTabBarViewModel()))
@@ -141,8 +141,8 @@ class MainViewController : UIViewController, Subscriber, LoginViewControllerDele
             UIView.animate(withDuration: 0.3, delay: 0.1, options: .transitionCrossDissolve, animations: {
                 tabBarViewVC.view.alpha = 1
                             }) { (finished) in
-                                NSLog("SwiftuI MainView Controller presented")
-                            }
+                                print("SwiftUI MainView Controller presented")
+                            } 
     }
 
     private func addTemporaryStartupViews() {

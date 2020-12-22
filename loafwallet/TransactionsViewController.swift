@@ -12,15 +12,11 @@ import LocalAuthentication
 
 private let promptDelay: TimeInterval = 0.6
 private let qrImageSize = 120.0
-
-final class TransactionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, Subscriber, Trackable {
+ 
+class TransactionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, Subscriber, Trackable {
 
     @IBOutlet weak var tableView: UITableView!
       
-    
-    @ObservedObject
-    var viewModel: TransactionsViewModel
-    
     var store: Store?
     var walletManager: WalletManager?
     var selectedIndexes = [IndexPath: NSNumber]()
@@ -55,15 +51,6 @@ final class TransactionsViewController: UIViewController, UITableViewDelegate, U
         didSet { reload() }
     }
     
-    init(viewModel: TransactionsViewModel) {
-        super.init()
-        self.viewModel = viewModel
-        
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
       setup()
@@ -421,21 +408,21 @@ final class TransactionsViewController: UIViewController, UITableViewDelegate, U
     }
 }
  
-struct TransactionsSwiftUIView: UIViewControllerRepresentable {
-    
-     
-
-    typealias UIViewControllerType = TransactionsViewController
-    
-  
-
-    func makeUIViewController(context: UIViewControllerRepresentableContext<TransactionsSwiftUIView>) -> TransactionsSwiftUIView.UIViewControllerType {
-        let viewModel = TransactionsViewModel(store: Store(), walletManager: WalletManager(store: Store()))
-
-        return TransactionsViewController(viewModel: viewModel, store: )
-    }
-
-    func updateUIViewController(_ uiViewController: TransactionsSwiftUIView.UIViewControllerType, context: UIViewControllerRepresentableContext<TransactionsSwiftUIView>) {
-        //
-    }
-}
+//struct TransactionsSwiftUIView: UIViewControllerRepresentable {
+//    
+//     
+//
+//    typealias UIViewControllerType = TransactionsViewController
+//    
+//  
+//
+//    func makeUIViewController(context: UIViewControllerRepresentableContext<TransactionsSwiftUIView>) -> TransactionsSwiftUIView.UIViewControllerType {
+//        let viewModel = TransactionsViewModel(store: Store(), walletManager: WalletManager(store: Store()))
+//
+//        return TransactionsViewController(viewModel: viewModel, store: )
+//    }
+//
+//    func updateUIViewController(_ uiViewController: TransactionsSwiftUIView.UIViewControllerType, context: UIViewControllerRepresentableContext<TransactionsSwiftUIView>) {
+//        //
+//    }
+//}

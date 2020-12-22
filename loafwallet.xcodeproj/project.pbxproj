@@ -267,6 +267,7 @@
 		75A2A8141DA5936F00A983D8 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75A2A8081DA5936F00A983D8 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75C735AA1DAA1B9C00251ECF /* libunbound.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD4121DAA0E3E0075898E /* libunbound.c */; };
 		BB66CB271F7F2FD1936AA04B /* Pods_loafwalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEAAB89A265CC043F53CC51 /* Pods_loafwalletTests.framework */; };
+		C32DAE0725925B7E003FC978 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DAE0625925B7E003FC978 /* Color+Extension.swift */; };
 		C354C43A258F98F400675E0E /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C439258F98F400675E0E /* MainTabBarView.swift */; };
 		C354C45A258FA9C000675E0E /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */; };
 		C354C4632590059500675E0E /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C4622590059500675E0E /* TransactionsViewModel.swift */; };
@@ -1421,6 +1422,7 @@
 		93035AB774472BF9805FD3F9 /* Pods-loafwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.debug.xcconfig"; path = "Target Support Files/Pods-loafwallet/Pods-loafwallet.debug.xcconfig"; sourceTree = "<group>"; };
 		9AA160F2A4C1674AC8595E65 /* Pods-loafwalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwalletTests.debug.xcconfig"; path = "Target Support Files/Pods-loafwalletTests/Pods-loafwalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C4905F581557D8FD607EB73 /* Pods-loafwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.release.xcconfig"; path = "Target Support Files/Pods-loafwallet/Pods-loafwallet.release.xcconfig"; sourceTree = "<group>"; };
+		C32DAE0625925B7E003FC978 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C354C439258F98F400675E0E /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		C354C4622590059500675E0E /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
@@ -3139,6 +3141,7 @@
 			isa = PBXGroup;
 			children = (
 				CE20C8F51DBAF77D00C8397A /* UIViewController+BRWAdditions.swift */,
+				C32DAE0625925B7E003FC978 /* Color+Extension.swift */,
 				CE20C8FB1DBB0F3A00C8397A /* UIColor+Extension.swift */,
 				CE20C90D1DBE52B000C8397A /* UIView+BRWAdditions.swift */,
 				CE20C9161DBE6F2A00C8397A /* UIButton+BRWAdditions.swift */,
@@ -4202,6 +4205,7 @@
 				CECCE5A91E0378FB00D99448 /* PinPadViewController.swift in Sources */,
 				C354C4632590059500675E0E /* TransactionsViewModel.swift in Sources */,
 				CEF3D2DB1E8B55C80070178E /* UISlider+Gradient.swift in Sources */,
+				C32DAE0725925B7E003FC978 /* Color+Extension.swift in Sources */,
 				CEC6AA4B1DEFD24C00EE5AFD /* MenuButtonType.swift in Sources */,
 				24313C752381E73200A83F69 /* TransactionManager.swift in Sources */,
 				CE4CA7BC1EE3649100373F11 /* BRActivityView.swift in Sources */,
