@@ -47,35 +47,4 @@ extension UINavigationController {
         navigationBar.backIndicatorImage = #imageLiteral(resourceName: "Back")
         navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "Back")
     }
-    
-    //https://stackoverflow.com/questions/56651245/how-to-change-the-status-bar-background-color-and-text-color-on-ios-13
-    //DEV: nice looking solution
-    func setStatusBar(backgroundColor: UIColor) {
-        let statusBarFrame: CGRect
-        if #available(iOS 13.0, *) {
-            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
-        } else {
-            statusBarFrame = UIApplication.shared.statusBarFrame
-        }
-        let statusBarView = UIView(frame: statusBarFrame)
-        statusBarView.backgroundColor = backgroundColor
-        view.addSubview(statusBarView)
-    }
 }
-
-//struct NavigationConfigurator: UIViewControllerRepresentable {
-//    var configure: (UINavigationController) -> Void = { nc in
-//
-//    }
-//
-//    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
-//        UIViewController()
-//    }
-//    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
-//        if let nc = uiViewController.navigationController {
-//            self.configure(nc)
-//        }
-//    }
-//
-//}
-

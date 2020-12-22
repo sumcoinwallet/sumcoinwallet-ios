@@ -108,17 +108,15 @@ extension UINavigationController {
         super.viewDidLoad()
         
         let appearance = UINavigationBarAppearance()
-        //background color of the navigation and status bar
-        appearance.backgroundColor = .red
-        //color when the title is large
-        appearance.largeTitleTextAttributes.updateValue(UIColor.white, forKey: NSAttributedString.Key.foregroundColor)
-        //color when the title is small
-        appearance.titleTextAttributes.updateValue(UIColor.white, forKey: NSAttributedString.Key.foregroundColor)
         
-        // change the background- and title foregroundcolor for navigationbar
+        //Background color of the navigation and status bar
+        appearance.backgroundColor = .liteWalletBlue
+        
+        //Cross set for Navigation bar
         navigationBar.standardAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance
         navigationBar.compactAppearance = appearance
+        
         // change color of navigationbar items
         navigationBar.tintColor = UIColor.white
     }

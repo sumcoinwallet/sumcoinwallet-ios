@@ -26,7 +26,6 @@ struct MainTabBarView: View {
     var body: some View {
         
                 NavigationView {
-                       // Color.liteWalletBlue.edgesIgnoringSafeArea(.all)
                     TabView {
                         Text("History")
                             .tabItem {
@@ -61,7 +60,6 @@ struct MainTabBarView: View {
                             }
                     }
                     .accentColor(.white)
-                    .navigationBarHidden(true)
 
                 }
     }
