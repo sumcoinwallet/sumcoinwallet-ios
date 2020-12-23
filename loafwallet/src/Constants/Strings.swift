@@ -99,7 +99,7 @@ enum S {
         
         enum UnstoppableDomains {
             static let placeholder = NSLocalizedString("Send.UnstoppableDomains.placeholder", value: "**Enter a .crypto or .zil domain**", comment: "Enter a .crypto or .zil domain")
-            
+            static let lookup = NSLocalizedString("Send.UnstoppableDomains.lookup", value: "**Lookup**", comment: "Lookup")
         }
     }
 
@@ -573,16 +573,17 @@ enum S {
         }
     }
 
-    enum BitID {
-        static let title = NSLocalizedString("BitID.title", value: "**BitID Authentication Request**", comment: "BitID Authentication Request alert view title")
-        static let authenticationRequest = NSLocalizedString("BitID.authenticationRequest", value: "**%1$@ is requesting authentication using your Litecoin wallet**", comment: "<sitename> is requesting authentication using your Litecoin wallet")
-        static let deny = NSLocalizedString("BitID.deny", value: "**Deny**", comment: "Deny button label")
-        static let approve = NSLocalizedString("BitID.approve", value: "**Approve**", comment: "Approve button label")
-        static let success = NSLocalizedString("BitID.success", value: "**Successfully Authenticated**", comment: "BitID success alert title")
-        static let error = NSLocalizedString("BitID.error", value: "**Authentication Error**", comment: "BitID error alert title")
-        static let errorMessage = NSLocalizedString("BitID.errorMessage", value: "**Please check with the service. You may need to try again.**", comment: "BitID error alert messaage")
+ //DEV: Removing eventually
+    //  enum BitID {
+//        static let title = NSLocalizedString("BitID.title", value: "**BitID Authentication Request**", comment: "BitID Authentication Request alert view title")
+//        static let authenticationRequest = NSLocalizedString("BitID.authenticationRequest", value: "**%1$@ is requesting authentication using your Litecoin wallet**", comment: "<sitename> is requesting authentication using your Litecoin wallet")
+//        static let deny = NSLocalizedString("BitID.deny", value: "**Deny**", comment: "Deny button label")
+//        static let approve = NSLocalizedString("BitID.approve", value: "**Approve**", comment: "Approve button label")
+//        static let success = NSLocalizedString("BitID.success", value: "**Successfully Authenticated**", comment: "BitID success alert title")
+//        static let error = NSLocalizedString("BitID.error", value: "**Authentication Error**", comment: "BitID error alert title")
+//        static let errorMessage = NSLocalizedString("BitID.errorMessage", value: "**Please check with the service. You may need to try again.**", comment: "BitID error alert messaage")
 
-    }
+ //   }
     
     enum SupportLitecoinFoundation {
         static let title = NSLocalizedString("SupportTheFoundation.title", value: "**Support the Litecoin Foundation**", comment: "Support the Litecoin Foundation")
