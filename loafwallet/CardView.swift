@@ -18,7 +18,74 @@ struct CardView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            //AnimatedCard()
+            
+            TextField(S.Receive.emailButton, text: $viewModel.emailString)
+                .padding([.leading, .trailing], 16)
+                .padding(.top, 30)
+                .foregroundColor(.red)
+            
+            Divider().padding([.leading, .trailing], 16)
+ 
+            TextField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)                    .padding([.leading, .trailing], 16)
+                .padding(.top, 30)
+
+            Divider().padding([.leading, .trailing], 16)
+ 
+            
+            Spacer()
+            Button(action: {
+                print("Button action")
+            }) {
+                Text("Forgot Password")
+                    .padding([.leading, .trailing], 16)
+                    .padding([.top, .bottom], 30)
+                    .background(Color.white)
+                    .foregroundColor(Color(UIColor.liteWalletBlue))
+
+            }
+            
+            Spacer()
+            Button(action: {
+                print("Login")
+            }) {
+                Text("Login")
+                    .padding([.leading, .trailing], 16)
+                    .padding([.top, .bottom], 30)
+                    .background(Color(UIColor.liteWalletBlue))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(10)
+
+
+            }
+            .frame(height: 48, alignment: .center)
+            .padding([.leading, .trailing], 16)
+            
+            Button(action: {
+                print("Button action")
+            }) {
+                Text("Register for LitecoinCard")
+                    .padding([.top, .bottom], 30)
+                    .background(Color.white)
+                    .foregroundColor(Color(UIColor.liteWalletBlue))
+                    .cornerRadius(10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(lineWidth: 2)
+                    )
+                    .frame(height: 48, alignment: .center)
+                    .padding([.leading, .trailing], 16)
+            }
+            
+
+            
+            Spacer()
+            //heigth 48.0
+            
+            //tr16.0
+            
+        }.padding([.leading, .trailing], 16)
     }
 }
 
@@ -37,8 +104,9 @@ struct CardView_Previews: PreviewProvider {
                 .previewDisplayName(DeviceType.Name.iPhone8)
             
             CardView(viewModel: viewModel)
-                    .previewDevice(PreviewDevice(rawValue: DeviceType.Name.iPhone12ProMax))
-                    .previewDisplayName(DeviceType.Name.iPhone12ProMax)
+                .previewDevice(PreviewDevice(rawValue: DeviceType.Name.iPhone12ProMax))
+                .previewDisplayName(DeviceType.Name.iPhone12ProMax)
         }
     }
 }
+

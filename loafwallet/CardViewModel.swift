@@ -11,6 +11,12 @@ import SwiftUI
 
 class CardViewModel: ObservableObject {
     
+    @Published
+    var emailString: String = ""
+    
+    @Published
+    var passwordString: String = ""
+    
     init() {
         
     }
