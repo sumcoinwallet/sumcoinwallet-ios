@@ -406,6 +406,15 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "KAART";
 
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Wachtwoord vergeten?";
+
+/* Login */
+"LitecoinCard.login" = "Log in";
+
+/* Register */
+"LitecoinCard.registerCard" = "Registreren";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Locatievoorzieningen zijn uitgeschakeld.";
 
@@ -804,6 +813,9 @@
 
 /* Send money to label */
 "Send.toLabel" = "Naar";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Opzoeken";
 
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "Voer een .crypto- of .zil-domein in";
@@ -1269,6 +1281,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d van %2$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Opzoeken";

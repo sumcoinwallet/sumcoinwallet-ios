@@ -17,7 +17,19 @@ class CardViewModel: ObservableObject {
     @Published
     var passwordString: String = ""
     
+    @Published
+    var isNotRegistered: Bool = true
+    
     init() {
         
     }
+    
+    func login(completion: @escaping (Bool) -> ()) {
+        
+         
+         completion(true)
+    }
+    
+    
+    
 }

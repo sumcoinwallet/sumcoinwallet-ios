@@ -1246,6 +1246,15 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "";
 
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "";
+
+/* Login */
+"LitecoinCard.login" = "";
+
+/* Register */
+"LitecoinCard.registerCard" = "";
+
 /* Menu button title */
 "MenuButton.customer.support" = "";
 
