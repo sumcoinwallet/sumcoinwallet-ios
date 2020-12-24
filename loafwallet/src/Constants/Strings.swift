@@ -115,6 +115,9 @@ enum S {
     
     enum LitecoinCard {
         static let barItemTitle = NSLocalizedString("LitecoinCard.barItemTitle", value: "**Card**", comment: "Card Bar Item Title")
+        static let login = NSLocalizedString("LitecoinCard.login", value: "**Login**", comment: "Login")
+        static let forgotPassword = NSLocalizedString("LitecoinCard.forgotPassword", value: "**Forgot password?**", comment: "Forgot password?")
+        static let registerCard = NSLocalizedString("LitecoinCard.registerCard", value: "**Register**", comment: "Register")
     }
     
     enum Account {
