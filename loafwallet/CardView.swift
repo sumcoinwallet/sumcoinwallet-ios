@@ -7,85 +7,168 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct CardView: View {
     
     @ObservedObject
     var viewModel: CardViewModel
     
+    @ObservedObject
+    var animatedViewModel = AnimatedCardViewModel()
+    
+    
+    @State
+    private var didTapLogin: Bool = false
+
+    @State
+    private var shouldShowRegistrationView: Bool = false
+    
+    @State
+    private var shouldShowPassword: Bool = false
+    
+    private var eyeballImageString: String {
+        return shouldShowPassword ? "" : ""
+    }
+    
+    
+    @State
+    var didCompleteLogin: Bool = false
+    
+    @State
+    var shouldShowForgotView: Bool = false
+ 
     init(viewModel: CardViewModel) {
         self.viewModel = viewModel
     }
     
     var body: some View {
-        VStack {
-            //AnimatedCard()
-            
-            TextField(S.Receive.emailButton, text: $viewModel.emailString)
-                .padding([.leading, .trailing], 16)
-                .padding(.top, 30)
-                .foregroundColor(.red)
-            
-            Divider().padding([.leading, .trailing], 16)
- 
-            TextField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)                    .padding([.leading, .trailing], 16)
-                .padding(.top, 30)
-
-            Divider().padding([.leading, .trailing], 16)
- 
-            
-            Spacer()
-            Button(action: {
-                print("Button action")
-            }) {
-                Text("Forgot Password")
-                    .padding([.leading, .trailing], 16)
-                    .padding([.top, .bottom], 30)
-                    .background(Color.white)
-                    .foregroundColor(Color(UIColor.liteWalletBlue))
-
+        GeometryReader { geometry in
+            VStack {
+                
+                // Animated Card View
+                Group {
+                    AnimatedCardView(viewModel: animatedViewModel)
+                        .frame(minWidth:0, maxWidth: geometry.size.width * 0.6)
+                        .padding(.all, 30)
+                        
+                }
+                
+                // Login Textfields
+                Group {
+                    
+                    TextField(S.Receive.emailButton, text: $viewModel.emailString)
+                        .font(Font(UIFont.customBody(size:22.0)))
+                        .padding([.leading, .trailing], 20)
+                        .padding(.top, 30)
+                        .foregroundColor(.black)
+                        .keyboardType(.emailAddress)
+                    
+                    Divider().padding([.leading, .trailing], 20)
+                    
+                    HStack {
+                        
+                        TextField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
+                            .font(Font(UIFont.customBody(size:22.0)))
+                            .padding([.leading, .trailing], 20)
+                            .padding(.top, 20)
+                            .keyboardType(.asciiCapable)
+                        
+                        SecureField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
+                            .font(Font(UIFont.customBody(size:22.0)))
+                            .padding([.leading, .trailing], 20)
+                            .padding(.top, 20)
+                            .keyboardType(.asciiCapable)
+                        
+                        Button(action: {
+                            shouldShowPassword.toggle()
+                        }) {
+                            Image(<#T##name: String##String#>)
+                        }
+                    }
+                    
+                    
+                    
+                    Divider().padding([.leading, .trailing], 20)
+                    
+                    
+                    Spacer()
+                }
+                
+                // Action Buttons
+                Group {
+                    
+                    // Forgot password button
+                    Button(action: {
+                        shouldShowForgotView = true
+                    }) {
+                        
+                        Text(S.LitecoinCard.forgotPassword)
+                            .frame(minWidth:0, maxWidth: .infinity)
+                            .font(Font(UIFont.barlowLight(size: 15)))
+                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .padding(.all, 30)
+                    }.alert(isPresented: $shouldShowForgotView) { () -> Alert in
+                        Alert(title: Text("I forgot"))
+                    }
+                
+                    Spacer(minLength: 5)
+                    
+                    // Login button
+                    Button(action: {
+                        didTapLogin = true
+                        viewModel.login { didLogin in
+                            print(didLogin)
+                        }
+                    }) {
+                         
+                      Text(S.LitecoinCard.login)
+                        .frame(minWidth:0, maxWidth: .infinity)
+                        .padding()
+                        .font(Font(UIFont.customMedium(size: 16.0)))
+                        .padding([.leading, .trailing], 16)
+                        .foregroundColor(.white)
+                        .background(Color(UIColor.liteWalletBlue))
+                        .overlay(
+                            RoundedRectangle(cornerRadius:4)
+                                .stroke(Color(UIColor.liteWalletBlue))
+                        )
+                    }.alert(isPresented: $didTapLogin) { () -> Alert in
+                        Alert(title: Text("Hello"))
+                    }.padding([.leading, .trailing], 16)
+//
+                    // Registration button
+                    Button(action: {
+                            shouldShowRegistrationView = true
+                        }) {
+                            Text(S.LitecoinCard.registerCard)
+                                .frame(minWidth:0, maxWidth: .infinity)
+                                .padding()
+                                .font(Font(UIFont.customMedium(size: 15.0)))
+                                .foregroundColor(Color(UIColor.liteWalletBlue))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius:4)
+                                        .stroke(Color(UIColor.liteWalletBlue))
+                                )
+                                .padding([.leading, .trailing], 16)
+                                .padding([.top,.bottom], 15)
+                        }
+                        .sheet(isPresented: $shouldShowRegistrationView) {
+                            RegistrationView(viewModel: RegistrationViewModel())
+                        }
+                }
+                Spacer()
             }
-            
-            Spacer()
-            Button(action: {
-                print("Login")
-            }) {
-                Text("Login")
-                    .padding([.leading, .trailing], 16)
-                    .padding([.top, .bottom], 30)
-                    .background(Color(UIColor.liteWalletBlue))
-                    .foregroundColor(Color.white)
-                    .cornerRadius(10)
-
-
-            }
-            .frame(height: 48, alignment: .center)
-            .padding([.leading, .trailing], 16)
-            
-            Button(action: {
-                print("Button action")
-            }) {
-                Text("Register for LitecoinCard")
-                    .padding([.top, .bottom], 30)
-                    .background(Color.white)
-                    .foregroundColor(Color(UIColor.liteWalletBlue))
-                    .cornerRadius(10)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(lineWidth: 2)
-                    )
-                    .frame(height: 48, alignment: .center)
-                    .padding([.leading, .trailing], 16)
-            }
-            
-
-            
-            Spacer()
-            //heigth 48.0
-            
-            //tr16.0
-            
-        }.padding([.leading, .trailing], 16)
+        }.onReceive(NotificationCenter.default.publisher(for: NSNotification.Name.UIKeyboardWillShow)) { _ in
+            animatedViewModel.dropOffset = -200
+        }.onReceive(NotificationCenter.default.publisher(for: NSNotification.Name.UIKeyboardWillHide)) { _ in
+            animatedViewModel.dropOffset = 0
+        }
+        .frame(minWidth: 0,
+               maxWidth: .infinity,
+               minHeight: 0,
+               maxHeight: .infinity,
+               alignment: .center)
     }
 }
 
@@ -109,4 +192,4 @@ struct CardView_Previews: PreviewProvider {
         }
     }
 }
-
+ 

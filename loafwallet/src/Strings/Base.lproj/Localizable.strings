@@ -1287,3 +1287,12 @@
 
 /* Lookup */
 "Send.UnstoppableDomains.lookup" = "Lookup";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Forgot password?";
+
+/* Login */
+"LitecoinCard.login" = "Login";
+
+/* Register */
+"LitecoinCard.registerCard" = "Register";

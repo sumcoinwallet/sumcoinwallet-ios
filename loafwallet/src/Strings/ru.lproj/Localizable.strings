@@ -406,6 +406,15 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "КАРТА";
 
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Забыли пароль?";
+
+/* Login */
+"LitecoinCard.login" = "Авторизоваться";
+
+/* Register */
+"LitecoinCard.registerCard" = "регистр";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Сервисы определения местоположения отключены.";
 
@@ -804,6 +813,9 @@
 
 /* Send money to label */
 "Send.toLabel" = "На";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Искать";
 
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "Введите домен .crypto или .zil";
@@ -1269,6 +1281,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d из %2$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Искать";

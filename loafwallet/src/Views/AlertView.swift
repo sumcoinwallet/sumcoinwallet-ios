@@ -18,13 +18,13 @@ enum AlertType {
     var header: String {
         switch self {
         case .pinSet:
-            return S.Alerts.pinSet
+            return S.SecurityAlerts.pinSet
         case .paperKeySet:
-            return S.Alerts.paperKeySet
+            return S.SecurityAlerts.paperKeySet
         case .sendSuccess:
-            return S.Alerts.sendSuccess
+            return S.SecurityAlerts.sendSuccess
         case .addressesCopied:
-            return S.Alerts.copiedAddressesHeader
+            return S.SecurityAlerts.copiedAddressesHeader
         case .sweepSuccess:
             return S.Import.success
         }
@@ -35,11 +35,11 @@ enum AlertType {
         case .pinSet:
             return ""
         case .paperKeySet:
-            return S.Alerts.paperKeySetSubheader
+            return S.SecurityAlerts.paperKeySetSubheader
         case .sendSuccess:
-            return S.Alerts.sendSuccessSubheader
+            return S.SecurityAlerts.sendSuccessSubheader
         case .addressesCopied:
-            return S.Alerts.copiedAddressesSubheader
+            return S.SecurityAlerts.copiedAddressesSubheader
         case .sweepSuccess:
             return S.Import.successBody
         }

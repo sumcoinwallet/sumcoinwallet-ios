@@ -50,7 +50,7 @@ enum S {
 
     }
 
-    enum Alert {
+    enum LitewalletAlert {
         static let warning = NSLocalizedString("Alert.warning", value: "**Warning**", comment: "Warning alert title")
         static let error = NSLocalizedString("Alert.error", value: "**Error**", comment: "Error alert title")
         static let noInternet = NSLocalizedString("Alert.noInternet", value: "**No internet connection found. Check your connection and try again.**", comment: "No internet alert message")
@@ -115,6 +115,9 @@ enum S {
     
     enum LitecoinCard {
         static let barItemTitle = NSLocalizedString("LitecoinCard.barItemTitle", value: "**Card**", comment: "Card Bar Item Title")
+        static let login = NSLocalizedString("LitecoinCard.login", value: "**Login**", comment: "Login")
+        static let forgotPassword = NSLocalizedString("LitecoinCard.forgotPassword", value: "**Forgot password?**", comment: "Forgot password?")
+        static let registerCard = NSLocalizedString("LitecoinCard.registerCard", value: "**Register**", comment: "Register")
     }
     
     enum Account {
@@ -421,7 +424,7 @@ enum S {
         static let noAmount = NSLocalizedString("RequestAnAmount.noAmount", value: "**Please enter an amount first.**", comment: "No amount entered error message.")
     }
 
-    enum Alerts {
+    enum SecurityAlerts {
         static let pinSet = NSLocalizedString("Alerts.pinSet", value: "**PIN Set**", comment: "Alert Header label (the PIN was set)")
         static let paperKeySet = NSLocalizedString("Alerts.paperKeySet", value: "**Paper Key Set**", comment: "Alert Header Label (the paper key was set)")
         static let sendSuccess = NSLocalizedString("Alerts.sendSuccess", value: "**Send Confirmation**", comment: "Send success alert header label (confirmation that the send happened)")

@@ -406,6 +406,15 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "KORT";
 
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Glömt ditt lösenord?";
+
+/* Login */
+"LitecoinCard.login" = "Logga in";
+
+/* Register */
+"LitecoinCard.registerCard" = "Registrera";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Platstjänster är inaktiverade.";
 
@@ -804,6 +813,9 @@
 
 /* Send money to label */
 "Send.toLabel" = "Till";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Slå upp";
 
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "Ange en .crypto- eller .zil-domän";
@@ -1269,6 +1281,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d av %2$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Slå upp";

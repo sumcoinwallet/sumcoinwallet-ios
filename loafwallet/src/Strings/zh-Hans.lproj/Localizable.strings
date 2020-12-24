@@ -406,6 +406,15 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "卡";
 
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "忘记密码？";
+
+/* Login */
+"LitecoinCard.login" = "登录";
+
+/* Register */
+"LitecoinCard.registerCard" = "寄存器";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置服务被禁用。";
 
@@ -804,6 +813,9 @@
 
 /* Send money to label */
 "Send.toLabel" = "至";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "抬头";
 
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "输入.crypto或.zil域";
@@ -1269,6 +1281,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d / %2$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "抬头";

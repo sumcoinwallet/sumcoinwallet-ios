@@ -271,6 +271,8 @@
 		C32DAE9125929492003FC978 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DAE9025929492003FC978 /* CardViewController.swift */; };
 		C32DC793259396AB00A7FDB4 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC792259396AB00A7FDB4 /* CardViewModel.swift */; };
 		C32DC79C2593971500A7FDB4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC79B2593971500A7FDB4 /* CardView.swift */; };
+		C32DC7AC2593B5C900A7FDB4 /* AnimatedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC7AB2593B5C900A7FDB4 /* AnimatedCardView.swift */; };
+		C32DC7B52593B61F00A7FDB4 /* AnimatedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC7B42593B61F00A7FDB4 /* AnimatedCardViewModel.swift */; };
 		C354C45A258FA9C000675E0E /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */; };
 		C354C4632590059500675E0E /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C4622590059500675E0E /* TransactionsViewModel.swift */; };
 		C35ABD232574070A002BB9BB /* PartnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35ABD222574070A002BB9BB /* PartnersView.swift */; };
@@ -280,6 +282,10 @@
 		C3B7C3C2255EAF1200E98A64 /* SupportSafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */; };
 		C3B7C3EE255FF59200E98A64 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C3ED255FF59200E98A64 /* ConstantsTests.swift */; };
 		C3B7C43F25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C43E25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift */; };
+		C3BD49B72595420A00D97079 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49B62595420A00D97079 /* RegistrationViewModel.swift */; };
+		C3BD49C02595423400D97079 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49BF2595423400D97079 /* RegistrationView.swift */; };
+		C3BD49C925954A1B00D97079 /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49C825954A1B00D97079 /* ForgotView.swift */; };
+		C3BD49D225954A3200D97079 /* ForgotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49D125954A3200D97079 /* ForgotViewModel.swift */; };
 		C3D4379F2566EA3E00F423E1 /* LWActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4379E2566EA3E00F423E1 /* LWActivityIndicator.swift */; };
 		C3D783A72565EA4B0004FF70 /* UnstoppableDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D783A62565EA4A0004FF70 /* UnstoppableDomainView.swift */; };
 		C3D783B72565EA6B0004FF70 /* UnstoppableDomainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D783B62565EA6B0004FF70 /* UnstoppableDomainViewModel.swift */; };
@@ -1428,6 +1434,8 @@
 		C32DAE9025929492003FC978 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C32DC792259396AB00A7FDB4 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		C32DC79B2593971500A7FDB4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C32DC7AB2593B5C900A7FDB4 /* AnimatedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardView.swift; sourceTree = "<group>"; };
+		C32DC7B42593B61F00A7FDB4 /* AnimatedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardViewModel.swift; sourceTree = "<group>"; };
 		C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		C354C4622590059500675E0E /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		C35ABD222574070A002BB9BB /* PartnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersView.swift; sourceTree = "<group>"; };
@@ -1437,6 +1445,10 @@
 		C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSafariView.swift; sourceTree = "<group>"; };
 		C3B7C3ED255FF59200E98A64 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
 		C3B7C43E25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLitecoinFoundationViewModelTests.swift; sourceTree = "<group>"; };
+		C3BD49B62595420A00D97079 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		C3BD49BF2595423400D97079 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C3BD49C825954A1B00D97079 /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
+		C3BD49D125954A3200D97079 /* ForgotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewModel.swift; sourceTree = "<group>"; };
 		C3D4379E2566EA3E00F423E1 /* LWActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWActivityIndicator.swift; sourceTree = "<group>"; };
 		C3D783A62565EA4A0004FF70 /* UnstoppableDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnstoppableDomainView.swift; sourceTree = "<group>"; };
 		C3D783B62565EA6B0004FF70 /* UnstoppableDomainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnstoppableDomainViewModel.swift; sourceTree = "<group>"; };
@@ -3206,6 +3218,7 @@
 				C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */,
 				C3F55643255A1916005F786F /* SupportLitecoinFoundation */,
 				24BA90C52410129E001E3825 /* FeeSelectorView.swift */,
+				C32DC7AB2593B5C900A7FDB4 /* AnimatedCardView.swift */,
 				CE6BCF5C1EE9E89A0029849C /* CustomTitleView.swift */,
 				CED341321EF5A5C00014912A /* InAppAlert.swift */,
 				CE3645461E7B40280079D0CF /* PinPadCells */,
@@ -3236,6 +3249,7 @@
 				CEEC70801E90C04700EF788E /* SeparatorCell.swift */,
 				CEEC70891E945E3B00EF788E /* UnEditableTextView.swift */,
 				CEEC708D1E954AAB00EF788E /* AboutCell.swift */,
+				C3BD49C825954A1B00D97079 /* ForgotView.swift */,
 				CEEC70911E95DA4400EF788E /* GradientSwitch.swift */,
 				CE83DE291E9EB7F600D07636 /* SendAmountCell.swift */,
 				CEE20C2C1EA288FA0086F724 /* UpdatingLabel.swift */,
@@ -3243,6 +3257,7 @@
 				CE5E6C931EB7964900A476DB /* WalletDisabledView.swift */,
 				CE8F0AE21EB91BB500AA7642 /* SearchHeaderView.swift */,
 				CE4C1CC51ED65D830063E184 /* DrawableCircle.swift */,
+				C3BD49BF2595423400D97079 /* RegistrationView.swift */,
 				CEBF292D1EF99E55005C330A /* LightWeightAlert.swift */,
 				2494037C23AE0C7100369261 /* SyncProgressHeaderView.swift */,
 				C32DC79B2593971500A7FDB4 /* CardView.swift */,
@@ -3350,12 +3365,15 @@
 			isa = PBXGroup;
 			children = (
 				C3B7C3B8255EABBF00E98A64 /* SupportSafariViewModel.swift */,
+				C3BD49D125954A3200D97079 /* ForgotViewModel.swift */,
+				C3BD49B62595420A00D97079 /* RegistrationViewModel.swift */,
 				C32DC792259396AB00A7FDB4 /* CardViewModel.swift */,
 				C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */,
 				CEBF33031DDE17A600348FC6 /* Transaction.swift */,
 				CE27F9581E2C8EA300F7F7F2 /* Amount.swift */,
 				CE124CF71E67A8E500DFA146 /* TransactionDirection.swift */,
 				C354C4622590059500675E0E /* TransactionsViewModel.swift */,
+				C32DC7B42593B61F00A7FDB4 /* AnimatedCardViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -4123,6 +4141,7 @@
 				2228734F1E916FC30044BA15 /* BRAPIClient+Wallet.swift in Sources */,
 				CEAA9EA81DC3342E0066731D /* PinView.swift in Sources */,
 				CE1D84B61EAEB2F4002A5D7B /* UIBarButtonItem+Additions.swift in Sources */,
+				C3BD49C02595423400D97079 /* RegistrationView.swift in Sources */,
 				CE4B6C1A1E219CA600CF935B /* WalletCoordinator.swift in Sources */,
 				CE6D0E5C1E14BFA700137DF1 /* KeyboardNotificationInfo.swift in Sources */,
 				CE20C8F21DBAF71500C8397A /* ApplicationController.swift in Sources */,
@@ -4210,6 +4229,7 @@
 				C3F55645255A193D005F786F /* SupportLitecoinFoundationView.swift in Sources */,
 				CEF61B161ED2056D00C7EA6A /* NumberFormatter+Additions.swift in Sources */,
 				CEF3E8321DE55540007C0A9E /* CheckView.swift in Sources */,
+				C3BD49C925954A1B00D97079 /* ForgotView.swift in Sources */,
 				CECCE5A91E0378FB00D99448 /* PinPadViewController.swift in Sources */,
 				C354C4632590059500675E0E /* TransactionsViewModel.swift in Sources */,
 				CEF3D2DB1E8B55C80070178E /* UISlider+Gradient.swift in Sources */,
@@ -4239,7 +4259,9 @@
 				CE8F0AE31EB91BB500AA7642 /* SearchHeaderView.swift in Sources */,
 				22A9A9551DF61945000F0016 /* BRTar.swift in Sources */,
 				CEAA9E971DC18E1F0066731D /* PhraseView.swift in Sources */,
+				C32DC7AC2593B5C900A7FDB4 /* AnimatedCardView.swift in Sources */,
 				CEF3E82F1DE534C5007C0A9E /* GradientView.swift in Sources */,
+				C3BD49B72595420A00D97079 /* RegistrationViewModel.swift in Sources */,
 				CE6D0F991DE8B75900BD4BCF /* DismissModalAnimator.swift in Sources */,
 				CE4C1CC61ED65D830063E184 /* DrawableCircle.swift in Sources */,
 				CE8CD8E31E31978100785E02 /* LoginBackgroundTriangle.swift in Sources */,
@@ -4250,6 +4272,7 @@
 				CEAA9E991DC262800066731D /* ConfirmPaperPhraseViewController.swift in Sources */,
 				22A9A9591DF61945000F0016 /* Extensions.swift in Sources */,
 				24470E4723A6B6E900ADDA27 /* MockSeeds.swift in Sources */,
+				C32DC7B52593B61F00A7FDB4 /* AnimatedCardViewModel.swift in Sources */,
 				22A9A94C1DF61945000F0016 /* BRGeoLocationPlugin.swift in Sources */,
 				CEAA9EA61DC3246F0066731D /* StartNavigationDelegate.swift in Sources */,
 				22A9A94B1DF61945000F0016 /* BRCoding.swift in Sources */,
@@ -4298,6 +4321,7 @@
 				CE760EDD1E561DF900EFAC2B /* UpdatePinViewController.swift in Sources */,
 				22A9A9481DF61945000F0016 /* BRBitID.swift in Sources */,
 				24BA90C62410129E001E3825 /* FeeSelectorView.swift in Sources */,
+				C3BD49D225954A3200D97079 /* ForgotViewModel.swift in Sources */,
 				CE9057181DFF0FA8006BA848 /* String+Additions.swift in Sources */,
 				CED341331EF5A5C00014912A /* InAppAlert.swift in Sources */,
 				CE47A8E01F7DA54000FF35BA /* UIScreen+Additions.swift in Sources */,
