@@ -415,6 +415,51 @@
 /* Register */
 "LitecoinCard.registerCard" = "登録";
 
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "ライトコインカードに登録";
+
+/* address */
+"LitecoinCard.Registration.address" = "住所";
+
+/* city */
+"LitecoinCard.Registration.city" = "市";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "パスワードを認証する";
+
+/* country */
+"LitecoinCard.Registration.country" = "国";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "ファーストネーム";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "識別";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "顧客を知る IDタイプ";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "苗字";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "携帯電話番号";
+
+/* password */
+"LitecoinCard.Registration.password" = "パスワード";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "州/県";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "郵便番号";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot にアクセスしてパスワードをリセットしてください。";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置情報サービスが無効化されています。";
 
@@ -1281,3 +1326,12 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$dの%1$d";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "";

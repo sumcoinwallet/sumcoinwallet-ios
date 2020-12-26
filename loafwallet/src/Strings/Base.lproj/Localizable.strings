@@ -1296,3 +1296,60 @@
 
 /* Register */
 "LitecoinCard.registerCard" = "Register";
+
+/* Litecoin card */
+"LitecoinCard.registerCardPhrase" = "Register for Litecoin Card";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Reset password";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "Enter the email associated with your Litecoin card to reset the password.";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Visit https://litecoin.dashboard.getblockcard.com/password/forgot\nto reset your password.";
+
+/* address */
+"LitecoinCard.Registration.address" = "Address";
+
+/* city */
+"LitecoinCard.Registration.city" = "City";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "Confirm password";
+
+/* country */
+"LitecoinCard.Registration.country" = "Country";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "First name";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "ID Number";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "Last name";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Mobile number";
+
+/* password */
+"LitecoinCard.Registration.password" = "Password";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "State / Province";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Email (Username)";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Zip / Postcode";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Identification";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCard.phrase" = "";

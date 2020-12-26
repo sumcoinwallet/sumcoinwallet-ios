@@ -415,6 +415,51 @@
 /* Register */
 "LitecoinCard.registerCard" = "寄存器";
 
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "註冊萊特幣卡";
+
+/* address */
+"LitecoinCard.Registration.address" = "街道地址";
+
+/* city */
+"LitecoinCard.Registration.city" = "市";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "確認密碼";
+
+/* country */
+"LitecoinCard.Registration.country" = "國家";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "名字";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "身份證明";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "了解你的顧客 證件類型";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "姓";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "手機號碼";
+
+/* password */
+"LitecoinCard.Registration.password" = "密碼";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "州/省";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "郵編";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "訪問https://litecoin.dashboard.getblockcard.com/password/forgot重設密碼。";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "定位服務已停用。";
 
@@ -1281,3 +1326,12 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d 之 %1$d";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "";

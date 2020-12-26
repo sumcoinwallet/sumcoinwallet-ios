@@ -17,9 +17,11 @@ struct CardView: View {
     @ObservedObject
     var animatedViewModel = AnimatedCardViewModel()
     
-    
     @State
     private var didTapLogin: Bool = false
+    
+    @State
+    var didTapIForgot: Bool = false
 
     @State
     private var shouldShowRegistrationView: Bool = false
@@ -27,16 +29,12 @@ struct CardView: View {
     @State
     private var shouldShowPassword: Bool = false
     
-    private var eyeballImageString: String {
-        return shouldShowPassword ? "" : ""
-    }
-    
-    
+    @State
+    private var forgotEmailAddressInput = ""
+      
     @State
     var didCompleteLogin: Bool = false
     
-    @State
-    var shouldShowForgotView: Bool = false
  
     init(viewModel: CardViewModel) {
         self.viewModel = viewModel
@@ -48,10 +46,10 @@ struct CardView: View {
                 
                 // Animated Card View
                 Group {
-                    AnimatedCardView(viewModel: animatedViewModel)
-                        .frame(minWidth:0, maxWidth: geometry.size.width * 0.6)
-                        .padding(.all, 30)
-                        
+                    AnimatedCardView(viewModel: animatedViewModel, isLoggedIn: $didCompleteLogin)
+                        .frame(minWidth:0,
+                               maxWidth: didCompleteLogin ? geometry.size.width * 0.4 :  geometry.size.width * 0.6)
+                        .padding(.all, didCompleteLogin ? 20 : 30)
                 }
                 
                 // Login Textfields
@@ -67,31 +65,31 @@ struct CardView: View {
                     Divider().padding([.leading, .trailing], 20)
                     
                     HStack {
-                        
-                        TextField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
-                            .font(Font(UIFont.customBody(size:22.0)))
-                            .padding([.leading, .trailing], 20)
-                            .padding(.top, 20)
-                            .keyboardType(.asciiCapable)
-                        
-                        SecureField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
-                            .font(Font(UIFont.customBody(size:22.0)))
-                            .padding([.leading, .trailing], 20)
-                            .padding(.top, 20)
-                            .keyboardType(.asciiCapable)
-                        
+                        if shouldShowPassword {
+                            TextField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
+                                .font(Font(UIFont.customBody(size:22.0)))
+                                .padding(.leading, 20)
+                                .padding(.top, 20)
+                                .keyboardType(.asciiCapable)
+                        } else { 
+                            SecureField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
+                                .font(Font(UIFont.customBody(size:22.0)))
+                                .padding(.leading, 20)
+                                .padding(.top, 20)
+                                .keyboardType(.asciiCapable)
+                        }
+                        Spacer()
                         Button(action: {
                             shouldShowPassword.toggle()
                         }) {
-                            Image(<#T##name: String##String#>)
+                            Image(systemName: shouldShowPassword ? "eye.fill" : "eye.slash.fill")
+                                .padding(.top, 20)
+                                .padding(.trailing, 20)
+                                .foregroundColor(.gray)
                         }
                     }
                     
-                    
-                    
                     Divider().padding([.leading, .trailing], 20)
-                    
-                    
                     Spacer()
                 }
                 
@@ -100,7 +98,7 @@ struct CardView: View {
                     
                     // Forgot password button
                     Button(action: {
-                        shouldShowForgotView = true
+                        didTapIForgot = true
                     }) {
                         
                         Text(S.LitecoinCard.forgotPassword)
@@ -108,8 +106,6 @@ struct CardView: View {
                             .font(Font(UIFont.barlowLight(size: 15)))
                             .foregroundColor(Color(UIColor.liteWalletBlue))
                             .padding(.all, 30)
-                    }.alert(isPresented: $shouldShowForgotView) { () -> Alert in
-                        Alert(title: Text("I forgot"))
                     }
                 
                     Spacer(minLength: 5)
@@ -131,12 +127,11 @@ struct CardView: View {
                         .background(Color(UIColor.liteWalletBlue))
                         .overlay(
                             RoundedRectangle(cornerRadius:4)
-                                .stroke(Color(UIColor.liteWalletBlue))
+                                .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
                         )
-                    }.alert(isPresented: $didTapLogin) { () -> Alert in
-                        Alert(title: Text("Hello"))
-                    }.padding([.leading, .trailing], 16)
-//
+                    }
+                    .padding([.leading, .trailing], 16)
+
                     // Registration button
                     Button(action: {
                             shouldShowRegistrationView = true
@@ -148,7 +143,7 @@ struct CardView: View {
                                 .foregroundColor(Color(UIColor.liteWalletBlue))
                                 .overlay(
                                     RoundedRectangle(cornerRadius:4)
-                                        .stroke(Color(UIColor.liteWalletBlue))
+                                        .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
                                 )
                                 .padding([.leading, .trailing], 16)
                                 .padding([.top,.bottom], 15)
@@ -164,6 +159,11 @@ struct CardView: View {
         }.onReceive(NotificationCenter.default.publisher(for: NSNotification.Name.UIKeyboardWillHide)) { _ in
             animatedViewModel.dropOffset = 0
         }
+        .forgotPasswordView(isShowingForgot: $didTapIForgot,
+                            emailString: $forgotEmailAddressInput,
+                            message: S.LitecoinCard.forgotPassword)
+        .loginAlertView(isShowingLogin: $didTapLogin,
+                        message: S.LitecoinCard.login)
         .frame(minWidth: 0,
                maxWidth: .infinity,
                minHeight: 0,

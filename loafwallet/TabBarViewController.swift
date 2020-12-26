@@ -6,7 +6,7 @@
 //  Copyright © 2019 Litecoin Foundation. All rights reserved.
 
 import UIKit
-import Foundation
+import Foundation 
 
 enum TabViewControllerIndex: Int {
     case transactions = 0
@@ -38,6 +38,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     private let largeFontSize: CGFloat = 24.0
     private let smallFontSize: CGFloat = 12.0
     private var hasInitialized = false
+    private var didLoginLitecoinCardAccount = false
     private let dateFormatter = DateFormatter()
     private let equalsLabel = UILabel(font: .barlowMedium(size: 12), color: .whiteTint)
     private var regularConstraints: [NSLayoutConstraint] = []
@@ -79,6 +80,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         setupViews()
         configurePriceLabels()
         addSubscriptions()
+        checkLitecoinCardLogin()
         dateFormatter.setLocalizedDateFormatFromTemplate("MMM d, h:mm a")
   
         for (index, storyboardID) in self.storyboardIDs.enumerated() {
@@ -115,6 +117,22 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             containerView.backgroundColor = .liteWalletBlue
             self.view.backgroundColor = .liteWalletBlue
        }
+    }
+    
+    private func checkLitecoinCardLogin() {
+       
+//        
+//        
+//        
+//        let manager = API.shared.loginUser(credentials: <#T##[String : Any]#>, completion: <#T##(String?) -> Void#>)
+//            let credentials: [String: Any] = manager.randomAddressDict()
+//            
+//            manager.loginUser(credentials: ["email": credentials["email"], "password": credentials["password"]]) { token in
+//                 print(token)
+//            }
+        
+        didLoginLitecoinCardAccount = false
+        
     }
     
     private func configurePriceLabels() {
@@ -323,6 +341,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
  
     func displayContentController(contentController:UIViewController) {
         
+        //MARK: - Tab View Controllers Configuration
         switch NSStringFromClass(contentController.classForCoder) {
         case "loafwallet.TransactionsViewController":
 
@@ -341,6 +360,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             }
 
             cardVC.parentFrame = self.containerView.frame
+            cardVC.isLoggedIn = didLoginLitecoinCardAccount
                 
             case "loafwallet.BuyTableViewController":
                 guard let buyVC = contentController as? BuyTableViewController else  {

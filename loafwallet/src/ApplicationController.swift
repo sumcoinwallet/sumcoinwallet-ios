@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import StoreKit
+import StoreKit 
  
 private let timeSinceLastExitKey = "TimeSinceLastExit"
 private let shouldRequireLoginTimeoutKey = "ShouldRequireLoginTimeoutKey"

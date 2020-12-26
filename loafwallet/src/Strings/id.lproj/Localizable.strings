@@ -415,6 +415,51 @@
 /* Register */
 "LitecoinCard.registerCard" = "Daftar";
 
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "Daftar untuk Kartu Litecoin";
+
+/* address */
+"LitecoinCard.Registration.address" = "Alamat jalan";
+
+/* city */
+"LitecoinCard.Registration.city" = "Kota";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "konfirmasi sandi";
+
+/* country */
+"LitecoinCard.Registration.country" = "Negara";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "nama depan";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Identifikasi";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "Kenali pelanggan Anda Jenis ID";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "nama keluarga";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Nomor handphone";
+
+/* password */
+"LitecoinCard.Registration.password" = "kata sandi";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "Negara Bagian / Provinsi";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Kode Pos";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Layanan lokasi dinonaktifkan.";
 
@@ -1281,3 +1326,12 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d dari %2$d";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "";

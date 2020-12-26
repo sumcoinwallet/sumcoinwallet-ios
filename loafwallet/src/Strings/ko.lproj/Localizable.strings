@@ -415,6 +415,51 @@
 /* Register */
 "LitecoinCard.registerCard" = "레지스터";
 
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "라이트 코인 카드 등록";
+
+/* address */
+"LitecoinCard.Registration.address" = "주소";
+
+/* city */
+"LitecoinCard.Registration.city" = "시티";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "비밀번호 확인";
+
+/* country */
+"LitecoinCard.Registration.country" = "국가";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "이름";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "신분증";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "고객 파악 ID 유형";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "성";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "휴대폰 번호";
+
+/* password */
+"LitecoinCard.Registration.password" = "암호";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "주 / 도";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "우편 번호";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "위치 서비스가 꺼졌습니다.";
 
@@ -1281,3 +1326,12 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d의 %1$d";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "";
