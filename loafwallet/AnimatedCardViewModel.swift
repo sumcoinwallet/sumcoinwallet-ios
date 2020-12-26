@@ -13,18 +13,14 @@ class AnimatedCardViewModel: ObservableObject {
      
     @Published
     var rotateIn3D = false
-    
-    var dropOffset: CGFloat = -200.0
-    
+     
+    @Published
+    var isLoggedIn = false
     
     @Published
     var imageFront = "litecoin-card-front"
     
-    @Published
-    var imageBack = "litecoin-card-back"
-
-    
-     init() {
-        
-     }
+    var dropOffset: CGFloat = -200.0
+     
+    init() { }
 }

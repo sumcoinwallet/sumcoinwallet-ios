@@ -9,5 +9,14 @@
 import Foundation
 
 class RegistrationViewModel: ObservableObject {
-    init() {}
+    
+    init() {
+        
+    }
+    
+    func register(user: [String: Any]) {
+        
+    }
+    
+ 
 }

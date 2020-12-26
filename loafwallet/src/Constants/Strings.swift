@@ -117,7 +117,28 @@ enum S {
         static let barItemTitle = NSLocalizedString("LitecoinCard.barItemTitle", value: "**Card**", comment: "Card Bar Item Title")
         static let login = NSLocalizedString("LitecoinCard.login", value: "**Login**", comment: "Login")
         static let forgotPassword = NSLocalizedString("LitecoinCard.forgotPassword", value: "**Forgot password?**", comment: "Forgot password?")
+        static let resetPasswordDetail = NSLocalizedString("LitecoinCard.resetPassword.detail", value: "**Reset Litecoin card password**", comment: "Reset Litecoin card password")
+        static let visitToReset = NSLocalizedString("LitecoinCard.visit.toReset", value: "**Reset Litecoin card visit**", comment: "Litecoin card visit")
+        static let resetPassword = NSLocalizedString("LitecoinCard.resetPassword", value: "**Reset Litecoin card password**", comment: "Reset Litecoin card password")
         static let registerCard = NSLocalizedString("LitecoinCard.registerCard", value: "**Register**", comment: "Register")
+    }
+    
+    enum Registration {
+        static let registerCardPhrase = NSLocalizedString("LitecoinCard.registerCardPhrase", value: "**Register for Litecoin Card**", comment: "Register for Litecoin Card")  
+        static let usernameEmail = NSLocalizedString("LitecoinCard.Registration.usernameEmail", value: "ggg", comment: "registraition username / email")
+        static let password = NSLocalizedString("LitecoinCard.Registration.password", value: "", comment: "password")
+        static let confirmPassword = NSLocalizedString("LitecoinCard.Registration.confirmPassword", value: "", comment: "confirm password")
+        static let firstName = NSLocalizedString("LitecoinCard.Registration.firstName", value: "", comment: "First name")
+        static let lastName = NSLocalizedString("LitecoinCard.Registration.lastName", value: "", comment: "Last name")
+        static let kycSSN = NSLocalizedString("LitecoinCard.Registration.kycSSN", value: "", comment: "SSN")
+        static let kycIDNumber = NSLocalizedString("LitecoinCard.Registration.kycIDNumber", value: "", comment: "kycIDNumber")
+        static let address = NSLocalizedString("LitecoinCard.Registration.address", value: "", comment: "address")
+        static let city = NSLocalizedString("LitecoinCard.Registration.city", value: "", comment: "city")
+        static let stateProvince = NSLocalizedString("LitecoinCard.Registration.stateProvince", value: "", comment: "state province")
+        static let country = NSLocalizedString("LitecoinCard.Registration.country", value: "", comment: "country")
+        static let zipPostCode = NSLocalizedString("LitecoinCard.Registration.zipPostCode", value: "", comment: "zip post Code")
+        static let mobileNumber = NSLocalizedString("LitecoinCard.Registration.mobileNumber", value: "", comment: "mobile number")
+        static let identification = NSLocalizedString("LitecoinCard.Registration.identification", value: "", comment: "identification")
     }
     
     enum Account {

@@ -1,30 +1,89 @@
+//  ForgotAlertView.swift
 //
-//  ForgotView.swift
-//  loafwallet
-//
-//  Created by Kerry Washington on 12/24/20.
+//  Created by Kerry Washington on 12/26/20.
 //  Copyright © 2020 Litecoin Foundation. All rights reserved.
-//
+
 
 import SwiftUI
 
-struct ForgotView: View {
+struct ForgotAlertView<Presenting>: View where Presenting: View {
     
-    @ObservedObject
-    var viewModel: ForgotViewModel
+    @Binding
+    var isShowingForgot: Bool
     
-    init(viewModel: ForgotViewModel) {
-        self.viewModel = viewModel
-    }
+    @Binding
+    var emailString: String
+    
+    let presenting: Presenting
+    
+    var mainMessage: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { (deviceSize: GeometryProxy) in
+            HStack{
+                Spacer()
+                ZStack {
+                    self.presenting.disabled(isShowingForgot)
+                    VStack {
+                        Text(S.LitecoinCard.resetPassword)
+                            .font(Font(UIFont.barlowBold(size: 20.0)))
+                            .padding()
+                            .foregroundColor(Color.white)
+                        
+                        Text(S.LitecoinCard.visitToReset)
+                            .font(Font(UIFont.barlowMedium(size: 18.0)))
+                            .foregroundColor(Color.white)
+                            .padding(.all, 10)
+                        
+                        Divider().background(Color.white)
+                        HStack {
+                            Button(action: {
+                                withAnimation {
+                                    self.isShowingForgot.toggle()
+                                }
+                            }) {
+                                Text(S.Button.ok)
+                                    .frame(minWidth:0, maxWidth: .infinity)
+                                    .padding()
+                                    .font(Font(UIFont.barlowBold(size: 20.0)))
+                                    .foregroundColor(Color.white)
+                            }
+                        }
+                    }
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1.5)
+                    )
+                    .background(Color(UIColor.liteWalletBlue))
+                    .cornerRadius(8)
+                    .frame(
+                        width: deviceSize.size.width * 0.8,
+                        height: deviceSize.size.height * 0.9
+                    )
+                    .shadow(color: .black, radius: 10, x: 5, y: 5)
+                    .opacity(self.isShowingForgot ? 1 : 0)
+                }
+                Spacer()
+            }
+        }
     }
 }
 
-struct ForgotView_Previews: PreviewProvider {
+struct ForgotAlertView_Previews: PreviewProvider {
     
-    static let viewModel = ForgotViewModel()
+    
     static var previews: some View {
-        ForgotView(viewModel: viewModel)
+        VStack {
+            Spacer()
+            Text("")
+                .padding(.all, 10)
+                .forgotPasswordView(isShowingForgot: .constant(true), emailString: .constant("efef@sec.com"), message: "Forgot message")
+            Spacer()
+        }
     }
 }
+
+
+
+

@@ -415,6 +415,51 @@
 /* Register */
 "LitecoinCard.registerCard" = "регистр";
 
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "Зарегистрируйтесь для получения карты Litecoin";
+
+/* address */
+"LitecoinCard.Registration.address" = "Адрес улицы";
+
+/* city */
+"LitecoinCard.Registration.city" = "город";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "Подтвердите Пароль";
+
+/* country */
+"LitecoinCard.Registration.country" = "Страна";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "Имя";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Идентификация";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "Знай своего клиента Тип ID";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "фамилия";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Номер мобильного";
+
+/* password */
+"LitecoinCard.Registration.password" = "пароль";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "Штат / провинция";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Почтовый индекс";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Посетите https://litecoin.dashboard.getblockcard.com/password/forgot, чтобы сбросить пароль.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Сервисы определения местоположения отключены.";
 
@@ -1281,3 +1326,12 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d из %2$d";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "";

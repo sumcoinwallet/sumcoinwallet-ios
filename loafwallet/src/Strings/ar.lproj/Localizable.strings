@@ -1255,6 +1255,60 @@
 /* Register */
 "LitecoinCard.registerCard" = "";
 
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "";
+
+/* address */
+"LitecoinCard.Registration.address" = "";
+
+/* city */
+"LitecoinCard.Registration.city" = "";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "";
+
+/* country */
+"LitecoinCard.Registration.country" = "";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "";
+
+/* password */
+"LitecoinCard.Registration.password" = "";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword.detail" = "";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "";
+
 /* Menu button title */
 "MenuButton.customer.support" = "";
 
