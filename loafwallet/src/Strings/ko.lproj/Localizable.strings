@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "받기";
 
+/* resetFields */
+"Button.resetFields" = "리셋 필드";
+
 /* send button */
 "Button.send" = "보내기";
 
@@ -439,6 +442,9 @@
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "고객 파악 ID 유형";
 
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID 유형";
+
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";
 
@@ -453,6 +459,9 @@
 
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "주 / 도";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "ID 유형";
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "우편 번호";
@@ -1326,9 +1335,6 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d의 %1$d";
-
-/* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "";
 
 /* Reset Litecoin card password */
 "LitecoinCard.resetPassword" = "";

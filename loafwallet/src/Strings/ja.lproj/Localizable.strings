@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "受取";
 
+/* resetFields */
+"Button.resetFields" = "フィールドをリセット";
+
 /* send button */
 "Button.send" = "送金する";
 
@@ -438,6 +441,9 @@
 
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "顧客を知る IDタイプ";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "IDタイプ";
 
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";

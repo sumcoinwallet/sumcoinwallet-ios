@@ -29,7 +29,7 @@ class CardViewModel: ObservableObject {
          
          completion(true)
                 
-        //DEV: The captcha is not support at this time
+        //DEV: The captcha is not supported at this time
         
         
         // Prepare a credential for a token response

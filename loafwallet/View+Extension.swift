@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+
 extension View {
     
     func loginAlertView(isShowingLogin: Binding<Bool>,
@@ -25,6 +26,14 @@ extension View {
                                    emailString: emailString,
                                    presenting: self,
                                    mainMessage: message)
+    }
+    
+    func registeredAlertView(shouldStartRegistering: Binding<Bool>,
+                             data: [String: Any],
+                        message: String) -> some View {
+        loafwallet.RegistrationAlertView(shouldStartRegistering: shouldStartRegistering,
+                                      presenting: self,
+                                      mainMessage: message)
     }
     
 }

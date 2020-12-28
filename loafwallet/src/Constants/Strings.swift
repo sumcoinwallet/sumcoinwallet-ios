@@ -35,6 +35,7 @@ enum S {
         static let asOf = NSLocalizedString("Conjunction.asOf", value: "**as of**", comment: "as of a time or date")
     }
 
+    //MARK: - Generic Button labels
     enum Button {
         static let ok = NSLocalizedString("Button.ok", value: "**OK**", comment: "OK button label")
         static let cancel = NSLocalizedString("Button.cancel", value: "**Cancel**", comment: "Cancel button label")
@@ -47,7 +48,7 @@ enum S {
         static let receive = NSLocalizedString("Button.receive", value: "**receive**", comment: "receive button")
         static let menu = NSLocalizedString("Button.menu", value: "**menu**", comment: "menu button")
         static let buy = NSLocalizedString("Button.buy", value: "**buy**", comment: "buy button")
-
+        static let resetFields = NSLocalizedString("Button.resetFields", value: "**reset**", comment: "resetFields") 
     }
 
     enum LitewalletAlert {
@@ -113,6 +114,7 @@ enum S {
         static let barItemTitle = NSLocalizedString("Receive.barItemTitle", value: "**Receive**", comment: "Receive Bar Item Title")
     }
     
+   //MARK: - Litecoin Card
     enum LitecoinCard {
         static let barItemTitle = NSLocalizedString("LitecoinCard.barItemTitle", value: "**Card**", comment: "Card Bar Item Title")
         static let login = NSLocalizedString("LitecoinCard.login", value: "**Login**", comment: "Login")
@@ -123,15 +125,16 @@ enum S {
         static let registerCard = NSLocalizedString("LitecoinCard.registerCard", value: "**Register**", comment: "Register")
     }
     
+    //MARK: - Registration
     enum Registration {
         static let registerCardPhrase = NSLocalizedString("LitecoinCard.registerCardPhrase", value: "**Register for Litecoin Card**", comment: "Register for Litecoin Card")  
-        static let usernameEmail = NSLocalizedString("LitecoinCard.Registration.usernameEmail", value: "ggg", comment: "registraition username / email")
         static let password = NSLocalizedString("LitecoinCard.Registration.password", value: "", comment: "password")
         static let confirmPassword = NSLocalizedString("LitecoinCard.Registration.confirmPassword", value: "", comment: "confirm password")
         static let firstName = NSLocalizedString("LitecoinCard.Registration.firstName", value: "", comment: "First name")
         static let lastName = NSLocalizedString("LitecoinCard.Registration.lastName", value: "", comment: "Last name")
         static let kycSSN = NSLocalizedString("LitecoinCard.Registration.kycSSN", value: "", comment: "SSN")
         static let kycIDNumber = NSLocalizedString("LitecoinCard.Registration.kycIDNumber", value: "", comment: "kycIDNumber")
+        static let kycIDType = NSLocalizedString("LitecoinCard.Registration.kycIDType", value: "", comment: "kycIDType")
         static let address = NSLocalizedString("LitecoinCard.Registration.address", value: "", comment: "address")
         static let city = NSLocalizedString("LitecoinCard.Registration.city", value: "", comment: "city")
         static let stateProvince = NSLocalizedString("LitecoinCard.Registration.stateProvince", value: "", comment: "state province")
@@ -220,7 +223,8 @@ enum S {
         static let staticTXIDLabel = NSLocalizedString("TransactionDetails.staticTXLabel", value: "**TXID:**", comment: "Label for TXID")
         static let priceTimeStampLabel = NSLocalizedString("TransactionDetails.priceTimeStampPrefix", value: "**as of**", comment: "Prefix for price")
     }
-  
+    
+    //MARK: - Buy Center
     enum BuyCenter {
       static let title = NSLocalizedString("BuyCenter.title", value: "**Buy Litecoin**", comment: "Buy Center Title")
       static let buyModalTitle = NSLocalizedString("BuyCenter.ModalTitle", value: "**Buy Łitecoin**", comment: "Buy Modal Title")
@@ -234,7 +238,8 @@ enum S {
         }
       static let barItemTitle = NSLocalizedString("BuyCenter.barItemTitle", value: "**Buy**", comment: "Buy Bar Item Title")
     }
-
+    
+    //MARK: - Security Center
     enum SecurityCenter {
         static let title = NSLocalizedString("SecurityCenter.title", value: "**Security Center**", comment: "Security Center Title")
         static let info = NSLocalizedString("SecurityCenter.info", value: "**Enable all security features for maximum protection.**", comment: "Security Center Info")
@@ -333,6 +338,7 @@ enum S {
         static let title = NSLocalizedString("FaceIDSpendingLimit.title", value: "**Face ID Spending Limit**", comment: "Face Id spending limit screen title")
     }
 
+    //MARK: - Settings
     enum Settings {
         static let title = NSLocalizedString("Settings.title", value: "**Settings**", comment: "Settings title")
         static let wallet = NSLocalizedString("Settings.wallet", value: "**Wallet**", comment: "Wallet Settings section header")
@@ -445,6 +451,7 @@ enum S {
         static let noAmount = NSLocalizedString("RequestAnAmount.noAmount", value: "**Please enter an amount first.**", comment: "No amount entered error message.")
     }
 
+    //MARK: - Security Alerts
     enum SecurityAlerts {
         static let pinSet = NSLocalizedString("Alerts.pinSet", value: "**PIN Set**", comment: "Alert Header label (the PIN was set)")
         static let paperKeySet = NSLocalizedString("Alerts.paperKeySet", value: "**Paper Key Set**", comment: "Alert Header Label (the paper key was set)")
@@ -521,6 +528,7 @@ enum S {
         }
     }
 
+    //MARK: - Payment Protocol
     enum PaymentProtocol {
         enum Errors {
             static let untrustedCertificate = NSLocalizedString("PaymentProtocol.Errors.untrustedCertificate", value: "**untrusted certificate**", comment: "Untrusted certificate payment protocol error message")
