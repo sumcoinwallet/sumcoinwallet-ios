@@ -15,6 +15,9 @@ struct CardView: View {
     var viewModel: CardViewModel
     
     @ObservedObject
+    var registrationModel = RegistrationViewModel()
+    
+    @ObservedObject
     var animatedViewModel = AnimatedCardViewModel()
     
     @State
@@ -44,15 +47,15 @@ struct CardView: View {
         GeometryReader { geometry in
             VStack {
                 
-                // Animated Card View
+                //MARK: - Animated Card View
                 Group {
                     AnimatedCardView(viewModel: animatedViewModel, isLoggedIn: $didCompleteLogin)
                         .frame(minWidth:0,
                                maxWidth: didCompleteLogin ? geometry.size.width * 0.4 :  geometry.size.width * 0.6)
                         .padding(.all, didCompleteLogin ? 20 : 30)
                 }
-                
-                // Login Textfields
+                 
+                //MARK: - Login Textfields
                 Group {
                     
                     TextField(S.Receive.emailButton, text: $viewModel.emailString)
@@ -93,7 +96,7 @@ struct CardView: View {
                     Spacer()
                 }
                 
-                // Action Buttons
+                //MARK: - Action Buttons
                 Group {
                     
                     // Forgot password button
@@ -125,6 +128,7 @@ struct CardView: View {
                         .padding([.leading, .trailing], 16)
                         .foregroundColor(.white)
                         .background(Color(UIColor.liteWalletBlue))
+                        .cornerRadius(4.0)
                         .overlay(
                             RoundedRectangle(cornerRadius:4)
                                 .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
@@ -149,7 +153,7 @@ struct CardView: View {
                                 .padding([.top,.bottom], 15)
                         }
                         .sheet(isPresented: $shouldShowRegistrationView) {
-                            RegistrationView(viewModel: RegistrationViewModel())
+                            RegistrationView(viewModel: registrationModel)
                         }
                 }
                 Spacer()
@@ -164,6 +168,9 @@ struct CardView: View {
                             message: S.LitecoinCard.forgotPassword)
         .loginAlertView(isShowingLogin: $didTapLogin,
                         message: S.LitecoinCard.login)
+        .registeredAlertView(shouldStartRegistering: $registrationModel.isRegistering,
+                             data: registrationModel.dataDictionary,
+                             message: "TEST") 
         .frame(minWidth: 0,
                maxWidth: .infinity,
                minHeight: 0,

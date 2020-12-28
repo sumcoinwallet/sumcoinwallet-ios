@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "ontvangen";
 
+/* resetFields */
+"Button.resetFields" = "Reset velden";
+
 /* send button */
 "Button.send" = "versturen";
 
@@ -438,6 +441,9 @@
 
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "Ken uw klant ID Type";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID Type";
 
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";

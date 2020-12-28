@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "menerima";
 
+/* resetFields */
+"Button.resetFields" = "Setel ulang bidang";
+
 /* send button */
 "Button.send" = "kirim";
 
@@ -439,6 +442,9 @@
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "Kenali pelanggan Anda Jenis ID";
 
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "Jenis ID";
+
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";
 
@@ -453,6 +459,9 @@
 
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Negara Bagian / Provinsi";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Surel";
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Kode Pos";
@@ -1326,9 +1335,6 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d dari %2$d";
-
-/* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "";
 
 /* Reset Litecoin card password */
 "LitecoinCard.resetPassword" = "";

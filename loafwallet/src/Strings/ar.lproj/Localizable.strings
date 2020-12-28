@@ -1234,6 +1234,9 @@
 /* Corruption Error alert title */
 "Alert.corruptionMessage" = "";
 
+/* resetFields */
+"Button.resetFields" = "";
+
 /* Luxury fee */
 "FeeSelector.luxury" = "";
 
@@ -1278,6 +1281,9 @@
 
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "";
 
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "";

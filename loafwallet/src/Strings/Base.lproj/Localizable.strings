@@ -1352,4 +1352,10 @@
 "LitecoinCard.Registration.identification" = "Identification";
 
 /* Register for Litecoin Card */
-"LitecoinCard.registerCard.phrase" = "";
+"LitecoinCard.registerCard.phrase" = "Register for Litecoin Card";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID Type";
+
+/* resetFields */
+"Button.resetFields" = "Reset fields";

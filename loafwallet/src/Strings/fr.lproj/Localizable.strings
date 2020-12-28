@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "recevoir";
 
+/* resetFields */
+"Button.resetFields" = "Réinitialisation des champs";
+
 /* send button */
 "Button.send" = "envoyer";
 
@@ -438,6 +441,9 @@
 
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "Connaissez votre client Type d'identification";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "Type d'identification";
 
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";

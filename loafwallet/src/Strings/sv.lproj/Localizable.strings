@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "ta emot";
 
+/* resetFields */
+"Button.resetFields" = "Nollställ fält";
+
 /* send button */
 "Button.send" = "skicka";
 
@@ -438,6 +441,9 @@
 
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "Känn din kund ID-typ";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID-typ";
 
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";

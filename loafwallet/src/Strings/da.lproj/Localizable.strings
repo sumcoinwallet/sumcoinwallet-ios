@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "modtag";
 
+/* resetFields */
+"Button.resetFields" = "Nulstil felter";
+
 /* send button */
 "Button.send" = "send";
 
@@ -438,6 +441,9 @@
 
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "Kend din kunde ID-type";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID-type";
 
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";

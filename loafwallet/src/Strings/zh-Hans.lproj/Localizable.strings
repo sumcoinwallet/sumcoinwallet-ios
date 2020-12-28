@@ -151,6 +151,9 @@
 /* receive button */
 "Button.receive" = "收到";
 
+/* resetFields */
+"Button.resetFields" = "重新设置领域";
+
 /* send button */
 "Button.send" = "发送";
 
@@ -433,6 +436,9 @@
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "了解你的顾客 证件类型";
 
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID 유형";
+
 /* SSN */
 "LitecoinCard.Registration.kycSSN" = "SSN";
 
@@ -447,6 +453,9 @@
 
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "州/省";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "ID 유형";
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "邮编";
@@ -1326,9 +1335,6 @@
 
 /* identification */
 "LitecoinCard.Registration.identification" = "";
-
-/* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "";
 
 /* Reset Litecoin card password */
 "LitecoinCard.resetPassword" = "";
