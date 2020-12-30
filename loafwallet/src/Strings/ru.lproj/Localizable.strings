@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "КАРТА";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "Баланс карты";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Забыли пароль?";
 
 /* Login */
 "LitecoinCard.login" = "Авторизоваться";
 
+/* Logout */
+"LitecoinCard.logout" = "Выйти";
+
 /* Register */
 "LitecoinCard.registerCard" = "регистр";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "Зарегистрируйтесь для получения карты Litecoin";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Регистрация пользователя ...";
 
 /* address */
 "LitecoinCard.Registration.address" = "Адрес улицы";
@@ -462,6 +471,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Почтовый индекс";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "При регистрации возникла проблема. Пожалуйста, проверьте свои данные и попробуйте еще раз.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "Вы зарегистрировались! Пожалуйста, проверьте и подтвердите свою электронную почту. Затем вернитесь к логину.";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Посетите https://litecoin.dashboard.getblockcard.com/password/forgot, чтобы сбросить пароль.";

@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginCardAlertView<Presenting>: View where Presenting: View {
     
     @Binding
-    var isShowingLogin: Bool
+    var isShowingLoginAlert: Bool
     
     let presenting: Presenting
     
@@ -20,14 +20,14 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
         GeometryReader { (deviceSize: GeometryProxy) in
             HStack{ Spacer()
                 ZStack {
-                    self.presenting
-                        .disabled(isShowingLogin)
+                        self.presenting.disabled(isShowingLoginAlert)
+                    
                     VStack {
                         Text(self.mainMessage)
                             .padding()
                             .font(Font(UIFont.customMedium(size: 16.0)))
                             .foregroundColor(Color(UIColor.liteWalletBlue))
-                        ActivityIndicator(isAnimating: $isShowingLogin,
+                        ActivityIndicator(isAnimating: $isShowingLoginAlert,
                                           style: .medium)
                             .padding(.bottom, 15)
                         Divider()
@@ -35,7 +35,7 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
                             Button(action: {
                                 
                                 withAnimation {
-                                    self.isShowingLogin.toggle()
+                                    self.isShowingLoginAlert.toggle()
                                 }
                             }) {
                                 Text(S.Prompts.dismiss.localizedCapitalized)
@@ -52,14 +52,16 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
                     .background(Color.white)
                     .cornerRadius(8)
                     .frame(
-                        width: deviceSize.size.width*0.8,
-                        height: deviceSize.size.height*0.5
+                        width: deviceSize.size.width * 0.85,
+                        height: deviceSize.size.height * 0.5
                     )
                     .shadow(color: .gray, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 5, y: 5)
-                    .opacity(self.isShowingLogin ? 1 : 0) 
+                    .opacity(self.isShowingLoginAlert ? 1 : 0)
                 }
                 Spacer()
             }
+        }.onAppear {
+
         }
     }
 }
@@ -70,7 +72,7 @@ struct LoginCardAlertView_Previews: PreviewProvider {
         VStack {
             Spacer()
             Text("").padding(.all, 10)
-                .loginAlertView(isShowingLogin: .constant(true), message: "Login...")
+                .loginAlertView(isShowingLoginAlert: .constant(true), message: "Login...")
             Spacer()
         }
     }

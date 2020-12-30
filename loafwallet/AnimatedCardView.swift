@@ -29,7 +29,6 @@ struct AnimatedCardView: View {
             Image(viewModel.imageFront)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .animation(.easeInOut(duration: 0.5))
                 .onAppear() {
                      withAnimation {
                         viewModel.dropOffset = 0.0

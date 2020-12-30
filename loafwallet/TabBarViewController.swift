@@ -15,9 +15,9 @@ enum TabViewControllerIndex: Int {
     case receive = 3
 }
  
-protocol MainTabBarControllerDelegate {
-    func alertViewShouldDismiss()
-}
+//protocol MainTabBarControllerDelegate {
+//    func alertViewShouldDismiss()
+//}
 
 class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDelegate {
       
@@ -49,7 +49,9 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     var viewControllers:[UIViewController] = []
     var activeController:UIViewController? = nil
     
-    var delegate: MainTabBarControllerDelegate?
+   // var delegate: MainTabBarControllerDelegate?
+    
+    var cardViewModel = CardViewModel()
     
     var updateTimer: Timer?
     var store: Store?
@@ -80,7 +82,6 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         setupViews()
         configurePriceLabels()
         addSubscriptions()
-        checkLitecoinCardLogin()
         dateFormatter.setLocalizedDateFormatFromTemplate("MMM d, h:mm a")
   
         for (index, storyboardID) in self.storyboardIDs.enumerated() {
@@ -117,22 +118,6 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             containerView.backgroundColor = .liteWalletBlue
             self.view.backgroundColor = .liteWalletBlue
        }
-    }
-    
-    private func checkLitecoinCardLogin() {
-       
-//        
-//        
-//        
-//        let manager = API.shared.loginUser(credentials: <#T##[String : Any]#>, completion: <#T##(String?) -> Void#>)
-//            let credentials: [String: Any] = manager.randomAddressDict()
-//            
-//            manager.loginUser(credentials: ["email": credentials["email"], "password": credentials["password"]]) { token in
-//                 print(token)
-//            }
-        
-        didLoginLitecoinCardAccount = false
-        
     }
     
     private func configurePriceLabels() {
@@ -196,6 +181,8 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     }
     
     private func addSubscriptions() {
+        
+        
         
         guard let store = self.store else {
             NSLog("ERROR - Store not passed")
@@ -328,7 +315,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             case 3: item.title = S.Receive.barItemTitle
             case 4: item.title = S.BuyCenter.barItemTitle
             default:
-                item.title = "XXXXXX"
+                item.title = "NO-TITLE"
                 NSLog("ERROR: UITabbar item count is wrong")
             }
         }
@@ -357,11 +344,10 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             case "loafwallet.CardViewController":
                 guard let cardVC = contentController as? CardViewController else  {
                     return
-            }
-
+            } 
+             
             cardVC.parentFrame = self.containerView.frame
-            cardVC.isLoggedIn = didLoginLitecoinCardAccount
-                
+           
             case "loafwallet.BuyTableViewController":
                 guard let buyVC = contentController as? BuyTableViewController else  {
                     return

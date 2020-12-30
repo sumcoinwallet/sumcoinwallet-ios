@@ -1359,3 +1359,18 @@
 
 /* resetFields */
 "Button.resetFields" = "Reset fields";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Registering user ...";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "Card balance";
+
+/* Logout */
+"LitecoinCard.logout" = "Logout";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "There was a problem with your registration. \nPlease check your data and try again.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "You have registered!\nPlease check and confirm your email. Then come back to login.";

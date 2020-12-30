@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "CARD";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "Card balance";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Forgot password?";
 
 /* Login */
 "LitecoinCard.login" = "Login";
 
+/* Logout */
+"LitecoinCard.logout" = "Logout";
+
 /* Register */
 "LitecoinCard.registerCard" = "Register";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "Register for Litecoin Card";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Registering user...";
 
 /* address */
 "LitecoinCard.Registration.address" = "Address";
@@ -465,6 +474,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Zip / Postcode";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "There was a problem with your registration. \nPlease check your data and try again.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "You have registered!\nPlease check and confirm your email. Then come back to login.";
 
 /* Reset Litecoin card password */
 "LitecoinCard.resetPassword" = "Reset password";

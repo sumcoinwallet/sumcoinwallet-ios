@@ -409,14 +409,23 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "卡";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "卡余额";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "忘记密码？";
 
 /* Login */
 "LitecoinCard.login" = "登录";
 
+/* Logout */
+"LitecoinCard.logout" = "登出";
+
 /* Register */
 "LitecoinCard.registerCard" = "寄存器";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "正在注册用户...";
 
 /* address */
 "LitecoinCard.Registration.address" = "街道地址";
@@ -459,6 +468,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "邮编";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "您的注册有问题。 请检查您的数据，然后重试。";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "您已经注册！ 请检查并确认您的电子邮件。 然后返回登录。";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "请访问 https://litecoin.dashboard.getblockcard.com/password/forgot 重置您的密码。";

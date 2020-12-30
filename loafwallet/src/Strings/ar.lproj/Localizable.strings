@@ -1249,17 +1249,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "";
 
 /* Login */
 "LitecoinCard.login" = "";
 
+/* Logout */
+"LitecoinCard.logout" = "";
+
 /* Register */
 "LitecoinCard.registerCard" = "";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "";
 
 /* address */
 "LitecoinCard.Registration.address" = "";
@@ -1305,6 +1314,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "";
 
 /* Reset Litecoin card password */
 "LitecoinCard.resetPassword" = "";

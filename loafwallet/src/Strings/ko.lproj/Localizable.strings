@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "카드";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "카드 잔액";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "비밀번호를 잊으 셨나요?";
 
 /* Login */
 "LitecoinCard.login" = "로그인";
 
+/* Logout */
+"LitecoinCard.logout" = "로그 아웃";
+
 /* Register */
 "LitecoinCard.registerCard" = "레지스터";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "라이트 코인 카드 등록";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "사용자 등록 중 ...";
 
 /* address */
 "LitecoinCard.Registration.address" = "주소";
@@ -465,6 +474,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "우편 번호";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "등록에 문제가 있습니다. 데이터를 확인하고 다시 시도하십시오.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "등록하셨습니다! 이메일을 확인하고 확인하십시오. 그런 다음 다시 로그인하십시오.";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";

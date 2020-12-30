@@ -13,6 +13,9 @@ struct RegistrationAlertView<Presenting>: View where Presenting: View {
     @Binding
     var shouldStartRegistering: Bool
     
+    @Binding
+    var didRegister: Bool
+    
     let presenting: Presenting
     
     var mainMessage: String
@@ -71,6 +74,7 @@ struct RegistrationAlertView_Previews: PreviewProvider {
                 Spacer()
                 Text("").padding(.all, 10)
                     .registeredAlertView(shouldStartRegistering: .constant(true),
+                                         didRegister: .constant(false),
                                          data: [:],
                                          message: "Registering...")
                 Spacer()

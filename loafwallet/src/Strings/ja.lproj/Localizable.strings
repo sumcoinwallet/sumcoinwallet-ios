@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "カード";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "カード残高";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "パスワードをお忘れですか？";
 
 /* Login */
 "LitecoinCard.login" = "ログインする";
 
+/* Logout */
+"LitecoinCard.logout" = "ログアウト";
+
 /* Register */
 "LitecoinCard.registerCard" = "登録";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "ライトコインカードに登録";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "ユーザーを登録しています...";
 
 /* address */
 "LitecoinCard.Registration.address" = "住所";
@@ -462,6 +471,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "郵便番号";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "登録に問題がありました。 データを確認して、もう一度お試しください。";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "登録しました！ メールを確認してください。 その後、ログインに戻ります。";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot にアクセスしてパスワードをリセットしてください。";
