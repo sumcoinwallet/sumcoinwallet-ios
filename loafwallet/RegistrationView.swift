@@ -16,7 +16,6 @@ struct RegistrationView: View {
     @Environment(\.presentationMode)
     var presentationMode
 
-    
     @State
     var usernameEmail: String = ""
     
@@ -31,18 +30,6 @@ struct RegistrationView: View {
     
     @State
     var lastName: String = ""
-    
-    @State
-    var kycSSN: String = ""
-    
-    @State
-    var kycIDString: String = ""
-    
-    @State
-    var idTypeString: String = ""
-    
-    @State
-    var isPassport: Bool = true
     
     @State
     var address: String = ""
@@ -67,6 +54,9 @@ struct RegistrationView: View {
     
     @State
     private var shouldStartRegistering: Bool = false
+    
+    @State
+    private var didRegister: Bool = false
     
     init(viewModel: RegistrationViewModel) {
         self.viewModel = viewModel
@@ -95,14 +85,14 @@ struct RegistrationView: View {
                                     VStack {
                                         TextField(S.Registration.firstName,
                                                   text: $firstName)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                                             .keyboardType(.namePhonePad)
-                                            .padding([.leading, .trailing], 8)
+                                            .padding([.leading, .trailing], 4)
                                             .padding(.top, 12)
                                             .foregroundColor(viewModel.isDataValid(dataType: .genericString,
                                                                                    data: firstName) ? .black : Color(UIColor.litecoinOrange))
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
@@ -110,14 +100,14 @@ struct RegistrationView: View {
                                     VStack {
                                         TextField(S.Registration.lastName,
                                                   text: $lastName)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                                             .keyboardType(.namePhonePad)
-                                            .padding([.leading, .trailing], 8)
+                                            .padding([.leading, .trailing], 4)
                                             .padding(.top, 12)
                                             .foregroundColor(viewModel.isDataValid(dataType: .genericString,
                                                                                    data: lastName) ? .black : Color(UIColor.litecoinOrange))
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
@@ -128,13 +118,13 @@ struct RegistrationView: View {
                             Group {
                                    TextField(S.Receive.emailButton,
                                           text: $usernameEmail)
-                                    .font(Font(UIFont.barlowBold(size: 16.0)))
+                                    .font(Font(UIFont.barlowRegular(size: 16.0)))
                                     .keyboardType(.emailAddress)
-                                    .padding([.leading, .trailing], 8)
+                                    .padding([.leading, .trailing], 4)
                                     .foregroundColor(viewModel.isDataValid(dataType: .email,
                                                                            data: usernameEmail) ? .black : Color(UIColor.litecoinOrange))
                                 Divider()
-                                    .padding([.leading, .bottom, .trailing], 8)
+                                    .padding([.leading, .bottom, .trailing], 4)
                                     .padding(.top, 1)
                                 Spacer()
                                 
@@ -142,14 +132,14 @@ struct RegistrationView: View {
                                     VStack {
                                         TextField(S.Registration.password,
                                                   text: $password)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                                             .autocapitalization(.none)
                                             .keyboardType(.default)
-                                            .padding([.leading, .trailing], 8)
+                                            .padding([.leading, .trailing], 4)
                                             .foregroundColor(viewModel.isDataValid(dataType: .password,
                                                                                    data: password) ? .black : Color(UIColor.litecoinOrange))
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
@@ -157,15 +147,15 @@ struct RegistrationView: View {
                                     VStack {
                                         TextField(S.Registration.confirmPassword,
                                                   text: $confirmPassword)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                                             .autocapitalization(.none)
                                             .keyboardType(.default)
-                                            .padding([.leading, .trailing], 8)
+                                            .padding([.leading, .trailing], 4)
                                             .foregroundColor(viewModel.isDataValid(dataType: .confirmation,
                                                                                    firstString: password,
                                                                                    data: confirmPassword) ? .black : Color(UIColor.litecoinOrange))
                                          Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
@@ -177,13 +167,13 @@ struct RegistrationView: View {
                             Group {
                                 VStack {
                                     TextField(S.Registration.mobileNumber, text: $mobileNumber)
-                                        .font(Font(UIFont.barlowBold(size: 16.0)))
+                                        .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .keyboardType(.numberPad)
-                                        .padding([.leading, .trailing], 8)
+                                        .padding([.leading, .trailing], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .mobileNumber,
                                                                                data: mobileNumber) ? .black : Color(UIColor.litecoinOrange))
                                     Divider()
-                                        .padding([.leading, .bottom, .trailing], 8)
+                                        .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
                                     
                                 }
@@ -194,13 +184,12 @@ struct RegistrationView: View {
                                 HStack {
                                     VStack {
                                         TextField(S.Registration.address, text: $address)
-                                            .padding([.leading, .trailing], 8)
-                                            .padding(.top, 12)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
+                                            .padding([.leading, .trailing], 4)
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                                             .foregroundColor(viewModel.isDataValid(dataType: .genericString,
                                                                                    data: address) ? .black : Color(UIColor.litecoinOrange))
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                     }
                                     Spacer()
@@ -208,23 +197,23 @@ struct RegistrationView: View {
                                 HStack {
                                     VStack {
                                         TextField(S.Registration.city, text: $city)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
-                                            .padding([.leading, .trailing], 8)
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
+                                            .padding([.leading, .trailing], 4)
                                             .foregroundColor(viewModel.isDataValid(dataType: .genericString,
                                                                                    data: city) ? .black : Color(UIColor.litecoinOrange))
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
                                     VStack {
                                         TextField(S.Registration.stateProvince, text: $state)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
-                                            .padding([.leading, .trailing], 8)
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
+                                            .padding([.leading, .trailing], 4)
                                             .foregroundColor(viewModel.isDataValid(dataType: .genericString,
                                                                                    data: state) ? .black : Color(UIColor.litecoinOrange))
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
@@ -234,25 +223,25 @@ struct RegistrationView: View {
                                     VStack {
                                         //DEV: Will change when EU support comes
                                         TextField("US", text: $country)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                                             .foregroundColor(.gray)
-                                            .padding(.leading, 8)
-                                            .padding(.trailing, 5)
+                                            .padding([.leading, .trailing], 4)
                                             .disabled(true)
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
                                         Spacer()
                                     }
+                                    
                                     VStack {
+                                        //DEV: Will change when EU support comes
                                         TextField(S.Registration.zipPostCode, text: $zipCodePostCode)
-                                            .font(Font(UIFont.barlowBold(size: 16.0)))
-                                            .padding([.leading, .trailing], 8)
-                                            .foregroundColor(viewModel.isDataValid(dataType: .genericString,
-                                                                                   data: zipCodePostCode) ? .black : Color(UIColor.litecoinOrange))
+                                            .font(Font(UIFont.barlowRegular(size: 16.0)))
+                                            .padding([.leading, .trailing], 4)
                                         Divider()
-                                            .padding([.leading, .bottom, .trailing], 8)
+                                            .padding([.leading, .bottom, .trailing], 4)
                                             .padding(.top, 1)
+                                        Spacer()
                                     }
                                 }
                                 Spacer()
@@ -295,7 +284,7 @@ struct RegistrationView: View {
                             shouldStartRegistering = isAllRegisterDataValid
                             
                             //Make a registration call
-                            viewModel.register()
+                            viewModel.registerCardUser()
                             
                             self.presentationMode.wrappedValue.dismiss()
                         }
@@ -336,9 +325,6 @@ struct RegistrationView: View {
         confirmPassword  = ""
         firstName = ""
         lastName  = ""
-        kycSSN = ""
-        kycIDString = ""
-        idTypeString = ""
         address = ""
         city = ""
         state = ""
@@ -348,20 +334,18 @@ struct RegistrationView: View {
     
     private func loadDataDictionary() -> [String: Any] {
         
-        viewModel.dataDictionary["firstName"] = firstName
-        viewModel.dataDictionary["lastName"] = lastName
-        viewModel.dataDictionary["usernameEmail"] = usernameEmail
+        viewModel.dataDictionary["firstname"] = firstName
+        viewModel.dataDictionary["lastname"] = lastName
+        viewModel.dataDictionary["email"] = usernameEmail
         viewModel.dataDictionary["password"] = password
-        viewModel.dataDictionary["confirmPassword"] = confirmPassword
-        viewModel.dataDictionary["ssn"] = kycSSN
-        viewModel.dataDictionary["idType"] = idTypeString
-        viewModel.dataDictionary["kycIDString"] = kycIDString
-        viewModel.dataDictionary["mobileNumber"] = mobileNumber
+        viewModel.dataDictionary["password_confirmation"] = confirmPassword
+        viewModel.dataDictionary["phone"] = mobileNumber
         viewModel.dataDictionary["city"] = city
         viewModel.dataDictionary["country"] = country
         viewModel.dataDictionary["state"] = state
-        viewModel.dataDictionary["address"] = address
-        viewModel.dataDictionary["postCode"] = zipCodePostCode
+        viewModel.dataDictionary["address1"] = address
+        viewModel.dataDictionary["address2"] = "second line" //API requires this but it doesnt use the data
+        viewModel.dataDictionary["zip_code"] = zipCodePostCode
         return viewModel.dataDictionary
     }
     

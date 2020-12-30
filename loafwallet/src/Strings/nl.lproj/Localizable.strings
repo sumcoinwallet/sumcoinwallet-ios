@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "KAART";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "Kaartsaldo";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Wachtwoord vergeten?";
 
 /* Login */
 "LitecoinCard.login" = "Log in";
 
+/* Logout */
+"LitecoinCard.logout" = "Uitloggen";
+
 /* Register */
 "LitecoinCard.registerCard" = "Registreren";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "Registreer voor Litecoin Card";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Gebruiker registreren ...";
 
 /* address */
 "LitecoinCard.Registration.address" = "Woonadres";
@@ -462,6 +471,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Postcode";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "Er is een probleem opgetreden met uw registratie. Controleer uw gegevens en probeer het opnieuw.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "U bent geregistreerd! Controleer en bevestig uw e-mail. Kom dan terug om in te loggen.";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Ga naar https://litecoin.dashboard.getblockcard.com/password/forgot om uw wachtwoord te resetten.";

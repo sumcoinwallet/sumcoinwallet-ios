@@ -12,9 +12,9 @@ import SwiftUI
 
 extension View {
     
-    func loginAlertView(isShowingLogin: Binding<Bool>,
+    func loginAlertView(isShowingLoginAlert: Binding<Bool>,
                         message: String) -> some View {
-        loafwallet.LoginCardAlertView(isShowingLogin: isShowingLogin,
+        loafwallet.LoginCardAlertView(isShowingLoginAlert: isShowingLoginAlert,
                        presenting: self,
                        mainMessage: message)
     }
@@ -29,11 +29,13 @@ extension View {
     }
     
     func registeredAlertView(shouldStartRegistering: Binding<Bool>,
+                             didRegister: Binding<Bool>,
                              data: [String: Any],
                         message: String) -> some View {
         loafwallet.RegistrationAlertView(shouldStartRegistering: shouldStartRegistering,
-                                      presenting: self,
-                                      mainMessage: message)
+                                         didRegister: didRegister,
+                                         presenting: self,
+                                         mainMessage: message)
     }
     
 }

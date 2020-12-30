@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "KARTU";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "Saldo kartu";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Tidak ingat kata sandi?";
 
 /* Login */
 "LitecoinCard.login" = "Gabung";
 
+/* Logout */
+"LitecoinCard.logout" = "Keluar";
+
 /* Register */
 "LitecoinCard.registerCard" = "Daftar";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "Daftar untuk Kartu Litecoin";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Mendaftarkan pengguna ...";
 
 /* address */
 "LitecoinCard.Registration.address" = "Alamat jalan";
@@ -465,6 +474,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Kode Pos";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "Ada masalah dengan pendaftaran Anda. Silakan periksa data Anda dan coba lagi.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "Anda telah mendaftar! Silakan periksa dan konfirmasi email Anda. Kemudian kembali untuk masuk.";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";

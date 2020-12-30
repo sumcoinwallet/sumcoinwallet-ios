@@ -118,11 +118,18 @@ enum S {
     enum LitecoinCard {
         static let barItemTitle = NSLocalizedString("LitecoinCard.barItemTitle", value: "**Card**", comment: "Card Bar Item Title")
         static let login = NSLocalizedString("LitecoinCard.login", value: "**Login**", comment: "Login")
+        static let logout = NSLocalizedString("LitecoinCard.logout", value: "**Logout**", comment: "Logout")
+
         static let forgotPassword = NSLocalizedString("LitecoinCard.forgotPassword", value: "**Forgot password?**", comment: "Forgot password?")
         static let resetPasswordDetail = NSLocalizedString("LitecoinCard.resetPassword.detail", value: "**Reset Litecoin card password**", comment: "Reset Litecoin card password")
         static let visitToReset = NSLocalizedString("LitecoinCard.visit.toReset", value: "**Reset Litecoin card visit**", comment: "Litecoin card visit")
         static let resetPassword = NSLocalizedString("LitecoinCard.resetPassword", value: "**Reset Litecoin card password**", comment: "Reset Litecoin card password")
         static let registerCard = NSLocalizedString("LitecoinCard.registerCard", value: "**Register**", comment: "Register")
+        static let registeringUser = NSLocalizedString("LitecoinCard.registering.user", value: "**Registering user...**", comment: "Registering user...")
+        
+        static let cardBalance = NSLocalizedString("LitecoinCard.cardBalance", value: "", comment: "Card balance")
+        static let registrationSuccess = NSLocalizedString("LitecoinCard.registrationSuccess", value: "", comment: "Registration success")
+        static let registrationFailure = NSLocalizedString("LitecoinCard.registrationFailure", value: "", comment: "Registration failure")
     }
     
     //MARK: - Registration

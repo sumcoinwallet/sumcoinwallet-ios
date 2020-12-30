@@ -9,8 +9,9 @@
 import SwiftUI
 import UIKit
 
+
 struct CardView: View {
-    
+      
     @ObservedObject
     var viewModel: CardViewModel
     
@@ -18,14 +19,17 @@ struct CardView: View {
     var registrationModel = RegistrationViewModel()
     
     @ObservedObject
+    var loginModel = LoginViewModel()
+    
+    @ObservedObject
     var animatedViewModel = AnimatedCardViewModel()
     
     @State
-    private var didTapLogin: Bool = false
+    private var shouldShowLoginModal: Bool = false
     
     @State
     var didTapIForgot: Bool = false
-
+    
     @State
     private var shouldShowRegistrationView: Bool = false
     
@@ -34,12 +38,16 @@ struct CardView: View {
     
     @State
     private var forgotEmailAddressInput = ""
-      
+    
     @State
     var didCompleteLogin: Bool = false
     
- 
+    @State
+    var cannotLogin: Bool = true
+    
+    
     init(viewModel: CardViewModel) {
+         
         self.viewModel = viewModel
     }
     
@@ -54,33 +62,49 @@ struct CardView: View {
                                maxWidth: didCompleteLogin ? geometry.size.width * 0.4 :  geometry.size.width * 0.6)
                         .padding(.all, didCompleteLogin ? 20 : 30)
                 }
-                 
+                
                 //MARK: - Login Textfields
                 Group {
                     
-                    TextField(S.Receive.emailButton, text: $viewModel.emailString)
-                        .font(Font(UIFont.customBody(size:22.0)))
-                        .padding([.leading, .trailing], 20)
-                        .padding(.top, 30)
-                        .foregroundColor(.black)
-                        .keyboardType(.emailAddress)
+                    TextField(S.Receive.emailButton, text: $loginModel.emailString) {  _ in
+                        if loginModel.emailString.count < 4 {
+                            cannotLogin = true
+                        } else {
+                            cannotLogin = false
+                        }
+                    }
+                    .font(Font(UIFont.barlowSemiBold(size:18.0)))
+                    .accentColor(Color(UIColor.liteWalletBlue))
+                    .padding([.leading, .trailing], 20)
+                    .padding(.top, 30)
+                    .foregroundColor(.black)
+                    .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
                     
                     Divider().padding([.leading, .trailing], 20)
                     
                     HStack {
                         if shouldShowPassword {
-                            TextField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
-                                .font(Font(UIFont.customBody(size:22.0)))
+                            
+                            TextField(S.Import.passwordPlaceholder.capitalized, text: $loginModel.passwordString)
+                                .font(Font(UIFont.barlowSemiBold(size:18.0)))
+                                .accentColor(Color(UIColor.liteWalletBlue))
                                 .padding(.leading, 20)
                                 .padding(.top, 20)
+                                .autocapitalization(.none)
                                 .keyboardType(.asciiCapable)
-                        } else { 
-                            SecureField(S.Import.passwordPlaceholder.capitalized, text: $viewModel.passwordString)
-                                .font(Font(UIFont.customBody(size:22.0)))
+                            
+                        } else {
+                            
+                            SecureField(S.Import.passwordPlaceholder.capitalized, text: $loginModel.passwordString)
+                                .font(Font(UIFont.barlowSemiBold(size:18.0)))
+                                .accentColor(Color(UIColor.liteWalletBlue))
                                 .padding(.leading, 20)
                                 .padding(.top, 20)
+                                .autocapitalization(.none)
                                 .keyboardType(.asciiCapable)
                         }
+                        
                         Spacer()
                         Button(action: {
                             shouldShowPassword.toggle()
@@ -110,51 +134,62 @@ struct CardView: View {
                             .foregroundColor(Color(UIColor.liteWalletBlue))
                             .padding(.all, 30)
                     }
-                
+                    
                     Spacer(minLength: 5)
                     
                     // Login button
                     Button(action: {
-                        didTapLogin = true
-                        viewModel.login { didLogin in
-                            print(didLogin)
+                        shouldShowLoginModal = true
+                         loginModel.login { isStillLoggingIn in
+                            
+                            if !isStillLoggingIn {
+                                viewModel.isLoggedIn = true
+                                shouldShowLoginModal = false
+                                 NotificationCenter.default.post(name: .LitecoinCardLoginNotification, object: nil,
+                                                                userInfo: nil)
+                            }
                         }
+                        
                     }) {
-                         
-                      Text(S.LitecoinCard.login)
-                        .frame(minWidth:0, maxWidth: .infinity)
-                        .padding()
-                        .font(Font(UIFont.customMedium(size: 16.0)))
-                        .padding([.leading, .trailing], 16)
-                        .foregroundColor(.white)
-                        .background(Color(UIColor.liteWalletBlue))
-                        .cornerRadius(4.0)
-                        .overlay(
-                            RoundedRectangle(cornerRadius:4)
-                                .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
-                        )
+                        
+                        Text(S.LitecoinCard.login)
+                            .frame(minWidth:0, maxWidth: .infinity)
+                            .padding()
+                            .font(Font(UIFont.barlowMedium(size: 16.0)))
+                            .padding([.leading, .trailing], 16)
+                            .foregroundColor(cannotLogin ? Color(UIColor.litecoinSilver) :
+                                                Color(.white))
+                            .background(cannotLogin ? .gray :
+                                            Color(UIColor.liteWalletBlue))
+                            .cornerRadius(4.0)
+                            .overlay(
+                                RoundedRectangle(cornerRadius:4)
+                                    .stroke((cannotLogin ? .gray :
+                                                Color(UIColor.liteWalletBlue)), lineWidth: 1)
+                            )
                     }
+                    .disabled(cannotLogin)
                     .padding([.leading, .trailing], 16)
-
+                    
                     // Registration button
                     Button(action: {
-                            shouldShowRegistrationView = true
-                        }) {
-                            Text(S.LitecoinCard.registerCard)
-                                .frame(minWidth:0, maxWidth: .infinity)
-                                .padding()
-                                .font(Font(UIFont.customMedium(size: 15.0)))
-                                .foregroundColor(Color(UIColor.liteWalletBlue))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius:4)
-                                        .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
-                                )
-                                .padding([.leading, .trailing], 16)
-                                .padding([.top,.bottom], 15)
-                        }
-                        .sheet(isPresented: $shouldShowRegistrationView) {
-                            RegistrationView(viewModel: registrationModel)
-                        }
+                        shouldShowRegistrationView = true
+                    }) {
+                        Text(S.LitecoinCard.registerCard)
+                            .frame(minWidth:0, maxWidth: .infinity)
+                            .padding()
+                            .font(Font(UIFont.barlowMedium(size: 15.0)))
+                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .overlay(
+                                RoundedRectangle(cornerRadius:4)
+                                    .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
+                            )
+                            .padding([.leading, .trailing], 16)
+                            .padding([.top,.bottom], 15)
+                    }
+                    .sheet(isPresented: $shouldShowRegistrationView) {
+                        RegistrationView(viewModel: registrationModel)
+                    }
                 }
                 Spacer()
             }
@@ -166,11 +201,12 @@ struct CardView: View {
         .forgotPasswordView(isShowingForgot: $didTapIForgot,
                             emailString: $forgotEmailAddressInput,
                             message: S.LitecoinCard.forgotPassword)
-        .loginAlertView(isShowingLogin: $didTapLogin,
+        .loginAlertView(isShowingLoginAlert: $shouldShowLoginModal,
                         message: S.LitecoinCard.login)
         .registeredAlertView(shouldStartRegistering: $registrationModel.isRegistering,
+                             didRegister: $registrationModel.didRegister,
                              data: registrationModel.dataDictionary,
-                             message: "TEST") 
+                             message: S.LitecoinCard.registeringUser)
         .frame(minWidth: 0,
                maxWidth: .infinity,
                minHeight: 0,
@@ -182,6 +218,7 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     
     static let viewModel = CardViewModel()
+      
     static var previews: some View {
         
         Group {
@@ -199,4 +236,6 @@ struct CardView_Previews: PreviewProvider {
         }
     }
 }
- 
+
+
+

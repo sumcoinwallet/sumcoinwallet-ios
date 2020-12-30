@@ -409,17 +409,26 @@
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "KORT";
 
+/* Card balance */
+"LitecoinCard.cardBalance" = "Kortbalance";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Glemt kodeord?";
 
 /* Login */
 "LitecoinCard.login" = "Log på";
 
+/* Logout */
+"LitecoinCard.logout" = "Log ud";
+
 /* Register */
 "LitecoinCard.registerCard" = "Tilmeld";
 
 /* Register for Litecoin Card */
 "LitecoinCard.registerCardPhrase" = "Tilmeld dig Litecoin-kort";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Registrerer bruger ...";
 
 /* address */
 "LitecoinCard.Registration.address" = "Vejnavn";
@@ -462,6 +471,12 @@
 
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Postnummer";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "Der var et problem med din registrering. Kontroller dine data, og prøv igen.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "Du har tilmeldt dig! Kontroller og bekræft din e-mail. Så kom tilbage for at logge ind.";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Besøg https://litecoin.dashboard.getblockcard.com/password/forgot for at nulstille din adgangskode.";

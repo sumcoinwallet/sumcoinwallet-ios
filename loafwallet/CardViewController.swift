@@ -15,36 +15,60 @@ import SwiftUI
 /// A container for a CardView - SwiftUI
 class CardViewController: UIViewController {
     
+    var viewModel = CardViewModel()
+    
+    var cardLoggedInView: CardLoggedInView?
+    
+    var cardView: CardView?
+ 
     var parentFrame: CGRect?
     
-    var isLoggedIn: Bool = true
+    var swiftUIContainerView = UIHostingController(rootView: AnyView(EmptyView()))
     
-    override func viewWillAppear(_ animated: Bool) {
+    var notificationToken: NSObjectProtocol?
+    
+    private func updateFromViewModel() {
         
-        let viewModel = CardViewModel()
+        swiftUIContainerView.remove()
         
-        var swiftUIContainerView: UIHostingController<AnyView>
-
-        if isLoggedIn {
-            swiftUIContainerView = UIHostingController(rootView: AnyView(CardLoggedInView(viewModel: viewModel)))
-
+        if viewModel.isLoggedIn {
+            cardLoggedInView = CardLoggedInView(viewModel: viewModel)
+            swiftUIContainerView = UIHostingController(rootView: AnyView(cardLoggedInView))
         } else {
-            
-            swiftUIContainerView = UIHostingController(rootView: AnyView(CardView(viewModel: viewModel)))
-
+            cardView = CardView(viewModel: viewModel)
+            swiftUIContainerView = UIHostingController(rootView: AnyView(cardView))
         }
- 
-        //Constraint the view to Tab container 
+         
+        //Constraint the view to Tab container
         if let size = parentFrame?.size {
-            swiftUIContainerView.view.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+            self.swiftUIContainerView.view.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
         }
- 
-        addChildViewController(swiftUIContainerView)
-        self.view.addSubview(swiftUIContainerView.view)
-        swiftUIContainerView.didMove(toParent: self)
+        
+        addChildViewController(self.swiftUIContainerView)
+        self.view.addSubview(self.swiftUIContainerView.view)
+        self.swiftUIContainerView.didMove(toParent: self)
+        
+       
     }
          
-    override func viewDidLoad() { }
+     override func viewDidLoad() {
+         
+        self.updateFromViewModel()
+ 
+        notificationToken = NotificationCenter.default
+            .addObserver(forName: NSNotification.Name.LitecoinCardLoginNotification,
+                         object: nil,
+                         queue: nil) { _ in
+                self.updateFromViewModel()
+            }
+         
+        notificationToken = NotificationCenter.default
+            .addObserver(forName: NSNotification.Name.LitecoinCardLogoutNotification,
+                         object: nil,
+                         queue: nil) { _ in
+                self.updateFromViewModel()
+            }
+    }
      
 }
     
