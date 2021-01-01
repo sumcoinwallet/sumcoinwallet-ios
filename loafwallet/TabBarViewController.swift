@@ -14,11 +14,7 @@ enum TabViewControllerIndex: Int {
     case buy = 2
     case receive = 3
 }
- 
-//protocol MainTabBarControllerDelegate {
-//    func alertViewShouldDismiss()
-//}
-
+  
 class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDelegate {
       
     let kInitialChildViewControllerIndex = 0 // TransactionsViewController
@@ -48,11 +44,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     var storyboardIDs:[String] = ["TransactionsViewController","SendLTCViewController","CardViewController","ReceiveLTCViewController","BuyTableViewController"]
     var viewControllers:[UIViewController] = []
     var activeController:UIViewController? = nil
-    
-   // var delegate: MainTabBarControllerDelegate?
-    
-    var cardViewModel = CardViewModel()
-    
+       
     var updateTimer: Timer?
     var store: Store?
     var walletManager: WalletManager?

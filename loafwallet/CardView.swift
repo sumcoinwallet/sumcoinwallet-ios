@@ -206,7 +206,7 @@ struct CardView: View {
         .registeredAlertView(shouldStartRegistering: $registrationModel.isRegistering,
                              didRegister: $registrationModel.didRegister,
                              data: registrationModel.dataDictionary,
-                             message: S.LitecoinCard.registeringUser)
+                             message: $registrationModel.message)
         .frame(minWidth: 0,
                maxWidth: .infinity,
                minHeight: 0,

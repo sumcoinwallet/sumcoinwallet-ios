@@ -16,9 +16,10 @@ struct RegistrationAlertView<Presenting>: View where Presenting: View {
     @Binding
     var didRegister: Bool
     
-    let presenting: Presenting
-    
+    @Binding
     var mainMessage: String
+      
+    let presenting: Presenting
     
     var body: some View {
         GeometryReader { (deviceSize: GeometryProxy) in
@@ -27,10 +28,16 @@ struct RegistrationAlertView<Presenting>: View where Presenting: View {
                     self.presenting
                         .disabled(shouldStartRegistering)
                     VStack {
-                        Text(self.mainMessage)
-                            .padding()
-                            .font(Font(UIFont.customMedium(size: 16.0)))
+                        Text(mainMessage)
+                            .frame(minWidth: 0,
+                                   maxWidth: .infinity,
+                                   alignment: .center)
+                            .multilineTextAlignment(.center)
+                            .font(Font(UIFont.barlowRegular(size: 16.0)))
                             .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .padding(.bottom, 20)
+                            .padding(.top, 10)
+                            .padding([.leading,.trailing], 20)
                         ActivityIndicator(isAnimating: $shouldStartRegistering,
                                           style: .medium)
                             .padding(.bottom, 15)
@@ -39,7 +46,7 @@ struct RegistrationAlertView<Presenting>: View where Presenting: View {
                             Button(action: {
                                 
                                 withAnimation {
-                                    self.shouldStartRegistering.toggle()
+                                    shouldStartRegistering.toggle()
                                 }
                             }) {
                                 Text(S.Prompts.dismiss.localizedCapitalized)
@@ -57,16 +64,17 @@ struct RegistrationAlertView<Presenting>: View where Presenting: View {
                     .cornerRadius(8)
                     .frame(
                         width: deviceSize.size.width*0.8,
-                        height: deviceSize.size.height*0.5
+                        height: deviceSize.size.height*0.7
                     )
                     .shadow(color: .gray, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 5, y: 5)
-                    .opacity(self.shouldStartRegistering ? 1 : 0)
+                    .opacity(shouldStartRegistering ? 1 : 0)
                 }
                 Spacer()
             }
         }
     }
 }
+
 struct RegistrationAlertView_Previews: PreviewProvider {
     
         static var previews: some View {
@@ -76,7 +84,7 @@ struct RegistrationAlertView_Previews: PreviewProvider {
                     .registeredAlertView(shouldStartRegistering: .constant(true),
                                          didRegister: .constant(false),
                                          data: [:],
-                                         message: "Registering...")
+                                         message: .constant("vwevwvvwv\nwevwevwevwevwevwvwevwvwvewRegistering..."))
                 Spacer()
             }
         }
