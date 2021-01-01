@@ -27,47 +27,57 @@ class CardViewController: UIViewController {
     
     var notificationToken: NSObjectProtocol?
     
-    private func updateFromViewModel() {
-        
-        swiftUIContainerView.remove()
-        
-        if viewModel.isLoggedIn {
-            cardLoggedInView = CardLoggedInView(viewModel: viewModel)
-            swiftUIContainerView = UIHostingController(rootView: AnyView(cardLoggedInView))
-        } else {
-            cardView = CardView(viewModel: viewModel)
-            swiftUIContainerView = UIHostingController(rootView: AnyView(cardView))
-        }
+    private func updateLoginStatusFromViewModel() {
          
-        //Constraint the view to Tab container
-        if let size = parentFrame?.size {
-            self.swiftUIContainerView.view.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+        // Bugfix: https://github.com/litecoin-foundation/loafwallet-ios/issues/175
+        // Verifies the stack has only one VC and it is the UIHostingController
+        
+        DispatchQueue.main.async {
+            if self.childViewControllers.count == 1,
+               ((self.childViewControllers.first?.isKind(of: UIHostingController<AnyView>.self)) != nil) {
+                self.swiftUIContainerView.willMove(toParent: nil)
+                self.swiftUIContainerView.removeFromParentViewController()
+                self.swiftUIContainerView.view.removeFromSuperview()
+            }
+            
+            if self.viewModel.isLoggedIn {
+                self.cardLoggedInView = CardLoggedInView(viewModel: self.viewModel)
+                self.swiftUIContainerView = UIHostingController(rootView: AnyView(self.cardLoggedInView))
+            } else {
+                self.cardView = CardView(viewModel: self.viewModel)
+                self.swiftUIContainerView = UIHostingController(rootView: AnyView(self.cardView))
+            }
+            
+            //Constraint the view to Tab container
+            if let size = self.parentFrame?.size {
+                self.swiftUIContainerView.view.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+            }
+            
+            self.addChildViewController(self.swiftUIContainerView)
+            self.view.addSubview(self.swiftUIContainerView.view)
+            self.swiftUIContainerView.didMove(toParent: self)
         }
-        
-        addChildViewController(self.swiftUIContainerView)
-        self.view.addSubview(self.swiftUIContainerView.view)
-        self.swiftUIContainerView.didMove(toParent: self)
-        
-       
     }
          
      override func viewDidLoad() {
          
-        self.updateFromViewModel()
+        self.updateLoginStatusFromViewModel()
  
+       // Listens for Login notification and updates the CardView
         notificationToken = NotificationCenter.default
-            .addObserver(forName: NSNotification.Name.LitecoinCardLoginNotification,
-                         object: nil,
-                         queue: nil) { _ in
-                self.updateFromViewModel()
-            }
+        .addObserver(forName: NSNotification.Name.LitecoinCardLoginNotification,
+                     object: nil,
+                     queue: nil) { _ in
+            self.updateLoginStatusFromViewModel()
+        }
          
+        // Listens for Logout notification and updates the CardView
         notificationToken = NotificationCenter.default
-            .addObserver(forName: NSNotification.Name.LitecoinCardLogoutNotification,
-                         object: nil,
-                         queue: nil) { _ in
-                self.updateFromViewModel()
-            }
+        .addObserver(forName: NSNotification.Name.LitecoinCardLogoutNotification,
+                     object: nil,
+                     queue: nil) { _ in
+            self.updateLoginStatusFromViewModel()
+        }
     }
      
 }

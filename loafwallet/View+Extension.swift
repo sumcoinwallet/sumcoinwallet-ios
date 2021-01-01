@@ -31,11 +31,11 @@ extension View {
     func registeredAlertView(shouldStartRegistering: Binding<Bool>,
                              didRegister: Binding<Bool>,
                              data: [String: Any],
-                        message: String) -> some View {
+                        message: Binding<String>) -> some View {
         loafwallet.RegistrationAlertView(shouldStartRegistering: shouldStartRegistering,
                                          didRegister: didRegister,
-                                         presenting: self,
-                                         mainMessage: message)
+                                         mainMessage: message,
+                                         presenting: self)
     }
     
 }
