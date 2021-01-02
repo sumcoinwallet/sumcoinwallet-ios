@@ -3627,7 +3627,6 @@
 				75A2A78E1DA5934300A983D8 /* Resources */,
 				75A2A8031DA5935F00A983D8 /* Embed App Extensions */,
 				22A9A9831DF63288000F0016 /* Embed Frameworks */,
-				24E179F123BDAC2C00F928D9 /* Swift Lint Script */,
 				8B664BEE6304C1815A957FC6 /* [CP] Embed Pods Frameworks */,
 				C3D1588125666B69009BD3BC /* Mark Dev Notes */,
 			);
@@ -3899,24 +3898,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "##  This only notates strings that have yet to be localized. The Base Localizable file is wnere the change needs to be changed.\n\nif which bartycrouch > /dev/null; then\n    bartycrouch update -x\n    bartycrouch lint -x\nelse\n    echo \"warning: BartyCrouch not installed, download it from https://github.com/Flinesoft/BartyCrouch\"\nfi\n";
-		};
-		24E179F123BDAC2C00F928D9 /* Swift Lint Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# add after v2.6.0\n#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		24E179F223BDAF8000F928D9 /* Xcode custom warnings */ = {
 			isa = PBXShellScriptBuildPhase;
