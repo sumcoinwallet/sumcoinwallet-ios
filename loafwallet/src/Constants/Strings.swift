@@ -99,7 +99,7 @@ enum S {
         
         enum UnstoppableDomains {
             static let placeholder = NSLocalizedString("Send.UnstoppableDomains.placeholder", value: "**Enter a .crypto or .zil domain**", comment: "Enter a .crypto or .zil domain")
-            
+            static let lookup = NSLocalizedString("Send.UnstoppableDomains.lookup", value: "**Lookup**", comment: "Lookup")
         }
     }
 
@@ -607,9 +607,7 @@ enum S {
         static let alertDeleteTitle = NSLocalizedString("WipeWallet.alertDeleteTitle", value: "**Delet Database**", comment: "Delete database title")
         static let deleteMessageTitle = NSLocalizedString("WipeWallet.deleteMessageTitle", value: "**This deletes the database but retains the PIN and phrase. You will be asked to confirm your existing PIN, seed and will re-sync the new db**", comment: "Delete database message")
         static let deleteSync = NSLocalizedString("WipeWallet.deleteSync", value: "**Delete & Sync**", comment: "Delete and sync")
-
-
-
+ 
     }
 
     enum FeeSelector {

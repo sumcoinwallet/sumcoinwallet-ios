@@ -1272,3 +1272,6 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d of %2$d";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Lookup";

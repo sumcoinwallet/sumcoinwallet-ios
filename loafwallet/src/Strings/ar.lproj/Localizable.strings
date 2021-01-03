@@ -1255,6 +1255,9 @@
 /* Enter LTC Address */
 "Send.enterLTCAddress" = "";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "";
+
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "";
 

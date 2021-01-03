@@ -1273,3 +1273,6 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d de %2$d";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Olho para cima";
