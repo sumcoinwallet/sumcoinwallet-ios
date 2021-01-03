@@ -190,13 +190,16 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
         
         unstoppableCell.rootView.viewModel.didResolveUDAddress = { resolvedUDAddress in
             
-            // Toast the successful resolution
-            self.onResolvedSuccess?()
-
             ///Paste in Unstoppable Domain resolved LTC address to textField
             self.addressCell.textField.becomeFirstResponder()
             self.addressCell.textField.isHidden = false
-            self.addressCell.textField.text = resolvedUDAddress
+            
+            if !resolvedUDAddress.isEmpty {
+                
+                // Toast the successful resolution
+                self.onResolvedSuccess?()
+                self.addressCell.textField.text = resolvedUDAddress
+            }
         }
          
     }

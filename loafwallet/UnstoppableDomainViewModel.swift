@@ -31,7 +31,6 @@ class UnstoppableDomainViewModel: ObservableObject {
     //MARK: - Private Variables
     private var ltcAddress = ""
     
-    
     private var dateFormatter: DateFormatter? {
         
         didSet {
@@ -65,7 +64,7 @@ class UnstoppableDomainViewModel: ObservableObject {
         self.resolveUDAddress(domainName: searchString)
         
         ///Fallback resolution: Set in case it takes a longer time to resolve.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 12) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.didResolveUDAddress?(self.ltcAddress)
             self.isDomainResolving = false
         }
