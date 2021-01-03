@@ -179,12 +179,19 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
             }
         }
         
+        unstoppableCell.rootView.viewModel.shouldClearAddressField = {
+            ///clear the existing textfield
+            self.addressCell.textField.becomeFirstResponder()
+            self.addressCell.textField.text = ""
+        }
+        
         unstoppableCell.rootView.viewModel.didResolveUDAddress = { resolvedUDAddress in
             ///Paste in Unstoppable Domain resolved LTC address to textField
             self.addressCell.textField.becomeFirstResponder()
             self.addressCell.textField.isHidden = false
             self.addressCell.textField.text = resolvedUDAddress
         }
+         
     }
     
     private func balanceTextForAmount(amount: Satoshis?, rate: Rate?) -> (NSAttributedString?, NSAttributedString?) {
