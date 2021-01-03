@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "Ensemble PIN";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Résolution de domaine";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "L'adresse a été résolue!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Échec de l'envoi";
 

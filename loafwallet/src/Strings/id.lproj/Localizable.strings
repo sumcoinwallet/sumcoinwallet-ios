@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "Set PIN";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Resolusi Domain";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Alamatnya sudah teratasi!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Pengiriman gagal";
 

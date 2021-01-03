@@ -1234,6 +1234,12 @@
 /* Corruption Error alert title */
 "Alert.corruptionMessage" = "";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "";
+
 /* Luxury fee */
 "FeeSelector.luxury" = "";
 

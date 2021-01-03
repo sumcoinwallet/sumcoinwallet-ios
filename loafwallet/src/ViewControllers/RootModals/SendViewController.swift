@@ -24,6 +24,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
     var presentScan: PresentScan?
     var presentVerifyPin: ((String, @escaping VerifyPinCallback)->Void)?
     var onPublishSuccess: (()->Void)?
+    var onResolvedSuccess: (()->Void)?
     var parentView: UIView? //ModalPresentable
     var initialAddress: String?
     var isPresentedFromLock = false
@@ -179,13 +180,19 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
             }
         }
         
+        //MARK: - Unstopplable Domain Callbacks
         unstoppableCell.rootView.viewModel.shouldClearAddressField = {
+            
             ///clear the existing textfield
             self.addressCell.textField.becomeFirstResponder()
             self.addressCell.textField.text = ""
         }
         
         unstoppableCell.rootView.viewModel.didResolveUDAddress = { resolvedUDAddress in
+            
+            // Toast the successful resolution
+            self.onResolvedSuccess?()
+
             ///Paste in Unstoppable Domain resolved LTC address to textField
             self.addressCell.textField.becomeFirstResponder()
             self.addressCell.textField.isHidden = false

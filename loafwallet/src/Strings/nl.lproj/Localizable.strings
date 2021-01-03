@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN Set.";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Domeinresolutie";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Uw adres is opgelost!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Zending mislukt";
 

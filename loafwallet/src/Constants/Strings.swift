@@ -421,6 +421,8 @@ enum S {
         static let pinSet = NSLocalizedString("Alerts.pinSet", value: "**PIN Set**", comment: "Alert Header label (the PIN was set)")
         static let paperKeySet = NSLocalizedString("Alerts.paperKeySet", value: "**Paper Key Set**", comment: "Alert Header Label (the paper key was set)")
         static let sendSuccess = NSLocalizedString("Alerts.sendSuccess", value: "**Send Confirmation**", comment: "Send success alert header label (confirmation that the send happened)")
+        static let resolvedSuccess = NSLocalizedString("Alerts.resolvedSuccess", value: "**Resolved Success**", comment: "Resolved Success")
+        static let resolvedSuccessSubheader = NSLocalizedString("Alerts.resolvedSuccessSubheader", value: "Resolved", comment: "Resolved Success subheader")
         static let sendFailure = NSLocalizedString("Alerts.sendFailure", value: "**Send failed**", comment: "Send failure alert header label (the send failed to happen)")
         static let paperKeySetSubheader = NSLocalizedString("Alerts.paperKeySetSubheader", value: "**Awesome!**", comment: "Alert Subheader label (playfully positive)")
         static let sendSuccessSubheader = NSLocalizedString("Alerts.sendSuccessSubheader", value: "**Money Sent!**", comment: "Send success alert subheader label (e.g. the money was sent)")

@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN-kod är inställd";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Domänupplösning";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Din adress har lösts!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Sändningen misslyckades";
 

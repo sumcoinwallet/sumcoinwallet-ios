@@ -81,9 +81,8 @@ struct UnstoppableDomainView: View {
                          // Description: the minmum domain length is 4 e.g.; 'a.zil'
                          // Enabling the button until the domain string is at least 4 chars long
                         
-                         if currentString.count > 4 {
-                            shouldDisableLookupButton = false
-                        }
+                         shouldDisableLookupButton = currentString.count > 4 ? false : true
+                          
                     })
                     .disabled(shouldDisableLookupButton)
                     
