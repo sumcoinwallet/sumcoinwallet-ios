@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN 준비";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "도메인 확인";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "주소가 확인되었습니다!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "보내기 실패함";
 
@@ -1351,8 +1357,5 @@
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d의 %1$d";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "";
-
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword.detail" = "";
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "조회";

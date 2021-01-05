@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "Set PIN";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Resolusi Domain";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Alamatnya sudah teratasi!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Pengiriman gagal";
 
@@ -1351,8 +1357,5 @@
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d dari %2$d";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "";
-
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword.detail" = "";
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Lihatlah";

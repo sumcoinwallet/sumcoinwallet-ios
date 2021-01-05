@@ -1282,6 +1282,7 @@
 /* Litewallet Partners */
 "Settings.litewallet.partners" = "Litewallet partners";
 
+<<<<<<< HEAD
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "Card";
 
@@ -1374,3 +1375,12 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "You have registered!\nPlease check and confirm your email. Then come back to login.";
+
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Domain Resolution";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Address was resolved!";
+
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Lookup";

@@ -61,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "Ensemble PIN";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Résolution de domaine";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "L'adresse a été résolue!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Échec de l'envoi";
 
@@ -1349,10 +1355,8 @@
 "WritePaperPhrase.step" = "%1$d de %2$d";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "";
+"LitecoinCard.Registration.usernameEmail" = "Email";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "";
-
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword.detail" = "";
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Chercher";
+ 

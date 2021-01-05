@@ -17,6 +17,9 @@ struct UnstoppableDomainView: View {
     @State
     private var didReceiveLTCfromUD: Bool = false
     
+    @State
+    private var shouldDisableLookupButton: Bool = true
+    
     init(viewModel: UnstoppableDomainViewModel) {
         self.viewModel = viewModel
     }
@@ -73,7 +76,15 @@ struct UnstoppableDomainView: View {
                                     .padding(.trailing, 18)
                             }
                         }
-                    }
+                    }.onReceive(viewModel.$searchString, perform: { currentString in
+                         
+                         // Description: the minmum domain length is 4 e.g.; 'a.zil'
+                         // Enabling the button until the domain string is at least 4 chars long
+                        
+                         shouldDisableLookupButton = currentString.count < 4
+                          
+                    })
+                    .disabled(shouldDisableLookupButton)
                     
                 }
                 Spacer()
