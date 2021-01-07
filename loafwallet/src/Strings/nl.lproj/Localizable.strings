@@ -475,6 +475,33 @@
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Staat / Provincie";
 
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "E-mail";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Mag niet leeg zijn";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Ongeldig e-mailadres";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Het mobiele nummer moet minimaal 10 cijfers hebben";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobiel nummer is vereist";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Wachtwoord moet minimaal 6 tekens bevatten";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Wachtwoord moet uit meer dan 6 tekens bestaan, met minimaal één teken en één numeriek teken";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Een wachtwoord is verplicht";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "verplicht veld";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Postcode";
 
@@ -483,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "U bent geregistreerd! Controleer en bevestig uw e-mail. Kom dan terug om in te loggen.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Wachtwoord opnieuw instellen";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Ga naar https://litecoin.dashboard.getblockcard.com/password/forgot om uw wachtwoord te resetten.";
@@ -1353,6 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d van %2$d";
- 
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Opzoeken"; 

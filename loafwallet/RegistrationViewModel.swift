@@ -58,41 +58,38 @@ class RegistrationViewModel: ObservableObject {
     
     func registerCardUser() {
         
-        var testUserID: String?
+        var setupUserID: String?
         
-     PartnerAPI.shared.createUser(userDataParams: dataDictionary) { (newUser) in
+        PartnerAPI.shared.createUser(userDataParams: dataDictionary) { (newUser) in
         
-        
-        if let userID = newUser?.userID,
-           let createdAt = newUser?.createdAtDateString {
-            
-            ///Set test UserID
-            testUserID = userID
-            print("XXX Registered User: \(testUserID)")
-            
-            guard let password = self.dataDictionary["password"] as? String else { return }
-            guard let email = self.dataDictionary["email"] as? String else { return }
-            
-            let cardService = "com.litecoincard.service"
-            let keychain = Keychain(service: cardService)
-            
-            keychain[email] = password
-            keychain["userID"] = userID
-            keychain["createdAt"] = createdAt
-            
-            DispatchQueue.main.async {
-                self.message = S.LitecoinCard.registrationSuccess
-                self.didRegister = true
+            if let userID = newUser?.userID,
+               let createdAt = newUser?.createdAtDateString {
+                
+                ///Move  setupUserID
+                setupUserID = userID
+     
+                guard let password = self.dataDictionary["password"] as? String else { return }
+                guard let email = self.dataDictionary["email"] as? String else { return }
+                
+                let cardService = "com.litecoincard.service"
+                let keychain = Keychain(service: cardService)
+                
+                keychain[email] = password
+                keychain["userID"] = userID
+                keychain["createdAt"] = createdAt
+                
+                DispatchQueue.main.async {
+                    self.message = S.LitecoinCard.registrationSuccess
+                    self.didRegister = true
 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-                    self.isRegistering = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.isRegistering = false
+                    }
                 }
             }
-        }
-        
        }
      
-        if testUserID == nil {
+        if setupUserID == nil {
             DispatchQueue.main.async {
                 self.message = S.LitecoinCard.registrationFailure
                 DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {

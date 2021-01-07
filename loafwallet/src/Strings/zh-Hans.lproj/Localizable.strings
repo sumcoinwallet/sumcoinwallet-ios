@@ -472,6 +472,30 @@
 /* registraition username / email */
 "LitecoinCard.Registration.usernameEmail" = "ID 유형";
 
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "不能为空";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "无效的邮件地址";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "手机号码必须至少有10位数字";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "手机号码为必填项";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "密码必须至少包含6个字符";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "密码必须超过6个字符，并且至少包含一个字符和一个数字字符";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "密码是必需的";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "必填项目";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "邮编";
 
@@ -480,6 +504,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "您已经注册！ 请检查并确认您的电子邮件。 然后返回登录。";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "重设密码";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "请访问 https://litecoin.dashboard.getblockcard.com/password/forgot 重置您的密码。";
@@ -1350,6 +1377,9 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d / %2$d";
- 
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "抬头"; 
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "";

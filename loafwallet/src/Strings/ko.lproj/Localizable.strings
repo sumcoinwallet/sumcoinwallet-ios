@@ -478,6 +478,30 @@
 /* registraition username / email */
 "LitecoinCard.Registration.usernameEmail" = "ID 유형";
 
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "비워 둘 수 없습니다.";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "잘못된 이메일 주소";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "휴대 전화 번호는 10 자리 이상이어야합니다.";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "휴대폰 번호가 필요합니다.";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "비밀번호는 6 자 이상이어야합니다.";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "비밀번호는 6 자 이상이어야하며 최소 1 개의 문자와 1 개의 숫자가 있어야합니다.";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "비밀번호가 필요합니다";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "필수 필드";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "우편 번호";
 
@@ -486,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "등록하셨습니다! 이메일을 확인하고 확인하십시오. 그런 다음 다시 로그인하십시오.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "암호를 재설정";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";
@@ -1356,6 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d의 %1$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "조회";

@@ -478,6 +478,30 @@
 /* registraition username / email */
 "LitecoinCard.Registration.usernameEmail" = "電子郵件";
 
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "必填項目";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "無效的郵件地址";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "手機號碼必須至少有10位數字";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "手機號碼為必填項";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "密碼必須至少包含6個字符";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "密碼必須超過6個字符，並且至少包含一個字符和一個數字字符";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "密碼是必需的";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "不能為空";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "郵編";
 
@@ -486,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "您已經註冊！ 請檢查並確認您的電子郵件。 然後返回登錄。";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "重設密碼";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "訪問https://litecoin.dashboard.getblockcard.com/password/forgot重設密碼。";
@@ -1356,7 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$d 之 %1$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "抬頭";
->>>>>>> origin/develop

@@ -1282,7 +1282,6 @@
 /* Litewallet Partners */
 "Settings.litewallet.partners" = "Litewallet partners";
 
-<<<<<<< HEAD
 /* Card Bar Item Title */
 "LitecoinCard.barItemTitle" = "Card";
 
@@ -1303,9 +1302,6 @@
 
 /* Reset Litecoin card password */
 "LitecoinCard.resetPassword" = "Reset password";
-
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword.detail" = "Enter the email associated with your Litecoin card to reset the password.";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Visit https://litecoin.dashboard.getblockcard.com/password/forgot\nto reset your password.";
@@ -1382,5 +1378,26 @@
 /* No comment provided by engineer. */
 "Alerts.resolvedSuccessSubheader" = "Address was resolved!";
 
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Lookup";
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Must not be empty";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Invalid e-mail Address";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Mobile number must have at least 10 digits";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobile number is required";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Password must have at least 6 characters";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Password must be more than 6 characters, with at least one character and one numeric character";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Password is Required";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "Required field";

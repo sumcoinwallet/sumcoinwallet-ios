@@ -60,9 +60,7 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
                 }
                 Spacer()
             }
-        }.onAppear {
-
-        }
+        } 
     }
 }
 

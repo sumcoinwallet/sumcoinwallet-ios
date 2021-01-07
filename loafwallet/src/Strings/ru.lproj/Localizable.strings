@@ -475,6 +475,33 @@
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Штат / провинция";
 
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Эл. адрес";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Не должно быть пустым";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Неверный адрес электронной почты";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Номер мобильного телефона должен состоять не менее чем из 10 цифр.";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Требуется номер мобильного телефона";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Пароль должен состоять не менее чем из 6 символов.";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Пароль должен содержать более 6 символов, по крайней мере, один символ и один цифровой символ.";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Необходим пароль";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "Обязательное поле";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Почтовый индекс";
 
@@ -483,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "Вы зарегистрировались! Пожалуйста, проверьте и подтвердите свою электронную почту. Затем вернитесь к логину.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Сброс пароля";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Посетите https://litecoin.dashboard.getblockcard.com/password/forgot, чтобы сбросить пароль.";
@@ -1353,6 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d из %2$d";
- 
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Искать"; 

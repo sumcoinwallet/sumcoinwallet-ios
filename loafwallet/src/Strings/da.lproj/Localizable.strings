@@ -475,6 +475,33 @@
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Stat / provins";
 
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Email";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Må ikke være tom";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Ugyldig emailadresse";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Mobilnummeret skal have mindst 10 cifre";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobilnummer er påkrævet";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Adgangskoden skal indeholde mindst 6 tegn";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Adgangskoden skal bestå af mere end 6 tegn med mindst et tegn og et numerisk tegn";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Adgangskode er påkrævet";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "påkrævet område";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Postnummer";
 
@@ -483,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "Du har tilmeldt dig! Kontroller og bekræft din e-mail. Så kom tilbage for at logge ind.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Nulstille kodeord";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Besøg https://litecoin.dashboard.getblockcard.com/password/forgot for at nulstille din adgangskode.";
@@ -1353,10 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d af %2$d";
-
-/* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "Email";
- 
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Kig op";
- 

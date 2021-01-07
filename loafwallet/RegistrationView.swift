@@ -70,7 +70,7 @@ struct RegistrationView: View {
             // Litewallet Blue Background
             VStack {
             
-                Text(S.Registration.registerCardPhrase)
+                Text(S.LitecoinCard.Registration.registerCardPhrase)
                     .multilineTextAlignment(.leading)
                     .foregroundColor(.white)
                     .font(Font(UIFont.barlowBold(size: 20.0)))
@@ -84,7 +84,7 @@ struct RegistrationView: View {
                         Group {
                             HStack {
                                 VStack {
-                                    TextField(S.Registration.firstName,
+                                    TextField(S.LitecoinCard.Registration.firstName,
                                               text: $firstName)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .keyboardType(.namePhonePad)
@@ -98,7 +98,7 @@ struct RegistrationView: View {
                                 }
                                 
                                 VStack {
-                                    TextField(S.Registration.lastName,
+                                    TextField(S.LitecoinCard.Registration.lastName,
                                               text: $lastName)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .keyboardType(.namePhonePad)
@@ -128,7 +128,7 @@ struct RegistrationView: View {
                             
                             HStack {
                                 VStack {
-                                    TextField(S.Registration.password,
+                                    TextField(S.LitecoinCard.Registration.password,
                                               text: $password)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .autocapitalization(.none)
@@ -142,7 +142,7 @@ struct RegistrationView: View {
                                 }
                                 
                                 VStack {
-                                    TextField(S.Registration.confirmPassword,
+                                    TextField(S.LitecoinCard.Registration.confirmPassword,
                                               text: $confirmPassword)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .autocapitalization(.none)
@@ -162,7 +162,7 @@ struct RegistrationView: View {
                         //MARK: - Mobile number
                         Group {
                             VStack {
-                                TextField(S.Registration.mobileNumber, text: $mobileNumber)
+                                TextField(S.LitecoinCard.Registration.mobileNumber, text: $mobileNumber)
                                     .font(Font(UIFont.barlowRegular(size: 16.0)))
                                     .keyboardType(.numberPad)
                                     .padding([.leading, .trailing, .top], 4)
@@ -179,7 +179,7 @@ struct RegistrationView: View {
                         Group {
                             HStack {
                                 VStack {
-                                    TextField(S.Registration.address, text: $address)
+                                    TextField(S.LitecoinCard.Registration.address, text: $address)
                                         .padding([.leading, .trailing, .top], 4)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
@@ -191,7 +191,7 @@ struct RegistrationView: View {
                             }
                             HStack {
                                 VStack {
-                                    TextField(S.Registration.city, text: $city)
+                                    TextField(S.LitecoinCard.Registration.city, text: $city)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .padding([.leading, .trailing, .top], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
@@ -201,7 +201,7 @@ struct RegistrationView: View {
                                         .padding(.top, 1)
                                 }
                                 VStack {
-                                    TextField(S.Registration.stateProvince, text: $state)
+                                    TextField(S.LitecoinCard.Registration.stateProvince, text: $state)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .padding([.leading, .trailing, .top], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
@@ -227,7 +227,7 @@ struct RegistrationView: View {
                                 
                                 VStack {
                                     //DEV: Will change when EU support comes
-                                    TextField(S.Registration.zipPostCode, text: $zipCodePostCode)
+                                    TextField(S.LitecoinCard.Registration.zipPostCode, text: $zipCodePostCode)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .padding([.leading, .trailing, .top], 4)
                                     Divider()
@@ -335,9 +335,7 @@ struct RegistrationView: View {
         viewModel.dataDictionary["zip_code"] = zipCodePostCode
         return viewModel.dataDictionary
     }
-    
 }
-
 
 struct RegistrationView_Previews: PreviewProvider {
     
@@ -360,11 +358,3 @@ struct RegistrationView_Previews: PreviewProvider {
         }
     }
 }
-
-
-
-
-
-
-
-

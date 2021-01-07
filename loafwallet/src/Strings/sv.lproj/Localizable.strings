@@ -475,6 +475,30 @@
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Stat / provins";
 
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Får inte vara tom";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Ogiltig e-postadress";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Mobilnumret måste innehålla minst tio siffror";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobilnummer krävs";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Lösenordet måste innehålla minst sex tecken";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Lösenordet måste innehålla mer än sex tecken, med minst ett tecken och ett numeriskt tecken";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Lösenord krävs";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "obligatoriskt fält";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Postnummer";
 
@@ -483,6 +507,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "Du har registrerat dig! Kontrollera och bekräfta din e-post.\nKom sedan tillbaka för att logga in.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Återställ lösenord";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Besök https://litecoin.dashboard.getblockcard.com/password/forgot för att återställa ditt lösenord.";
@@ -1354,5 +1381,5 @@
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d av %2$d";
 
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Slå upp"; 
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "";

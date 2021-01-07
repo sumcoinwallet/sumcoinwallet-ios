@@ -295,7 +295,6 @@
 		C3BD4A5325975C6000D97079 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD4A5225975C6000D97079 /* View+Extension.swift */; };
 		C3BD4A6A2597E1E900D97079 /* CardLoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD4A692597E1E900D97079 /* CardLoggedInView.swift */; };
 		C3BFD349259E31C100136837 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFD348259E31C100136837 /* LoginViewModel.swift */; };
-		C3C6527125992B120011C25F /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6527025992B120011C25F /* Keychain.swift */; };
 		C3D4379F2566EA3E00F423E1 /* LWActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4379E2566EA3E00F423E1 /* LWActivityIndicator.swift */; };
 		C3D783A72565EA4B0004FF70 /* UnstoppableDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D783A62565EA4A0004FF70 /* UnstoppableDomainView.swift */; };
 		C3D783B72565EA6B0004FF70 /* UnstoppableDomainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D783B62565EA6B0004FF70 /* UnstoppableDomainViewModel.swift */; };
@@ -1467,7 +1466,6 @@
 		C3BD4A5225975C6000D97079 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		C3BD4A692597E1E900D97079 /* CardLoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLoggedInView.swift; sourceTree = "<group>"; };
 		C3BFD348259E31C100136837 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		C3C6527025992B120011C25F /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		C3D4379E2566EA3E00F423E1 /* LWActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWActivityIndicator.swift; sourceTree = "<group>"; };
 		C3D783A62565EA4A0004FF70 /* UnstoppableDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnstoppableDomainView.swift; sourceTree = "<group>"; };
 		C3D783B62565EA6B0004FF70 /* UnstoppableDomainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnstoppableDomainViewModel.swift; sourceTree = "<group>"; };
@@ -3323,7 +3321,6 @@
 				CEE65DEF1E39056F0002994D /* Rate.swift */,
 				24016D8F23F913C1006A6791 /* LWAnalytics.swift */,
 				CEEC70821E90C07C00EF788E /* Setting.swift */,
-				C3C6527025992B120011C25F /* Keychain.swift */,
 				C30AFB632598FFB200CDCF69 /* PartnerAPIManager.swift */,
 				CEF61B131ED0D10000C7EA6A /* Types.swift */,
 				C3A4647C259A646A00D74D81 /* DataValidation.swift */,
@@ -4309,7 +4306,6 @@
 				CEB909FA1E5FF242001804DC /* RecoverWalletIntroViewController.swift in Sources */,
 				CE25BF911DF9ADE700BC67B6 /* UIImage+Utils.swift in Sources */,
 				CEBF33041DDE17A600348FC6 /* Transaction.swift in Sources */,
-				C3C6527125992B120011C25F /* Keychain.swift in Sources */,
 				CEAA9E911DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */,
 				22E773041EE7813000397E0E /* Bonjour.swift in Sources */,
 				C3BD4A4A2597542700D97079 /* LoginCardAlertView.swift in Sources */,

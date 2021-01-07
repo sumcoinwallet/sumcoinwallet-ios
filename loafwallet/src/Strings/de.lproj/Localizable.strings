@@ -478,6 +478,30 @@
 /* registraition username / email */
 "LitecoinCard.Registration.usernameEmail" = "E-Mail (Benutzername)";
 
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Darf nicht leer sein";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Ungültige E-Mail-Adresse";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Die Handynummer muss mindestens 10 Ziffern haben";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Handynummer ist erforderlich";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Das Passwort muss mindestens 6 Zeichen lang sein";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Das Passwort muss aus mehr als 6 Zeichen bestehen, mit mindestens einem Zeichen und einem numerischen Zeichen";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Passwort wird benötigt";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "Pflichtfeld";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Postleitzahl";
 
@@ -486,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "Sie haben sich registriert! Bitte überprüfen und bestätigen Sie Ihre E-Mail. Dann komm zurück zum Login.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Passwort zurücksetzen";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Besuchen Sie https://litecoin.dashboard.getblockcard.com/password/forgot, um Ihr Passwort zurückzusetzen.";
@@ -1356,6 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d von %2$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Nachsehen";

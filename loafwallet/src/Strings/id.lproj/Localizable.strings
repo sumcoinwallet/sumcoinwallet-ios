@@ -478,6 +478,30 @@
 /* registraition username / email */
 "LitecoinCard.Registration.usernameEmail" = "Surel";
 
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Wajib diisi";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Alamat email salah";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Nomor ponsel setidaknya harus terdiri dari 10 digit";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Nomor ponsel diperlukan";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Kata sandi harus memiliki setidaknya 6 karakter";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Kata sandi harus lebih dari 6 karakter, dengan setidaknya satu karakter dan satu karakter numerik";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Kata sandi diperlukan";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "kolom yang harus diisi";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Kode Pos";
 
@@ -486,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "Anda telah mendaftar! Silakan periksa dan konfirmasi email Anda. Kemudian kembali untuk masuk.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Setel ulang kata sandi";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
@@ -1356,6 +1383,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d dari %2$d";
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Lihatlah";

@@ -475,6 +475,33 @@
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Stato / provincia";
 
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "E-mail";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Non deve essere vuoto";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Indirizzo email non valido";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Il numero di cellulare deve contenere almeno 10 cifre";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "È richiesto il numero di cellulare";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "La password deve contenere almeno 6 caratteri";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "La password deve contenere più di 6 caratteri, con almeno un carattere e un carattere numerico";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "E 'richiesta la password";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "campo obbligatorio";
+
 /* zip post Code */
 "LitecoinCard.Registration.zipPostCode" = "Codice postale";
 
@@ -483,6 +510,9 @@
 
 /* Registration success */
 "LitecoinCard.registrationSuccess" = "Ti sei registrato! Controlla e conferma la tua email. Quindi torna indietro per accedere.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Resetta la password";
 
 /* Litecoin card visit */
 "LitecoinCard.visit.toReset" = "Visita https://litecoin.dashboard.getblockcard.com/password/forgot per reimpostare la tua password.";
@@ -1352,10 +1382,4 @@
 "WritePaperPhrase.previous" = "Precedente";
 
 /* 1 of 3 */
-"WritePaperPhrase.step" = "%1$d di %2$d"; 
-
-/* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "E-mail"; 
-
-/* Lookup */
-"Send.UnstoppableDomains.lookup" = "Consultare";
+"WritePaperPhrase.step" = "%1$d di %2$d";

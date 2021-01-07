@@ -23,9 +23,9 @@ enum AlertType {
         case .paperKeySet:
             return S.SecurityAlerts.paperKeySet
         case .sendSuccess: 
-            return S.Alerts.sendSuccess
+            return S.SecurityAlerts.sendSuccess
         case .resolvedSuccess:
-            return S.Alerts.resolvedSuccess 
+            return S.SecurityAlerts.resolvedSuccess
         case .addressesCopied:
             return S.SecurityAlerts.copiedAddressesHeader
         case .sweepSuccess:
@@ -40,9 +40,9 @@ enum AlertType {
         case .paperKeySet:
             return S.SecurityAlerts.paperKeySetSubheader
         case .sendSuccess: 
-            return S.Alerts.sendSuccessSubheader
+            return S.SecurityAlerts.sendSuccessSubheader
         case .resolvedSuccess:
-            return S.Alerts.resolvedSuccessSubheader 
+            return S.SecurityAlerts.resolvedSuccessSubheader 
         case .addressesCopied:
             return S.SecurityAlerts.copiedAddressesSubheader
         case .sweepSuccess:
