@@ -22,7 +22,7 @@ class LoginViewModel: ObservableObject {
     var isLoggedIn: Bool = false
     
     @Published
-    var isLoggingIn: Bool = false
+    var doShowModal: Bool = false
     
     @Published
     var didCompleteLogin: Bool = false
@@ -30,18 +30,20 @@ class LoginViewModel: ObservableObject {
     func login(completion: @escaping (Bool) -> ()) {
         
         //Turn on the modal
-        self.isLoggingIn = false
+        self.doShowModal = false
         
         let credentials: [String: Any] = ["email": emailString, "password": passwordString]
         
         PartnerAPI.shared.loginUser(credentials: credentials) { dataDictionary in
             
             if let error = dataDictionary?["error"] as? String {
-                print("ERROR: Login failure: \(error.description)")
                 
-                self.isLoggedIn = false
-                self.didCompleteLogin = false
-                completion(self.didCompleteLogin)  
+                DispatchQueue.main.async {
+                    print("ERROR: Login failure: \(error.description)")
+                    self.isLoggedIn = false
+                    self.didCompleteLogin = false
+                    completion(self.didCompleteLogin)
+                }
             }
             
             let cardService = "com.litecoincard.service"
@@ -63,11 +65,11 @@ class LoginViewModel: ObservableObject {
                     self.didCompleteLogin = true
                     
                     //Turn modal off
-                    self.isLoggingIn = false
+                    self.doShowModal = false
                     
                     NotificationCenter.default.post(name: .LitecoinCardLoginNotification, object: nil,
                                                     userInfo: nil)
-                    completion(self.isLoggingIn)
+                    completion(self.didCompleteLogin)
                 }
             }
         }

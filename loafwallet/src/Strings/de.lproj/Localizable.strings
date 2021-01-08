@@ -418,6 +418,9 @@
 /* Card balance */
 "LitecoinCard.cardBalance" = "Kartenguthaben";
 
+/* Failed Login */
+"LitecoinCard.failed.login" = "Anmeldung fehlgeschlagen";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Passwort vergessen?";
 

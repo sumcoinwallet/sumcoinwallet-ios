@@ -12,6 +12,9 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
     @Binding
     var isShowingLoginAlert: Bool
     
+    @Binding
+    var didFail: Bool
+    
     let presenting: Presenting
     
     var mainMessage: String
@@ -23,7 +26,7 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
                         self.presenting.disabled(isShowingLoginAlert)
                     
                     VStack {
-                        Text(self.mainMessage)
+                        Text(didFail ? S.LitecoinCard.failedlogin : self.mainMessage)
                             .padding()
                             .font(Font(UIFont.customMedium(size: 16.0)))
                             .foregroundColor(Color(UIColor.liteWalletBlue))
@@ -70,7 +73,9 @@ struct LoginCardAlertView_Previews: PreviewProvider {
         VStack {
             Spacer()
             Text("").padding(.all, 10)
-                .loginAlertView(isShowingLoginAlert: .constant(true), message: "Login...")
+                .loginAlertView(isShowingLoginAlert: .constant(true),
+                                didFail: .constant(true),
+                                message: "Login...")
             Spacer()
         }
     }

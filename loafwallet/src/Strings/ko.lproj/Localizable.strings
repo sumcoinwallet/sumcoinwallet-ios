@@ -418,6 +418,9 @@
 /* Card balance */
 "LitecoinCard.cardBalance" = "카드 잔액";
 
+/* Failed Login */
+"LitecoinCard.failed.login" = "로그인 실패";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "비밀번호를 잊으 셨나요?";
 

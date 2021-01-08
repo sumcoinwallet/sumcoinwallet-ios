@@ -1401,3 +1401,6 @@
 
 /* Required field */
 "LitecoinCard.Registration.ValidationError.requiredField" = "Required field";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "Login failed";

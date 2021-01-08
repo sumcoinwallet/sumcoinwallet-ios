@@ -13,10 +13,12 @@ import SwiftUI
 extension View {
     
     func loginAlertView(isShowingLoginAlert: Binding<Bool>,
+                        didFail: Binding<Bool>,
                         message: String) -> some View {
         loafwallet.LoginCardAlertView(isShowingLoginAlert: isShowingLoginAlert,
-                       presenting: self,
-                       mainMessage: message)
+                                      didFail: didFail,
+                                      presenting: self,
+                                      mainMessage: message)
     }
     
     func forgotPasswordView(isShowingForgot: Binding<Bool>,

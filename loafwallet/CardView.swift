@@ -28,6 +28,9 @@ struct CardView: View {
     private var shouldShowLoginModal: Bool = false
     
     @State
+    private var didFailToLogin: Bool = false
+    
+    @State
     var didTapIForgot: Bool = false
     
     @State
@@ -67,11 +70,7 @@ struct CardView: View {
                 Group {
                     
                     TextField(S.Receive.emailButton, text: $loginModel.emailString) {  _ in
-                        if loginModel.emailString.count < 4 {
-                            cannotLogin = true
-                        } else {
-                            cannotLogin = false
-                        }
+                       cannotLogin = loginModel.emailString.count < 4
                     }
                     .font(Font(UIFont.barlowSemiBold(size:18.0)))
                     .accentColor(Color(UIColor.liteWalletBlue))
@@ -140,13 +139,20 @@ struct CardView: View {
                     // Login button
                     Button(action: {
                         shouldShowLoginModal = true
-                         loginModel.login { isStillLoggingIn in
+                         loginModel.login { didLogin in
                             
-                            if !isStillLoggingIn {
+                            if didLogin {
                                 viewModel.isLoggedIn = true
                                 shouldShowLoginModal = false
                                  NotificationCenter.default.post(name: .LitecoinCardLoginNotification, object: nil,
                                                                 userInfo: nil)
+                            } else {
+                                viewModel.isLoggedIn = true
+                                didFailToLogin = true
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                                    shouldShowLoginModal = false
+                                } 
                             }
                         }
                         
@@ -202,6 +208,7 @@ struct CardView: View {
                             emailString: $forgotEmailAddressInput,
                             message: S.LitecoinCard.forgotPassword)
         .loginAlertView(isShowingLoginAlert: $shouldShowLoginModal,
+                        didFail: $didFailToLogin,
                         message: S.LitecoinCard.login)
         .registeredAlertView(shouldStartRegistering: $registrationModel.isRegistering,
                              didRegister: $registrationModel.didRegister,

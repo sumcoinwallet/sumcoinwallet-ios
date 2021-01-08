@@ -418,6 +418,9 @@
 /* Card balance */
 "LitecoinCard.cardBalance" = "Kortbalans";
 
+/* Failed Login */
+"LitecoinCard.failed.login" = "Inloggningen misslyckades";
+
 /* Forgot password? */
 "LitecoinCard.forgotPassword" = "Glömt ditt lösenord?";
 
@@ -474,6 +477,9 @@
 
 /* state province */
 "LitecoinCard.Registration.stateProvince" = "Stat / provins";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "E-mail";
 
 /* must not be empty */
 "LitecoinCard.Registration.ValidationError.empty" = "Får inte vara tom";
@@ -1380,6 +1386,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d av %2$d";
-
-/* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "";
