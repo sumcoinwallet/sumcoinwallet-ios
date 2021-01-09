@@ -276,6 +276,9 @@
 		C32DC79C2593971500A7FDB4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC79B2593971500A7FDB4 /* CardView.swift */; };
 		C32DC7AC2593B5C900A7FDB4 /* AnimatedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC7AB2593B5C900A7FDB4 /* AnimatedCardView.swift */; };
 		C32DC7B52593B61F00A7FDB4 /* AnimatedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DC7B42593B61F00A7FDB4 /* AnimatedCardViewModel.swift */; };
+		C345D81525A8D52600657E30 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345D81425A8D52600657E30 /* LoginViewModelTests.swift */; };
+		C345D82525A8D54200657E30 /* RegistrationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345D82425A8D54200657E30 /* RegistrationViewModelTests.swift */; };
+		C345D83725A8D57E00657E30 /* AnimatedCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345D83625A8D57E00657E30 /* AnimatedCardViewModelTests.swift */; };
 		C354C45A258FA9C000675E0E /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */; };
 		C354C4632590059500675E0E /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354C4622590059500675E0E /* TransactionsViewModel.swift */; };
 		C35ABD232574070A002BB9BB /* PartnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35ABD222574070A002BB9BB /* PartnersView.swift */; };
@@ -1447,6 +1450,9 @@
 		C32DC79B2593971500A7FDB4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C32DC7AB2593B5C900A7FDB4 /* AnimatedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardView.swift; sourceTree = "<group>"; };
 		C32DC7B42593B61F00A7FDB4 /* AnimatedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardViewModel.swift; sourceTree = "<group>"; };
+		C345D81425A8D52600657E30 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		C345D82425A8D54200657E30 /* RegistrationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelTests.swift; sourceTree = "<group>"; };
+		C345D83625A8D57E00657E30 /* AnimatedCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardViewModelTests.swift; sourceTree = "<group>"; };
 		C354C459258FA9C000675E0E /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		C354C4622590059500675E0E /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		C35ABD222574070A002BB9BB /* PartnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersView.swift; sourceTree = "<group>"; };
@@ -2147,6 +2153,7 @@
 		24470E4323A6088700ADDA27 /* Class Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C345D81325A8D50600657E30 /* LitecoinCardTests */,
 				24470E4423A608A700ADDA27 /* AmountTests.swift */,
 				2494037523AD35C000369261 /* BuyWKWebVCTests.swift */,
 				249C570423B51F9B009CB5A9 /* TransactionsViewControllerTests.swift */,
@@ -3073,6 +3080,16 @@
 			name = CardModels;
 			sourceTree = "<group>";
 		};
+		C345D81325A8D50600657E30 /* LitecoinCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				C345D81425A8D52600657E30 /* LoginViewModelTests.swift */,
+				C345D83625A8D57E00657E30 /* AnimatedCardViewModelTests.swift */,
+				C345D82425A8D54200657E30 /* RegistrationViewModelTests.swift */,
+			);
+			path = LitecoinCardTests;
+			sourceTree = "<group>";
+		};
 		C35ABD07257404C6002BB9BB /* SwiftUI+UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -3996,13 +4013,16 @@
 				24470E3E23A6000900ADDA27 /* WalletAuthenticationTests.swift in Sources */,
 				24470E2A23A5F33000ADDA27 /* BRReplicatedKVStoreTests.swift in Sources */,
 				C3D783C02565ECF60004FF70 /* UnstoppableDomainViewModelTests.swift in Sources */,
+				C345D81525A8D52600657E30 /* LoginViewModelTests.swift in Sources */,
 				249C570523B51F9B009CB5A9 /* TransactionsViewControllerTests.swift in Sources */,
 				24470E2523A5EF0D00ADDA27 /* BRAPIClientTests.swift in Sources */,
 				24470E3C23A5FFD700ADDA27 /* TouchIdEnabledTests.swift in Sources */,
 				24470E3023A5F55700ADDA27 /* BRHTTPServerTests.swift in Sources */,
 				24470E3A23A5FF5700ADDA27 /* TestHelpers.swift in Sources */,
+				C345D83725A8D57E00657E30 /* AnimatedCardViewModelTests.swift in Sources */,
 				C3B7C43F25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift in Sources */,
 				2465873923A5AAD100A32E9E /* loafwalletTests.swift in Sources */,
+				C345D82525A8D54200657E30 /* RegistrationViewModelTests.swift in Sources */,
 				24470E3623A5FDE800ADDA27 /* PhraseTests.swift in Sources */,
 				24470E4523A608A700ADDA27 /* AmountTests.swift in Sources */,
 				C3B7C3EE255FF59200E98A64 /* ConstantsTests.swift in Sources */,
