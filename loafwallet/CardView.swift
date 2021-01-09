@@ -51,7 +51,12 @@ struct CardView: View {
     @State
     var isPasswordValid: Bool = false
     
-     
+    private var shouldEnableLogin: Binding<Bool> {
+        return Binding(
+            get: { return (self.isPasswordValid && self.isEmailValid) },
+            set: { if !$0 { (self.isPasswordValid && self.isEmailValid) } })
+    }
+    
     init(viewModel: CardViewModel) {
          
         self.viewModel = viewModel
@@ -65,7 +70,9 @@ struct CardView: View {
                 Group {
                     AnimatedCardView(viewModel: animatedViewModel, isLoggedIn: $didCompleteLogin)
                         .frame(minWidth:0,
-                               maxWidth: didCompleteLogin ? geometry.size.width * 0.4 :  geometry.size.width * 0.6)
+                               maxWidth:
+                                didCompleteLogin ? geometry.size.width * 0.4 :
+                                geometry.size.width * 0.6)
                         .padding(.all, didCompleteLogin ? 20 : 30)
                 }
                 
@@ -188,18 +195,15 @@ struct CardView: View {
                             .padding()
                             .font(Font(UIFont.barlowMedium(size: 16.0)))
                             .padding([.leading, .trailing], 16)
-                            .foregroundColor((isPasswordValid && isEmailValid) ? Color(UIColor.litecoinSilver) :
-                                                Color(.white))
-                            .background((isPasswordValid && isEmailValid) ? .gray :
-                                            Color(UIColor.liteWalletBlue))
+                            .foregroundColor(shouldEnableLogin.wrappedValue ? .white : Color(UIColor.litecoinSilver))
+                            .background(shouldEnableLogin.wrappedValue ? Color(UIColor.liteWalletBlue) : Color(UIColor.litecoinGray))
                             .cornerRadius(4.0)
                             .overlay(
                                 RoundedRectangle(cornerRadius:4)
-                                    .stroke(((isPasswordValid && isEmailValid) ? .gray :
-                                                Color(UIColor.liteWalletBlue)), lineWidth: 1)
+                                    .stroke(shouldEnableLogin.wrappedValue ? Color(UIColor.liteWalletBlue) : .gray, lineWidth: 1)
                             )
                     }
-                    .disabled(isPasswordValid && isEmailValid)
+                    .disabled(!shouldEnableLogin.wrappedValue)
                     .padding([.leading, .trailing], 16)
                     
                     // Registration button
