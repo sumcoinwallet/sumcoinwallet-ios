@@ -38,7 +38,7 @@ class RegistrationViewModel: ObservableObject {
     
     func verify(data: [String: Any],
                 completion: @escaping (Bool) -> ()) {
-        
+					
         guard let first = data["firstname"] as? String else { return }
         guard let last = data["lastname"] as? String else { return }
         guard let email = data["email"] as? String else { return }
@@ -50,20 +50,20 @@ class RegistrationViewModel: ObservableObject {
         guard let address1 = data["address1"] as? String else { return }
         guard let zip = data["zip_code"] as? String else { return }
         
-        if  self.isDataValid(dataType: .genericString, data: first) &&
-                isDataValid(dataType: .genericString, data: last) &&
-                isDataValid(dataType: .email, data: email) &&
-                isDataValid(dataType: .password, data: password) &&
-                isDataValid(dataType: .mobileNumber, data: phone) &&
-                isDataValid(dataType: .country, data: country) &&
-                isDataValid(dataType: .genericString, data: state) &&
-                isDataValid(dataType: .genericString, data: city) &&
-                isDataValid(dataType: .genericString, data: address1) &&
-                isDataValid(dataType: .genericString, data: zip) {
+        if isDataValid(dataType: .genericString, data: first) &&
+            isDataValid(dataType: .genericString, data: last) &&
+            isDataValid(dataType: .email, data: email) &&
+            isDataValid(dataType: .password, data: password) &&
+            isDataValid(dataType: .mobileNumber, data: phone) &&
+            isDataValid(dataType: .country, data: country) &&
+            isDataValid(dataType: .genericString, data: state) &&
+            isDataValid(dataType: .genericString, data: city) &&
+            isDataValid(dataType: .genericString, data: address1) &&
+            isDataValid(dataType: .genericString, data: zip) {
             
-            self.dataDictionary = data
+            dataDictionary = data
             
-            self.isRegistering = true
+            isRegistering = true
             
             completion(isRegistering)
         }
