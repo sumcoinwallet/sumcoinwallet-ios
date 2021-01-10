@@ -810,7 +810,7 @@
 "Send.toLabel" = "Para";
 
 /* Lookup */
-"Send.UnstoppableDomains.lookup" = "Olho para cima";
+"Send.UnstoppableDomains.lookup" = "Pesquisa";
 
 /* Enter to match domain name to LTC Address */
 "Send.UnstoppableDomains.placeholder" = "Insira um domínio .crypto ou .zil";

@@ -417,7 +417,7 @@ enum S {
         static let noAmount = NSLocalizedString("RequestAnAmount.noAmount", value: "**Please enter an amount first.**", comment: "No amount entered error message.")
     }
 
-    enum Alerts {
+    enum SecurityAlerts {
         static let pinSet = NSLocalizedString("Alerts.pinSet", value: "**PIN Set**", comment: "Alert Header label (the PIN was set)")
         static let paperKeySet = NSLocalizedString("Alerts.paperKeySet", value: "**Paper Key Set**", comment: "Alert Header Label (the paper key was set)")
         static let sendSuccess = NSLocalizedString("Alerts.sendSuccess", value: "**Send Confirmation**", comment: "Send success alert header label (confirmation that the send happened)")

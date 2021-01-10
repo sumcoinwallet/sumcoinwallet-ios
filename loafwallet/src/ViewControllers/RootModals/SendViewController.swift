@@ -375,7 +375,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
                                 self?.saveEvent("send.publishFailed", attributes: ["errorMessage": message])
                             case .publishFailure(let error):
                                 if case .posixError(let code, let description) = error {
-                                    self?.showAlert(title: S.Alerts.sendFailure, message: "\(description) (\(code))", buttonLabel: S.Button.ok)
+                                    self?.showAlert(title: S.SecurityAlerts.sendFailure, message: "\(description) (\(code))", buttonLabel: S.Button.ok)
                                     self?.saveEvent("send.publishFailed", attributes: ["errorMessage": "\(description) (\(code))"])
                                 }
                         }
