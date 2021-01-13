@@ -28,8 +28,6 @@ class UnstoppableDomainViewModel: ObservableObject {
      
     var shouldClearAddressField: (() -> Void)?
     
-    var shouldClearAddressField: (() -> Void)?
-    
     //MARK: - Private Variables
     private var ltcAddress = "" 
 	
