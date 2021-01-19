@@ -17,10 +17,8 @@ The following outlines the steps for releasing a version.
 5. Once approved, it's merged.
    
 
-
-
 #### Step B
-6. A new PR from the `master` to `develop` is created
+6. A new PR from the `release/v2.9.0` to `develop` is created
 
 7. The resolution of conflicts is completed
 
