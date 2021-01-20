@@ -70,7 +70,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-Ff-7Tv">
-                                                            <rect key="frame" x="105" y="0.0" width="249" height="105"/>
+                                                            <rect key="frame" x="105" y="0.0" width="279" height="105"/>
                                                             <connections>
                                                                 <action selector="didTapSimplex:" destination="CPA-Q1-wsm" eventType="touchUpInside" id="9M9-gv-7i3"/>
                                                             </connections>
@@ -80,6 +80,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="0eN-Mu-2s3" secondAttribute="bottom" id="19h-v8-mRZ"/>
                                                         <constraint firstAttribute="bottom" secondItem="yIf-Ff-7Tv" secondAttribute="bottom" id="1i3-hL-gEU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yIf-Ff-7Tv" secondAttribute="trailing" id="7No-qm-mCB"/>
                                                         <constraint firstItem="0eN-Mu-2s3" firstAttribute="top" secondItem="Krb-ZF-yM2" secondAttribute="top" id="7Y1-xr-MZi"/>
                                                         <constraint firstItem="6SE-LJ-SKa" firstAttribute="leading" secondItem="Krb-ZF-yM2" secondAttribute="leading" id="8jp-rq-pXV"/>
                                                         <constraint firstItem="lu8-PU-mmm" firstAttribute="leading" secondItem="6SE-LJ-SKa" secondAttribute="trailing" constant="10" id="BNh-vL-fve"/>
@@ -96,7 +97,6 @@
                                                         <constraint firstAttribute="bottom" secondItem="6SE-LJ-SKa" secondAttribute="bottom" id="hVf-Cy-eNf"/>
                                                         <constraint firstItem="BcN-Op-p6S" firstAttribute="leading" secondItem="Krb-ZF-yM2" secondAttribute="leading" constant="10" id="n6A-tw-DgI"/>
                                                         <constraint firstItem="6SE-LJ-SKa" firstAttribute="top" secondItem="Krb-ZF-yM2" secondAttribute="top" id="o4G-gT-pT9"/>
-                                                        <constraint firstItem="0eN-Mu-2s3" firstAttribute="leading" secondItem="yIf-Ff-7Tv" secondAttribute="trailing" id="paL-8c-gMF"/>
                                                         <constraint firstItem="BcN-Op-p6S" firstAttribute="top" secondItem="Krb-ZF-yM2" secondAttribute="top" constant="10" id="y51-Qm-jTs"/>
                                                     </constraints>
                                                 </view>
