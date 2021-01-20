@@ -64,11 +64,13 @@ import WebKit
     private func getSimplexParams(appInstallDate: Date?, walletAddress: String?, currencyCode: String?, uuid: String?) -> String {
         guard let appInstallDate = appInstallDate else { return "" }
         guard let walletAddress = walletAddress else { return "" }
-        let currencyCode = Currency.returnSimplexSupportedFiat(givenCode: currencyCode!)
+        guard let code = currencyCode else { return "USD" }
+//
+//        let sentCurrencyCode = Currency.returnSimplexSupportedFiat(givenCode: code)
         guard let uuid = uuid else { return "" }
         
         let timestamp = Int(appInstallDate.timeIntervalSince1970)
-        return "https://buy.loafwallet.org/?address=\(walletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuid)"
+        return "https://buy.loafwallet.org/?address=\(walletAddress)&code=\(code)&idate=\(timestamp)&uid=\(uuid)"
     }
     
     private let messageUIPresenter = MessageUIPresenter()
