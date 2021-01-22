@@ -21,12 +21,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tabBar: UITabBar!
-    @IBOutlet weak var currentLTCPriceLabel: UILabel!
-    @IBOutlet weak var settingsButton: UIButton!
-    @IBOutlet weak var timeStampLabel: UILabel!
-    @IBOutlet weak var timeStampStackView: UIStackView!
-    @IBOutlet weak var timeStampStackViewHeight: NSLayoutConstraint!
-     
+    @IBOutlet weak var settingsButton: UIButton!  
     var primaryBalanceLabel: UpdatingLabel?
     var secondaryBalanceLabel: UpdatingLabel?
     private let largeFontSize: CGFloat = 24.0
@@ -140,7 +135,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         equalsLabel.translatesAutoresizingMaskIntoConstraints = false
         primaryLabel.translatesAutoresizingMaskIntoConstraints = false
         regularConstraints = [
-            primaryLabel.firstBaselineAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -12),
+            primaryLabel.firstBaselineAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -20),
             primaryLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: C.padding[1]*1.25),
             equalsLabel.firstBaselineAnchor.constraint(equalTo: primaryLabel.firstBaselineAnchor, constant: 0),
             equalsLabel.leadingAnchor.constraint(equalTo: primaryLabel.trailingAnchor, constant: C.padding[1]/2.0),
@@ -148,7 +143,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         ]
         
         swappedConstraints = [
-            secondaryLabel.firstBaselineAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -12),
+            secondaryLabel.firstBaselineAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -20),
             secondaryLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: C.padding[1]*1.25),
             equalsLabel.firstBaselineAnchor.constraint(equalTo: secondaryLabel.firstBaselineAnchor, constant: 0),
             equalsLabel.leadingAnchor.constraint(equalTo: secondaryLabel.trailingAnchor, constant: C.padding[1]/2.0),
@@ -159,14 +154,14 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             NSLayoutConstraint.activate(isLTCSwapped ? self.swappedConstraints : self.regularConstraints)
         }
         
-        currencyTapView.constrain([
-                                    currencyTapView.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 0),
-                                    currencyTapView.trailingAnchor.constraint(equalTo: self.timeStampStackView.leadingAnchor, constant: 0),
-                                    currencyTapView.topAnchor.constraint(equalTo: primaryLabel.topAnchor, constant: 0),
-                                    currencyTapView.bottomAnchor.constraint(equalTo: primaryLabel.bottomAnchor, constant: C.padding[1]) ])
-        
-        let gr = UITapGestureRecognizer(target: self, action: #selector(currencySwitchTapped))
-        currencyTapView.addGestureRecognizer(gr)
+        currencyTapView.constrain([ 
+                   currencyTapView.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 0),
+                   currencyTapView.trailingAnchor.constraint(equalTo: self.settingsButton.leadingAnchor, constant: 0),
+                   currencyTapView.topAnchor.constraint(equalTo: primaryLabel.topAnchor, constant: 0),
+                   currencyTapView.bottomAnchor.constraint(equalTo: primaryLabel.bottomAnchor, constant: C.padding[1]) ])
+
+         let gr = UITapGestureRecognizer(target: self, action: #selector(currencySwitchTapped))
+         currencyTapView.addGestureRecognizer(gr) 
     }
     //MARK: - Adding Subscriptions
     private func addSubscriptions() {
@@ -266,14 +261,8 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
         } else {
             secondaryLabel.transform = .identity
             primaryLabel.transform = transform(forView: primaryLabel)
-        }
-        
-        self.timeStampLabel.text = S.TransactionDetails.priceTimeStampLabel + " " + dateFormatter.string(from: Date())
-        let fiatRate = Double(round(100*rate.rate)/100)
-        let formattedFiatString = String(format: "%.02f", fiatRate)
-        self.currentLTCPriceLabel.text = Currency.getSymbolForCurrencyCode(code: rate.code)! + formattedFiatString
-        
-    }
+        } 
+     }
     
     private func transform(forView: UIView) ->  CGAffineTransform {
         forView.transform = .identity //Must reset the view's transform before we calculate the next transform

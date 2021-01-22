@@ -63,32 +63,10 @@
                                             <action selector="showSettingsAction:" destination="x3n-5i-KbR" eventType="touchUpInside" id="34N-aU-I4A"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="RAg-vc-Wor">
-                                        <rect key="frame" x="331.33333333333331" y="12" width="38.666666666666686" height="36"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dET-GI-JeX">
-                                                <rect key="frame" x="0.0" y="0.0" width="38.666666666666664" height="21.666666666666668"/>
-                                                <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed Medium" pointSize="18"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVZ-9F-hgM">
-                                                <rect key="frame" x="15.666666666666686" y="22.666666666666664" width="23" height="13.333333333333336"/>
-                                                <fontDescription key="fontDescription" name="BarlowSemiCondensed-Light" family="Barlow Semi Condensed Light" pointSize="11"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="M3y-Ln-jGL"/>
-                                        </constraints>
-                                    </stackView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="81g-U6-NOG"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstItem="zmH-Ee-H6k" firstAttribute="leading" secondItem="RAg-vc-Wor" secondAttribute="trailing" constant="10" id="LKm-Ws-j91"/>
-                                    <constraint firstItem="RAg-vc-Wor" firstAttribute="centerY" secondItem="ZHZ-G5-6k8" secondAttribute="centerY" id="huE-hU-1KP"/>
                                     <constraint firstAttribute="height" constant="60" id="iBk-qu-OG6"/>
                                     <constraint firstItem="zmH-Ee-H6k" firstAttribute="centerY" secondItem="ZHZ-G5-6k8" secondAttribute="centerY" id="ksC-fB-keg"/>
                                     <constraint firstAttribute="trailing" secondItem="zmH-Ee-H6k" secondAttribute="trailing" constant="10" id="vY4-OJ-KBs"/>
@@ -122,13 +100,9 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="containerView" destination="euD-bi-teC" id="8Hi-tB-iI4"/>
-                        <outlet property="currentLTCPriceLabel" destination="dET-GI-JeX" id="6nV-rL-53D"/>
                         <outlet property="headerView" destination="ZHZ-G5-6k8" id="eca-ki-lm4"/>
                         <outlet property="settingsButton" destination="zmH-Ee-H6k" id="k3e-rQ-MBP"/>
                         <outlet property="tabBar" destination="j3Z-Gw-zod" id="PpH-h0-AQX"/>
-                        <outlet property="timeStampLabel" destination="eVZ-9F-hgM" id="s8z-9v-5Gc"/>
-                        <outlet property="timeStampStackView" destination="RAg-vc-Wor" id="mfo-7A-ayM"/>
-                        <outlet property="timeStampStackViewHeight" destination="M3y-Ln-jGL" id="aUv-Zm-IFf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Bt-6z-wZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
