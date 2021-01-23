@@ -121,10 +121,8 @@ extension BuyWKWebViewController {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         webView.evaluateJavaScript("document.readyState", completionHandler: { (complete, error) in
-            if complete != nil {
-                //Required protocol stub
-            }
-            })
+            if complete != nil { }
+        })
     }
      
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
