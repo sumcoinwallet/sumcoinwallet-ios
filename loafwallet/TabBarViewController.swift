@@ -13,7 +13,8 @@ enum TabViewControllerIndex: Int {
     case send = 1
     case buy = 2
     case receive = 3
-} 
+}
+
 class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDelegate {
     
     let kInitialChildViewControllerIndex = 0 // TransactionsViewController
@@ -330,6 +331,7 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
                 }
                 
                 cardVC.parentFrame = self.containerView.frame
+				
             case "loafwallet.BuyTableViewController":
                 guard let buyVC = contentController as? BuyTableViewController else  {
                     return
