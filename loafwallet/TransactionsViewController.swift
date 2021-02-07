@@ -223,8 +223,9 @@ extension TransactionsViewController {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if shouldBeSyncing { return kProgressHeaderHeight }
-        return 5.0
+        return 0.0
     }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return hasExtraSection ? 2 : 1

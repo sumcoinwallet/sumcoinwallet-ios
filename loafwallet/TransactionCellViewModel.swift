@@ -60,6 +60,24 @@ class TransactionCellViewModel: ObservableObject {
         loadVariables()
      }
     
+    @objc private func timerDidFire() {
+        updateTimestamp()
+    }
+    
+    private func updateTimestamp() {
+        
+        let timestampInfo = transaction.timeSince
+        
+        timedateText = timestampInfo.0
+        if !timestampInfo.1 {
+            timer?.invalidate()
+        }
+    }
+    
+    deinit {
+        timer?.invalidate()
+    }
+    
     private func loadVariables() {
         
         amountText = transaction.descriptionString(isLtcSwapped: isLtcSwapped, rate: rate, maxDigits: maxDigits).string
@@ -79,7 +97,7 @@ class TransactionCellViewModel: ObservableObject {
         let timestampInfo = transaction.timeSince
         timedateText = timestampInfo.0
         if timestampInfo.1 {
-            timer = Timer.scheduledTimer(timeInterval: timestampRefreshRate, target: self, selector: NSSelectorFromString("timerDidFire"), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: timestampRefreshRate, target: self, selector: #selector(TransactionCellViewModel.timerDidFire), userInfo: nil, repeats: true)
         } else {
             timer?.invalidate()
         }
