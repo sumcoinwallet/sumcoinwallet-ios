@@ -172,7 +172,8 @@ class RegistrationViewModel: ObservableObject {
             return false
         }
         
-        guard (passwordString.count >= 6 && passwordString.count <= 10) else {
+        //MARK: -  Max Password 24 chars
+        guard (passwordString.count >= 6 && passwordString.count <= 24) else {
             return false
         }
         
