@@ -9,6 +9,8 @@
 import UIKit
 import WebKit
 
+
+
 class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
  
     @IBOutlet weak var backbutton: UIButton!
@@ -17,11 +19,14 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
     @IBOutlet weak var currentAddressButton: UIButton!
     @IBOutlet weak var copiedLabel: UILabel!
  
-    var didDismissChildView: (() -> ())? 
+    var didDismissChildView: (() -> ())?
+    
+    var partnerName: PartnerName?
 
     private let uuidString : String = {
         return  UIDevice.current.identifierForVendor?.uuidString ?? ""
     }()
+    
     private let currentWalletAddress : String = {
         return WalletManager.sharedInstance.wallet?.receiveAddress ?? ""
     }()
@@ -36,9 +41,7 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
     }()
     
     private let wkProcessPool = WKProcessPool()
-    
-    var partnerPrefixString: String?
-    
+     
     var currencyCode: String = "USD"
     
     override func viewDidLoad() {
@@ -55,6 +58,9 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
      }
     
     func loadRequest() {
+        
+        
+        guard let partnerName = self.partnerName else { return }
         
         let contentController = WKUserContentController()
         contentController.add(self, name: "callback")
@@ -73,13 +79,23 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
         wkWebView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.wkWebContainerView.addSubview(wkWebView)
         
-        let timestamp = Int(appInstallDate.timeIntervalSince1970)
-        let urlString =  APIServer.baseUrl + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
-        guard let url = URL(string: urlString) else {
-        NSLog("ERROR: URL not initialized")
-            return
+        
+        var urlString: String
+        
+        //MARK: - Partner Constructor
+        switch partnerName {
+            case .simplex:
+                let timestamp = Int(appInstallDate.timeIntervalSince1970)
+                urlString =  APIServer.baseUrl + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
+            case .moonpay:
+                urlString =  APIServer.baseUrl
         }
         
+        guard let url = URL(string: urlString) else {
+            NSLog("ERROR: URL not initialized")
+            return
+        }
+         
         let request = URLRequest(url: url)
         wkWebView.load(request)
     }
@@ -97,10 +113,6 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
     @IBAction func backAction(_ sender: Any) {
        didDismissChildView?()
     }
-    
-    func closeNow() {
-       didDismissChildView?()
-    }
 }
 
 extension BuyWKWebViewController {
@@ -109,14 +121,7 @@ extension BuyWKWebViewController {
     
     open func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
                       decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let url = navigationAction.request.url?.absoluteString {
-            let mutableurl = url
-            if mutableurl.contains("/close") {
-                DispatchQueue.main.async {
-                    self.closeNow()
-                }
-            }
-        }
+        
         return decisionHandler(.allow)
     }
     
@@ -125,22 +130,11 @@ extension BuyWKWebViewController {
             if complete != nil { }
         })
     }
-     
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        guard let response = message.body as? String else { return }
-        print(response)
-        guard let url = URL(string: "https://checkout.simplexcc.com/payments/new") else { return }
-        
-        var req = URLRequest(url: url)
-        req.httpBody = Data(response.utf8)
-        req.httpMethod = "POST"
-           
-        DispatchQueue.main.async {
-            let vc = BRBrowserViewController()
-            vc.load(req)
-            self.addChildViewController(vc)
-            self.wkWebContainerView.addSubview(vc.view)
-            vc.didMove(toParentViewController: self)
-        }
+    
+    
+    func userContentController(_ userContentController: WKUserContentController,
+                               didReceive message: WKScriptMessage) {
+
     }
+     
 }

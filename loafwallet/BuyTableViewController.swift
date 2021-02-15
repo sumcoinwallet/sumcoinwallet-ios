@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum PartnerName {
+    case simplex
+    case moonpay
+}
+
 class BuyTableViewController: UITableViewController { 
      
     @IBOutlet weak var simplexLogoImageView: UIImageView!
@@ -21,7 +26,8 @@ class BuyTableViewController: UITableViewController {
     
     @IBAction func didTapSimplex(_ sender: Any) {
         
-        if let vcWKVC = UIStoryboard.init(name: "Buy", bundle: nil).instantiateViewController(withIdentifier: "BuyWKWebViewController") as? BuyWKWebViewController {
+        if let vcWKVC = UIStoryboard.init(name: "Buy", bundle: nil).instantiateViewController(withIdentifier: "BuyWKWebViewController") as? BuyWKWebViewController { 
+            vcWKVC.partnerName = .simplex 
             vcWKVC.currencyCode = currencyCode
             addChildViewController(vcWKVC)
             self.view.addSubview(vcWKVC.view)
