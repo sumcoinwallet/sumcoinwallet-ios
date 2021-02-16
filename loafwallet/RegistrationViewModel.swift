@@ -170,12 +170,7 @@ class RegistrationViewModel: ObservableObject {
         
         guard passwordString != "" else {
             return false
-        }
-        
-        //MARK: -  Max Password 24 chars
-        guard (passwordString.count >= 6 && passwordString.count <= 24) else {
-            return false
-        }
+        } 
         
         if try! NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$", options: .caseInsensitive)
             .firstMatch(in: passwordString, options: [],
