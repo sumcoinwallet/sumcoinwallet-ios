@@ -1362,7 +1362,7 @@
 
 /* Balance */
 "ManageWallet.balance" = "Balance";
-
+ 
 /* Features and limitations */
 "LitecoinCard.Disclaimer.bullets" = "- New Registration\n- Login (existing account)\n- No balance shown\n- No transfer\n- US Only";
 

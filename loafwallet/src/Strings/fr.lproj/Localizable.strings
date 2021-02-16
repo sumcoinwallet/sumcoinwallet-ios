@@ -1365,3 +1365,9 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d de %2$d";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "";

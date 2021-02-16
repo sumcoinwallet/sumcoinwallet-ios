@@ -8,10 +8,10 @@
 
 import UIKit
 import WebKit
+import SafariServices
 
 
-
-class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
+class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, SFSafariViewControllerDelegate {
  
     @IBOutlet weak var backbutton: UIButton!
     @IBOutlet weak var wkWebContainerView: UIView!
@@ -62,42 +62,54 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
         
         guard let partnerName = self.partnerName else { return }
         
-        let contentController = WKUserContentController()
-        contentController.add(self, name: "callback")
-  
-        let config = WKWebViewConfiguration()
-        config.processPool = wkProcessPool
-        config.userContentController = contentController
-        
-        let wkWithFooter = CGRect(x: 0, y: 0, width: self.wkWebContainerView.bounds.width,
-                                  height: self.wkWebContainerView.bounds.height - 100)
-        let wkWebView = WKWebView(frame:wkWithFooter, configuration: config)
-        wkWebView.navigationDelegate = self
-        wkWebView.allowsBackForwardNavigationGestures = true
-        wkWebView.contentMode = .scaleAspectFit
-        wkWebView.autoresizesSubviews = true
-        wkWebView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        self.wkWebContainerView.addSubview(wkWebView)
-        
         
         var urlString: String
+        let timestamp = Int(appInstallDate.timeIntervalSince1970)
         
         //MARK: - Partner Constructor
         switch partnerName {
             case .simplex:
-                let timestamp = Int(appInstallDate.timeIntervalSince1970)
                 urlString =  APIServer.baseUrl + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
             case .moonpay:
-                urlString =  APIServer.baseUrl
+                urlString = APIServer.baseUrl + "/moonpay/buy" + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
         }
         
         guard let url = URL(string: urlString) else {
             NSLog("ERROR: URL not initialized")
             return
         }
-         
+        
         let request = URLRequest(url: url)
-        wkWebView.load(request)
+
+        switch partnerName {
+            case .simplex:
+                
+                let contentController = WKUserContentController()
+                contentController.add(self, name: "callback")
+                
+                let config = WKWebViewConfiguration()
+                config.processPool = wkProcessPool
+                config.userContentController = contentController
+                
+                let wkWithFooter = CGRect(x: 0, y: 0, width: self.wkWebContainerView.bounds.width,
+                                          height: self.wkWebContainerView.bounds.height - 100)
+                let setupWkWebView = WKWebView(frame:wkWithFooter, configuration: config)
+                setupWkWebView.navigationDelegate = self
+                setupWkWebView.allowsBackForwardNavigationGestures = true
+                setupWkWebView.contentMode = .scaleAspectFit
+                setupWkWebView.autoresizesSubviews = true
+                setupWkWebView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+                self.wkWebContainerView.addSubview(setupWkWebView)
+                setupWkWebView.load(request)
+            case .moonpay:
+                let sfSafariVC = SFSafariViewController(url: url)
+                sfSafariVC.delegate = self
+                
+                present(sfSafariVC, animated: true)
+                
+               // self.wkWebContainerView.addSubview(sfSafariVC.view)
+         }
+       
     }
     
     @IBAction func didTapCurrentAddressButton(_ sender: Any) {
