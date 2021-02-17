@@ -1364,9 +1364,7 @@
 "WritePaperPhrase.previous" = "上一步";
 
 /* 1 of 3 */
-"WritePaperPhrase.step" = "%1$d / %2$d";
-<<<<<<< HEAD
-=======
+"WritePaperPhrase.step" = "%1$d / %2$d"; 
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "";
@@ -1378,5 +1376,4 @@
 "LitecoinCard.registerCardPhrase" = "";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "";
->>>>>>> cdb5bc15... WIP: Moonpay UI and localizations
+"LitecoinCard.Registration.identification" = ""; 

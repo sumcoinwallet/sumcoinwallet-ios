@@ -11,7 +11,7 @@ import WebKit
 import SafariServices
 
 
-class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, SFSafariViewControllerDelegate {
+class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
  
     @IBOutlet weak var backbutton: UIButton!
     @IBOutlet weak var wkWebContainerView: UIView!
@@ -22,24 +22,15 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
     var didDismissChildView: (() -> ())?
     
     var partnerName: PartnerName?
-
-    private let uuidString : String = {
-        return  UIDevice.current.identifierForVendor?.uuidString ?? ""
-    }()
     
-    private let currentWalletAddress : String = {
-        return WalletManager.sharedInstance.wallet?.receiveAddress ?? ""
-    }()
-
-    private let appInstallDate : Date = {
-         if let documentsFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
-                if let installDate = try! FileManager.default.attributesOfItem(atPath: documentsFolder.path)[.creationDate] as? Date {
-                    return installDate
-                }
-            }
-        return Date()
-    }()
+    var uuidString: String = ""
     
+    var currentWalletAddress: String = ""
+    
+    var timestamp: Int = 0
+ 
+    var appInstallDate: Date = Date()
+ 
     private let wkProcessPool = WKProcessPool()
      
     var currencyCode: String = "USD"
@@ -58,20 +49,17 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
      }
     
     func loadRequest() {
-        
-        
+         
         guard let partnerName = self.partnerName else { return }
-        
-        
-        var urlString: String
-        let timestamp = Int(appInstallDate.timeIntervalSince1970)
+         
+        var urlString: String = ""
         
         //MARK: - Partner Constructor
         switch partnerName {
             case .simplex:
                 urlString =  APIServer.baseUrl + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
             case .moonpay:
-                urlString = APIServer.baseUrl + "/moonpay/buy" + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
+                assertionFailure("ERROR: This should not currently be used")
         }
         
         guard let url = URL(string: urlString) else {
@@ -102,12 +90,7 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
                 self.wkWebContainerView.addSubview(setupWkWebView)
                 setupWkWebView.load(request)
             case .moonpay:
-                let sfSafariVC = SFSafariViewController(url: url)
-                sfSafariVC.delegate = self
-                
-                present(sfSafariVC, animated: true)
-                
-               // self.wkWebContainerView.addSubview(sfSafariVC.view)
+                assertionFailure("ERROR: This should not currently be used")
          }
        
     }
@@ -143,10 +126,7 @@ extension BuyWKWebViewController {
         })
     }
     
-    
     func userContentController(_ userContentController: WKUserContentController,
-                               didReceive message: WKScriptMessage) {
-
-    }
+                               didReceive message: WKScriptMessage) { }
      
 }

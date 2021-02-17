@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import SafariServices
 
 enum PartnerName {
     case simplex
     case moonpay
 }
 
-class BuyTableViewController: UITableViewController { 
-   
+class BuyTableViewController: UITableViewController, SFSafariViewControllerDelegate {
+    
     //MARK: Moonpay UI
     @IBOutlet weak var moonpayLogoImageView: UIImageView!
     @IBOutlet weak var moonpayHeaderLabel: UILabel!
@@ -24,21 +25,15 @@ class BuyTableViewController: UITableViewController {
     
     @IBAction func didTapMoonpay(_ sender: Any) {
         
-        if let vcWKVC = UIStoryboard.init(name: "Buy", bundle: nil).instantiateViewController(withIdentifier: "BuyWKWebViewController") as? BuyWKWebViewController {
-            vcWKVC.partnerName = .moonpay
-            vcWKVC.currencyCode = currencyCode
-            addChildViewController(vcWKVC)
-            self.view.addSubview(vcWKVC.view)
-            vcWKVC.didMove(toParentViewController: self)
-            
-            vcWKVC.didDismissChildView = {
-                vcWKVC.willMove(toParentViewController: nil)
-                vcWKVC.view.removeFromSuperview()
-                vcWKVC.removeFromParentViewController()
-            }
-        }  else {
-            NSLog("ERROR: Storyboard not initialized")
-        }
+        let timestamp = Int(appInstallDate.timeIntervalSince1970)
+        
+        let urlString = APIServer.baseUrl + "/moonpay/buy" + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
+        
+        guard let url = URL(string: urlString) else { return }
+        
+        let sfSafariVC = SFSafariViewController(url: url)
+        sfSafariVC.delegate = self
+        present(sfSafariVC, animated: true)
     }
     
     //MARK: Simplex UI
@@ -55,6 +50,10 @@ class BuyTableViewController: UITableViewController {
         if let vcWKVC = UIStoryboard.init(name: "Buy", bundle: nil).instantiateViewController(withIdentifier: "BuyWKWebViewController") as? BuyWKWebViewController { 
             vcWKVC.partnerName = .simplex 
             vcWKVC.currencyCode = currencyCode
+            vcWKVC.currentWalletAddress = currentWalletAddress
+            vcWKVC.uuidString = uuidString
+            vcWKVC.timestamp = Int(appInstallDate.timeIntervalSince1970)
+            
             addChildViewController(vcWKVC)
             self.view.addSubview(vcWKVC.view)
             vcWKVC.didMove(toParentViewController: self)
@@ -76,7 +75,7 @@ class BuyTableViewController: UITableViewController {
     
     var store: Store?
     var walletManager: WalletManager?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,10 +97,10 @@ class BuyTableViewController: UITableViewController {
         simplexCurrencySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
         simplexCurrencySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.liteWalletBlue], for: .selected)
         
-        setupData()
+        setupWkVCData()
     }
     
-    private func setupData() {
+    private func setupWkVCData() {
         
         let moonpayData = Partner.partnerDataArray()[0]
         moonpayLogoImageView.image = moonpayData.logo
@@ -122,6 +121,24 @@ class BuyTableViewController: UITableViewController {
         simplexCellContainerView.clipsToBounds = true
     }
     
+    
+    private let uuidString : String = {
+        return  UIDevice.current.identifierForVendor?.uuidString ?? ""
+    }()
+    
+    private let currentWalletAddress : String = {
+        return WalletManager.sharedInstance.wallet?.receiveAddress ?? ""
+    }()
+    
+    private let appInstallDate : Date = {
+        if let documentsFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
+            if let installDate = try! FileManager.default.attributesOfItem(atPath: documentsFolder.path)[.creationDate] as? Date {
+                return installDate
+            }
+        }
+        return Date()
+    }()
+    
     @objc private func didChangeCurrencyA() {
         if let code = PartnerFiatOptions(rawValue: moonpaySegmentedControl.selectedSegmentIndex)?.description {
             self.currencyCode = code
@@ -138,3 +155,4 @@ class BuyTableViewController: UITableViewController {
         }
     }
 }
+
