@@ -25,9 +25,7 @@ struct TransactionCellView: View {
     var body: some View {
 
         VStack(alignment: .leading, spacing: 1.0) {
-                
-           // Spacer(minLength: 2.0)
-                
+                 
             //Send and Date Labels
             HStack(alignment: .bottom, spacing: 1.0) {
                  
