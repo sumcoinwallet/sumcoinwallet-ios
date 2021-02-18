@@ -25,11 +25,7 @@ class PromptTableViewCell : UITableViewCell {
     
     @IBAction func closeAction(_ sender: Any) {
         didClose?()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+    } 
 }
 
 enum PromptType {
