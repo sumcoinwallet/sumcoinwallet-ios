@@ -140,7 +140,7 @@
 "BuyCenter.ModalTitle" = "Buy Łitecoin";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "• Point 1 XXXXX\n• Point 2 XXXX\n• XXX Point 3";
+"BuyCenter.moonpayFinancialDetails" = "• Buy LTC with many fiat pairs\n• Pay with multiple methods\n• Global payment provider";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";

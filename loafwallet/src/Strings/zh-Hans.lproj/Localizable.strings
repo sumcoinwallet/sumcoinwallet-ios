@@ -1364,16 +1364,10 @@
 "WritePaperPhrase.previous" = "上一步";
 
 /* 1 of 3 */
-"WritePaperPhrase.step" = "%1$d / %2$d"; 
+"WritePaperPhrase.step" = "%1$d / %2$d";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "";
-
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "";
-
-/* identification */
-"LitecoinCard.Registration.identification" = ""; 
