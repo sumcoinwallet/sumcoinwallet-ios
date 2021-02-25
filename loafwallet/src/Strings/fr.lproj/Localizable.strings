@@ -479,7 +479,7 @@
 "Malformed URI" = "URI mal formé";
 
 /* Balance */
-"ManageWallet.balance" = "Équilibre";
+"ManageWallet.balance" = "Solde";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Vous avez créé votre portefeuille sur %1$@";

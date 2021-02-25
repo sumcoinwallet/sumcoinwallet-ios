@@ -479,7 +479,7 @@
 "Malformed URI" = "URI cacat";
 
 /* Balance */
-"ManageWallet.balance" = "Keseimbangan";
+"ManageWallet.balance" = "Saldo";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Anda membuat dompet Anda di %1$@";

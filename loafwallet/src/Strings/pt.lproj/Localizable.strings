@@ -480,7 +480,7 @@
 "Malformed URI" = "URI malformado";
 
 /* Balance */
-"ManageWallet.balance" = "Equilíbrio";
+"ManageWallet.balance" = "Saldo";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Criou a sua carteira em %1$@";
