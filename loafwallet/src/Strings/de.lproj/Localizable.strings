@@ -1344,3 +1344,15 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d von %2$d";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "";
