@@ -1353,7 +1353,7 @@
 
 /* Failed Login */
 "LitecoinCard.failed.login" = "Login failed";
- 
+
 /* Copied */
 "TransactionDetails.copiedAll" = "Copied";
 
@@ -1361,4 +1361,4 @@
 "TransactionDetails.copyAllDetails" = "Copy all details";
 
 /* Balance */
-"ManageWallet.balance" = "Balance"; 
+"ManageWallet.balance" = "Balance";

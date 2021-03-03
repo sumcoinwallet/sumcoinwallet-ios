@@ -383,7 +383,7 @@
 "LitecoinCard.registerCard" = "寄存器";
 
 /* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "注册莱特币卡"; 
+"LitecoinCard.registerCardPhrase" = "注册莱特币卡";
 
 /* Registering user... */
 "LitecoinCard.registering.user" = "正在注册用户...";
@@ -405,7 +405,7 @@
 
 /* identification */
 "LitecoinCard.Registration.identification" = "身份证明";
- 
+
 /* kycIDNumber */
 "LitecoinCard.Registration.kycIDNumber" = "了解你的顾客 证件类型";
 
@@ -1344,9 +1344,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d / %2$d";
-
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "";
-
-/* identification */
-"LitecoinCard.Registration.identification" = "";
