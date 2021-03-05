@@ -367,6 +367,18 @@
 /* Card balance */
 "LitecoinCard.cardBalance" = "カード残高";
 
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "-新規登録\n-ログイン（既存のアカウント）\n-残高は表示されていません\n-転送なし\n-米国のみ";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "ライトコインカードは現在、ライトウォレットの機能が制限されています。";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "フルアクセスについては、litecoin.getblockcard.comにアクセスしてください";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "ライトコインカードベータ";
+
 /* Failed Login */
 "LitecoinCard.failed.login" = "ログインに失敗しました";
 
@@ -1344,15 +1356,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$dの%1$d";
-
-/* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "";
-
-/* Description of the status */
-"LitecoinCard.Disclaimer.description" = "";
-
-/* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "";
-
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "";
