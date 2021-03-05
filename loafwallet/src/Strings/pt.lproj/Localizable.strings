@@ -369,7 +369,7 @@
 "LitecoinCard.cardBalance" = "Saldo do cartão";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "- Novo registro\n- Entrar em uma conta existente)\n- Nenhum saldo mostrado\n- Sem transferência\n- Apenas nós";
+"LitecoinCard.Disclaimer.bullets" = "- Novo registro\n- Entrar em uma conta existente)\n- Nenhum saldo mostrado\n- Sem transferência\n- Apenas nos EUA";
 
 /* Description of the status */
 "LitecoinCard.Disclaimer.description" = "O cartão Litecoin atualmente tem funcionalidade limitada no Litewallet.";

@@ -368,7 +368,7 @@
 "LitecoinCard.cardBalance" = "卡余额";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "-新注册\n-登录（现有帐户\n-没有余额显示\n-没有转移\n-仅美国";
+"LitecoinCard.Disclaimer.bullets" = "-新注册\n-登录（现有帐户\n-没有余额显示\n-没有转移\n-仅限美国";
 
 /* Description of the status */
 "LitecoinCard.Disclaimer.description" = "Litecoin卡当前在Litewallet中具有有限的功能。";

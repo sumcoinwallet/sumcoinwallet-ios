@@ -368,7 +368,7 @@
 "LitecoinCard.cardBalance" = "Kaartsaldo";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "- Nieuwe registratie\n- Inloggen (bestaand account)\n- Geen saldo weergegeven\n- Geen overdracht\n- Wij alleen";
+"LitecoinCard.Disclaimer.bullets" = "- Nieuwe registratie\n- Inloggen (bestaand account)\n- Geen saldo weergegeven\n- Geen overdracht\n- Alleen in de VS.";
 
 /* Description of the status */
 "LitecoinCard.Disclaimer.description" = "Litecoin Card heeft momenteel beperkte functionaliteit in Litewallet.";
