@@ -1383,9 +1383,9 @@
  
 /* Balance */
 "ManageWallet.balance" = "Balance"; 
- 
+
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "• Buy LTC with many fiat pairs\n• Pay with multiple methods\n• Global payment provider";
- 
+
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
