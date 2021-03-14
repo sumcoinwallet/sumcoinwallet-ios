@@ -168,7 +168,7 @@ class RegistrationViewModel: ObservableObject {
     /// - Returns: Bool
     func isPasswordValid(passwordString: String) -> Bool {
         
-        guard passwordString != "" else {
+        guard passwordString.count >= 6 else {
             return false
         } 
         
