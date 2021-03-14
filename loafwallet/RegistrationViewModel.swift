@@ -164,7 +164,7 @@ class RegistrationViewModel: ObservableObject {
     }
     
     /// Password  Validator
-    /// - Parameter passwordString: 6 - 10 chars
+    /// - Parameter passwordString: 6 chars minimum
     /// - Returns: Bool
     func isPasswordValid(passwordString: String) -> Bool {
         
