@@ -139,6 +139,12 @@
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "Kaufen Sie Łitecoin";
 
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "• Kaufen Sie LTC mit vielen Fiat-Paaren.\n• Bezahlen Sie mit mehreren Methoden.\n• Globaler Zahlungsanbieter";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
+
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "• Holen Sie sich Litecoin in 5 Minuten!\n• Kaufen Sie Litecoin per Kreditkarte\n• Reisepass oder Staatsausweis.";
 
@@ -1365,9 +1371,3 @@
 
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$d von %2$d";
-
-/* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "";
-
-/* Moonpay Title */
-"BuyCenter.moonpayTitle" = "";
