@@ -145,7 +145,7 @@ class BuyTableViewController: UITableViewController, SFSafariViewControllerDeleg
         if let code = PartnerFiatOptions(rawValue: simplexCurrencySegmentedControl.selectedSegmentIndex)?.description {
             self.currencyCode = code
         } else {
-            print("Error: Code not found: XXXX\(simplexCurrencySegmentedControl.selectedSegmentIndex)")
+            print("Error: Code not found: \(currencySegmentedControl.selectedSegmentIndex)")
         }
     }
 }
