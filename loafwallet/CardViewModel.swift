@@ -43,7 +43,7 @@ class CardViewModel: ObservableObject {
         
         PartnerAPI.shared.getWalletDetails(userID: userID, token: token) { detailsDict in
             
-            //Only reteives the data element there is the metadata and
+            //Only reteives the data element there is the metadata and the result as well
             guard let data = detailsDict?["data"] as? [String: Any] else {
                 print("Error: Data dict not found")
                 return

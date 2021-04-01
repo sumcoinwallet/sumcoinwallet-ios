@@ -20,7 +20,7 @@ class CardWalletTests: XCTestCase {
             {
                     "user_id": "fbabf1bc-1b32-40e6-b072-a0127c026a86",
                     "tern_address": "GBI6LADAXTIEOVRTQURCCBP77OVYOI7WBLSMEUXXHWUX7UJRUB4DIXET",
-                    "balance": 0,
+                    "balance": 0.335425,
                     "btc_address": "moEStpdJy3WXgvrM4UMEPJpG6cJkPiuJ8u",
                     "eth_address": "0x08598f771bd2481026369552DdDEE52d2c32AA01",
                     "bch_address": "bchtest:qrn7u2kpkf6lrudytt74z6qadvse3t6whs370a3pnk",
@@ -32,7 +32,7 @@ class CardWalletTests: XCTestCase {
                     "bank_balance": null,
                     "bank_pending_balance": null,
                     "bank_account_number": null,
-                    "available_balance": 0,
+                    "available_balance": 0.335425,
                     "available_balance_usd": 0,
                     "withdrawable_balance": 0,
                     "withdrawable_balance_usd": 0,
