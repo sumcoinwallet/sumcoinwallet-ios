@@ -43,6 +43,7 @@ class CardViewModel: ObservableObject {
         
         PartnerAPI.shared.getWalletDetails(userID: userID, token: token) { detailsDict in
             
+            //Only reteives the data element there is the metadata and
             guard let data = detailsDict?["data"] as? [String: Any] else {
                 print("Error: Data dict not found")
                 return
@@ -55,8 +56,6 @@ class CardViewModel: ObservableObject {
                 let decoder = JSONDecoder() 
                 
                 let walletDetails = try? decoder.decode(CardWalletDetails.self, from: jsonData)
-                     
-                print("XXX Wallet Details: \(walletDetails.debugDescription)")
                 
                 DispatchQueue.main.async {
                     self.walletDetails = walletDetails
