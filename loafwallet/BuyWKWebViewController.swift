@@ -38,7 +38,7 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubViews()
-        loadRequest()
+        loadSimplexRequest()
      }
 
     private func setupSubViews() {
@@ -48,51 +48,34 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
         copiedLabel.alpha = 0.0
      }
     
-    func loadRequest() {
-         
-        guard let partnerName = self.partnerName else { return }
-         
-        var urlString: String = ""
-        
-        //MARK: - Partner Constructor
-        switch partnerName {
-            case .simplex:
-                urlString =  APIServer.baseUrl + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
-            case .moonpay:
-                assertionFailure("ERROR: This should not currently be used")
-        }
-        
+    func loadSimplexRequest() {
+          
+        let urlString: String = APIServer.baseUrl + "?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
+             
         guard let url = URL(string: urlString) else {
             NSLog("ERROR: URL not initialized")
             return
         }
         
         let request = URLRequest(url: url)
-
-        switch partnerName {
-            case .simplex:
-                
-                let contentController = WKUserContentController()
-                contentController.add(self, name: "callback")
-                
-                let config = WKWebViewConfiguration()
-                config.processPool = wkProcessPool
-                config.userContentController = contentController
-                
-                let wkWithFooter = CGRect(x: 0, y: 0, width: self.wkWebContainerView.bounds.width,
-                                          height: self.wkWebContainerView.bounds.height - 100)
-                let setupWkWebView = WKWebView(frame:wkWithFooter, configuration: config)
-                setupWkWebView.navigationDelegate = self
-                setupWkWebView.allowsBackForwardNavigationGestures = true
-                setupWkWebView.contentMode = .scaleAspectFit
-                setupWkWebView.autoresizesSubviews = true
-                setupWkWebView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-                self.wkWebContainerView.addSubview(setupWkWebView)
-                setupWkWebView.load(request)
-            case .moonpay:
-                assertionFailure("ERROR: This should not currently be used")
-         }
-       
+ 
+        let contentController = WKUserContentController()
+        contentController.add(self, name: "callback")
+        
+        let config = WKWebViewConfiguration()
+        config.processPool = wkProcessPool
+        config.userContentController = contentController
+        
+        let wkWithFooter = CGRect(x: 0, y: 0, width: self.wkWebContainerView.bounds.width,
+                                  height: self.wkWebContainerView.bounds.height - 100)
+        let setupWkWebView = WKWebView(frame:wkWithFooter, configuration: config)
+        setupWkWebView.navigationDelegate = self
+        setupWkWebView.allowsBackForwardNavigationGestures = true
+        setupWkWebView.contentMode = .scaleAspectFit
+        setupWkWebView.autoresizesSubviews = true
+        setupWkWebView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        self.wkWebContainerView.addSubview(setupWkWebView)
+        setupWkWebView.load(request)
     }
     
     @IBAction func didTapCurrentAddressButton(_ sender: Any) {

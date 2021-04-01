@@ -85,13 +85,13 @@ class BuyTableViewController: UITableViewController, SFSafariViewControllerDeleg
         tableView.tableHeaderView = thinHeaderView
         tableView.tableFooterView = UIView()
         
-        moonpaySegmentedControl.addTarget(self, action: #selector(didChangeCurrencyA), for: .valueChanged)
+        moonpaySegmentedControl.addTarget(self, action: #selector(didChangeCurrencyMoonpay), for: .valueChanged)
         moonpaySegmentedControl.selectedSegmentIndex = PartnerFiatOptions.usd.index
         moonpaySegmentedControl.selectedSegmentTintColor = .white
         moonpaySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
         moonpaySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.liteWalletBlue], for: .selected)
         
-        simplexCurrencySegmentedControl.addTarget(self, action: #selector(didChangeCurrencyB), for: .valueChanged)
+        simplexCurrencySegmentedControl.addTarget(self, action: #selector(didChangeCurrencySimplex), for: .valueChanged)
         simplexCurrencySegmentedControl.selectedSegmentIndex = PartnerFiatOptions.usd.index
         simplexCurrencySegmentedControl.selectedSegmentTintColor = .white
         simplexCurrencySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
@@ -139,7 +139,7 @@ class BuyTableViewController: UITableViewController, SFSafariViewControllerDeleg
         return Date()
     }()
     
-    @objc private func didChangeCurrencyA() {
+    @objc private func didChangeCurrencyMoonpay() {
         if let code = PartnerFiatOptions(rawValue: moonpaySegmentedControl.selectedSegmentIndex)?.description {
             self.currencyCode = code
         } else {
@@ -147,7 +147,7 @@ class BuyTableViewController: UITableViewController, SFSafariViewControllerDeleg
         }
     }
     
-    @objc private func didChangeCurrencyB() {
+    @objc private func didChangeCurrencySimplex() {
         if let code = PartnerFiatOptions(rawValue: simplexCurrencySegmentedControl.selectedSegmentIndex)?.description {
             self.currencyCode = code
         } else {
