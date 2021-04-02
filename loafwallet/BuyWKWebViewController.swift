@@ -21,8 +21,6 @@ class BuyWKWebViewController: UIViewController, WKNavigationDelegate, WKScriptMe
  
     var didDismissChildView: (() -> ())?
     
-    var partnerName: PartnerName?
-    
     var uuidString: String = ""
     
     var currentWalletAddress: String = ""

@@ -9,11 +9,6 @@
 import UIKit
 import SafariServices
 
-enum PartnerName {
-    case simplex
-    case moonpay
-}
-
 class BuyTableViewController: UITableViewController, SFSafariViewControllerDelegate {
     
     //MARK: Moonpay UI
@@ -48,7 +43,6 @@ class BuyTableViewController: UITableViewController, SFSafariViewControllerDeleg
     @IBAction func didTapSimplex(_ sender: Any) {
         
         if let vcWKVC = UIStoryboard.init(name: "Buy", bundle: nil).instantiateViewController(withIdentifier: "BuyWKWebViewController") as? BuyWKWebViewController { 
-            vcWKVC.partnerName = .simplex 
             vcWKVC.currencyCode = currencyCode
             vcWKVC.currentWalletAddress = currentWalletAddress
             vcWKVC.uuidString = uuidString

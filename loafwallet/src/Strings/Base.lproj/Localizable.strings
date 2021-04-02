@@ -1380,7 +1380,7 @@
 
 /* UDSystemError */
 "Send.UnstoppableDomains.udSystemError" = "System lookup problem. [Error: %2$d]";
- 
+
 /* Balance */
 "ManageWallet.balance" = "Balance";
 
