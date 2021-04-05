@@ -26,7 +26,7 @@ class ForgotAlertViewModel: ObservableObject {
         PartnerAPI.shared.forgotPassword(email: emailString) { (responseMessage, code) in
              
             DispatchQueue.main.async {
-                self.detailMessage = "\(code): "+responseMessage
+                self.detailMessage = "\(code): " + responseMessage
                 completion()
             }
         }
