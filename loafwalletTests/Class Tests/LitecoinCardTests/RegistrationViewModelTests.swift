@@ -46,6 +46,7 @@ class RegistrationViewModelTests: XCTestCase {
         
         XCTAssertTrue(mockRegistrationData["country"] == "US")
         
+        //DEV: For US only now
         XCTAssertFalse(mockRegistrationData["country"] != "US")
         
         XCTAssertTrue(viewModel.isDataValid(dataType: .country,
@@ -68,42 +69,13 @@ class RegistrationViewModelTests: XCTestCase {
          
     }
     
-    func testIsPasswordValid() throws {
-        
-        let goodPassword = "Password1*"
-        let badPassword = "Passwo"
- 
-        XCTAssertTrue(viewModel.isDataValid(dataType: .password,
-                                            data: goodPassword as Any))
-        
-        XCTAssertFalse(viewModel.isDataValid(dataType: .password,
-                                             data: badPassword as Any))
-        
-    }
-    
-    func testIsPasswordHaveAtLeastOneDigit() throws {
-        
-        let goodPassword = "Password1"
-        let badPassword = "Passwo"
+    func testIsPasswordDataValid() throws {
         
         XCTAssertTrue(viewModel.isDataValid(dataType: .password,
-                                            data: goodPassword as Any))
+                                            data: mockRegistrationData["password"] as Any))
         
         XCTAssertFalse(viewModel.isDataValid(dataType: .password,
-                                             data: badPassword as Any))
-        
-    }
-    
-    func testIsPasswordIsLongEnough() throws {
-        
-        let goodPassword = "Password1"
-        let badPassword = "Pass2"
-        
-        XCTAssertTrue(viewModel.isDataValid(dataType: .password,
-                                            data: goodPassword as Any))
-        
-        XCTAssertFalse(viewModel.isDataValid(dataType: .password,
-                                             data: badPassword as Any))
+                                             data: mockBadRegistrationData["password"] as Any))
         
     }
     
