@@ -164,15 +164,15 @@ class RegistrationViewModel: ObservableObject {
     }
     
     /// Password  Validator
-    /// - Parameter passwordString: 8 chars minimum, 1 Capital letter and 1 number, accepts special characters
+    /// - Parameter passwordString: 6 chars minimum
     /// - Returns: Bool
     func isPasswordValid(passwordString: String) -> Bool {
         
-        guard passwordString.count >= 8 else {
+        guard passwordString.count >= 6 else {
             return false
         } 
         
-        if try! NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d$&+,:;=?@#|'<>.^*()%!-]{8,}$", options: .caseInsensitive)
+        if try! NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$", options: .caseInsensitive)
             .firstMatch(in: passwordString, options: [],
                         range: NSRange(location: 0,
                                        length: passwordString.count)) == nil {
@@ -181,7 +181,7 @@ class RegistrationViewModel: ObservableObject {
             return true
         }
     }
-      
+    
     /// Mobile Number Validator
     /// - Parameter mobileString: 10+ integers 0 - 9
     /// - Returns: Bool
