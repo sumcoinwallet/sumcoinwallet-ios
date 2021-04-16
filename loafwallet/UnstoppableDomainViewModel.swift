@@ -27,9 +27,7 @@ class UnstoppableDomainViewModel: ObservableObject {
     var didResolveUDAddress: ((String) -> Void)?
      
     var shouldClearAddressField: (() -> Void)?
-    
-    var shouldClearAddressField: (() -> Void)?
-    
+        
     var didFailToResolve: ((String) -> Void)?
     
     //MARK: - Private Variables

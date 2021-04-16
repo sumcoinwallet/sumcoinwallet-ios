@@ -1671,7 +1671,6 @@
 		DA0A9E434AE0804412FE6C43 /* Pods-loafwalletTests.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwalletTests.testnet.xcconfig"; path = "Target Support Files/Pods-loafwalletTests/Pods-loafwalletTests.testnet.xcconfig"; sourceTree = "<group>"; };
 		EEE1B45F7430F6BA698E4972 /* Pods_loafwalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loafwalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E743170D714EE124029E99 /* Pods-loafwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loafwallet.debug.xcconfig"; path = "Target Support Files/Pods-loafwallet/Pods-loafwallet.debug.xcconfig"; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3129,8 +3128,6 @@
 				C3F7BCD825FEC69B00694C28 /* Alerts */,
 				C32142E825C97CB900BECCD0 /* Transactions */,
 				C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */,
-				C32DC7AB2593B5C900A7FDB4 /* AnimatedCardView.swift */,
-				C3BD4A492597542700D97079 /* LoginCardAlertView.swift */,
 				C3BD4A692597E1E900D97079 /* CardLoggedInView.swift */,
 				C3F55643255A1916005F786F /* SupportLitecoinFoundation */,
 				C35ABD08257404D2002BB9BB /* Partners */,
@@ -3683,7 +3680,7 @@
 			buildPhases = (
 				E85603DAE7C21FF2F41766D3 /* [CP] Check Pods Manifest.lock */,
 				2430679A238F538C00EBEA99 /* Update Localizable using BartyCrouch */,
-				24E179F223BDAF8000F928D9 /* Xcode custom warnings */,
+				24E179F223BDAF8000F928D9 /* [CP] Check Pods Manifest.lock */,
 				75A2A78C1DA5934300A983D8 /* Sources */,
 				75A2A78D1DA5934300A983D8 /* Frameworks */,
 				75A2A78E1DA5934300A983D8 /* Resources */,
@@ -3939,7 +3936,7 @@
 			shellPath = /bin/sh;
 			shellScript = "##  This only notates strings that have yet to be localized. The Base Localizable file is wnere the change needs to be changed.\n\nif which bartycrouch > /dev/null; then\n    bartycrouch update -x\n    bartycrouch lint -x\nelse\n    echo \"warning: BartyCrouch not installed, download it from https://github.com/Flinesoft/BartyCrouch\"\nfi\n";
 		};
-		24E179F223BDAF8000F928D9 /* Xcode custom warnings */ = {
+		24E179F223BDAF8000F928D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3973,7 +3970,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loafwallet/Pods-loafwallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6667AA56BFA4804A96E62DB8 /* [CP] Check Pods Manifest.lock */ = {
@@ -3991,7 +3988,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-loafwallet-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-loafwalletTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -4359,7 +4356,6 @@
 				CE124CF81E67A8E500DFA146 /* TransactionDirection.swift in Sources */,
 				CE8CD8DD1E2D9EF200785E02 /* Sender.swift in Sources */,
 				CE4DFB2C1E9BE5880014009E /* ReScanViewController.swift in Sources */,
-				C321442B25CC2B2C00BECCD0 /* TransactionModalView.swift in Sources */,
 				CE8F0AE31EB91BB500AA7642 /* SearchHeaderView.swift in Sources */,
 				22A9A9551DF61945000F0016 /* BRTar.swift in Sources */,
 				CEAA9E971DC18E1F0066731D /* PhraseView.swift in Sources */,
@@ -4735,7 +4731,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = loafwallet/loafwallet.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4842,7 +4838,7 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
@@ -5153,7 +5149,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = loafwallet/loafwallet.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
@@ -5183,7 +5179,7 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -5283,7 +5279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = loafwallet/loafwallet.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5315,7 +5311,7 @@
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
