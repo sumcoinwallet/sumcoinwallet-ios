@@ -1,6 +1,10 @@
 #  Changelog
 
 ---
+## Release v3.4.0
+
+This release note is being tested
+----
 ## Release v3.3.0
 
 This release is the interim to the v2 of the Litecoin Card and fixes mainly bugs.  
