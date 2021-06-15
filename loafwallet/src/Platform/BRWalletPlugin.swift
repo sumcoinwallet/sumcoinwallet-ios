@@ -105,22 +105,6 @@ class BRWalletPlugin: BRHTTPRouterPlugin, BRWebSocketClient, Trackable {
             }
         }
 
-        // POST /_wallet/sign_bitid
-        //
-        // Sign a message using the user's BitID private key. Calling this WILL trigger authentication
-        //
-        // Request body: application/json
-        //      {
-        //          "prompt_string": "Sign in to My Service", // shown to the user in the authentication prompt
-        //          "string_to_sign": "https://bitid.org/bitid?x=2783408723", // the string to sign
-        //          "bitid_url": "https://bitid.org/bitid", // the bitid url for deriving the private key
-        //          "bitid_index": "0" // the bitid index as a string (just pass "0")
-        //      }
-        //
-        // Response body: application/json
-        //      {
-        //          "signature": "oibwaeofbawoefb" // base64-encoded signature
-        //      }
         router.post("/_wallet/sign_bitid") { (request, match) -> BRHTTPResponse in
             guard let cts = request.headers["content-type"] , cts.count == 1 && cts[0] == "application/json" else {
                 return BRHTTPResponse(request: request, code: 400)
