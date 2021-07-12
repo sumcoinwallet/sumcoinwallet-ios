@@ -94,8 +94,8 @@ class UnstoppableDomainViewModel: ObservableObject {
                     
                     ///Quicker resolution: When the resolution is done, the activity indicatior stops and the address is  updated
                     DispatchQueue.main.async {
-                        self.ltcAddress = returnValue
-                        self.didResolveUDAddress?(self.ltcAddress)
+                        self.sumAddress = returnValue
+                        self.didResolveUDAddress?(self.sumAddress)
                         self.isDomainResolving = false
                     }
 					

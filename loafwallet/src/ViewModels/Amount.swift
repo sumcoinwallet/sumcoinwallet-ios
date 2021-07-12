@@ -71,7 +71,7 @@ struct Amount {
             format.currencySymbol = "\(S.Symbols.sums)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*1000 as NSNumber
         case 8: // litecoin
-            format.currencySymbol = "\(S.Symbols.ltc)\(S.Symbols.narrowSpace)"
+            format.currencySymbol = "\(S.Symbols.sum)\(S.Symbols.narrowSpace)"
             format.maximum = C.maxMoney/C.satoshis as NSNumber
         default:
             format.currencySymbol = "\(S.Symbols.sums)\(S.Symbols.narrowSpace)"
@@ -157,7 +157,7 @@ struct DisplayAmount {
             format.currencySymbol = "\(S.Symbols.sums)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*1000 as NSNumber
         case 8:
-            format.currencySymbol = "\(S.Symbols.ltc)\(S.Symbols.narrowSpace)"
+            format.currencySymbol = "\(S.Symbols.sum)\(S.Symbols.narrowSpace)"
             format.maximum = C.maxMoney/C.satoshis as NSNumber
         default:
             format.currencySymbol = "\(S.Symbols.sums)\(S.Symbols.narrowSpace)"

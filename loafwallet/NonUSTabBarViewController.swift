@@ -94,7 +94,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
             exchangeRate = rate
             let placeholderAmount = Amount(amount: 0, rate: rate, maxDigits: store.state.maxDigits)
             secondaryBalanceLabel = UpdatingLabel(formatter: placeholderAmount.localFormat)
-            primaryBalanceLabel = UpdatingLabel(formatter: placeholderAmount.ltcFormat)
+            primaryBalanceLabel = UpdatingLabel(formatter: placeholderAmount.sumFormat)
         } else {
             secondaryBalanceLabel = UpdatingLabel(formatter: NumberFormatter())
             primaryBalanceLabel = UpdatingLabel(formatter: NumberFormatter())
@@ -205,7 +205,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
                                 if let rate = $0.currentRate {
                                     let placeholderAmount = Amount(amount: 0, rate: rate, maxDigits: $0.maxDigits)
                                     secondaryLabel.formatter = placeholderAmount.localFormat
-                                    primaryLabel.formatter = placeholderAmount.ltcFormat
+                                    primaryLabel.formatter = placeholderAmount.sumFormat
                                     
                                 }
                                 self.exchangeRate = $0.currentRate
@@ -217,7 +217,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
                                 if let rate = $0.currentRate {
                                     let placeholderAmount = Amount(amount: 0, rate: rate, maxDigits: $0.maxDigits)
                                     secondaryLabel.formatter = placeholderAmount.localFormat
-                                    primaryLabel.formatter = placeholderAmount.ltcFormat
+                                    primaryLabel.formatter = placeholderAmount.sumFormat
                                     self.setBalances()
                                 }
                             })
