@@ -84,7 +84,7 @@ extension UserDefaults {
     
     //
     // 2 - millisums
-    // 5 - lites
+    // 5 - sums
     // 8 - SUM
     //
     static var maxDigits: Int {

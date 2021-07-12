@@ -1310,7 +1310,7 @@
 "Webview.updating" = "Updating...";
 
 /* Welcome view body text */
-"Welcome.body" = "Sumcoin Wallet now has a brand new look and some new features.\n\nAll coins are displayed in lites (𝜮). 1 Sumcoin (𝚺) = 1000 lites (𝜮).";
+"Welcome.body" = "Sumcoin Wallet now has a brand new look and some new features.\n\nAll coins are displayed in sums (𝜮). 1 Sumcoin (𝚺) = 1000 sums (𝜮).";
 
 /* Welcome view title */
 "Welcome.title" = "Welcome to Sumcoin Wallet!";
