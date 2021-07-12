@@ -9,95 +9,95 @@
 import UIKit
 
 let π: CGFloat = .pi
-  
+
 /// Custom Event Enum: Events related to different user based actions
 enum CustomEvent: String {
     /// App Launched
     case _20191105_AL = "APP_LAUNCHED"
-    
+
     /// App Visit Send Controller
     case _20191105_VSC = "VISIT_SEND_CONTROLLER"
-    
+
     /// Visit Receive Controller
     case _20202116_VRC = "VISIT_RECEIVE_CONTROLLER"
-    
+
     /// Did Send SUM
     case _20191105_DSL = "DID_SEND_LTC"
-    
+
     /// Updated SUM price
     case _20191105_DULP = "DID_UPDATE_LTC_PRICE"
-    
+
     /// User tapped Buy tab
     case _20191105_DTBT = "DID_TAP_BUY_TAB"
-    
+
     /// Entered dispatch group
     case _20200111_DEDG = "DID_ENTER_DISPATCH_GROUP"
-    
+
     /// Left dispatch group
     case _20200111_DLDG = "DID_LEAVE_DISPATCH_GROUP"
-    
+
     /// Rate not initialized
     case _20200111_RNI = "RATE_NOT_INITIALIZED"
-    
+
     /// Fee per kb not initialized
     case _20200111_FNI = "FEEPERKB_NOT_INITIALIZED"
-    
+
     /// Transaction not initialized
     case _20200111_TNI = "TRANSACTION_NOT_INITIALIZED"
-    
+
     /// Wallet not initialized
     case _20200111_WNI = "WALLET_NOT_INITIALIZED"
-    
+
     /// Phrase not initialized
     case _20200111_PNI = "PHRASE_NOT_INITIALIZED"
-    
+
     /// Unable to sign transaction
     case _20200111_UTST = "UNABLE_TO_SIGN_TRANSACTION"
-    
+
     /// Generalized Error
     case _20200112_ERR = "ERROR"
-    
+
     /// Started resync
     case _20200112_DSR = "DID_START_RESYNC"
-    
+
     /// Showed review request
     case _20200125_DSRR = "DID_SHOW_REVIEW_REQUEST"
-    
+
     /// Unlocked in with PIN
     case _20200217_DUWP = "DID_UNLOCK_WITH_PIN"
-    
+
     /// App Launched
     case _20200217_DUWB = "DID_UNLOCK_WITH_BIOMETRICS"
-    
+
     /// Did donate
     case _20200223_DD = "DID_DONATE"
-    
+
     /// Did cancel donation
     case _20200225_DCD = "DID_CANCEL_DONATE"
-    
+
     /// Did use default fee per kb
     case _20200301_DUDFPK = "DID_USE_DEFAULT_FEE_PER_KB"
-    
+
     /// User tapped support LF
     case _20201118_DTS = "DID_TAP_SUPPORT_LF"
-    
+
     /// Started IFPS Lookup
     case _20201121_SIL = "STARTED_IFPS_LOOKUP"
-    
+
     /// Resolved IPFS Address
     case _20201121_DRIA = "DID_RESOLVE_IPFS_ADDRESS"
-    
+
     /// Failed to resolve IPFS Address
-    case _20201121_FRIA = "FAILED_RESOLVE_IPFS_ADDRESS" 
-	
+    case _20201121_FRIA = "FAILED_RESOLVE_IPFS_ADDRESS"
+
     /// User tapped balance
     case _20200207_DTHB = "DID_TAP_HEADER_BALANCE"
-    
+
     /// Ternio API Wallet details failure
     case _20210405_TAWDF = "TERNIO_API_WALLET_DETAILS_FAILURE"
-     
+
     /// Heartbeat check If event even happens
-    case _20210427_HCIEEH = "HEARTBEAT_CHECK_IF_EVENT_EVEN_HAPPENS" 
+    case _20210427_HCIEEH = "HEARTBEAT_CHECK_IF_EVENT_EVEN_HAPPENS"
 }
 
 struct FoundationSupport {
@@ -107,16 +107,16 @@ struct FoundationSupport {
     /// Sumcoin Wallet main donation address: MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe
     /// As of Nov 14th, 2020
     static let supportLTCAddress = "MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe"
-} 
+}
 
 struct APIServer {
-     
+
     #if DEBUG
     static let baseUrl = "https://api-stage.lite-wallet.org/"
     #else
     static let baseUrl = "https://api-prod.lite-wallet.org/"
     #endif
-} 
+}
 
 struct Padding {
     subscript(multiplier: Int) -> CGFloat {
@@ -124,7 +124,7 @@ struct Padding {
             return CGFloat(multiplier) * 8.0
         }
     }
-    
+
     subscript(multiplier: Double) -> CGFloat {
         get {
             return CGFloat(multiplier) * 8.0
@@ -133,7 +133,7 @@ struct Padding {
 }
 
 struct DeviceType {
-    
+
     enum Name  {
         static var iPhoneSE = "iPhone SE"
         static var iPhoneSE2 = "iPhone SE2"
@@ -146,7 +146,7 @@ struct DeviceType {
         static var iPhone12ProMax = "iPhone 12 Pro Max"
         static var iPadPro = "iPad Pro (12.9-inch) (3rd generation)"
     }
-    
+
 }
 
 struct C {
@@ -170,13 +170,13 @@ struct C {
     static let maxMemoLength = 250
     static let feedbackEmail = "feedback@litecoinfoundation.zendesk.com"
     static let supportEmail = "support@litecoinfoundation.zendesk.com"
-    
-    
+
+
     static let reviewLink = "https://itunes.apple.com/app/loafwallet-litecoin-wallet/id1119332592?action=write-review"
     static var standardPort: Int {
-        return E.isTestnet ? 19335 : 9333
+        return E.isTestnet ? 19335 : 3333
     }
-    
+
     static let troubleshootingQuestions = """
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
         <html>
@@ -236,4 +236,3 @@ struct AppVersion {
     static let versionNumber = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     static let string = "v." + versionNumber! + " (\(buildNumber!))"
 }
-
