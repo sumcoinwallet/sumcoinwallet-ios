@@ -107,7 +107,7 @@ struct PaymentRequest {
 
     static func requestString(withAddress: String, forAmount: UInt64) -> String {
         let btcAmount = convertToBTC(fromSatoshis: forAmount)
-        return "litecoin:\(withAddress)?amount=\(btcAmount)"
+        return "sumcoin:\(withAddress)?amount=\(btcAmount)"
     }
 
     var toAddress: String?
