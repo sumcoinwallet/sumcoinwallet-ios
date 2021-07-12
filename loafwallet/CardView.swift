@@ -85,7 +85,7 @@ struct CardView: View {
                     }
                     .foregroundColor(isEmailValid ? .black : Color(UIColor.litecoinOrange))
                     .font(Font(UIFont.barlowSemiBold(size:18.0)))
-                    .accentColor(Color(UIColor.liteWalletBlue))
+                    .accentColor(Color(UIColor.sumcoinWalletBlue))
                     .padding([.leading, .trailing], 20)
                     .padding(.top, 30)
                     .autocapitalization(.none)
@@ -99,7 +99,7 @@ struct CardView: View {
                             TextField(S.Import.passwordPlaceholder.capitalized, text: $loginModel.passwordString)
                                 .foregroundColor(.black)
                                 .font(Font(UIFont.barlowSemiBold(size:18.0)))
-                                .accentColor(Color(UIColor.liteWalletBlue))
+                                .accentColor(Color(UIColor.sumcoinWalletBlue))
                                 .padding(.leading, 20)
                                 .padding(.top, 20)
                                 .autocapitalization(.none)
@@ -110,7 +110,7 @@ struct CardView: View {
                             SecureField(S.Import.passwordPlaceholder.capitalized, text: $loginModel.passwordString)
                                 .foregroundColor(.black)
                                 .font(Font(UIFont.barlowSemiBold(size:18.0)))
-                                .accentColor(Color(UIColor.liteWalletBlue))
+                                .accentColor(Color(UIColor.sumcoinWalletBlue))
                                 .padding(.leading, 20)
                                 .padding(.top, 20)
                                 .autocapitalization(.none)
@@ -143,7 +143,7 @@ struct CardView: View {
                         Text(S.SumcoinCard.forgotPassword)
                             .frame(minWidth:0, maxWidth: .infinity)
                             .font(Font(UIFont.barlowLight(size: 15)))
-                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                             .padding(.all, 30)
                     }
                     
@@ -177,11 +177,11 @@ struct CardView: View {
                             .font(Font(UIFont.barlowMedium(size: 16.0)))
                             .padding([.leading, .trailing], 16)
                             .foregroundColor(.white)
-                            .background(Color(UIColor.liteWalletBlue))
+                            .background(Color(UIColor.sumcoinWalletBlue))
                             .cornerRadius(4.0)
                             .overlay(
                                 RoundedRectangle(cornerRadius:4)
-                                    .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
+                                    .stroke(Color(UIColor.sumcoinWalletBlue), lineWidth: 1)
                             )
                     }
                     .padding([.leading, .trailing], 16)
@@ -194,10 +194,10 @@ struct CardView: View {
                             .frame(minWidth:0, maxWidth: .infinity)
                             .padding()
                             .font(Font(UIFont.barlowMedium(size: 15.0)))
-                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                             .overlay(
                                 RoundedRectangle(cornerRadius:4)
-                                    .stroke(Color(UIColor.liteWalletBlue), lineWidth: 1)
+                                    .stroke(Color(UIColor.sumcoinWalletBlue), lineWidth: 1)
                             )
                             .padding([.leading, .trailing], 16)
                             .padding([.top,.bottom], 15)

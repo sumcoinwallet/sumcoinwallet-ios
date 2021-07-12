@@ -32,10 +32,10 @@ extension UIColor {
       return #colorLiteral(red: 0.3019607843, green: 0.3019607843, blue: 0.3058823529, alpha: 1)
     }
     
-    static var liteWalletBlue: UIColor { //345D9D
+    static var sumcoinWalletBlue: UIColor { //345D9D
       return #colorLiteral(red: 0.2039215686, green: 0.3647058824, blue: 0.6156862745, alpha: 1)
     }
-    static var liteWalletDarkBlue: UIColor { //0C3475
+    static var sumcoinWalletDarkBlue: UIColor { //0C3475
         return #colorLiteral(red: 0.04705882353, green: 0.2039215686, blue: 0.4588235294, alpha: 1)
     }
     

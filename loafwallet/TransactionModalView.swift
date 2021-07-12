@@ -41,7 +41,7 @@ struct TransactionModalView: View {
                 .padding()
             }
             .edgesIgnoringSafeArea(.all)
-            .background(Color(UIColor.liteWalletBlue))
+            .background(Color(UIColor.sumcoinWalletBlue))
             
  
             //MARK: Amount data
@@ -229,11 +229,11 @@ struct TransactionModalView: View {
                         .font(Font(UIFont.barlowSemiBold(size: 20.0)))
                         .padding(.all, 10.0)
                         .foregroundColor(.white)
-                        .background(Color(UIColor.liteWalletBlue))
+                        .background(Color(UIColor.sumcoinWalletBlue))
                         .cornerRadius(4.0)
                         .overlay(
                             RoundedRectangle(cornerRadius: 4.0)
-                                .stroke(Color(UIColor.liteWalletBlue))
+                                .stroke(Color(UIColor.sumcoinWalletBlue))
                         )
                     }
                 }

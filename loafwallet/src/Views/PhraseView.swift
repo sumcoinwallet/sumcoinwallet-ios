@@ -30,7 +30,7 @@ class PhraseView: UIView {
         label.adjustsFontSizeToFitWidth = true
         label.text = phrase
         label.font = UIFont.customBold(size: 30.0)
-        backgroundColor = .liteWalletBlue
+        backgroundColor = .sumcoinWalletBlue
         layer.cornerRadius = 10.0
     }
 

@@ -27,7 +27,7 @@ class StartViewController : UIViewController {
     private let didTapCreate: () -> Void
     private let backgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = .liteWalletBlue
+        view.backgroundColor = .sumcoinWalletBlue
         return view
     }()
     private var logo: UIImageView = {
@@ -62,7 +62,7 @@ class StartViewController : UIViewController {
             }
             view.backgroundColor = mainColor
         } else {
-            view.backgroundColor = .liteWalletBlue
+            view.backgroundColor = .sumcoinWalletBlue
         }
     }
 

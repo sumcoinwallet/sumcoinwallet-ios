@@ -27,7 +27,7 @@ class AboutViewController : UIViewController {
             privacy.tintColor = labelTextColor
             view.backgroundColor = backgroundColor
          } else {
-            privacy.tintColor = .liteWalletBlue
+            privacy.tintColor = .sumcoinWalletBlue
             view.backgroundColor = .whiteTint
         }
         

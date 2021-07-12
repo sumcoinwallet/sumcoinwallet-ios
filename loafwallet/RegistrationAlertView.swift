@@ -34,7 +34,7 @@ struct RegistrationAlertView<Presenting>: View where Presenting: View {
                                    alignment: .center)
                             .multilineTextAlignment(.center)
                             .font(Font(UIFont.barlowRegular(size: 16.0)))
-                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                             .padding(.bottom, 20)
                             .padding(.top, 10)
                             .padding([.leading,.trailing], 20)

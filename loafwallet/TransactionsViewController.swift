@@ -75,7 +75,7 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
         self.transactions = TransactionManager.sharedInstance.transactions
         self.rate = TransactionManager.sharedInstance.rate
         
-        tableView.backgroundColor = .liteWalletBlue
+        tableView.backgroundColor = .sumcoinWalletBlue
         initSyncingHeaderView(reduxState: reduxState, completion: { })
         attemptShowPrompt()
     }

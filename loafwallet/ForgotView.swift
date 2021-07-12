@@ -109,7 +109,7 @@ struct ForgotAlertView<Presenting>: View where Presenting: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.gray, lineWidth: 1.5)
                     )
-                    .background(Color(UIColor.liteWalletBlue))
+                    .background(Color(UIColor.sumcoinWalletBlue))
                     .cornerRadius(8)
                     .frame(
                         width: deviceSize.size.width * 0.85,

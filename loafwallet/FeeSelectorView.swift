@@ -43,7 +43,7 @@ class FeeSelector : UIView {
         addSubview(subheader)
         addSubview(feeMessageLabel)
         
-        control.tintColor = .liteWalletBlue
+        control.tintColor = .sumcoinWalletBlue
         
         header.constrain([
             header.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[2]),

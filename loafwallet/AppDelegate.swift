@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         guard let thisWindow = self.window  else { return false }
         
-        thisWindow.tintColor = .liteWalletBlue
+        thisWindow.tintColor = .sumcoinWalletBlue
         
         UIView.swizzleSetFrame()
         

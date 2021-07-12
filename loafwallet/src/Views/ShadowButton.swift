@@ -161,7 +161,7 @@ class ShadowButton: UIControl {
     private func setColors() {
         switch type {
         case .flatSumcoinBlue:
-        container.backgroundColor = .liteWalletBlue
+        container.backgroundColor = .sumcoinWalletBlue
         label.textColor = .primaryText
         container.layer.borderColor = UIColor.white.cgColor
         container.layer.borderWidth = 1.0
@@ -170,16 +170,16 @@ class ShadowButton: UIControl {
         shadowView.layer.shadowOpacity = 0.15
         case .flatWhite:
         container.backgroundColor = .white
-        label.textColor = .liteWalletBlue
+        label.textColor = .sumcoinWalletBlue
         container.layer.borderColor = nil
         container.layer.borderWidth = 0.0
-        imageView?.tintColor = .liteWalletBlue
+        imageView?.tintColor = .sumcoinWalletBlue
         case .flatWhiteBorder:
         container.backgroundColor = .white
-        label.textColor = .liteWalletBlue
-        container.layer.borderColor = UIColor.liteWalletBlue.cgColor
+        label.textColor = .sumcoinWalletBlue
+        container.layer.borderColor = UIColor.sumcoinWalletBlue.cgColor
         container.layer.borderWidth = 1.0
-        imageView?.tintColor = .liteWalletBlue
+        imageView?.tintColor = .sumcoinWalletBlue
         case .primary:
         container.backgroundColor = .primaryButton
         label.textColor = .primaryText

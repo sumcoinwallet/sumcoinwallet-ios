@@ -147,7 +147,7 @@ class UpdatePinViewController: UIViewController, Subscriber {
             }
             view.backgroundColor = mainColor
         } else {
-            view.backgroundColor = .liteWalletBlue
+            view.backgroundColor = .sumcoinWalletBlue
         }
         header.text = isCreatingPin ? S.UpdatePin.createTitle : S.UpdatePin.updateTitle
         instruction.text = isCreatingPin ? S.UpdatePin.createInstruction : S.UpdatePin.enterCurrent

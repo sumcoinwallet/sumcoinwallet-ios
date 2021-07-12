@@ -280,7 +280,7 @@ struct RegistrationView: View {
                             .frame(minWidth:0, maxWidth: .infinity)
                             .padding()
                             .font(Font(UIFont.barlowBold(size:20.0)))
-                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                             .background(Color.white)
                             .cornerRadius(4)
                             .overlay(
@@ -294,7 +294,7 @@ struct RegistrationView: View {
             .padding([.leading,.trailing], 15)
             .padding(.top, 15)
             .padding(.bottom, 30)
-            .background(Color(UIColor.liteWalletBlue))
+            .background(Color(UIColor.sumcoinWalletBlue))
             .edgesIgnoringSafeArea(.all)
             }
             .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name.UIKeyboardWillShow)) { notification in

@@ -83,13 +83,13 @@ class BuyTableViewController: UITableViewController, SFSafariViewControllerDeleg
         moonpaySegmentedControl.selectedSegmentIndex = PartnerFiatOptions.usd.index
         moonpaySegmentedControl.selectedSegmentTintColor = .white
         moonpaySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
-        moonpaySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.liteWalletBlue], for: .selected)
+        moonpaySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.sumcoinWalletBlue], for: .selected)
         
         simplexCurrencySegmentedControl.addTarget(self, action: #selector(didChangeCurrencySimplex), for: .valueChanged)
         simplexCurrencySegmentedControl.selectedSegmentIndex = PartnerFiatOptions.usd.index
         simplexCurrencySegmentedControl.selectedSegmentTintColor = .white
         simplexCurrencySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
-        simplexCurrencySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.liteWalletBlue], for: .selected)
+        simplexCurrencySegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.sumcoinWalletBlue], for: .selected)
         
         setupWkVCData()
     }

@@ -165,7 +165,7 @@ class AlertView : UIView, SolidColorDrawable {
     }
     
     override func draw(_ rect: CGRect) {
-        drawColor(color: .liteWalletBlue, rect)
+        drawColor(color: .sumcoinWalletBlue, rect)
     }
     
     required init?(coder aDecoder: NSCoder) {

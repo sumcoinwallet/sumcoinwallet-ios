@@ -29,7 +29,7 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
                         Text(didFail ? S.SumcoinCard.failedlogin : self.mainMessage)
                             .padding()
                             .font(Font(UIFont.customMedium(size: 16.0)))
-                            .foregroundColor(Color(UIColor.liteWalletBlue))
+                            .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                         ActivityIndicator(isAnimating: $isShowingLoginAlert,
                                           style: .medium)
                             .padding(.bottom, 15)

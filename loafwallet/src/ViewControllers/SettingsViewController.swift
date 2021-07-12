@@ -48,7 +48,7 @@ class SettingsViewController : UITableViewController, CustomTitleView {
             titleLabel = UILabel(font: .customBold(size: 26.0), color: textColor)
 
         } else {
-            headerView.backgroundColor = .liteWalletBlue
+            headerView.backgroundColor = .sumcoinWalletBlue
             tableView.backgroundColor = .clear
             titleLabel = UILabel(font: .customBold(size: 26.0), color: .darkText)
         }

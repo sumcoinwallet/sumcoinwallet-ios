@@ -11,11 +11,11 @@ import SwiftUI
 
 extension Color {
     
-    static var liteWalletBlue: Color { //345D9D
-        return Color(UIColor.liteWalletBlue)
+    static var sumcoinWalletBlue: Color { //345D9D
+        return Color(UIColor.sumcoinWalletBlue)
     }
      
-    static var liteWalletDarkBlue: Color { //163e7f
-        return Color(UIColor.liteWalletDarkBlue)
+    static var sumcoinWalletDarkBlue: Color { //163e7f
+        return Color(UIColor.sumcoinWalletDarkBlue)
     }  
 }

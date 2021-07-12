@@ -98,7 +98,7 @@ class VerifyPinViewController : UIViewController, ContentBoxPresenter {
     }
 
     private func setupSubviews() {
-        contentBox.backgroundColor = .liteWalletBlue
+        contentBox.backgroundColor = .sumcoinWalletBlue
         contentBox.layer.cornerRadius = 8.0
         contentBox.layer.borderWidth = 1.0
         contentBox.layer.borderColor = UIColor.secondaryShadow.cgColor

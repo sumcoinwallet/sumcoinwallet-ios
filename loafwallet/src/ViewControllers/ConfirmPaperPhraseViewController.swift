@@ -87,7 +87,7 @@ class ConfirmPaperPhraseViewController : UITableViewController {
     }
  
     private func setupSubViews() {
-        headerView.backgroundColor = .liteWalletBlue 
+        headerView.backgroundColor = .sumcoinWalletBlue 
         headerTitleLabel.font = UIFont.barlowBold(size: 18.0)
         headerDescriptionLabel.font = UIFont.barlowRegular(size: 14.0)
         
@@ -119,7 +119,7 @@ class ConfirmPaperPhraseViewController : UITableViewController {
         backButton.addTarget(self, action: #selector(dismissController), for: .touchUpInside)
         submitButton.setTitle(S.Button.submit, for: .normal)
         submitButton.titleLabel?.font = UIFont.barlowBold(size: 18.0)
-        submitButton.backgroundColor = .liteWalletBlue
+        submitButton.backgroundColor = .sumcoinWalletBlue
         submitButton.layer.cornerRadius = 4.0
         submitButton.clipsToBounds = true
         submitButton.addTarget(self, action: #selector(checkPhrases), for: .touchUpInside)

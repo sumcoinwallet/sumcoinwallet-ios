@@ -47,7 +47,7 @@ struct SupportSumcoinWalletView: View {
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundColor(Color(UIColor.white))
-                    .background(Color(UIColor.liteWalletBlue))
+                    .background(Color(UIColor.sumcoinWalletBlue))
                     .cornerRadius(4.0)
             }
             .padding([.leading, .trailing], 40)
@@ -61,7 +61,7 @@ struct SupportSumcoinWalletView: View {
                     .font(Font(UIFont.customMedium(size: 16.0)))
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .foregroundColor(Color(UIColor.liteWalletBlue))
+                    .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                     .background(Color(UIColor.white))
                     .cornerRadius(4.0)
                     .overlay(

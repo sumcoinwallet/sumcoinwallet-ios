@@ -111,10 +111,10 @@ class TabBarViewController: UIViewController, Subscriber, Trackable, UITabBarDel
             containerView.backgroundColor = backgroundColor
             self.view.backgroundColor = backgroundColor
         } else {
-            headerView.backgroundColor = .liteWalletBlue
-            tabBar.barTintColor = .liteWalletBlue
-            containerView.backgroundColor = .liteWalletBlue
-            self.view.backgroundColor = .liteWalletBlue
+            headerView.backgroundColor = .sumcoinWalletBlue
+            tabBar.barTintColor = .sumcoinWalletBlue
+            containerView.backgroundColor = .sumcoinWalletBlue
+            self.view.backgroundColor = .sumcoinWalletBlue
         }
     }
     

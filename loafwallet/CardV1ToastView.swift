@@ -59,7 +59,7 @@ struct CardV1ToastView<Presenting>: View where Presenting: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.gray, lineWidth: 1.5)
                     )
-                    .background(Color(UIColor.liteWalletBlue))
+                    .background(Color(UIColor.sumcoinWalletBlue))
                     .cornerRadius(8)
                     .shadow(color: .black, radius: 10, x: 5, y: 5)
                     .opacity(self.isShowingCardToast ? 1 : 0)

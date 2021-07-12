@@ -21,7 +21,7 @@ struct LockScreenHeaderView: View {
     var body: some View {
         
         Color
-            .liteWalletDarkBlue
+            .sumcoinWalletDarkBlue
             .opacity(0.9)
             .edgesIgnoringSafeArea(.all)
             .overlay(

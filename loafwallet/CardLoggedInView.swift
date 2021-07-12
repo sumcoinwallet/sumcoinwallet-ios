@@ -54,7 +54,7 @@ struct CardLoggedInView: View {
                                alignment: .center)
                         .padding(.all, 10)
                         .font(Font(UIFont.barlowRegular(size: 18.0)))
-                        .foregroundColor(Color(UIColor.liteWalletBlue))
+                        .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                         .cornerRadius(8.0)
                         .padding(.all, 10)
                 }
@@ -67,7 +67,7 @@ struct CardLoggedInView: View {
                            alignment: .center)
                     .padding(.top, 40)
                     .font(Font(UIFont.barlowBold(size: 20.0)))
-                    .foregroundColor(Color(UIColor.liteWalletBlue))
+                    .foregroundColor(Color(UIColor.sumcoinWalletBlue))
                 Divider()
                     .frame(minWidth: 0,
                                 maxWidth: geometry.size.width * 0.4,

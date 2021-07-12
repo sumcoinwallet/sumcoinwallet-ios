@@ -25,7 +25,7 @@ class StartPaperPhraseViewController : UIViewController {
     private let pencil = UIImageView(image: #imageLiteral(resourceName: "Pencil"))
     private var explanation = UILabel.wrapping(font: UIFont.barlowMedium(size: 20.0))
     private let store: Store
-    private let header = RadialGradientView(backgroundColor: .liteWalletBlue, offset: 64.0)
+    private let header = RadialGradientView(backgroundColor: .sumcoinWalletBlue, offset: 64.0)
     private var footer = UILabel.wrapping(font: .customBody(size: 13.0), color: .secondaryGrayText)
     private let callback: () -> Void
 

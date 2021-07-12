@@ -46,7 +46,7 @@ protocol SolidColorDrawable {
 }
 
 extension UIView {
-    func drawColor(color: UIColor = .liteWalletBlue, _ rect: CGRect) {
+    func drawColor(color: UIColor = .sumcoinWalletBlue, _ rect: CGRect) {
         let image = UIImageView(image: #imageLiteral(resourceName: "colorImageBlue"))
         image.contentMode = .scaleToFill
         addSubview(image)

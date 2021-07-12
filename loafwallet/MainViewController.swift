@@ -51,16 +51,16 @@ class MainViewController : UIViewController, Subscriber, LoginViewControllerDele
    
     override func viewDidLoad() {
         
-        self.view.backgroundColor = .liteWalletBlue
+        self.view.backgroundColor = .sumcoinWalletBlue
         
-        self.navigationController?.navigationBar.tintColor = .liteWalletBlue
+        self.navigationController?.navigationBar.tintColor = .sumcoinWalletBlue
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.darkText,
             NSAttributedString.Key.font: UIFont.customBold(size: 17.0)
         ]
         
         self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.barTintColor = .liteWalletBlue
+        self.navigationController?.navigationBar.barTintColor = .sumcoinWalletBlue
         self.loginView.delegate = self
        
         // detect jailbreak so we can throw up an idiot warning, in viewDidLoad so it can't easily be swizzled out
