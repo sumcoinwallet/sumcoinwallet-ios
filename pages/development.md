@@ -6,7 +6,7 @@ ____
 The following outlines the steps for releasing a version.
  
 #### Step A
-1. When the develop branch has the features, changes as decided a draft of a release tag should be begun: [releases page](https://github.com/sumcoinwallet/loafwallet-ios/releases)
+1. When the develop branch has the features, changes as decided a draft of a release tag should be begun: [releases page](https://github.com/sumcoinwallet/sumcoinwallet-ios/releases)
 
 2. From the develop branch, a new branch needs to be created in the semver method (v#.#.#) e.g.; `release/v2.9.0`
 

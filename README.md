@@ -26,7 +26,7 @@ Sumcoin Wallet is the best way to get started with Sumcoin. Our simple, streamli
 
 Sumcoin Wallet is the best way to get started with Sumcoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users. This is a free app produced by the Sumcoin Wallet.
 
-iOS Users can visit the iOS version of the code here: [Sumcoin Wallet iOS](https://github.com/sumcoinwallet/loafwallet-ios) 
+iOS Users can visit the iOS version of the code here: [Sumcoin Wallet iOS](https://github.com/sumcoinwallet/sumcoinwallet-ios) 
 
 ### Completely decentralized
 
@@ -73,8 +73,8 @@ Simplicity and ease-of-use is **Sumcoin Wallet**'s core design principle. A simp
 ## Sumcoin Wallet Development:
 =======
 ### Sumcoin Wallet Development:
-[![GitHub issues](https://img.shields.io/github/issues/sumcoinwallet/loafwallet-ios?style=plastic)](https://github.com/sumcoinwallet/loafwallet-ios/re-frame/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/sumcoinwallet/loafwallet-ios?color=00ff00&style=plastic)](https://github.com/sumcoinwallet/loafwallet-ios/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/sumcoinwallet/sumcoinwallet-ios?style=plastic)](https://github.com/sumcoinwallet/sumcoinwallet-ios/re-frame/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sumcoinwallet/sumcoinwallet-ios?color=00ff00&style=plastic)](https://github.com/sumcoinwallet/sumcoinwallet-ios/pulls)
 >>>>>>> parent of 85bfab43 (moved donations)
 
 ### Building & Developing Sumcoin Wallet for iOS:
