@@ -101,7 +101,7 @@ class Transaction {
             nf.currencySymbol = currentRate.currencySymbol
             nf.numberStyle = .currency
             if let rateString = nf.string(from: metaData.exchangeRate as NSNumber) {
-                let secondLine = "\(rateString)/LTC \(prefix)\(String(format: "%.2f", difference))%"
+                let secondLine = "\(rateString)/SUM \(prefix)\(String(format: "%.2f", difference))%"
                 exchangeRateInfo = "\(firstLine)\n\(secondLine)"
             }
         }
@@ -133,7 +133,7 @@ class Transaction {
             nf.numberStyle = .currency
             if let rateString = nf.string(from: metaData.exchangeRate as NSNumber) {
                 ///TODO: Decide the usefulness of the rate percentage or a better way to describe it
-                let secondLine = "\(rateString)/LTC \(prefix)\(String(format: "%.2f", difference))%"
+                let secondLine = "\(rateString)/SUM \(prefix)\(String(format: "%.2f", difference))%"
                 exchangeRateInfo = "\(secondLine)"
             }
         }

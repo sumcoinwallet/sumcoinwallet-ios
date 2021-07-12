@@ -21,10 +21,10 @@ enum CustomEvent: String {
     /// Visit Receive Controller
     case _20202116_VRC = "VISIT_RECEIVE_CONTROLLER"
     
-    /// Did Send LTC
+    /// Did Send SUM
     case _20191105_DSL = "DID_SEND_LTC"
     
-    /// Updated LTC price
+    /// Updated SUM price
     case _20191105_DULP = "DID_UPDATE_LTC_PRICE"
     
     /// User tapped Buy tab
@@ -165,7 +165,7 @@ struct C {
     static let maxMoney: UInt64 = 84000000*100000000
     static let satoshis: UInt64 = 100000000
     static let walletQueue = "com.litecoin.walletqueue"
-    static let btcCurrencyCode = "LTC"
+    static let btcCurrencyCode = "SUM"
     static let null = "(null)"
     static let maxMemoLength = 250
     static let feedbackEmail = "feedback@litecoinfoundation.zendesk.com"

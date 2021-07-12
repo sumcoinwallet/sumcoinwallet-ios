@@ -27,7 +27,7 @@ struct LockScreenHeaderView: View {
             .overlay(
                 VStack() {
                     Spacer()
-                    Text(" 1 LTC = \(viewModel.currentValueInFiat)")
+                    Text(" 1 SUM = \(viewModel.currentValueInFiat)")
                         .font(Font(UIFont.barlowSemiBold(size: 16.0)))
                         .foregroundColor(.white)
                     

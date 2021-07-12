@@ -141,7 +141,7 @@
 "BuyCenter.ModalTitle" = "Comprar Łitecoin";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "• Compre LTC con muchos pares fiat\n• Pague con múltiples métodos\n• Proveedor de pago global";
+"BuyCenter.moonpayFinancialDetails" = "• Compre SUM con muchos pares fiat\n• Pague con múltiples métodos\n• Proveedor de pago global";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -288,7 +288,7 @@
 "History.barItemTitle" = "HISTORIA";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "Valor actual de LTC en";
+"History.currentSumcoinValue" = "Valor actual de SUM en";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Averiguando el saldo de la clave privada...";
@@ -842,7 +842,7 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "Pasteboard está vacío";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "Introduzca una dirección de Sumcoin";
 
 /* Network Fee: $0.01 */
@@ -905,7 +905,7 @@
 /* lookupFailureHeader */
 "Send.UnstoppableDomains.lookupFailureHeader" = "Búsqueda fallida";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = "Ingrese un dominio .crypto o .zil";
 
 /* UDSystemError */

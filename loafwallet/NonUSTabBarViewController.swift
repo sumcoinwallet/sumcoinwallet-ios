@@ -279,7 +279,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
         }
     }
     
-    /// Transform LTC and Fiat  Balances
+    /// Transform SUM and Fiat  Balances
     /// - Parameter forView: Views
     /// - Returns: the inverse transform
     private func transform(forView: UIView) ->  CGAffineTransform {

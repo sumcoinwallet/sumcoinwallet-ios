@@ -140,7 +140,7 @@
 "BuyCenter.ModalTitle" = "Sumcoin を購入する";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "•多くの法定紙幣ペアでLTCを購入する\n•複数の方法で支払う\n•グローバル決済プロバイダー";
+"BuyCenter.moonpayFinancialDetails" = "•多くの法定紙幣ペアでSUMを購入する\n•複数の方法で支払う\n•グローバル決済プロバイダー";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -287,7 +287,7 @@
 "History.barItemTitle" = "歴史";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "現在のLTC値";
+"History.currentSumcoinValue" = "現在のSUM値";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "秘密鍵の残高確認中...";
@@ -841,7 +841,7 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "ペーストボードが空です";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "Sumcoinのアドレスを入力してください。";
 
 /* Network Fee: $0.01 */
@@ -904,7 +904,7 @@
 /* lookupFailureHeader */
 "Send.UnstoppableDomains.lookupFailureHeader" = "ルックアップに失敗しました";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = ".cryptoまたは.zilドメインを入力してください";
 
 /* UDSystemError */

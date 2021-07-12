@@ -140,7 +140,7 @@
 "BuyCenter.ModalTitle" = "购买 Łitecoin";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "•购买具有许多法定货币对的LTC\n•以多种方式支付\n•全球支付提供商";
+"BuyCenter.moonpayFinancialDetails" = "•购买具有许多法定货币对的SUM\n•以多种方式支付\n•全球支付提供商";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -287,7 +287,7 @@
 "History.barItemTitle" = "历史";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "当前的LTC值";
+"History.currentSumcoinValue" = "当前的SUM值";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "正在查看私人密钥余额...";
@@ -841,7 +841,7 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "粘贴板为空";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "输入一个Sumcoin地址";
 
 /* Network Fee: $0.01 */
@@ -904,7 +904,7 @@
 /* lookupFailureHeader */
 "Send.UnstoppableDomains.lookupFailureHeader" = "查找失败";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = "输入.crypto或.zil域";
 
 /* UDSystemError */

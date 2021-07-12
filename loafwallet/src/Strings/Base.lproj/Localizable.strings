@@ -1219,13 +1219,13 @@
 /* Menu button title */
 "MenuButton.customer.support" = "Customer support";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = "Enter a .crypto or .zil domain";
 
 /* Or */
 "Fragment.or" = "or";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "Enter a Sumcoin address";
 
 /* Litewallet Partners */
@@ -1385,7 +1385,7 @@
 "ManageWallet.balance" = "Balance";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "• Buy LTC with many fiat pairs\n• Pay with multiple methods\n• Global payment provider";
+"BuyCenter.moonpayFinancialDetails" = "• Buy SUM with many fiat pairs\n• Pay with multiple methods\n• Global payment provider";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -1397,4 +1397,4 @@
 "Settings.currentLocale" = "Current Locale:";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "Current LTC value in";
+"History.currentSumcoinValue" = "Current SUM value in";

@@ -140,7 +140,7 @@
 "BuyCenter.ModalTitle" = "Membeli Łitecoin";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "• Beli LTC dengan banyak pasangan fiat\n• Bayar dengan berbagai metode\n• Penyedia pembayaran global";
+"BuyCenter.moonpayFinancialDetails" = "• Beli SUM dengan banyak pasangan fiat\n• Bayar dengan berbagai metode\n• Penyedia pembayaran global";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -287,7 +287,7 @@
 "History.barItemTitle" = "SEJARAH";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "Nilai LTC saat ini dalam";
+"History.currentSumcoinValue" = "Nilai SUM saat ini dalam";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Memeriksa saldo kunci pribadi...";
@@ -841,7 +841,7 @@
 /* Empty pasteboard error message */
 "Send.emptyPasteboard" = "Papan tulis kosong";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "Masukkan alamat Sumcoin";
 
 /* Network Fee: $0.01 */
@@ -904,7 +904,7 @@
 /* lookupFailureHeader */
 "Send.UnstoppableDomains.lookupFailureHeader" = "Pencarian gagal";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = "Masukkan domain .crypto atau .zil";
 
 /* UDSystemError */

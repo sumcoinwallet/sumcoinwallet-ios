@@ -140,7 +140,7 @@
 "BuyCenter.ModalTitle" = "Koop Sumcoin";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "• Koop LTC met veel fiat-paren\n• Betaal met meerdere methoden\n• Wereldwijde betalingsprovider";
+"BuyCenter.moonpayFinancialDetails" = "• Koop SUM met veel fiat-paren\n• Betaal met meerdere methoden\n• Wereldwijde betalingsprovider";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -287,7 +287,7 @@
 "History.barItemTitle" = "GESCHIEDENIS";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "Huidige LTC-waarde in";
+"History.currentSumcoinValue" = "Huidige SUM-waarde in";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Persoonlijke sleutel balans checken...";
@@ -841,7 +841,7 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "Plakbord is leeg";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "Voer een Sumcoin-adres in";
 
 /* Network Fee: $0.01 */
@@ -904,7 +904,7 @@
 /* lookupFailureHeader */
 "Send.UnstoppableDomains.lookupFailureHeader" = "Opzoeken mislukt";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = "Voer een .crypto- of .zil-domein in";
 
 /* UDSystemError */

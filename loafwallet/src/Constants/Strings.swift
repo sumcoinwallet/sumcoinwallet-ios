@@ -24,7 +24,7 @@ enum S {
             case 5:
                 return "lites\(S.Symbols.narrowSpace)(\(S.Symbols.lites))"
             case 8:
-                return "LTC\(S.Symbols.narrowSpace)(\(S.Symbols.ltc))"
+                return "SUM\(S.Symbols.narrowSpace)(\(S.Symbols.ltc))"
             default:
                 return "lites\(S.Symbols.narrowSpace)(\(S.Symbols.lites))"
             }
@@ -67,7 +67,7 @@ enum S {
     enum Send {
         static let title = NSLocalizedString("Send.title", value: "**Send**", comment: "Send modal title")
         static let toLabel = NSLocalizedString("Send.toLabel", value: "**To**", comment: "Send money to label")
-        static let enterLTCAddressLabel = NSLocalizedString("Send.enterLTCAddress", value: "**Enter LTC Address**", comment: "Enter LTC Address")
+        static let enterLTCAddressLabel = NSLocalizedString("Send.enterLTCAddress", value: "**Enter SUM Address**", comment: "Enter SUM Address")
         static let amountLabel = NSLocalizedString("Send.amountLabel", value: "**Amount**", comment: "Send money amount label")
         static let descriptionLabel = NSLocalizedString("Send.descriptionLabel", value: "**Memo**", comment: "Description for sending money label")
         static let sendLabel = NSLocalizedString("Send.sendLabel", value: "**Send**", comment: "Send button label")
@@ -232,7 +232,7 @@ enum S {
 
     enum TransactionDetails {
         static let title = NSLocalizedString("TransactionDetails.title", value: "**Transaction Details**", comment: "Transaction Details Title")
-        static let receiveModaltitle = NSLocalizedString("TransactionDetails.receivedModalTitle", value: "**RECEIVE LTC**", comment: "RECEIVE LTCTitle")
+        static let receiveModaltitle = NSLocalizedString("TransactionDetails.receivedModalTitle", value: "**RECEIVE SUM**", comment: "RECEIVE LTCTitle")
         static let statusHeader = NSLocalizedString("TransactionDetails.statusHeader", value: "**Status**", comment: "Status section header")
         static let commentsHeader = NSLocalizedString("TransactionDetails.commentsHeader", value: "**Memo**", comment: "Memo section header")
         static let amountHeader = NSLocalizedString("TransactionDetails.amountHeader", value: "**Amount**", comment: "Amount section header")

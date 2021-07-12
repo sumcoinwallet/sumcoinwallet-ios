@@ -140,7 +140,7 @@
 "BuyCenter.ModalTitle" = "Купить Sumcoin";
 
 /* Moonpay buy financial details */
-"BuyCenter.moonpayFinancialDetails" = "• Покупайте LTC с помощью множества фиатных пар\n• Оплачивайте несколькими способами\n• Глобальный платежный провайдер";
+"BuyCenter.moonpayFinancialDetails" = "• Покупайте SUM с помощью множества фиатных пар\n• Оплачивайте несколькими способами\n• Глобальный платежный провайдер";
 
 /* Moonpay Title */
 "BuyCenter.moonpayTitle" = "Moonpay";
@@ -287,7 +287,7 @@
 "History.barItemTitle" = "ИСТОРИЯ";
 
 /* History Current Sumcoin Value */
-"History.currentSumcoinValue" = "Текущее значение LTC в";
+"History.currentSumcoinValue" = "Текущее значение SUM в";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Проверяем баланс по персональному ключу...";
@@ -841,7 +841,7 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "Буфер обмена пуст";
 
-/* Enter LTC Address */
+/* Enter SUM Address */
 "Send.enterLTCAddress" = "Введите адрес Sumcoin";
 
 /* Network Fee: $0.01 */
@@ -904,7 +904,7 @@
 /* lookupFailureHeader */
 "Send.UnstoppableDomains.lookupFailureHeader" = "Ошибка поиска";
 
-/* Enter to match domain name to LTC Address */
+/* Enter to match domain name to SUM Address */
 "Send.UnstoppableDomains.placeholder" = "Введите домен .crypto или .zil";
 
 /* UDSystemError */

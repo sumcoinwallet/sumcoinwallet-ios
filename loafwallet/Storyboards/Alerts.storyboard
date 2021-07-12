@@ -52,7 +52,7 @@
                                             <action selector="didCancelAction:" destination="3tF-rI-LAg" eventType="touchUpInside" id="hUG-jw-2Ib"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEIVE LTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTI-Q5-Xjf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEIVE SUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTI-Q5-Xjf">
                                         <rect key="frame" x="10" y="10" width="260" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.5" id="iZF-kE-3yV"/>

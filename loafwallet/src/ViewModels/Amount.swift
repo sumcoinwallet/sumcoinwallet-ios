@@ -61,7 +61,7 @@ struct Amount {
         format.numberStyle = .currency
         format.generatesDecimalNumbers = true
         format.negativePrefix = "-"
-        format.currencyCode = "LTC"
+        format.currencyCode = "SUM"
 
         switch maxDigits {
         case 2: // photons
@@ -147,7 +147,7 @@ struct DisplayAmount {
         format.numberStyle = .currency
         format.generatesDecimalNumbers = true
         format.negativePrefix = "-"
-        format.currencyCode = "LTC"
+        format.currencyCode = "SUM"
 
         switch state.maxDigits {
         case 2:

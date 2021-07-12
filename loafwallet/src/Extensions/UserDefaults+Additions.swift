@@ -85,12 +85,12 @@ extension UserDefaults {
     //
     // 2 - photons
     // 5 - lites
-    // 8 - LTC
+    // 8 - SUM
     //
     static var maxDigits: Int {
         get {
             guard defaults.object(forKey: maxDigitsKey) != nil else {
-                return 8///Default to LTC
+                return 8///Default to SUM
             }
             return defaults.integer(forKey: maxDigitsKey)
         }

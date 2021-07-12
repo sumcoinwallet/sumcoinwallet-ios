@@ -46,7 +46,7 @@ class UnstoppableDomainViewModel: ObservableObject {
         
         isDomainResolving = true
         
-        //Clear existing LTC Address to avoid confusion
+        //Clear existing SUM Address to avoid confusion
         self.shouldClearAddressField?()
         
         // Added timing peroformance probes to see what the average time is
