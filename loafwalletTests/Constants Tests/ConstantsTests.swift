@@ -12,6 +12,6 @@ import XCTest
 class ConstantsTests: XCTestCase {
  
     func testLFDonationAddressPage() throws {
-        XCTAssertTrue(FoundationSupport.url.absoluteString == "https://lite-wallet.org/support_address.html" )
+        XCTAssertTrue(FoundationSupport.url.absoluteString == "https://sumcoinwallet.com/support_address.html" )
 	}
 }
