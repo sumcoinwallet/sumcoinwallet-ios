@@ -3,7 +3,7 @@
 //  breadwallet
 //
 //  Created by Adrian Corscadden on 2017-04-01.
-//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet All rights reserved.
 //
 
 import UIKit

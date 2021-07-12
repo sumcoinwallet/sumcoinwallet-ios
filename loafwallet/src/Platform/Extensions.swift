@@ -414,7 +414,7 @@ public extension Date {
     }
 
     // this is lifted from: https://github.com/Fykec/NSDate-RFC1123/blob/master/NSDate%2BRFC1123.swift
-    // Copyright © 2015 Foster Yin. All rights reserved.
+    // Copyright © 2021 Foster Yin. All rights reserved.
     fileprivate static func cachedThreadLocalObjectWithKey<T: AnyObject>(_ key: String, create: () -> T) -> T {
         let threadDictionary = Thread.current.threadDictionary
         if let cachedObject = threadDictionary[key] as! T? {

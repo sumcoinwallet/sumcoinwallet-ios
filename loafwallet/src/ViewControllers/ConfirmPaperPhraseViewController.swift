@@ -2,7 +2,7 @@
 //  ConfirmPaperPhraseViewController.swift
 //
 //  Created by Kerry Washington on 11/27/19.
-//  Copyright © 2019 Sumcoin Wallet. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  breadwallet
 //
 //  Created by Samuel Sutch on 12/7/16.
-//  Copyright © 2016 breadwallet LLC. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet All rights reserved.
 //
 
 import XCTest

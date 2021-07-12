@@ -3,7 +3,7 @@
 //  breadwallet
 //
 //  Created by Kerry Washington on 10/2/18.
-//  Copyright © 2018 breadwallet LLC. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet All rights reserved.
 //
 
 import Foundation

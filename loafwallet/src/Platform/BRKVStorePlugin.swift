@@ -3,7 +3,7 @@
 //  BreadWallet
 //
 //  Created by Samuel Sutch on 8/18/16.
-//  Copyright © 2016 breawallet LLC. All rights reserved.
+//  Copyright © 2021 breawallet LLC. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

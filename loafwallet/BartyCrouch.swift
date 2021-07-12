@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 11/27/19.
-//  Copyright © 2019 Sumcoin Wallet. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
   
 //  This file is required in order for the `transform` task of the translation helper tool BartyCrouch to work.
 //  See here for more details: https://github.com/Flinesoft/BartyCrouch

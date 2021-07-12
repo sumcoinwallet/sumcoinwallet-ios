@@ -3,7 +3,7 @@
 //  loafwallet-dev
 //
 //  Created by Kerry Washington on 10/4/18.
-//  Copyright © 2018 Sumcoin Wallet. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation

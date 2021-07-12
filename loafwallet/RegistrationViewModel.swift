@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/24/20.
-//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -20,25 +20,25 @@ enum UserDataType {
 }
 
 class RegistrationViewModel: ObservableObject {
-    
+
     @Published
     var isRegistering: Bool = false
-    
+
     @Published
     var didRegister: Bool = false
-    
+
     @Published
     var message: String = S.SumcoinCard.registeringUser
-    
+
     var dataDictionary = [String: Any]()
-    
+
     init() {
-        
+
     }
-    
+
     func verify(data: [String: Any],
                 completion: @escaping (Bool) -> ()) {
-        
+
         guard let first = data["firstname"] as? String else { return }
         guard let last = data["lastname"] as? String else { return }
         guard let email = data["email"] as? String else { return }
@@ -49,7 +49,7 @@ class RegistrationViewModel: ObservableObject {
         guard let city = data["city"] as? String else { return }
         guard let address1 = data["address1"] as? String else { return }
         guard let zip = data["zip_code"] as? String else { return }
-        
+
         if  self.isDataValid(dataType: .genericString, data: first) &&
                 isDataValid(dataType: .genericString, data: last) &&
                 isDataValid(dataType: .email, data: email) &&
@@ -60,37 +60,37 @@ class RegistrationViewModel: ObservableObject {
                 isDataValid(dataType: .genericString, data: city) &&
                 isDataValid(dataType: .genericString, data: address1) &&
                 isDataValid(dataType: .genericString, data: zip) {
-            
+
             self.dataDictionary = data
-            
+
             self.isRegistering = true
-            
+
             completion(isRegistering)
         }
     }
-    
+
     func registerCardUser() {
-        
+
         var setupUserID: String?
-        
+
         PartnerAPI.shared.createUser(userDataParams: dataDictionary) { (newUser) in
-        
+
             if let userID = newUser?.userID,
                let createdAt = newUser?.createdAtDateString {
-                
+
                 ///Move  setupUserID
                 setupUserID = userID
-     
+
                 guard let password = self.dataDictionary["password"] as? String else { return }
                 guard let email = self.dataDictionary["email"] as? String else { return }
-                
+
                 let cardService = "com.litecoincard.service"
                 let keychain = Keychain(service: cardService)
-                
+
                 keychain[email] = password
                 keychain["userID"] = userID
                 keychain["createdAt"] = createdAt
-                
+
                 DispatchQueue.main.async {
                     self.message = S.SumcoinCard.registrationSuccess
                     self.didRegister = true
@@ -101,7 +101,7 @@ class RegistrationViewModel: ObservableObject {
                 }
             }
        }
-     
+
         if setupUserID == nil {
             DispatchQueue.main.async {
                 self.message = S.SumcoinCard.registrationFailure
@@ -111,11 +111,11 @@ class RegistrationViewModel: ObservableObject {
             }
         }
     }
-    
+
     func isDataValid(dataType: UserDataType, firstString: String = "", data: Any) -> Bool {
-        
+
         guard let dataString = data as? String else { return false }
-        
+
         switch dataType {
             case .genericString:
                 return isGenericStringValid(genericString: dataString)
@@ -131,28 +131,28 @@ class RegistrationViewModel: ObservableObject {
                 return isConfirmedValid(firstString: firstString, confirmingString: dataString)
         }
     }
-    
+
     //MARK: - Data Validators
-    
+
     func isGenericStringValid(genericString: String) -> Bool {
-        
+
         guard genericString != "" else {
             return false
         }
-        
+
         guard genericString.count <= 32 else {
             return false
         }
-        
+
         return true
     }
-    
+
     func isConfirmedValid(firstString: String, confirmingString: String) -> Bool {
         return firstString == confirmingString ? true : false
     }
-    
+
     func isEmailValid(emailString: String) -> Bool {
-        
+
         if try! NSRegularExpression(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$", options: .caseInsensitive)
             .firstMatch(in: emailString, options: [],
                         range: NSRange(location: 0,
@@ -162,16 +162,16 @@ class RegistrationViewModel: ObservableObject {
             return true
         }
     }
-    
+
     /// Password  Validator
     /// - Parameter passwordString: 6 chars minimum
     /// - Returns: Bool
     func isPasswordValid(passwordString: String) -> Bool {
-        
+
         guard passwordString.count >= 6 else {
             return false
         }
-        
+
         if try! NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$", options: .caseInsensitive)
             .firstMatch(in: passwordString, options: [],
                         range: NSRange(location: 0,
@@ -181,7 +181,7 @@ class RegistrationViewModel: ObservableObject {
             return true
         }
     }
-    
+
     /// Mobile Number Validator
     /// - Parameter mobileString: 10+ integers 0 - 9
     /// - Returns: Bool
@@ -189,12 +189,12 @@ class RegistrationViewModel: ObservableObject {
         guard mobileString != "" else {
             return false
         }
-        
+
         //https://boards.straightdope.com/t/longest-telephone-number-in-the-world/400450
         guard (mobileString.count >= 10 && mobileString.count <= 20) else {
             return false
         }
-        
+
         if try! NSRegularExpression(pattern: "^[0-9]*$", options: .caseInsensitive)
             .firstMatch(in: mobileString, options: [],
                         range: NSRange(location: 0,

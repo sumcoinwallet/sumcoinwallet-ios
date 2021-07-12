@@ -1,7 +1,7 @@
 //  ForgotAlertView.swift
 //
 //  Created by Kerry Washington on 12/26/20.
-//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 
 
 import SwiftUI
