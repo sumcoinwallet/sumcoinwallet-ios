@@ -14,13 +14,13 @@ class TransactionsViewModel: ObservableObject {
     
     var walletManager: WalletManager
     
-    var isLTCSwapped: Bool  = false
+    var isSUMSwapped: Bool  = false
       
     init(store: Store, walletManager: WalletManager) {
         
         self.store = store
         self.walletManager = walletManager
-        self.isLTCSwapped = store.state.isLtcSwapped
+        self.isSUMSwapped = store.state.isSumSwapped
     }
 }
 

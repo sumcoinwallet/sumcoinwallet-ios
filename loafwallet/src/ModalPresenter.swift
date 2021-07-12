@@ -368,7 +368,7 @@ class ModalPresenter : Subscriber, Trackable {
         receiveVC.presentEmail = { [weak self, weak root] address, image in
             guard let root = root else { return }
             self?.messagePresenter.presenter = root
-            self?.messagePresenter.presentMailCompose(litecoinAddress: address, image: image)
+            self?.messagePresenter.presentMailCompose(sumcoinAddress: address, image: image)
         }
         receiveVC.presentText = { [weak self, weak root] address, image in
             guard let root = root else { return }
@@ -391,7 +391,7 @@ class ModalPresenter : Subscriber, Trackable {
         menu.didTapSupport = { [weak self, weak menu] in
             menu?.dismiss(animated: true, completion: {
                 
-                let urlString = "https://litecoinfoundation.zendesk.com/hc/en-us"
+                let urlString = "https://sumcoinfoundation.zendesk.com/hc/en-us"
                 
                 guard let url = URL(string: urlString) else { return }
                 

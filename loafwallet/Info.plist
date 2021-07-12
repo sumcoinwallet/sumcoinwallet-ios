@@ -17,7 +17,7 @@
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>litecoin.paymentrequest</string>
+				<string>sumcoin.paymentrequest</string>
 			</array>
 		</dict>
 		<dict>
@@ -29,7 +29,7 @@
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>litecoin.payment</string>
+				<string>sumcoin.payment</string>
 			</array>
 		</dict>
 		<dict>
@@ -41,7 +41,7 @@
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>litecoin.paymentack</string>
+				<string>sumcoin.paymentack</string>
 			</array>
 		</dict>
 	</array>
@@ -63,17 +63,17 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>litecoin</string>
+			<string>sumcoin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>litecoin</string>
+				<string>sumcoin</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.litecoin.loafwallet</string>
+			<string>com.sumcoin.loafwallet</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>loaf</string>
@@ -164,11 +164,11 @@
 			<key>UTTypeDescription</key>
 			<string>Sumcoin Payment Request</string>
 			<key>UTTypeIdentifier</key>
-			<string>litecoin.paymentrequest</string>
+			<string>sumcoin.paymentrequest</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/litecoin-paymentrequest</string>
+				<string>application/sumcoin-paymentrequest</string>
 			</dict>
 		</dict>
 		<dict>
@@ -179,11 +179,11 @@
 			<key>UTTypeDescription</key>
 			<string>Sumcoin Payment</string>
 			<key>UTTypeIdentifier</key>
-			<string>litecoin.payment</string>
+			<string>sumcoin.payment</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/litecoin-payment</string>
+				<string>application/sumcoin-payment</string>
 			</dict>
 		</dict>
 		<dict>
@@ -194,11 +194,11 @@
 			<key>UTTypeDescription</key>
 			<string>Sumcoin Payment ACK</string>
 			<key>UTTypeIdentifier</key>
-			<string>litecoin.paymentack</string>
+			<string>sumcoin.paymentack</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/litecoin-paymentack</string>
+				<string>application/sumcoin-paymentack</string>
 			</dict>
 		</dict>
 	</array>

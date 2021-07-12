@@ -28,13 +28,13 @@ class AmountTests: XCTestCase {
         //Then:
      }
     
-    func testAmountForLtcFormat() {
+    func testAmountForSumFormat() {
         
 //        //Given:
 //        let amount = MockSeeds.amount100
 //        
 //        //When:
-//        if amount.amountForLtcFormat == 0.003 {
+//        if amount.amountForSumFormat == 0.003 {
 //            XCTAssertFalse(true)
 //        }
 //        //Then:

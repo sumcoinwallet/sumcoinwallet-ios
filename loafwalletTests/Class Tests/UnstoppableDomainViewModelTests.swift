@@ -20,13 +20,13 @@ class UnstoppableDomainViewModelTests: XCTestCase {
     
     /// Checks the domain address closure
     /// - Throws: Error
-    func testDomainLookupForLTC() throws {
+    func testDomainLookupForSUM() throws {
           
-        self.viewModel.didResolveUDAddress?("RESOLVED_LTC_ADDRESS")
+        self.viewModel.didResolveUDAddress?("RESOLVED_SUM_ADDRESS")
         
         //DEV: This test succeeds incorrectly
         viewModel.didResolveUDAddress = { address in
-            XCTAssertTrue(address == "RESOLVED_LTC_ADDRESS")
+            XCTAssertTrue(address == "RESOLVED_SUM_ADDRESS")
         }
     }
 

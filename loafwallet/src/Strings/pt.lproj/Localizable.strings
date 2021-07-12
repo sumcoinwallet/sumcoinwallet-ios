@@ -384,7 +384,7 @@
 "SumcoinCard.Disclaimer.description" = "O cartão Sumcoin atualmente tem funcionalidade limitada no Sumcoin Wallet.";
 
 /* Referral to the website */
-"SumcoinCard.Disclaimer.referral" = "Visite litecoin.getblockcard.com para acesso total";
+"SumcoinCard.Disclaimer.referral" = "Visite sumcoin.getblockcard.com para acesso total";
 
 /* Beta Testing Sumcoin Card */
 "SumcoinCard.Disclaimer.title" = "Sumcoin Card Beta";
@@ -492,7 +492,7 @@
 "SumcoinCard.resetPasswordDetail" = "Digite o endereço de e-mail associado à sua conta do cartão Sumcoin e procure um e-mail com as instruções de reinicialização.";
 
 /* Sumcoin card visit */
-"SumcoinCard.visit.toReset" = "Visite https://litecoin.dashboard.getblockcard.com/password/forgot para redefinir a sua palavra-passe.";
+"SumcoinCard.visit.toReset" = "Visite https://sumcoin.dashboard.getblockcard.com/password/forgot para redefinir a sua palavra-passe.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Os serviços de localização estão desativados.";
@@ -843,7 +843,7 @@
 "Send.emptyPasteboard" = "A área de transferência está vazia";
 
 /* Enter SUM Address */
-"Send.enterLTCAddress" = "Introduzir um endereço Sumcoin";
+"Send.enterSUMAddress" = "Introduzir um endereço Sumcoin";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "Taxa de rede: %1$@";
@@ -1187,7 +1187,7 @@
 /* Received $5.00 */
 "TransactionDetails.receivedAmountDescription" = "Recebido <b>%1@</b>";
 
-/* RECEIVE LTCTitle */
+/* RECEIVE SUMTitle */
 "TransactionDetails.receivedModalTitle" = "RECEBER ENDEREÇO";
 
 /* "Sent [$5] to [address]" => This is the "Sent [$5]" part. */

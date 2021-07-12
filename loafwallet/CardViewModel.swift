@@ -28,7 +28,7 @@ class CardViewModel: ObservableObject {
     
     func fetchCardWalletDetails(completion: @escaping () -> Void) {
         
-        let cardService = "com.litecoincard.service"
+        let cardService = "com.sumcoincard.service"
         let keychain = Keychain(service: cardService)
         
         guard let token = (try? keychain.getString("token")) as? String else {

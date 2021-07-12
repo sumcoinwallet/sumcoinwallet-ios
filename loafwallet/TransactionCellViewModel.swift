@@ -16,7 +16,7 @@ class TransactionCellViewModel: ObservableObject {
     //MARK: - Public Variables
     var transaction: Transaction
     
-    var isLtcSwapped: Bool
+    var isSumSwapped: Bool
      
     var rate: Rate
     
@@ -46,13 +46,13 @@ class TransactionCellViewModel: ObservableObject {
     private var timer: Timer? = nil
  
     init(transaction: Transaction,
-         isLtcSwapped: Bool,
+         isSumSwapped: Bool,
          rate: Rate,
          maxDigits: Int,
          isSyncing: Bool) {
         
         self.transaction = transaction
-        self.isLtcSwapped = isLtcSwapped
+        self.isSumSwapped = isSumSwapped
         self.rate = rate
         self.maxDigits = maxDigits
         self.isSyncing = isSyncing
@@ -80,18 +80,18 @@ class TransactionCellViewModel: ObservableObject {
     
     private func loadVariables() {
         
-        amountText = transaction.descriptionString(isLtcSwapped: isLtcSwapped, rate: rate, maxDigits: maxDigits).string
+        amountText = transaction.descriptionString(isSumSwapped: isSumSwapped, rate: rate, maxDigits: maxDigits).string
          
-        feeText = transaction.amountDetails(isLtcSwapped: isLtcSwapped, rate: rate, rates: [rate], maxDigits: maxDigits)
+        feeText = transaction.amountDetails(isSumSwapped: isSumSwapped, rate: rate, rates: [rate], maxDigits: maxDigits)
         
         addressText = String(format: transaction.direction.addressTextFormat, transaction.toAddress ?? "")
         
         if self.transaction.direction == .sent {
             directionImageText = "arrowtriangle.up.circle.fill"
-            directionArrowColor = Color(UIColor.litecoinOrange)
+            directionArrowColor = Color(UIColor.sumcoinOrange)
         } else if self.transaction.direction == .received {
             directionImageText = "arrowtriangle.down.circle.fill"
-            directionArrowColor = Color(UIColor.litecoinGreen)
+            directionArrowColor = Color(UIColor.sumcoinGreen)
         }
         
         let timestampInfo = transaction.timeSince

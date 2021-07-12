@@ -1,5 +1,5 @@
 //
-//  SendLTCViewController.swift
+//  SendSUMViewController.swift
 //  loafwallet
 //
 //  Created by Kerry Washington on 11/17/19.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SendLTCViewController: UIViewController {
+class SendSUMViewController: UIViewController {
     
     var store: Store?
     

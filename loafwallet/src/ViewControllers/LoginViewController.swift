@@ -86,7 +86,7 @@ class LoginViewController : UIViewController, Subscriber, Trackable {
         return button
     }()
     
-    private let showLTCAddressButton: UIButton = {
+    private let showSUMAddressButton: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = .white
         button.setImage(#imageLiteral(resourceName: "genericqricon"), for: .normal)
@@ -315,13 +315,13 @@ class LoginViewController : UIViewController, Subscriber, Trackable {
     }
     
     private func addShowAddressButton() {
-        view.addSubview(showLTCAddressButton)
-        showLTCAddressButton.addTarget(self, action: #selector(showLTCAddress), for: .touchUpInside)
-        showLTCAddressButton.constrain([
-                                        showLTCAddressButton.widthAnchor.constraint(equalToConstant: squareButtonSize),
-                                        showLTCAddressButton.heightAnchor.constraint(equalToConstant: squareButtonSize),
-                                        showLTCAddressButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -C.padding[2]),
-                                        showLTCAddressButton.topAnchor.constraint(equalTo: view.topAnchor, constant: headerHeight + C.padding[2]) ])
+        view.addSubview(showSUMAddressButton)
+        showSUMAddressButton.addTarget(self, action: #selector(showSUMAddress), for: .touchUpInside)
+        showSUMAddressButton.constrain([
+                                        showSUMAddressButton.widthAnchor.constraint(equalToConstant: squareButtonSize),
+                                        showSUMAddressButton.heightAnchor.constraint(equalToConstant: squareButtonSize),
+                                        showSUMAddressButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -C.padding[2]),
+                                        showSUMAddressButton.topAnchor.constraint(equalTo: view.topAnchor, constant: headerHeight + C.padding[2]) ])
     }
     
     
@@ -434,7 +434,7 @@ class LoginViewController : UIViewController, Subscriber, Trackable {
         })
     }
     
-    @objc func showLTCAddress() {
+    @objc func showSUMAddress() {
         guard !isWalletDisabled else { return }
         store.perform(action: RootModalActions.Present(modal: .loginAddress))
     }

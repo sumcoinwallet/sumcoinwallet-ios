@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.litecoin-foundation.sumcoinwallet-develop</string>
+	<string>com.sumcoinwallet.sumcoinwallet-develop</string>
 	<key>PROJECT_ID</key>
 	<string>sumcoinwallet-develop</string>
 	<key>STORAGE_BUCKET</key>

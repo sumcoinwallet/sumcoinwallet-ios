@@ -101,7 +101,7 @@ class AddressCell : UIView {
     }
 
     private func setInitialData() {
-        label.text = S.Send.enterLTCAddressLabel
+        label.text = S.Send.enterSUMAddressLabel
         textField.font = contentLabel.font
         textField.adjustsFontSizeToFitWidth = true
         textField.minimumFontSize = 10.0

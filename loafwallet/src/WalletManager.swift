@@ -54,7 +54,7 @@ private func SafeSqlite3ColumnBlob<T>(statement: OpaquePointer, iCol: Int32) -> 
     return result.assumingMemoryBound(to: T.self)
 }
 
-// A WalletManger instance manages a single wallet, and that wallet's individual connection to the litecoin network.
+// A WalletManger instance manages a single wallet, and that wallet's individual connection to the sumcoin network.
 // After instantiating a WalletManager object, call myWalletManager.peerManager.connect() to begin syncing.
 
 class WalletManager : BRWalletListener, BRPeerManagerListener {

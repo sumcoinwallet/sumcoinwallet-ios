@@ -13,8 +13,8 @@ class MessageUIPresenter: NSObject, Trackable {
 
     weak var presenter: UIViewController?
 
-    func presentMailCompose(litecoinAddress: String, image: UIImage) {
-        presentMailCompose(string: "sumcoin: \(litecoinAddress)", image: image)
+    func presentMailCompose(sumcoinAddress: String, image: UIImage) {
+        presentMailCompose(string: "sumcoin: \(sumcoinAddress)", image: image)
     }
 
     func presentMailCompose(bitcoinURL: String, image: UIImage) {
@@ -28,7 +28,7 @@ class MessageUIPresenter: NSObject, Trackable {
         let emailView = MFMailComposeViewController()
         emailView.setMessageBody(string, isHTML: false)
         if let data = UIImagePNGRepresentation(image) {
-            emailView.addAttachmentData(data, mimeType: "image/png", fileName: "litecoinqr.png")
+            emailView.addAttachmentData(data, mimeType: "image/png", fileName: "sumcoinqr.png")
         }
         emailView.mailComposeDelegate = self
         present(emailView)
@@ -82,7 +82,7 @@ class MessageUIPresenter: NSObject, Trackable {
         let textView = MFMessageComposeViewController()
         textView.body = string
         if let data = UIImagePNGRepresentation(image) {
-            textView.addAttachmentData(data, typeIdentifier: "public.image", filename: "litecoinqr.png")
+            textView.addAttachmentData(data, typeIdentifier: "public.image", filename: "sumcoinqr.png")
         }
         textView.messageComposeDelegate = self
         saveEvent("receive.presentMessage")

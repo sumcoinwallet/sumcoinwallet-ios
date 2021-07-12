@@ -39,7 +39,7 @@ struct SupportSumcoinWalletView: View {
             
             // Copy the LF Address and paste into the SendViewController
             Button(action: {
-                UIPasteboard.general.string = FoundationSupport.supportLTCAddress
+                UIPasteboard.general.string = FoundationSupport.supportSUMAddress
                 self.viewModel.didTapToDismiss?()
             }) {
                 Text(S.URLHandling.copy.uppercased())

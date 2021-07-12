@@ -92,7 +92,7 @@ struct RegistrationView: View {
                                         .padding([.leading, .trailing, .top], 4)
                                         .padding(.top, 12)
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
-                                                                               data: firstName) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: firstName) ? .black : Color(UIColor.sumcoinOrange))
                                     Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -106,7 +106,7 @@ struct RegistrationView: View {
                                         .padding([.leading, .trailing, .top], 4)
                                         .padding(.top, 12)
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
-                                                                               data: lastName) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: lastName) ? .black : Color(UIColor.sumcoinOrange))
                                     Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -122,7 +122,7 @@ struct RegistrationView: View {
                                 .keyboardType(.emailAddress)
                                 .padding([.leading, .trailing, .top], 4)
                                 .foregroundColor(viewModel.isDataValid(dataType: .email,
-                                                                       data: usernameEmail) ? .black : Color(UIColor.litecoinOrange))
+                                                                       data: usernameEmail) ? .black : Color(UIColor.sumcoinOrange))
                             Divider()
                                 .padding([.leading, .bottom, .trailing], 4)
                                 .padding(.top, 1)
@@ -136,7 +136,7 @@ struct RegistrationView: View {
                                         .keyboardType(.default)
                                         .padding([.leading, .trailing, .top], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .password,
-                                                                               data: password) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: password) ? .black : Color(UIColor.sumcoinOrange))
                                     Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -151,7 +151,7 @@ struct RegistrationView: View {
                                         .padding([.leading, .trailing, .top], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .confirmation,
                                                                                firstString: password,
-                                                                               data: confirmPassword) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: confirmPassword) ? .black : Color(UIColor.sumcoinOrange))
                                      Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -168,7 +168,7 @@ struct RegistrationView: View {
                                     .keyboardType(.numberPad)
                                     .padding([.leading, .trailing, .top], 4)
                                     .foregroundColor(viewModel.isDataValid(dataType: .mobileNumber,
-                                                                           data: mobileNumber) ? .black : Color(UIColor.litecoinOrange))
+                                                                           data: mobileNumber) ? .black : Color(UIColor.sumcoinOrange))
                                 Divider()
                                     .padding([.leading, .bottom, .trailing], 4)
                                     .padding(.top, 1)
@@ -184,7 +184,7 @@ struct RegistrationView: View {
                                         .padding([.leading, .trailing, .top], 4)
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
-                                                                               data: address) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: address) ? .black : Color(UIColor.sumcoinOrange))
                                     Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -196,7 +196,7 @@ struct RegistrationView: View {
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .padding([.leading, .trailing, .top], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
-                                                                               data: city) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: city) ? .black : Color(UIColor.sumcoinOrange))
                                     Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -206,7 +206,7 @@ struct RegistrationView: View {
                                         .font(Font(UIFont.barlowRegular(size: 16.0)))
                                         .padding([.leading, .trailing, .top], 4)
                                         .foregroundColor(viewModel.isDataValid(dataType: .genericString,
-                                                                               data: state) ? .black : Color(UIColor.litecoinOrange))
+                                                                               data: state) ? .black : Color(UIColor.sumcoinOrange))
                                     Divider()
                                         .padding([.leading, .bottom, .trailing], 4)
                                         .padding(.top, 1)
@@ -254,7 +254,7 @@ struct RegistrationView: View {
                             .frame(minWidth:0, maxWidth: .infinity)
                             .padding()
                             .font(Font(UIFont.barlowRegular(size:20.0)))
-                            .foregroundColor(Color(UIColor.litecoinOrange))
+                            .foregroundColor(Color(UIColor.sumcoinOrange))
                             .overlay(
                                 RoundedRectangle(cornerRadius:4)
                                     .stroke(Color(UIColor.white), lineWidth: 1)

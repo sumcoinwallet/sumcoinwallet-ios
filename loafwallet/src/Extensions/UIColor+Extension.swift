@@ -16,19 +16,19 @@ extension UIColor {
   // #FFFFFF, White
   // #345D9D, Blue, 7684 C, UIColor(red: 52.0/255.0, green: 52.0/255.0, blue: 157.0/255.0, alpha: 1.0)
  
-    static var litecoinWhite: UIColor {
+    static var sumcoinWhite: UIColor {
       return .white
     }
     
-    static var litecoinGray: UIColor { //F1F1F1
+    static var sumcoinGray: UIColor { //F1F1F1
       return #colorLiteral(red: 0.9450980392, green: 0.9450980392, blue: 0.9450980392, alpha: 1)
     }
       
-    static var litecoinSilver: UIColor { //A6A9AA
+    static var sumcoinSilver: UIColor { //A6A9AA
       return #colorLiteral(red: 0.6509803922, green: 0.662745098, blue: 0.6666666667, alpha: 1)
     }
     
-    static var litecoinDarkSilver: UIColor { //4D4D4E
+    static var sumcoinDarkSilver: UIColor { //4D4D4E
       return #colorLiteral(red: 0.3019607843, green: 0.3019607843, blue: 0.3058823529, alpha: 1)
     }
     
@@ -39,11 +39,11 @@ extension UIColor {
         return #colorLiteral(red: 0.04705882353, green: 0.2039215686, blue: 0.4588235294, alpha: 1)
     }
     
-    static var litecoinOrange: UIColor { // FE5F55
+    static var sumcoinOrange: UIColor { // FE5F55
       return #colorLiteral(red: 0.9960784314, green: 0.3725490196, blue: 0.3333333333, alpha: 1)
     }
     
-    static var litecoinGreen: UIColor { //179E27
+    static var sumcoinGreen: UIColor { //179E27
       return #colorLiteral(red: 0.09019607843, green: 0.6196078431, blue: 0.1529411765, alpha: 1)
     }
     // MARK: Buttons

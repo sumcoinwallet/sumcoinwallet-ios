@@ -26,7 +26,7 @@ jobs:
         # Required recipients' addresses:
         to: ${{secrets.MAIL_ORI}},${{secrets.MAIL_KERRY}}
         # Required sender full name (address can be skipped):
-        from:  <litecoin.foundation.mobile.agent@gmail.com> # <user@example.com> Sumcoin Wallet iOS Github Repo 
+        from:  <sumcoin.foundation.mobile.agent@gmail.com> # <user@example.com> Sumcoin Wallet iOS Github Repo 
         # Optional whether this connection use TLS (default is true if server_port is 465)
         secure: true
         # Optional plain body:
@@ -36,7 +36,7 @@ jobs:
         # Optional carbon copy recipients:
         cc: kerry.washington.uk@gmail.com 
         # Optional recipient of the email response:
-        reply_to: litecoin.foundation.mobile.agent@gmail.com
+        reply_to: sumcoin.foundation.mobile.agent@gmail.com
         # Optional unsigned/invalid certificates allowance:
         ignore_cert: true
         # Optional converting Markdown to HTML (set content_type to text/html too):

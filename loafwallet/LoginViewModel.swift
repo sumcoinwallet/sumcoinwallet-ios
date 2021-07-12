@@ -46,7 +46,7 @@ class LoginViewModel: ObservableObject {
                 }
             }
             
-            let cardService = "com.litecoincard.service"
+            let cardService = "com.sumcoincard.service"
             let keychain = Keychain(service: cardService)
             
             if let responeDict = dataDictionary,

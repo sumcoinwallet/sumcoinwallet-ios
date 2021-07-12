@@ -15,7 +15,7 @@ struct UnstoppableDomainView: View {
     var viewModel: UnstoppableDomainViewModel
     
     @State
-    private var didReceiveLTCfromUD: Bool = false
+    private var didReceiveSUMfromUD: Bool = false
     
     @State
     private var shouldDisableLookupButton: Bool = true

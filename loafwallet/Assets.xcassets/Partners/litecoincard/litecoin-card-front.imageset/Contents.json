@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "litecoin-front-1x.png",
+      "filename" : "sumcoin-front-1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "litecoin-front-2x.png",
+      "filename" : "sumcoin-front-2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "litecoin-card-3x.png",
+      "filename" : "sumcoin-card-3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

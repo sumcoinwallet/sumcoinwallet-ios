@@ -1,5 +1,5 @@
 //
-//  ReceiveLTCViewController.swift
+//  ReceiveSUMViewController.swift
 //  loafwallet
 //
 //  Created by Kerry Washington on 11/17/19.
@@ -19,7 +19,7 @@ struct WalletAddressData {
     }
 }
 
-class ReceiveLTCViewController: UIViewController {
+class ReceiveSUMViewController: UIViewController {
      
    var store: Store?
     override func viewDidLoad() {

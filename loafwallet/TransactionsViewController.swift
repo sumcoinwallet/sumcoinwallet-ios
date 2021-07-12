@@ -50,7 +50,7 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    var isLtcSwapped: Bool? {
+    var isSumSwapped: Bool? {
         didSet { reload() }
     }
     
@@ -140,7 +140,7 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
         let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: self.tableView.bounds.size.width, height: self.tableView.bounds.size.height))
         let messageLabel = UILabel(frame: rect)
         messageLabel.text = S.TransactionDetails.emptyMessage
-        messageLabel.textColor = .litecoinGray
+        messageLabel.textColor = .sumcoinGray
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
         messageLabel.font = UIFont.barlowMedium(size: 20)
@@ -193,8 +193,8 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
                 
                 if let rate = rate,
                    let store = self.store,
-                   let isLtcSwapped = self.isLtcSwapped {
-                    let viewModel = TransactionCellViewModel(transaction: transaction, isLtcSwapped: isLtcSwapped, rate: rate, maxDigits: store.state.maxDigits, isSyncing: store.state.walletState.syncState != .success)
+                   let isSumSwapped = self.isSumSwapped {
+                    let viewModel = TransactionCellViewModel(transaction: transaction, isSumSwapped: isSumSwapped, rate: rate, maxDigits: store.state.maxDigits, isSyncing: store.state.walletState.syncState != .success)
                     cell.set(rootView: TransactionCellView(viewModel: viewModel), parentController: self)
                     cell.selectionStyle = .default
                 }
@@ -210,9 +210,9 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
             
             if let rate = rate,
                let store = self.store,
-               let isLtcSwapped = self.isLtcSwapped {
+               let isSumSwapped = self.isSumSwapped {
                 
-                  let viewModel = TransactionCellViewModel(transaction: transaction, isLtcSwapped: isLtcSwapped, rate: rate, maxDigits: store.state.maxDigits, isSyncing: store.state.walletState.syncState != .success)
+                  let viewModel = TransactionCellViewModel(transaction: transaction, isSumSwapped: isSumSwapped, rate: rate, maxDigits: store.state.maxDigits, isSyncing: store.state.walletState.syncState != .success)
                 
                   let hostingController = UIHostingController(rootView: TransactionModalView(viewModel: viewModel))
                 
@@ -332,9 +332,9 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
                             self.reload()
                         })
         
-        // MARK: - Wallet State: isLTCSwapped
-        store.subscribe(self, selector: { $0.isLtcSwapped != $1.isLtcSwapped },
-                        callback: { self.isLtcSwapped = $0.isLtcSwapped })
+        // MARK: - Wallet State: isSUMSwapped
+        store.subscribe(self, selector: { $0.isSumSwapped != $1.isSumSwapped },
+                        callback: { self.isSumSwapped = $0.isSumSwapped })
         
         // MARK: - Wallet State:  CurrentRate
         store.subscribe(self, selector: { $0.currentRate != $1.currentRate},

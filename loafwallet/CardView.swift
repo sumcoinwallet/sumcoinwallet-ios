@@ -83,7 +83,7 @@ struct CardView: View {
                                 isEmailValid = true
                             }
                     }
-                    .foregroundColor(isEmailValid ? .black : Color(UIColor.litecoinOrange))
+                    .foregroundColor(isEmailValid ? .black : Color(UIColor.sumcoinOrange))
                     .font(Font(UIFont.barlowSemiBold(size:18.0)))
                     .accentColor(Color(UIColor.sumcoinWalletBlue))
                     .padding([.leading, .trailing], 20)

@@ -383,7 +383,7 @@
 "SumcoinCard.Disclaimer.description" = "Sumcoin卡当前在Sumcoin Wallet中具有有限的功能。";
 
 /* Referral to the website */
-"SumcoinCard.Disclaimer.referral" = "访问litecoin.getblockcard.com以获取完全访问权限";
+"SumcoinCard.Disclaimer.referral" = "访问sumcoin.getblockcard.com以获取完全访问权限";
 
 /* Beta Testing Sumcoin Card */
 "SumcoinCard.Disclaimer.title" = "Sumcoin卡测试版";
@@ -491,7 +491,7 @@
 "SumcoinCard.resetPasswordDetail" = "输入与您的Sumcoin卡帐户关联的电子邮件地址，并查找包含重置说明的电子邮件。";
 
 /* Sumcoin card visit */
-"SumcoinCard.visit.toReset" = "请访问 https://litecoin.dashboard.getblockcard.com/password/forgot 重置您的密码。";
+"SumcoinCard.visit.toReset" = "请访问 https://sumcoin.dashboard.getblockcard.com/password/forgot 重置您的密码。";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置服务被禁用。";
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "粘贴板为空";
 
 /* Enter SUM Address */
-"Send.enterLTCAddress" = "输入一个Sumcoin地址";
+"Send.enterSUMAddress" = "输入一个Sumcoin地址";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "网络费：%1$@";
@@ -1186,7 +1186,7 @@
 /* Received $5.00 */
 "TransactionDetails.receivedAmountDescription" = "已收到 <b>%1@</b>";
 
-/* RECEIVE LTCTitle */
+/* RECEIVE SUMTitle */
 "TransactionDetails.receivedModalTitle" = "接收地址";
 
 /* "Sent [$5] to [address]" => This is the "Sent [$5]" part. */

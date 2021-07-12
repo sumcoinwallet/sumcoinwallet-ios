@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "litecoin-back-1x.png",
+      "filename" : "sumcoin-back-1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "litecoin-back-2x.png",
+      "filename" : "sumcoin-back-2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "litecoin-back-3x.png",
+      "filename" : "sumcoin-back-3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

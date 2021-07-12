@@ -8,7 +8,7 @@
 	<string>NSFileProtectionComplete</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.litecoin.loafwallet</string>
+		<string>group.com.sumcoin.loafwallet</string>
 	</array>
 </dict>
 </plist>

@@ -383,7 +383,7 @@
 "SumcoinCard.Disclaimer.description" = "라이트 코인 카드는 현재 라이트 월렛에서 제한된 기능을 가지고 있습니다.";
 
 /* Referral to the website */
-"SumcoinCard.Disclaimer.referral" = "전체 액세스를 위해 litecoin.getblockcard.com을 방문하십시오.";
+"SumcoinCard.Disclaimer.referral" = "전체 액세스를 위해 sumcoin.getblockcard.com을 방문하십시오.";
 
 /* Beta Testing Sumcoin Card */
 "SumcoinCard.Disclaimer.title" = "라이트 코인 카드 베타";
@@ -491,7 +491,7 @@
 "SumcoinCard.resetPasswordDetail" = "라이트 코인 카드 계정과 연결된 이메일 주소를 입력하고 재설정 지침이있는 이메일을 찾으십시오.";
 
 /* Sumcoin card visit */
-"SumcoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";
+"SumcoinCard.visit.toReset" = "https://sumcoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "위치 서비스가 꺼졌습니다.";
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "클립보드가 비어 있습니다";
 
 /* Enter SUM Address */
-"Send.enterLTCAddress" = "라이트 코인 주소를 입력하세요";
+"Send.enterSUMAddress" = "라이트 코인 주소를 입력하세요";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "네트워크 비용: %1$@";
@@ -1186,7 +1186,7 @@
 /* Received $5.00 */
 "TransactionDetails.receivedAmountDescription" = "<b>%1@</b> 수신됨";
 
-/* RECEIVE LTCTitle */
+/* RECEIVE SUMTitle */
 "TransactionDetails.receivedModalTitle" = "수신 주소";
 
 /* "Sent [$5] to [address]" => This is the "Sent [$5]" part. */

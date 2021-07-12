@@ -1,15 +1,15 @@
 [![Sumcoin Wallet](/images/header-ios.png)](https://itunes.apple.com/us/app/loafwallet/id1119332592)
 ======================================= 
 
-[![Release](https://img.shields.io/github/v/release/litecoin-foundation/sumcoinwallet-ios?style=flat)](https://img.shields.io/github/v/release/litecoin-foundation/sumcoinwallet-ios) 
+[![Release](https://img.shields.io/github/v/release/sumcoinwallet/sumcoinwallet-ios?style=flat)](https://img.shields.io/github/v/release/sumcoinwallet/sumcoinwallet-ios) 
 
 
 <<<<<<< HEAD
 [![Build Status](https://app.bitrise.io/app/3c3c3f9830a3bac7/status.svg?token=zisOsG_I-9nSfT3c1FML7w)](https://app.bitrise.io/app/3c3c3f9830a3bac7)
-[![GitHub issues](https://img.shields.io/github/issues/litecoin-foundation/sumcoinwallet-ios?style=flat)](https://github.com/litecoin-foundation/sumcoinwallet-ios/re-frame/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/litecoin-foundation/sumcoinwallet-ios?color=00ff00&style=flat)](https://github.com/litecoin-foundation/sumcoinwallet-ios/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/sumcoinwallet/sumcoinwallet-ios?style=flat)](https://github.com/sumcoinwallet/sumcoinwallet-ios/re-frame/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sumcoinwallet/sumcoinwallet-ios?color=00ff00&style=flat)](https://github.com/sumcoinwallet/sumcoinwallet-ios/pulls)
  
-[![MIT License](https://img.shields.io/github/license/litecoin-foundation/sumcoinwallet-ios?style=flat)](https://img.shields.io/github/license/litecoin-foundation/sumcoinwallet-ios?style=flat)
+[![MIT License](https://img.shields.io/github/license/sumcoinwallet/sumcoinwallet-ios?style=flat)](https://img.shields.io/github/license/sumcoinwallet/sumcoinwallet-ios?style=flat)
 
 -------------------------------------
 ## Easy and secure
@@ -19,14 +19,14 @@ Sumcoin Wallet is the best way to get started with Sumcoin. Our simple, streamli
 
 |                                   Hardware Campaign                                   	|                              General Sumcoin Wallet                              	|
 |:-------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------------------:	|
-| [QR Code](https://blockchair.com/litecoin/address/MJ4W7NZya4SzE7R6xpEVdamGCimaQYPiWu) 	| [QR Code](https://blockchair.com/litecoin/address/MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe) 	|
+| [QR Code](https://blockchair.com/sumcoin/address/MJ4W7NZya4SzE7R6xpEVdamGCimaQYPiWu) 	| [QR Code](https://blockchair.com/sumcoin/address/MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe) 	|
 
 
 ### The easy and secure Sumcoin wallet
 
 Sumcoin Wallet is the best way to get started with Sumcoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users. This is a free app produced by the Sumcoin Wallet.
 
-iOS Users can visit the iOS version of the code here: [Sumcoin Wallet iOS](https://github.com/litecoin-foundation/loafwallet-ios) 
+iOS Users can visit the iOS version of the code here: [Sumcoin Wallet iOS](https://github.com/sumcoinwallet/loafwallet-ios) 
 
 ### Completely decentralized
 
@@ -73,8 +73,8 @@ Simplicity and ease-of-use is **Sumcoin Wallet**'s core design principle. A simp
 ## Sumcoin Wallet Development:
 =======
 ### Sumcoin Wallet Development:
-[![GitHub issues](https://img.shields.io/github/issues/litecoin-foundation/loafwallet-ios?style=plastic)](https://github.com/litecoin-foundation/loafwallet-ios/re-frame/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/litecoin-foundation/loafwallet-ios?color=00ff00&style=plastic)](https://github.com/litecoin-foundation/loafwallet-ios/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/sumcoinwallet/loafwallet-ios?style=plastic)](https://github.com/sumcoinwallet/loafwallet-ios/re-frame/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sumcoinwallet/loafwallet-ios?color=00ff00&style=plastic)](https://github.com/sumcoinwallet/loafwallet-ios/pulls)
 >>>>>>> parent of 85bfab43 (moved donations)
 
 ### Building & Developing Sumcoin Wallet for iOS:
@@ -86,7 +86,7 @@ Any jailbreak app can grant itself access to every other app's keychain data. Th
 2. Download and install the latest version of [Xcode](https://developer.apple.com/xcode/)
 3. Clone this repo & init submodules
 ```bash
-$ git clone https://github.com/litecoin-foundation/sumcoinwallet-ios
+$ git clone https://github.com/sumcoinwallet/sumcoinwallet-ios
 $ git submodule init
 $ git submodule update
 ```
@@ -96,4 +96,4 @@ $ git submodule update
 ### Sumcoin Wallet Team:
 * [Development Code of Conduct](/development.md)
 ---
-**Sumcoin** source code is available at https://github.com/litecoin-project/litecoin
+**Sumcoin** source code is available at https://github.com/sumcoin-project/sumcoin

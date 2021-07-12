@@ -11,7 +11,7 @@ import Foundation
 
 enum Faucets : String {
   case xblau = "https://faucet.xblau.com/"
-  case litecoinTools = "http://testnet.litecointools.com/"
+  case sumcoinTools = "http://testnet.sumcointools.com/"
 }
 
 class TestnetData {

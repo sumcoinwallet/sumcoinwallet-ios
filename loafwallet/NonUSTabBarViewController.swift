@@ -30,7 +30,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
     private var swappedConstraints: [NSLayoutConstraint] = []
     private let currencyTapView = UIView()
     private let storyboardNames:[String] = ["Transactions","Send","Receive","Buy"]
-    var storyboardIDs:[String] = ["TransactionsViewController","SendLTCViewController","ReceiveLTCViewController","BuyTableViewController"]
+    var storyboardIDs:[String] = ["TransactionsViewController","SendSUMViewController","ReceiveSUMViewController","BuyTableViewController"]
     var viewControllers:[UIViewController] = []
     var activeController:UIViewController? = nil
     var updateTimer: Timer?
@@ -44,7 +44,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
         didSet { setBalances() }
     }
     
-    var isLtcSwapped: Bool? {
+    var isSumSwapped: Bool? {
         didSet { setBalances() }
     }
     
@@ -88,7 +88,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
         
         guard let store = self.store else { return }
         
-        isLtcSwapped = store.state.isLtcSwapped
+        isSumSwapped = store.state.isSumSwapped
         
         if let rate = store.state.currentRate {
             exchangeRate = rate
@@ -165,8 +165,8 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
             primaryLabel.leadingAnchor.constraint(equalTo: equalsLabel.trailingAnchor, constant: C.padding[1]/2.0),
         ]
         
-        if let isLTCSwapped = self.isLtcSwapped {
-            NSLayoutConstraint.activate(isLTCSwapped ? self.swappedConstraints : self.regularConstraints)
+        if let isSUMSwapped = self.isSumSwapped {
+            NSLayoutConstraint.activate(isSUMSwapped ? self.swappedConstraints : self.regularConstraints)
         }
         
         currencyTapView.constrain([
@@ -197,8 +197,8 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
                         })
         
         store.lazySubscribe(self,
-                            selector: { $0.isLtcSwapped != $1.isLtcSwapped },
-                            callback: { self.isLtcSwapped = $0.isLtcSwapped })
+                            selector: { $0.isSumSwapped != $1.isSumSwapped },
+                            callback: { self.isSumSwapped = $0.isSumSwapped })
         store.lazySubscribe(self,
                             selector: { $0.currentRate != $1.currentRate},
                             callback: {
@@ -233,7 +233,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
     
     /// This is called when the price changes
     private func setBalances() {
-        guard let rate = exchangeRate, let store = self.store, let isLTCSwapped = self.isLtcSwapped else {
+        guard let rate = exchangeRate, let store = self.store, let isSUMSwapped = self.isSumSwapped else {
             NSLog("ERROR: Rate, Store not initialized")
             return
         }
@@ -247,11 +247,11 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
         
         if !hasInitialized {
             let amount = Amount(amount: balance, rate: exchangeRate!, maxDigits: store.state.maxDigits)
-            NSLayoutConstraint.deactivate(isLTCSwapped ? self.regularConstraints : self.swappedConstraints)
-            NSLayoutConstraint.activate(isLTCSwapped ? self.swappedConstraints : self.regularConstraints)
-            primaryLabel.setValue(amount.amountForLtcFormat)
+            NSLayoutConstraint.deactivate(isSUMSwapped ? self.regularConstraints : self.swappedConstraints)
+            NSLayoutConstraint.activate(isSUMSwapped ? self.swappedConstraints : self.regularConstraints)
+            primaryLabel.setValue(amount.amountForSumFormat)
             secondaryLabel.setValue(amount.localAmount)
-            if isLTCSwapped {
+            if isSUMSwapped {
                 primaryLabel.transform = transform(forView: primaryLabel)
             } else {
                 secondaryLabel.transform = transform(forView: secondaryLabel)
@@ -267,10 +267,10 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
             }
         }
         
-        primaryLabel.setValue(amount.amountForLtcFormat)
+        primaryLabel.setValue(amount.amountForSumFormat)
         secondaryLabel.setValue(amount.localAmount)
         
-        if !isLTCSwapped {
+        if !isSUMSwapped {
             primaryLabel.transform = .identity
             secondaryLabel.transform = transform(forView: secondaryLabel)
         } else {
@@ -331,7 +331,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
                 
                 transactionVC.store = self.store
                 transactionVC.walletManager = self.walletManager
-                transactionVC.isLtcSwapped = self.store?.state.isLtcSwapped
+                transactionVC.isSumSwapped = self.store?.state.isSumSwapped
                 
             case "loafwallet.BuyTableViewController":
                 guard let buyVC = contentController as? BuyTableViewController else  {
@@ -340,15 +340,15 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
                 buyVC.store = self.store
                 buyVC.walletManager = self.walletManager
                 
-            case "loafwallet.SendLTCViewController":
-                guard let sendVC = contentController as? SendLTCViewController else  {
+            case "loafwallet.SendSUMViewController":
+                guard let sendVC = contentController as? SendSUMViewController else  {
                     return
                 }
                 
                 sendVC.store = self.store
                 
-            case "loafwallet.ReceiveLTCViewController":
-                guard let receiveVC = contentController as? ReceiveLTCViewController else  {
+            case "loafwallet.ReceiveSUMViewController":
+                guard let receiveVC = contentController as? ReceiveSUMViewController else  {
                     return
                 }
                 receiveVC.store = self.store
@@ -387,7 +387,7 @@ extension NonUSTabBarViewController {
     @objc private func currencySwitchTapped() {
         self.view.layoutIfNeeded()
         guard let store = self.store else { return }
-        guard let isLTCSwapped = self.isLtcSwapped else { return }
+        guard let isSUMSwapped = self.isSumSwapped else { return }
         guard let primaryLabel = self.primaryBalanceLabel,
               let secondaryLabel = self.secondaryBalanceLabel else {
             NSLog("ERROR: Price labels not initialized")
@@ -397,8 +397,8 @@ extension NonUSTabBarViewController {
         UIView.spring(0.7, animations: {
             primaryLabel.transform = primaryLabel.transform.isIdentity ? self.transform(forView: primaryLabel) : .identity
             secondaryLabel.transform = secondaryLabel.transform.isIdentity ? self.transform(forView: secondaryLabel) : .identity
-            NSLayoutConstraint.deactivate(!isLTCSwapped ? self.regularConstraints : self.swappedConstraints)
-            NSLayoutConstraint.activate(!isLTCSwapped ? self.swappedConstraints : self.regularConstraints)
+            NSLayoutConstraint.deactivate(!isSUMSwapped ? self.regularConstraints : self.swappedConstraints)
+            NSLayoutConstraint.activate(!isSUMSwapped ? self.swappedConstraints : self.regularConstraints)
             self.view.layoutIfNeeded()
             
             LWAnalytics.logEventWithParameters(itemName: ._20200207_DTHB)

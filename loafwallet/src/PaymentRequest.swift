@@ -21,7 +21,7 @@ struct PaymentRequest {
             if let scheme = url.scheme, let resourceSpecifier = url.resourceSpecifier, url.host == nil {
                 url = NSURL(string: "\(scheme)://\(resourceSpecifier)")!
 
-                if url.scheme == "litecoin", let host = url.host {
+                if url.scheme == "sumcoin", let host = url.host {
                     toAddress = host
                     guard let components = url.query?.components(separatedBy: "&") else { type = .local; return }
                     for component in components {
@@ -77,14 +77,14 @@ struct PaymentRequest {
             request = NSMutableURLRequest(url: remoteRequest! as URL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 5.0) //TODO - fix !
         }
 
-        request.setValue("application/litecoin-paymentrequest", forHTTPHeaderField: "Accept")
+        request.setValue("application/sumcoin-paymentrequest", forHTTPHeaderField: "Accept")
 
         URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
             guard error == nil else { return completion(nil) }
             guard let data = data else { return completion(nil) }
             guard let response = response else { return completion(nil) }
 
-            if response.mimeType?.lowercased() == "application/litecoin-paymentrequest" {
+            if response.mimeType?.lowercased() == "application/sumcoin-paymentrequest" {
                 completion(PaymentRequest(data: data))
             } else if response.mimeType?.lowercased() == "text/uri-list" {
                 

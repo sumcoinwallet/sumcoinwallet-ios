@@ -64,9 +64,9 @@
 		24306797238F3DF900EBEA99 /* BartyCrouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24306796238F3DF900EBEA99 /* BartyCrouch.swift */; };
 		24313C752381E73200A83F69 /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C732381E73200A83F69 /* TransactionManager.swift */; };
 		24313C782381E8F100A83F69 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C762381E8F100A83F69 /* TabBarViewController.swift */; };
-		24313C7B23820BC200A83F69 /* SendLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C7923820BC200A83F69 /* SendLTCViewController.swift */; };
+		24313C7B23820BC200A83F69 /* SendSUMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C7923820BC200A83F69 /* SendSUMViewController.swift */; };
 		24313C7E23820C1900A83F69 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C7C23820C1900A83F69 /* TransactionsViewController.swift */; };
-		24313C8423820C4B00A83F69 /* ReceiveLTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C8223820C4B00A83F69 /* ReceiveLTCViewController.swift */; };
+		24313C8423820C4B00A83F69 /* ReceiveSUMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C8223820C4B00A83F69 /* ReceiveSUMViewController.swift */; };
 		24313C8723821B8C00A83F69 /* PromptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C8523821B8C00A83F69 /* PromptTableViewCell.swift */; };
 		24313C922382433700A83F69 /* LFModalReceiveQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24313C902382433700A83F69 /* LFModalReceiveQRViewController.swift */; };
 		24313C9B23824F5800A83F69 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24313C9323824F5700A83F69 /* Transactions.storyboard */; };
@@ -760,9 +760,9 @@
 		2430679B238F5A2900EBEA99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		24313C732381E73200A83F69 /* TransactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 		24313C762381E8F100A83F69 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		24313C7923820BC200A83F69 /* SendLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLTCViewController.swift; sourceTree = "<group>"; };
+		24313C7923820BC200A83F69 /* SendSUMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSUMViewController.swift; sourceTree = "<group>"; };
 		24313C7C23820C1900A83F69 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
-		24313C8223820C4B00A83F69 /* ReceiveLTCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveLTCViewController.swift; sourceTree = "<group>"; };
+		24313C8223820C4B00A83F69 /* ReceiveSUMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveSUMViewController.swift; sourceTree = "<group>"; };
 		24313C8523821B8C00A83F69 /* PromptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTableViewCell.swift; sourceTree = "<group>"; };
 		24313C902382433700A83F69 /* LFModalReceiveQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFModalReceiveQRViewController.swift; sourceTree = "<group>"; };
 		24313C9323824F5700A83F69 /* Transactions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
@@ -2089,7 +2089,7 @@
 		24313C8823823B9F00A83F69 /* Receive */ = {
 			isa = PBXGroup;
 			children = (
-				24313C8223820C4B00A83F69 /* ReceiveLTCViewController.swift */,
+				24313C8223820C4B00A83F69 /* ReceiveSUMViewController.swift */,
 				24313C902382433700A83F69 /* LFModalReceiveQRViewController.swift */,
 			);
 			name = Receive;
@@ -2103,12 +2103,12 @@
 			name = WipeWallet;
 			sourceTree = "<group>";
 		};
-		24313C8A23823BC400A83F69 /* SendLTC */ = {
+		24313C8A23823BC400A83F69 /* SendSUM */ = {
 			isa = PBXGroup;
 			children = (
-				24313C7923820BC200A83F69 /* SendLTCViewController.swift */,
+				24313C7923820BC200A83F69 /* SendSUMViewController.swift */,
 			);
-			name = SendLTC;
+			name = SendSUM;
 			sourceTree = "<group>";
 		};
 		24313C8B23823BDD00A83F69 /* Transactions */ = {
@@ -3258,7 +3258,7 @@
 				24313C8D23823C2B00A83F69 /* Pin */,
 				24313C8C23823C0F00A83F69 /* Login */,
 				24313C8B23823BDD00A83F69 /* Transactions */,
-				24313C8A23823BC400A83F69 /* SendLTC */,
+				24313C8A23823BC400A83F69 /* SendSUM */,
 				24313C8923823BB700A83F69 /* WipeWallet */,
 				24313C8823823B9F00A83F69 /* Receive */,
 				CE1E5F241EF081F300BD0F72 /* Import */,
@@ -4240,7 +4240,7 @@
 				CE90571A1DFF18B2006BA848 /* ScanViewController.swift in Sources */,
 				CE20C8F61DBAF77D00C8397A /* UIViewController+BRWAdditions.swift in Sources */,
 				CE74F58D1E3BA85600ED5FA9 /* ExchangeUpdater.swift in Sources */,
-				24313C7B23820BC200A83F69 /* SendLTCViewController.swift in Sources */,
+				24313C7B23820BC200A83F69 /* SendSUMViewController.swift in Sources */,
 				CE6DCC251E6001E50044257B /* UIControl+Callback.swift in Sources */,
 				C30029E225D0185500F08C2B /* StandardDividerView.swift in Sources */,
 				223DB2191DF691260076A151 /* BRSocketHelpers.c in Sources */,
@@ -4318,7 +4318,7 @@
 				CEE20C2F1EA3E5820086F724 /* BlinkingView.swift in Sources */,
 				CEC6AA441DEFCDE900EE5AFD /* ModalViewController.swift in Sources */,
 				C3F7BCDC25FEC6AD00694C28 /* FailedAlertView.swift in Sources */,
-				24313C8423820C4B00A83F69 /* ReceiveLTCViewController.swift in Sources */,
+				24313C8423820C4B00A83F69 /* ReceiveSUMViewController.swift in Sources */,
 				C3F55655255A195B005F786F /* SupportSumcoinWalletViewModel.swift in Sources */,
 				CEEC70831E90C07C00EF788E /* Setting.swift in Sources */,
 				CE45C1F91E74B400002C3847 /* ManageWalletViewController.swift in Sources */,
@@ -4679,7 +4679,7 @@
 				);
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -4777,7 +4777,7 @@
 				);
 				MARKETING_VERSION = 3.5.1;
 				OTHER_SWIFT_FLAGS = "-DDebug $(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet;
 				PRODUCT_MODULE_NAME = loafwallet;
 				PRODUCT_NAME = Sumcoin Wallet;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -4851,7 +4851,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet.loafwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet.loafwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -4879,7 +4879,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 3.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -4957,7 +4957,7 @@
 				);
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -4986,7 +4986,7 @@
 				);
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5015,7 +5015,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet.loafwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet.loafwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5043,7 +5043,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet.loafwalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet.loafwalletTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5071,7 +5071,7 @@
 				);
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5195,7 +5195,7 @@
 				);
 				MARKETING_VERSION = 3.5.1;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet;
 				PRODUCT_MODULE_NAME = loafwallet;
 				PRODUCT_NAME = Sumcoin Wallet;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -5220,7 +5220,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 3.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5326,7 +5326,7 @@
 				);
 				MARKETING_VERSION = 3.5.1;
 				OTHER_SWIFT_FLAGS = "-DDebug -DTestnet $(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet;
 				PRODUCT_MODULE_NAME = loafwallet;
 				PRODUCT_NAME = Sumcoin Wallet;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -5353,7 +5353,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 3.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.loafwallet.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.loafwallet.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5432,7 +5432,7 @@
 				);
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/libbz2/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/libbz2/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.libbz2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.libbz2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5461,7 +5461,7 @@
 				);
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/Modules/sqlite3/iphone.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/Modules/sqlite3/iphonesim.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.sqlite3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumcoin.sqlite3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5578,7 +5578,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		C30AFB4C2598FC1B00CDCF69 /* XCRemoteSwiftPackageReference "Sumcoin WalletPartnerAPI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/litecoin-foundation/Sumcoin WalletPartnerAPI.git";
+			repositoryURL = "https://github.com/sumcoinwallet/Sumcoin WalletPartnerAPI.git";
 			requirement = {
 				kind = exactVersion;
 				version = 0.7.0;

@@ -63,13 +63,13 @@ class Transaction {
 
     }
 
-    func amountDescription(isLtcSwapped: Bool, rate: Rate, maxDigits: Int) -> String {
+    func amountDescription(isSumSwapped: Bool, rate: Rate, maxDigits: Int) -> String {
         let amount = Amount(amount: satoshis, rate: rate, maxDigits: maxDigits)
-        return isLtcSwapped ? amount.localCurrency : amount.bits
+        return isSumSwapped ? amount.localCurrency : amount.bits
     }
 
-    func descriptionString(isLtcSwapped: Bool, rate: Rate, maxDigits: Int) -> NSAttributedString {
-        let amount = Amount(amount: satoshis, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped)
+    func descriptionString(isSumSwapped: Bool, rate: Rate, maxDigits: Int) -> NSAttributedString {
+        let amount = Amount(amount: satoshis, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped)
         let format = direction.amountDescriptionFormat
         let string = String(format: format, amount)
         return string.attributedStringForTags
@@ -80,12 +80,12 @@ class Transaction {
         return String(format: direction.addressTextFormat, address ?? S.TransactionDetails.account)
     }
 
-    func amountDetails(isLtcSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
+    func amountDetails(isSumSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
         let feeAmount = Amount(amount: fee, rate: rate, maxDigits: maxDigits)
-        let feeString = direction == .sent ? String(format: S.Transaction.fee, "\(feeAmount.string(isLtcSwapped: isLtcSwapped))") : ""
-        let amountString = "\(direction.sign)\(Amount(amount: satoshis, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped)) \(feeString)"
-        var startingString = String(format: S.Transaction.starting, "\(Amount(amount: startingBalance, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped))")
-        var endingString = String(format: String(format: S.Transaction.ending, "\(Amount(amount: balanceAfter, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped))"))
+        let feeString = direction == .sent ? String(format: S.Transaction.fee, "\(feeAmount.string(isSumSwapped: isSumSwapped))") : ""
+        let amountString = "\(direction.sign)\(Amount(amount: satoshis, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped)) \(feeString)"
+        var startingString = String(format: S.Transaction.starting, "\(Amount(amount: startingBalance, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped))")
+        var endingString = String(format: String(format: S.Transaction.ending, "\(Amount(amount: balanceAfter, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped))"))
 
         if startingBalance > C.maxMoney {
             startingString = ""
@@ -109,21 +109,21 @@ class Transaction {
         return "\(amountString)\n\(startingString)\n\(endingString)\n\(exchangeRateInfo)"
     }
     
-    func amountDetailsAmountString(isLtcSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
+    func amountDetailsAmountString(isSumSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
         let feeAmount = Amount(amount: fee, rate: rate, maxDigits: maxDigits)
-        let feeString = direction == .sent ? String(format: S.Transaction.fee, "\(feeAmount.string(isLtcSwapped: isLtcSwapped))") : ""
-        return "\(direction.sign)\(Amount(amount: satoshis, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped)) \(feeString)"
+        let feeString = direction == .sent ? String(format: S.Transaction.fee, "\(feeAmount.string(isSumSwapped: isSumSwapped))") : ""
+        return "\(direction.sign)\(Amount(amount: satoshis, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped)) \(feeString)"
     }
     
-    func amountDetailsStartingBalanceString(isLtcSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
-        return String(format: S.Transaction.starting, "\(Amount(amount: startingBalance, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped))")
+    func amountDetailsStartingBalanceString(isSumSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
+        return String(format: S.Transaction.starting, "\(Amount(amount: startingBalance, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped))")
     }
     
-    func amountDetailsEndingBalanceString(isLtcSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
-        return  String(format: String(format: S.Transaction.ending, "\(Amount(amount: balanceAfter, rate: rate, maxDigits: maxDigits).string(isLtcSwapped: isLtcSwapped))"))
+    func amountDetailsEndingBalanceString(isSumSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
+        return  String(format: String(format: S.Transaction.ending, "\(Amount(amount: balanceAfter, rate: rate, maxDigits: maxDigits).string(isSumSwapped: isSumSwapped))"))
     }
     
-    func amountExchangeString(isLtcSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
+    func amountExchangeString(isSumSwapped: Bool, rate: Rate, rates: [Rate], maxDigits: Int) -> String {
         var exchangeRateInfo = ""
         if let metaData = metaData, let currentRate = rates.filter({ $0.code.lowercased() == metaData.exchangeRateCurrency.lowercased() }).first {
             let difference = (currentRate.rate - metaData.exchangeRate)/metaData.exchangeRate*100.0

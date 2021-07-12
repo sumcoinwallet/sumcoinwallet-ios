@@ -34,7 +34,7 @@ class MenuButton : UIControl {
     override var isHighlighted: Bool {
         didSet {
             if isHighlighted {
-                backgroundColor = .litecoinSilver
+                backgroundColor = .sumcoinSilver
             } else {
                 backgroundColor = .white
             } 

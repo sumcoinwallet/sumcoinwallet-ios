@@ -14,8 +14,8 @@ struct Amount {
     let amount: UInt64 //amount in satoshis
     let rate: Rate
     let maxDigits: Int
-    
-    var amountForLtcFormat: Double {
+
+    var amountForSumFormat: Double {
         var decimal = Decimal(self.amount)
         var amount: Decimal = 0.0
         NSDecimalMultiplyByPowerOf10(&amount, &decimal, Int16(-maxDigits), .up)
@@ -31,7 +31,7 @@ struct Amount {
         var amount: Decimal = 0.0
         NSDecimalMultiplyByPowerOf10(&amount, &decimal, Int16(-maxDigits), .up)
         let number = NSDecimalNumber(decimal: amount)
-        guard let string = ltcFormat.string(from: number) else { return "" }
+        guard let string = sumFormat.string(from: number) else { return "" }
         return string
     }
 
@@ -51,11 +51,11 @@ struct Amount {
         return string
     }
 
-    func string(isLtcSwapped: Bool) -> String {
-        return isLtcSwapped ? localCurrency : bits
+    func string(isSumSwapped: Bool) -> String {
+        return isSumSwapped ? localCurrency : bits
     }
 
-    var ltcFormat: NumberFormatter {
+    var sumFormat: NumberFormatter {
         let format = NumberFormatter()
         format.isLenient = true
         format.numberStyle = .currency
@@ -70,7 +70,7 @@ struct Amount {
         case 5: // sums
             format.currencySymbol = "\(S.Symbols.sums)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*1000 as NSNumber
-        case 8: // litecoin
+        case 8: // sumcoin
             format.currencySymbol = "\(S.Symbols.sum)\(S.Symbols.narrowSpace)"
             format.maximum = C.maxMoney/C.satoshis as NSNumber
         default:
@@ -102,11 +102,11 @@ struct DisplayAmount {
     let minimumFractionDigits: Int?
 
     var description: String {
-        return selectedRate != nil ? fiatDescription : litecoinDescription
+        return selectedRate != nil ? fiatDescription : sumcoinDescription
     }
 
     var combinedDescription: String {
-        return state.isLtcSwapped ? "\(fiatDescription) (\(litecoinDescription))" : "\(litecoinDescription) (\(fiatDescription))"
+        return state.isSumSwapped ? "\(fiatDescription) (\(sumcoinDescription))" : "\(sumcoinDescription) (\(fiatDescription))"
     }
 
     private var fiatDescription: String {
@@ -115,12 +115,12 @@ struct DisplayAmount {
         return string
     }
 
-    private var litecoinDescription: String {
+    private var sumcoinDescription: String {
         var decimal = Decimal(self.amount.rawValue)
         var amount: Decimal = 0.0
         NSDecimalMultiplyByPowerOf10(&amount, &decimal, Int16(-state.maxDigits), .up)
         let number = NSDecimalNumber(decimal: amount)
-        guard let string = ltcFormat.string(from: number) else { return "" }
+        guard let string = sumFormat.string(from: number) else { return "" }
         return string
     }
 
@@ -141,7 +141,7 @@ struct DisplayAmount {
         return format
     }
 
-    var ltcFormat: NumberFormatter {
+    var sumFormat: NumberFormatter {
         let format = NumberFormatter()
         format.isLenient = true
         format.numberStyle = .currency

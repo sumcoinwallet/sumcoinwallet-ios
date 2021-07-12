@@ -1114,7 +1114,7 @@
 /* Prefix for price */
 "TransactionDetails.priceTimeStampPrefix" = "as of";
 
-/* RECEIVE LTCTitle */
+/* RECEIVE SUMTitle */
 "TransactionDetails.receivedModalTitle" = "RECEIVE ADDRESS";
 
 /* Label for TXID */
@@ -1226,7 +1226,7 @@
 "Fragment.or" = "or";
 
 /* Enter SUM Address */
-"Send.enterLTCAddress" = "Enter a Sumcoin address";
+"Send.enterSUMAddress" = "Enter a Sumcoin address";
 
 /* Sumcoin Wallet Partners */
 "Settings.sumcoinwallet.partners" = "Sumcoin Wallet partners";
@@ -1253,7 +1253,7 @@
 "SumcoinCard.resetPassword" = "Reset password";
 
 /* Sumcoin card visit */
-"SumcoinCard.visit.toReset" = "Visit https://litecoin.dashboard.getblockcard.com/password/forgot\nto reset your password.";
+"SumcoinCard.visit.toReset" = "Visit https://sumcoin.dashboard.getblockcard.com/password/forgot\nto reset your password.";
 
 /* address */
 "SumcoinCard.Registration.address" = "Address";
@@ -1367,7 +1367,7 @@
 "SumcoinCard.Disclaimer.description" = "Sumcoin Card currently has limited functionality in Sumcoin Wallet.";
 
 /* Referral to the website */
-"SumcoinCard.Disclaimer.referral" = "Visit litecoin.getblockcard.com for full access";
+"SumcoinCard.Disclaimer.referral" = "Visit sumcoin.getblockcard.com for full access";
 
 /* Beta Testing Sumcoin Card */
 "SumcoinCard.Disclaimer.title" = "Sumcoin Card Beta";

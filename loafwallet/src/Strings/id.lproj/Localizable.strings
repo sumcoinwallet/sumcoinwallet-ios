@@ -383,7 +383,7 @@
 "SumcoinCard.Disclaimer.description" = "Kartu Sumcoin saat ini memiliki fungsi terbatas di Sumcoin Wallet.";
 
 /* Referral to the website */
-"SumcoinCard.Disclaimer.referral" = "Kunjungi litecoin.getblockcard.com untuk akses penuh";
+"SumcoinCard.Disclaimer.referral" = "Kunjungi sumcoin.getblockcard.com untuk akses penuh";
 
 /* Beta Testing Sumcoin Card */
 "SumcoinCard.Disclaimer.title" = "Kartu Sumcoin Beta";
@@ -491,7 +491,7 @@
 "SumcoinCard.resetPasswordDetail" = "Masukkan alamat email yang terkait dengan akun Kartu Sumcoin Anda & cari email dengan instruksi reset.";
 
 /* Sumcoin card visit */
-"SumcoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
+"SumcoinCard.visit.toReset" = "Kunjungi https://sumcoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Layanan lokasi dinonaktifkan.";
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "Papan tulis kosong";
 
 /* Enter SUM Address */
-"Send.enterLTCAddress" = "Masukkan alamat Sumcoin";
+"Send.enterSUMAddress" = "Masukkan alamat Sumcoin";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "Biaya Jaringan: %1$@";
@@ -1186,7 +1186,7 @@
 /* Received $5.00 */
 "TransactionDetails.receivedAmountDescription" = "Terima <b>%1@</b>";
 
-/* RECEIVE LTCTitle */
+/* RECEIVE SUMTitle */
 "TransactionDetails.receivedModalTitle" = "TransactionDetails.receivedModalTitle";
 
 /* Sent $5.00 (sent title 1/2) */

@@ -31,7 +31,7 @@ class UnstoppableDomainViewModel: ObservableObject {
     var didFailToResolve: ((String) -> Void)?
     
     //MARK: - Private Variables
-    private var ltcAddress = ""
+    private var sumAddress = ""
     private var dateFormatter: DateFormatter? {
         
         didSet {

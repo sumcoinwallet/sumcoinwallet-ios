@@ -11,7 +11,7 @@ import Foundation
 struct CardWalletDetails: Decodable {
 
     var balance: Float?
-    var ltcAddress: String?
+    var sumAddress: String?
     var createdAt: String?
     var updatedAt: String?
     var availableBalance: Float?
@@ -20,7 +20,7 @@ struct CardWalletDetails: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case balance = "balance"
-        case ltcAddress = "ltc_address"
+        case sumAddress = "sum_address"
         case createdAt = "created_at"
         case updatedAt  = "updated_at"
         case availableBalance = "available_balance"
@@ -33,7 +33,7 @@ struct CardWalletDetails: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         balance = try? container.decode(Float.self, forKey: .balance)
-        ltcAddress = try? container.decode(String.self, forKey: .sumAddress)
+        sumAddress = try? container.decode(String.self, forKey: .sumAddress)
         createdAt = try? container.decode(String.self, forKey: .createdAt)
         updatedAt = try? container.decode(String.self, forKey: .updatedAt)
         availableBalance = try? container.decode(Float.self, forKey: .availableBalance)

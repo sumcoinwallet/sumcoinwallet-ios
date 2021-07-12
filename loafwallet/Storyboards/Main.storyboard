@@ -31,7 +31,7 @@
                                     <tabBarItem tag="1" title="Send" image="send_icon" selectedImage="send_icon" id="Idu-CT-kfl" userLabel="Send"/>
                                     <tabBarItem tag="2" title="Card" image="card_icon" selectedImage="card_icon" id="DPD-tH-DDL" userLabel="Card"/>
                                     <tabBarItem tag="3" title="Receive" image="receive_icon" selectedImage="receive_icon" id="1Ar-eJ-M87" userLabel="Receive"/>
-                                    <tabBarItem tag="4" title="Buy" image="litecoin_cutout24" selectedImage="litecoin_cutout24" id="spP-38-fzY" userLabel="Buy"/>
+                                    <tabBarItem tag="4" title="Buy" image="sumcoin_cutout24" selectedImage="sumcoin_cutout24" id="spP-38-fzY" userLabel="Buy"/>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -139,7 +139,7 @@
                                     <tabBarItem title="History" image="history_icon" selectedImage="history_icon" id="bcE-8M-dwp" userLabel="History"/>
                                     <tabBarItem tag="1" title="Send" image="send_icon" selectedImage="send_icon" id="RIS-fI-9CG" userLabel="Send"/>
                                     <tabBarItem tag="2" title="Receive" image="receive_icon" selectedImage="receive_icon" id="MWM-XE-gE7" userLabel="Receive"/>
-                                    <tabBarItem tag="3" title="Buy" image="litecoin_cutout24" selectedImage="litecoin_cutout24" id="Pzx-4b-zDZ" userLabel="Buy"/>
+                                    <tabBarItem tag="3" title="Buy" image="sumcoin_cutout24" selectedImage="sumcoin_cutout24" id="Pzx-4b-zDZ" userLabel="Buy"/>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -235,7 +235,7 @@
     <resources>
         <image name="card_icon" width="24" height="24"/>
         <image name="history_icon" width="32" height="32"/>
-        <image name="litecoin_cutout24" width="24" height="24"/>
+        <image name="sumcoin_cutout24" width="24" height="24"/>
         <image name="receive_icon" width="20" height="24"/>
         <image name="send_icon" width="20" height="24"/>
         <image name="settingsWhite" width="170.66667175292969" height="170.66667175292969"/>
