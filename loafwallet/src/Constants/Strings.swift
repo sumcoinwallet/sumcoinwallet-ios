@@ -258,7 +258,7 @@ enum S {
     //MARK: - Buy Center
     enum BuyCenter {
       static let title = NSLocalizedString("BuyCenter.title", value: "**Buy Sumcoin**", comment: "Buy Center Title")
-      static let buyModalTitle = NSLocalizedString("BuyCenter.ModalTitle", value: "**Buy Łitecoin**", comment: "Buy Modal Title")
+      static let buyModalTitle = NSLocalizedString("BuyCenter.ModalTitle", value: "**Buy Sumcoin**", comment: "Buy Modal Title")
       enum Cells {
         static let moonpayTitle = NSLocalizedString("BuyCenter.moonpayTitle", value: "**Moonpay**", comment: "Moonpay Title")
         static let moonpayFinancialDetails = NSLocalizedString("BuyCenter.moonpayFinancialDetails", value: "**• Point 1 XXXXX\n• Point 2 XXXXn• XXX Point 3**", comment: "Moonpay buy financial details")

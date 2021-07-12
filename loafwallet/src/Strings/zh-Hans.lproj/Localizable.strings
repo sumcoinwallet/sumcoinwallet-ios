@@ -137,7 +137,7 @@
 "BuyCenter.changellyTitle" = "Changelly";
 
 /* Buy Modal Title */
-"BuyCenter.ModalTitle" = "购买 Łitecoin";
+"BuyCenter.ModalTitle" = "购买 Sumcoin";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "•购买具有许多法定货币对的SUM\n•以多种方式支付\n•全球支付提供商";
@@ -152,7 +152,7 @@
 "BuyCenter.simplexTitle" = "Simplex";
 
 /* Buy Center Title */
-"BuyCenter.title" = "购买 Łitecoin";
+"BuyCenter.title" = "购买 Sumcoin";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "将您的身份证号集中在方框中";

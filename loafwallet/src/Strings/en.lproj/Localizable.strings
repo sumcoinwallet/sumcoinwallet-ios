@@ -137,7 +137,7 @@
 "BuyCenter.changellyTitle" = "Changelly";
 
 /* Buy Modal Title */
-"BuyCenter.ModalTitle" = "Buy Łitecoin";
+"BuyCenter.ModalTitle" = "Buy Sumcoin";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "• Buy SUM with many fiat pairs\n• Pay with multiple methods\n• Global payment provider";

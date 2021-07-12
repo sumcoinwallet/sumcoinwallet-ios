@@ -137,7 +137,7 @@
 "BuyCenter.changellyTitle" = "Changelly";
 
 /* Buy Modal Title */
-"BuyCenter.ModalTitle" = "Kaufen Sie Łitecoin";
+"BuyCenter.ModalTitle" = "Kaufen Sie Sumcoin";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "• Kaufen Sie SUM mit vielen Fiat-Paaren.\n• Bezahlen Sie mit mehreren Methoden.\n• Globaler Zahlungsanbieter";
@@ -152,7 +152,7 @@
 "BuyCenter.simplexTitle" = "Simplex";
 
 /* Buy Center Title */
-"BuyCenter.title" = "Kaufen Sie Łitecoin";
+"BuyCenter.title" = "Kaufen Sie Sumcoin";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "Zentriere deinen Ausweis im Rechteck";
