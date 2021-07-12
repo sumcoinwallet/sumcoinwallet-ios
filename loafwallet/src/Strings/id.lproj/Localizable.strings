@@ -950,13 +950,13 @@
 "Settings.languages" = "Bahasa";
 
 /* Sumcoin Wallet environment */
-"Settings.litewallet.environment" = "Lingkungan Hidup:";
+"Settings.sumcoinwallet.environment" = "Lingkungan Hidup:";
 
 /* Sumcoin Wallet Partners */
-"Settings.litewallet.partners" = "Mitra Sumcoin Wallet";
+"Settings.sumcoinwallet.partners" = "Mitra Sumcoin Wallet";
 
 /* Sumcoin Wallet version */
-"Settings.litewallet.version" = "Versi litewallet:";
+"Settings.sumcoinwallet.version" = "Versi sumcoinwallet:";
 
 /* Manage settings section header */
 "Settings.manage" = "Mengelola";

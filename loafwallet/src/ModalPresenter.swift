@@ -436,17 +436,17 @@ class ModalPresenter : Subscriber, Trackable {
         let settingsNav = UINavigationController()
         let sections = ["About", "Wallet", "Manage", "Support", "Blockchain"]
         let rows = [
-            "About": [Setting(title: S.Settings.litewalletVersion, accessoryText: {
+            "About": [Setting(title: S.Settings.sumcoinwalletVersion, accessoryText: {
                 return AppVersion.string
             }, callback: {}),
-            Setting(title: S.Settings.litewalletEnvironment, accessoryText: {
+            Setting(title: S.Settings.sumcoinwalletEnvironment, accessoryText: {
                 var envName = "Release"
                 #if Debug || Testflight
                 envName = "Debug"
                 #endif
                 return envName
             }, callback: {}),
-            Setting(title: S.Settings.litewalletPartners, callback: {
+            Setting(title: S.Settings.sumcoinwalletPartners, callback: {
                 let partnerView = UIHostingController(rootView: PartnersView(viewModel: PartnerViewModel()))
                 settingsNav.pushViewController(partnerView, animated: true)
             }),

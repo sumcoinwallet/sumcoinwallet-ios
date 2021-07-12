@@ -1,15 +1,15 @@
 [![Sumcoin Wallet](/images/header-ios.png)](https://itunes.apple.com/us/app/loafwallet/id1119332592)
 ======================================= 
 
-[![Release](https://img.shields.io/github/v/release/litecoin-foundation/litewallet-ios?style=flat)](https://img.shields.io/github/v/release/litecoin-foundation/litewallet-ios) 
+[![Release](https://img.shields.io/github/v/release/litecoin-foundation/sumcoinwallet-ios?style=flat)](https://img.shields.io/github/v/release/litecoin-foundation/sumcoinwallet-ios) 
 
 
 <<<<<<< HEAD
 [![Build Status](https://app.bitrise.io/app/3c3c3f9830a3bac7/status.svg?token=zisOsG_I-9nSfT3c1FML7w)](https://app.bitrise.io/app/3c3c3f9830a3bac7)
-[![GitHub issues](https://img.shields.io/github/issues/litecoin-foundation/litewallet-ios?style=flat)](https://github.com/litecoin-foundation/litewallet-ios/re-frame/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/litecoin-foundation/litewallet-ios?color=00ff00&style=flat)](https://github.com/litecoin-foundation/litewallet-ios/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/litecoin-foundation/sumcoinwallet-ios?style=flat)](https://github.com/litecoin-foundation/sumcoinwallet-ios/re-frame/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/litecoin-foundation/sumcoinwallet-ios?color=00ff00&style=flat)](https://github.com/litecoin-foundation/sumcoinwallet-ios/pulls)
  
-[![MIT License](https://img.shields.io/github/license/litecoin-foundation/litewallet-ios?style=flat)](https://img.shields.io/github/license/litecoin-foundation/litewallet-ios?style=flat)
+[![MIT License](https://img.shields.io/github/license/litecoin-foundation/sumcoinwallet-ios?style=flat)](https://img.shields.io/github/license/litecoin-foundation/sumcoinwallet-ios?style=flat)
 
 -------------------------------------
 ## Easy and secure
@@ -86,7 +86,7 @@ Any jailbreak app can grant itself access to every other app's keychain data. Th
 2. Download and install the latest version of [Xcode](https://developer.apple.com/xcode/)
 3. Clone this repo & init submodules
 ```bash
-$ git clone https://github.com/litecoin-foundation/litewallet-ios
+$ git clone https://github.com/litecoin-foundation/sumcoinwallet-ios
 $ git submodule init
 $ git submodule update
 ```

@@ -1172,10 +1172,10 @@
 "DefaultCurrency.chooseFiatLabel" = "Choose:";
 
 /* Sumcoin Wallet environment */
-"Settings.litewallet.environment" = "Environment:";
+"Settings.sumcoinwallet.environment" = "Environment:";
 
 /* Sumcoin Wallet version */
-"Settings.litewallet.version" = "Sumcoin Wallet version:";
+"Settings.sumcoinwallet.version" = "Sumcoin Wallet version:";
 
 /* Sumcoin Wallet Social links */
 "Settings.socialLinks" = "Social";
@@ -1229,7 +1229,7 @@
 "Send.enterLTCAddress" = "Enter a Sumcoin address";
 
 /* Sumcoin Wallet Partners */
-"Settings.litewallet.partners" = "Sumcoin Wallet partners";
+"Settings.sumcoinwallet.partners" = "Sumcoin Wallet partners";
 
 /* Card Bar Item Title */
 "SumcoinCard.barItemTitle" = "Card";

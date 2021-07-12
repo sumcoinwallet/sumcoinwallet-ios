@@ -1,6 +1,6 @@
 //
 //  FeeManager.swift
-//  litewallet
+//  sumcoinwallet
 //
 //  Created by Kerry Washington on 2/29/20.
 //  Copyright © 2021 Sumcoin Wallet. All rights reserved.

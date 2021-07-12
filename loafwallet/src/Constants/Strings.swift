@@ -394,10 +394,10 @@ enum S {
         static let advancedTitle = NSLocalizedString("Settings.advancedTitle", value: "**Advanced Settings**", comment: "Advanced Settings title")
         static let faceIdLimit = NSLocalizedString("Settings.faceIdLimit", value: "**Face ID Spending Limit**", comment: "Face ID spending limit label")
         static let languages = NSLocalizedString("Settings.languages", value: "**Languages**", comment: "Languages label")
-        static let litewalletVersion = NSLocalizedString("Settings.litewallet.version", value: "**Sumcoin Wallet Version:**", comment: "Sumcoin Wallet version")
-        static let litewalletEnvironment = NSLocalizedString("Settings.litewallet.environment", value: "**Sumcoin Wallet Environment:**", comment: "Sumcoin Wallet environment")
+        static let sumcoinwalletVersion = NSLocalizedString("Settings.sumcoinwallet.version", value: "**Sumcoin Wallet Version:**", comment: "Sumcoin Wallet version")
+        static let sumcoinwalletEnvironment = NSLocalizedString("Settings.sumcoinwallet.environment", value: "**Sumcoin Wallet Environment:**", comment: "Sumcoin Wallet environment")
         static let socialLinks = NSLocalizedString("Settings.socialLinks", value: "**Social Links:**", comment: "Sumcoin Wallet Social links")
-        static let litewalletPartners = NSLocalizedString("Settings.litewallet.partners", value: "**Sumcoin Wallet Partners:**", comment: "Sumcoin Wallet Partners")
+        static let sumcoinwalletPartners = NSLocalizedString("Settings.sumcoinwallet.partners", value: "**Sumcoin Wallet Partners:**", comment: "Sumcoin Wallet Partners")
         static let currentLocale = NSLocalizedString("Settings.currentLocale", value: "**Current Locale:**", comment: "Current Locale")
     }
 

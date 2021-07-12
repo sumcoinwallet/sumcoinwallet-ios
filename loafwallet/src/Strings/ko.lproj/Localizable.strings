@@ -950,13 +950,13 @@
 "Settings.languages" = "언어";
 
 /* Sumcoin Wallet environment */
-"Settings.litewallet.environment" = "환경:";
+"Settings.sumcoinwallet.environment" = "환경:";
 
 /* Sumcoin Wallet Partners */
-"Settings.litewallet.partners" = "Sumcoin Wallet 파트너";
+"Settings.sumcoinwallet.partners" = "Sumcoin Wallet 파트너";
 
 /* Sumcoin Wallet version */
-"Settings.litewallet.version" = "라이트 월렛 버전 :";
+"Settings.sumcoinwallet.version" = "라이트 월렛 버전 :";
 
 /* Manage settings section header */
 "Settings.manage" = "관리";
