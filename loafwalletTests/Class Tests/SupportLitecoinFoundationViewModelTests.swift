@@ -1,21 +1,21 @@
 //
-//  SupportLitecoinFoundationViewModelTests.swift
+//  SupportSumcoinWalletViewModelTests.swift
 //  loafwalletTests
 //
 //  Created by Kerry Washington on 11/16/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import XCTest
 @testable import loafwallet
 
-class SupportLitecoinFoundationViewModelTests: XCTestCase {
+class SupportSumcoinWalletViewModelTests: XCTestCase {
       
-    var viewModel: SupportLitecoinFoundationViewModel!
+    var viewModel: SupportSumcoinWalletViewModel!
       
     override func setUp() {
         super.setUp()
-        viewModel = SupportLitecoinFoundationViewModel()
+        viewModel = SupportSumcoinWalletViewModel()
     }
      
     /// Checks the user taps on the closure

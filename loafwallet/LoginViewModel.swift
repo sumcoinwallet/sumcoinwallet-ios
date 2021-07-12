@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/31/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -67,7 +67,7 @@ class LoginViewModel: ObservableObject {
                     //Turn modal off
                     self.doShowModal = false
                     
-                    NotificationCenter.default.post(name: .LitecoinCardLoginNotification, object: nil,
+                    NotificationCenter.default.post(name: .SumcoinCardLoginNotification, object: nil,
                                                     userInfo: nil)
                     completion(self.didCompleteLogin)
                 }

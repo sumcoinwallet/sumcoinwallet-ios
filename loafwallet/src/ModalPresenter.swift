@@ -546,7 +546,7 @@ class ModalPresenter : Subscriber, Trackable {
                     guard let walletManager = myself.walletManager else { return }
                     let sections = ["Network"]
                     var networkRows = [Setting]()
-                    networkRows = [Setting(title: "Litecoin Nodes", callback: {
+                    networkRows = [Setting(title: "Sumcoin Nodes", callback: {
                         let nodeSelector = NodeSelectorViewController(walletManager: walletManager)
                         settingsNav.pushViewController(nodeSelector, animated: true)
                     })]
@@ -601,7 +601,7 @@ class ModalPresenter : Subscriber, Trackable {
     // MARK: - Present Support LF View
     private func presentSupportLF() {
         
-        let supportLFView = UIHostingController(rootView: SupportLitecoinFoundationView(viewModel: SupportLitecoinFoundationViewModel()))
+        let supportLFView = UIHostingController(rootView: SupportSumcoinWalletView(viewModel: SupportSumcoinWalletViewModel()))
 
         supportLFView.rootView.viewModel.didTapToDismiss = {
             supportLFView.dismiss(animated: true) {

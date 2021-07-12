@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/28/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -44,7 +44,7 @@ struct GenericStringValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         
-        guard !value.isEmpty else { throw ValidationError(S.LitecoinCard
+        guard !value.isEmpty else { throw ValidationError(S.SumcoinCard
                                                             .Registration
                                                             .ValidationError
                                                             .empty) }
@@ -56,12 +56,12 @@ struct MobileNumberValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         
-        guard value != "" else { throw ValidationError(S.LitecoinCard
+        guard value != "" else { throw ValidationError(S.SumcoinCard
                                                         .Registration
                                                         .ValidationError
                                                         .empty) }
         
-        guard value.count >= 10 else { throw ValidationError(S.LitecoinCard
+        guard value.count >= 10 else { throw ValidationError(S.SumcoinCard
                                                                 .Registration
                                                                 .ValidationError
                                                                 .numberDigitsRequired) }
@@ -78,7 +78,7 @@ struct RequiredFieldValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         guard !value.isEmpty else {
-            throw ValidationError(S.LitecoinCard
+            throw ValidationError(S.SumcoinCard
                                     .Registration
                                     .ValidationError
                                     .requiredField + fieldName)
@@ -91,25 +91,25 @@ struct PasswordValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         
-        guard value != "" else { throw ValidationError(S.LitecoinCard
+        guard value != "" else { throw ValidationError(S.SumcoinCard
                                                         .Registration
                                                         .ValidationError
                                                         .empty) }
         
-        guard value.count >= 6 else { throw ValidationError(S.LitecoinCard
+        guard value.count >= 6 else { throw ValidationError(S.SumcoinCard
                                                                 .Registration
                                                                 .ValidationError
                                                                 .passwordCharacters) }
         
         do {
             if try NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$", options: .caseInsensitive).firstMatch(in: value, options: [], range: NSRange(location: 0, length: value.count)) == nil {
-                throw ValidationError(S.LitecoinCard
+                throw ValidationError(S.SumcoinCard
                                         .Registration
                                         .ValidationError
                                         .passwordComposition)
             }
         } catch {
-            throw  ValidationError(S.LitecoinCard
+            throw  ValidationError(S.SumcoinCard
                                     .Registration
                                     .ValidationError
                                     .passwordComposition)
@@ -123,13 +123,13 @@ struct EmailValidator: ValidatorConvertible {
     func validated(_ value: String) throws -> String {
         do {
             if try NSRegularExpression(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$", options: .caseInsensitive).firstMatch(in: value, options: [], range: NSRange(location: 0, length: value.count)) == nil {
-                throw ValidationError(S.LitecoinCard
+                throw ValidationError(S.SumcoinCard
                                     .Registration
                                     .ValidationError
                                     .invalidEmail)
             }
         } catch {
-            throw ValidationError(S.LitecoinCard
+            throw ValidationError(S.SumcoinCard
                                     .Registration
                                     .ValidationError
                                     .invalidEmail)

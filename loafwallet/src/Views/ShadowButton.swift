@@ -18,7 +18,7 @@ enum ButtonType {
     case boldWarning
     case flatWhite
     case flatWhiteBorder
-    case flatLitecoinBlue
+    case flatSumcoinBlue
 }
 
 private let minTargetSize: CGFloat = 48.0
@@ -160,7 +160,7 @@ class ShadowButton: UIControl {
 
     private func setColors() {
         switch type {
-        case .flatLitecoinBlue:
+        case .flatSumcoinBlue:
         container.backgroundColor = .liteWalletBlue
         label.textColor = .primaryText
         container.layer.borderColor = UIColor.white.cgColor

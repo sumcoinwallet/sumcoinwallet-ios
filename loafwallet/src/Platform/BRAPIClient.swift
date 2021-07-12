@@ -32,11 +32,11 @@ let BRAPIClientErrorDomain = "BRApiClientErrorDomain"
 // these flags map to api feature flag name values
 // eg "buy-bitcoin-with-cash" is a persistent name in the /me/features list
 @objc public enum BRFeatureFlags : Int, CustomStringConvertible {
-    case buyLitecoin
+    case buySumcoin
     
     public var description: String {
         switch self {
-        case .buyLitecoin: return "buy-litecoin";
+        case .buySumcoin: return "buy-litecoin";
          }
     }
 }
@@ -158,7 +158,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
     
     private func decorateRequest(_ request: URLRequest) -> URLRequest {
         var actualRequest = request
-        actualRequest.setValue("\(E.isTestnet ? 1 : 0)", forHTTPHeaderField: "X-Litecoin-Testnet")
+        actualRequest.setValue("\(E.isTestnet ? 1 : 0)", forHTTPHeaderField: "X-Sumcoin-Testnet")
         actualRequest.setValue("\((E.isTestFlight || E.isDebug) ? 1 : 0)", forHTTPHeaderField: "X-Testflight")
         actualRequest.setValue(Locale.current.identifier, forHTTPHeaderField: "Accept-Language")
         return actualRequest

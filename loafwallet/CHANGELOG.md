@@ -33,7 +33,7 @@ The list of changes are below:
 
 ## Release v3.3.0
 
-This release is the interim to the v2 of the Litecoin Card and fixes mainly bugs.  
+This release is the interim to the v2 of the Sumcoin Card and fixes mainly bugs.  
 The list of changes are below:
  
  ### Bugfixes
@@ -47,6 +47,6 @@ The list of changes are below:
     * Added Litewallett Customer support portal in place of the email
     * Added animation for the latest LTC price
     * Added balance label
-	* Added Litecoin Card disclaimer
+	* Added Sumcoin Card disclaimer
 ----
 ## Release v3.2.0

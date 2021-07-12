@@ -13,24 +13,24 @@
 
 -------------------------------------
 ## Easy and secure
-Litewallet is the best way to get started with Litecoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users. This is a free app produced by the Litecoin Foundation.
+Litewallet is the best way to get started with Sumcoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users. This is a free app produced by the Sumcoin Wallet.
 =======
 >>>>>>> parent of 85bfab43 (moved donations)
 
-|                                   Hardware Campaign                                   	|                              General Litecoin Foundation                              	|
+|                                   Hardware Campaign                                   	|                              General Sumcoin Wallet                              	|
 |:-------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------------------:	|
 | [QR Code](https://blockchair.com/litecoin/address/MJ4W7NZya4SzE7R6xpEVdamGCimaQYPiWu) 	| [QR Code](https://blockchair.com/litecoin/address/MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe) 	|
 
 
-### The easy and secure Litecoin wallet
+### The easy and secure Sumcoin wallet
 
-Litewallet is the best way to get started with Litecoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users. This is a free app produced by the Litecoin Foundation.
+Litewallet is the best way to get started with Sumcoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users. This is a free app produced by the Sumcoin Wallet.
 
 iOS Users can visit the iOS version of the code here: [Litewallet iOS](https://github.com/litecoin-foundation/loafwallet-ios) 
 
 ### Completely decentralized
 
-Unlike other iOS Litecoin wallets, **Litewallet** is a standalone Litecoin client. It connects directly to the Litecoin network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. Even if Litewallet is removed from the App Store, the app will continue to function, allowing users to access their valuable Litecoin at any time.
+Unlike other iOS Sumcoin wallets, **Litewallet** is a standalone Sumcoin client. It connects directly to the Sumcoin network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. Even if Litewallet is removed from the App Store, the app will continue to function, allowing users to access their valuable Sumcoin at any time.
 
 ### Cutting-edge security
 
@@ -80,7 +80,7 @@ Simplicity and ease-of-use is **Litewallet**'s core design principle. A simple r
 ### Building & Developing Litewallet for iOS:
 ***Installation on jailbroken devices is strongly discouraged.***
 
-Any jailbreak app can grant itself access to every other app's keychain data. This means it can access your wallet and steal your Litecoin by self-signing as described [here](http://www.saurik.com/id/8) and including `<key>application-identifier</key><string>*</string>` in its .entitlements file.
+Any jailbreak app can grant itself access to every other app's keychain data. This means it can access your wallet and steal your Sumcoin by self-signing as described [here](http://www.saurik.com/id/8) and including `<key>application-identifier</key><string>*</string>` in its .entitlements file.
 
 1. Download and install Cocoapods to your Mac computer: `sudo gem install cocoapods`
 2. Download and install the latest version of [Xcode](https://developer.apple.com/xcode/)
@@ -96,4 +96,4 @@ $ git submodule update
 ### Litewallet Team:
 * [Development Code of Conduct](/development.md)
 ---
-**Litecoin** source code is available at https://github.com/litecoin-project/litecoin
+**Sumcoin** source code is available at https://github.com/litecoin-project/litecoin

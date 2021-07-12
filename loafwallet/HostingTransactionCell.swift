@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 2/5/21.
-//  Copyright © 2021 Litecoin Foundation. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation

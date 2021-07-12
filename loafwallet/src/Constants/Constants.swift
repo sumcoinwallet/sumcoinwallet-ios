@@ -104,7 +104,7 @@ struct FoundationSupport {
 
     static let url = URL(string: "https://lite-wallet.org/support_address.html")!
 
-    /// Litecoin Foundation main donation address: MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe
+    /// Sumcoin Wallet main donation address: MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe
     /// As of Nov 14th, 2020
     static let supportLTCAddress = "MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe"
 } 

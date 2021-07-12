@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 5/15/21.
-//  Copyright © 2021 Litecoin Foundation. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import SwiftUI
@@ -31,7 +31,7 @@ struct LockScreenHeaderView: View {
                         .font(Font(UIFont.barlowSemiBold(size: 16.0)))
                         .foregroundColor(.white)
                     
-                    Text("\(S.History.currentLitecoinValue) \(viewModel.currencyCode)")
+                    Text("\(S.History.currentSumcoinValue) \(viewModel.currencyCode)")
                         .font(Font(UIFont.barlowRegular(size: 14.0)))
                         .foregroundColor(Color.white.opacity(0.5))
                         .padding(.bottom, 10)

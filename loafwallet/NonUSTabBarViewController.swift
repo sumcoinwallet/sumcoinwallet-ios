@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 5/9/21.
-//  Copyright © 2021 Litecoin Foundation. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import UIKit
@@ -23,7 +23,7 @@ class NonUSTabBarViewController: UIViewController, Subscriber, Trackable, UITabB
     private let largeFontSize: CGFloat = 24.0
     private let smallFontSize: CGFloat = 12.0
     private var hasInitialized = false
-    private var didLoginLitecoinCardAccount = false
+    private var didLoginSumcoinCardAccount = false
     private let dateFormatter = DateFormatter()
     private let equalsLabel = UILabel(font: .barlowMedium(size: 12), color: .whiteTint)
     private var regularConstraints: [NSLayoutConstraint] = []

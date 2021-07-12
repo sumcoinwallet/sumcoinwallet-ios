@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 4/1/21.
-//  Copyright © 2021 Litecoin Foundation. All rights reserved.
+//  Copyright © 2021 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -17,7 +17,7 @@ class ForgotAlertViewModel: ObservableObject {
     var emailString: String = ""
     
     @Published
-    var detailMessage: String = S.LitecoinCard.resetPasswordDetail
+    var detailMessage: String = S.SumcoinCard.resetPasswordDetail
     
     init() { }
     

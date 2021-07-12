@@ -2,7 +2,7 @@
 //  LoginCardAlertView.swift
 //
 //  Created by Kerry Washington on 12/26/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 
 
 import SwiftUI
@@ -26,7 +26,7 @@ struct LoginCardAlertView<Presenting>: View where Presenting: View {
                         self.presenting.disabled(isShowingLoginAlert)
                     
                     VStack {
-                        Text(didFail ? S.LitecoinCard.failedlogin : self.mainMessage)
+                        Text(didFail ? S.SumcoinCard.failedlogin : self.mainMessage)
                             .padding()
                             .font(Font(UIFont.customMedium(size: 16.0)))
                             .foregroundColor(Color(UIColor.liteWalletBlue))

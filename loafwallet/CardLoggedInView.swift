@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/26/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import SwiftUI
@@ -43,12 +43,12 @@ struct CardLoggedInView: View {
                 Button(action: {
                     shouldLogout = true
                     viewModel.isLoggedIn = false
-                    NotificationCenter.default.post(name: .LitecoinCardLogoutNotification,
+                    NotificationCenter.default.post(name: .SumcoinCardLogoutNotification,
                                                     object: nil,
                                                     userInfo: nil)
 
                 }) {
-                    Text(S.LitecoinCard.logout)
+                    Text(S.SumcoinCard.logout)
                         .frame(minWidth: 0,
                                maxWidth: geometry.size.width * 0.7,
                                alignment: .center)
@@ -61,7 +61,7 @@ struct CardLoggedInView: View {
                  
                 //MARK: - Card Balance
                 
-                Text(S.LitecoinCard.cardBalance)
+                Text(S.SumcoinCard.cardBalance)
                     .frame(minWidth: 0,
                            maxWidth: geometry.size.width * 0.4,
                            alignment: .center)

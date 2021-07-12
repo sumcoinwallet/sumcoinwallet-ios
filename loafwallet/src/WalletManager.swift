@@ -43,8 +43,8 @@ extension NSNotification.Name {
     public static let WalletSyncStoppedNotification = NSNotification.Name("WalletSyncStopped")
     public static let WalletDidWipeNotification = NSNotification.Name("WalletDidWipe")
     public static let DidDeleteWalletDBNotification = NSNotification.Name("DidDeleteDatabase")
-    public static let LitecoinCardLoginNotification = NSNotification.Name("LitecoinCardLogin")
-    public static let LitecoinCardLogoutNotification = NSNotification.Name("LitecoinCardLogout")
+    public static let SumcoinCardLoginNotification = NSNotification.Name("SumcoinCardLogin")
+    public static let SumcoinCardLogoutNotification = NSNotification.Name("SumcoinCardLogout")
 
 
 }

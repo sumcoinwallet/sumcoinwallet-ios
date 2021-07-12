@@ -131,13 +131,13 @@
 "BuyCenter.BitrefillTitle" = "ビットリフィル";
 
 /* Changelly buy financial details */
-"BuyCenter.changellyFinancialDetails" = "•他の暗号のLitecoinを変更  \n•IDは不要\n•クレジットカードで購入 \n•グローバルな補償範囲";
+"BuyCenter.changellyFinancialDetails" = "•他の暗号のSumcoinを変更  \n•IDは不要\n•クレジットカードで購入 \n•グローバルな補償範囲";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "Changelly";
 
 /* Buy Modal Title */
-"BuyCenter.ModalTitle" = "Litecoin を購入する";
+"BuyCenter.ModalTitle" = "Sumcoin を購入する";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "•多くの法定紙幣ペアでLTCを購入する\n•複数の方法で支払う\n•グローバル決済プロバイダー";
@@ -146,13 +146,13 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "•5分でLitecoinを入手！\n •クレジットカードでLitecoinを購入 \n•パスポートまたは州ID";
+"BuyCenter.simplexFinancialDetails" = "•5分でSumcoinを入手！\n •クレジットカードでSumcoinを購入 \n•パスポートまたは州ID";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "シンプレックス";
 
 /* Buy Center Title */
-"BuyCenter.title" = "Litecoin を購入する";
+"BuyCenter.title" = "Sumcoin を購入する";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "ご自身のIDをこのボックス内で中央に配置してください";
@@ -208,7 +208,7 @@
 /* No comment provided by engineer. */
 "Copy" = "コピー";
 
-/* Litecoin denomination picker label */
+/* Sumcoin denomination picker label */
 "DefaultCurrency.bitcoinLabel" = "リテコインの表示単位";
 
 /* Label to pick fiat */
@@ -286,8 +286,8 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "歴史";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "現在のLTC値";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "現在のLTC値";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "秘密鍵の残高確認中...";
@@ -371,127 +371,127 @@
 "JailbreakWarnings.wipe" = "完全削除";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "カード";
+"SumcoinCard.barItemTitle" = "カード";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "カード残高";
+"SumcoinCard.cardBalance" = "カード残高";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "-登録とログイン\n-利用可能なカード残高\n- パスワードを再設定する\n-Litewalletへの転送なし\n-米国のみ";
+"SumcoinCard.Disclaimer.bullets" = "-登録とログイン\n-利用可能なカード残高\n- パスワードを再設定する\n-Litewalletへの転送なし\n-米国のみ";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "ライトコインカードは現在、ライトウォレットの機能が制限されています。";
+"SumcoinCard.Disclaimer.description" = "ライトコインカードは現在、ライトウォレットの機能が制限されています。";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "フルアクセスについては、litecoin.getblockcard.comにアクセスしてください";
+"SumcoinCard.Disclaimer.referral" = "フルアクセスについては、litecoin.getblockcard.comにアクセスしてください";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "ライトコインカードベータ";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "ライトコインカードベータ";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "ログインに失敗しました";
+"SumcoinCard.failed.login" = "ログインに失敗しました";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "パスワードをお忘れですか？";
+"SumcoinCard.forgotPassword" = "パスワードをお忘れですか？";
 
 /* Login */
-"LitecoinCard.login" = "ログインする";
+"SumcoinCard.login" = "ログインする";
 
 /* Logout */
-"LitecoinCard.logout" = "ログアウト";
+"SumcoinCard.logout" = "ログアウト";
 
 /* Register */
-"LitecoinCard.registerCard" = "登録";
+"SumcoinCard.registerCard" = "登録";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "ライトコインカードに登録";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "ライトコインカードに登録";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "ユーザーを登録しています...";
+"SumcoinCard.registering.user" = "ユーザーを登録しています...";
 
 /* address */
-"LitecoinCard.Registration.address" = "住所";
+"SumcoinCard.Registration.address" = "住所";
 
 /* city */
-"LitecoinCard.Registration.city" = "市";
+"SumcoinCard.Registration.city" = "市";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "パスワードを認証する";
+"SumcoinCard.Registration.confirmPassword" = "パスワードを認証する";
 
 /* country */
-"LitecoinCard.Registration.country" = "国";
+"SumcoinCard.Registration.country" = "国";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "ファーストネーム";
+"SumcoinCard.Registration.firstName" = "ファーストネーム";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "識別";
+"SumcoinCard.Registration.identification" = "識別";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "顧客を知る IDタイプ";
+"SumcoinCard.Registration.kycIDNumber" = "顧客を知る IDタイプ";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "IDタイプ";
+"SumcoinCard.Registration.kycIDType" = "IDタイプ";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "苗字";
+"SumcoinCard.Registration.lastName" = "苗字";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "携帯電話番号";
+"SumcoinCard.Registration.mobileNumber" = "携帯電話番号";
 
 /* password */
-"LitecoinCard.Registration.password" = "パスワード";
+"SumcoinCard.Registration.password" = "パスワード";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "州/県";
+"SumcoinCard.Registration.stateProvince" = "州/県";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "Eメール";
+"SumcoinCard.Registration.usernameEmail" = "Eメール";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "空であってはなりません";
+"SumcoinCard.Registration.ValidationError.empty" = "空であってはなりません";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "無効なメールアドレス";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "無効なメールアドレス";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "携帯電話番号は10桁以上である必要があります";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "携帯電話番号は10桁以上である必要があります";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "携帯電話番号が必要です";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "携帯電話番号が必要です";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "パスワードは6文字以上である必要があります";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "パスワードは6文字以上である必要があります";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "パスワードは6文字を超え、少なくとも1文字と1つの数字を使用する必要があります";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "パスワードは6文字を超え、少なくとも1文字と1つの数字を使用する必要があります";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "パスワードが必要";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "パスワードが必要";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "必須フィールド";
+"SumcoinCard.Registration.ValidationError.requiredField" = "必須フィールド";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "郵便番号";
+"SumcoinCard.Registration.zipPostCode" = "郵便番号";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "登録に問題がありました。 データを確認して、もう一度お試しください。";
+"SumcoinCard.registrationFailure" = "登録に問題がありました。 データを確認して、もう一度お試しください。";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "登録しました！ メールを確認してください。 その後、ログインに戻ります。";
+"SumcoinCard.registrationSuccess" = "登録しました！ メールを確認してください。 その後、ログインに戻ります。";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "パスワードを再設定する";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "パスワードを再設定する";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "ライトコインカードアカウントに関連付けられているメールアドレスを入力し、リセット手順が記載されたメールを探します。";
+"SumcoinCard.resetPasswordDetail" = "ライトコインカードアカウントに関連付けられているメールアドレスを入力し、リセット手順が記載されたメールを探します。";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot にアクセスしてパスワードをリセットしてください。";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot にアクセスしてパスワードをリセットしてください。";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置情報サービスが無効化されています。";
@@ -517,7 +517,7 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "ウォレットを管理";
 
-/* Buy Litecoin title */
+/* Buy Sumcoin title */
 "MenuButton.buy" = "リテコインを購入";
 
 /* Menu button title */
@@ -730,7 +730,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "初めに数量を入力してください。";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "金額のリクエスト";
 
 /* Alert action button label */
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "ペーストボードが空です";
 
 /* Enter LTC Address */
-"Send.enterLTCAddress" = "Litecoinのアドレスを入力してください。";
+"Send.enterLTCAddress" = "Sumcoinのアドレスを入力してください。";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "ネットワーク手数料: %1$@";
@@ -1018,8 +1018,8 @@
 /* Start view message */
 "StartViewController.message" = "最も安全にリテコインを使う手段。";
 
-/* Support the Litecoin Foundation */
-"SupportTheFoundation.title" = "Litecoin基金を支援する";
+/* Support the Sumcoin Wallet */
+"SupportTheFoundation.title" = "Sumcoin基金を支援する";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "接続しています...";

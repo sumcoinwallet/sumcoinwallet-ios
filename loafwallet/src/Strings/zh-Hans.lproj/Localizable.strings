@@ -131,7 +131,7 @@
 "BuyCenter.BitrefillTitle" = "Bitrefill";
 
 /* Changelly buy financial details */
-"BuyCenter.changellyFinancialDetails" = "•将Litecoin更改为其他加密货币 \n •无需ID \n •通过信用卡购买 \n •全球覆盖";
+"BuyCenter.changellyFinancialDetails" = "•将Sumcoin更改为其他加密货币 \n •无需ID \n •通过信用卡购买 \n •全球覆盖";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "Changelly";
@@ -146,7 +146,7 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "• 5分钟内获得Litecoin！\n •通过信用卡购买Litecoin \n •护照或州ID";
+"BuyCenter.simplexFinancialDetails" = "• 5分钟内获得Sumcoin！\n •通过信用卡购买Sumcoin \n •护照或州ID";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "Simplex";
@@ -208,7 +208,7 @@
 /* No comment provided by engineer. */
 "Copy" = "复制";
 
-/* Litecoin denomination picker label */
+/* Sumcoin denomination picker label */
 "DefaultCurrency.bitcoinLabel" = "莱特币显示单位";
 
 /* Label to pick fiat */
@@ -286,8 +286,8 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "历史";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "当前的LTC值";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "当前的LTC值";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "正在查看私人密钥余额...";
@@ -371,127 +371,127 @@
 "JailbreakWarnings.wipe" = "擦除";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "卡";
+"SumcoinCard.barItemTitle" = "卡";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "卡余额";
+"SumcoinCard.cardBalance" = "卡余额";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "-注册和登录\n-可用卡余额\n-重置密码\n-不能转移到Litewallet\n-仅限美国";
+"SumcoinCard.Disclaimer.bullets" = "-注册和登录\n-可用卡余额\n-重置密码\n-不能转移到Litewallet\n-仅限美国";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "Litecoin卡当前在Litewallet中具有有限的功能。";
+"SumcoinCard.Disclaimer.description" = "Sumcoin卡当前在Litewallet中具有有限的功能。";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "访问litecoin.getblockcard.com以获取完全访问权限";
+"SumcoinCard.Disclaimer.referral" = "访问litecoin.getblockcard.com以获取完全访问权限";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "Litecoin卡测试版";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "Sumcoin卡测试版";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "登录失败";
+"SumcoinCard.failed.login" = "登录失败";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "忘记密码？";
+"SumcoinCard.forgotPassword" = "忘记密码？";
 
 /* Login */
-"LitecoinCard.login" = "登录";
+"SumcoinCard.login" = "登录";
 
 /* Logout */
-"LitecoinCard.logout" = "登出";
+"SumcoinCard.logout" = "登出";
 
 /* Register */
-"LitecoinCard.registerCard" = "寄存器";
+"SumcoinCard.registerCard" = "寄存器";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "注册莱特币卡";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "注册莱特币卡";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "正在注册用户...";
+"SumcoinCard.registering.user" = "正在注册用户...";
 
 /* address */
-"LitecoinCard.Registration.address" = "街道地址";
+"SumcoinCard.Registration.address" = "街道地址";
 
 /* city */
-"LitecoinCard.Registration.city" = "市";
+"SumcoinCard.Registration.city" = "市";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "确认密码";
+"SumcoinCard.Registration.confirmPassword" = "确认密码";
 
 /* country */
-"LitecoinCard.Registration.country" = "国家";
+"SumcoinCard.Registration.country" = "国家";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "名字";
+"SumcoinCard.Registration.firstName" = "名字";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "身份证明";
+"SumcoinCard.Registration.identification" = "身份证明";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "了解你的顾客 证件类型";
+"SumcoinCard.Registration.kycIDNumber" = "了解你的顾客 证件类型";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "ID 유형";
+"SumcoinCard.Registration.kycIDType" = "ID 유형";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "姓";
+"SumcoinCard.Registration.lastName" = "姓";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "手机号码";
+"SumcoinCard.Registration.mobileNumber" = "手机号码";
 
 /* password */
-"LitecoinCard.Registration.password" = "密码";
+"SumcoinCard.Registration.password" = "密码";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "州/省";
+"SumcoinCard.Registration.stateProvince" = "州/省";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "ID 유형";
+"SumcoinCard.Registration.usernameEmail" = "ID 유형";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "不能为空";
+"SumcoinCard.Registration.ValidationError.empty" = "不能为空";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "无效的邮件地址";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "无效的邮件地址";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "手机号码必须至少有10位数字";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "手机号码必须至少有10位数字";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "手机号码为必填项";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "手机号码为必填项";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "密码必须至少包含6个字符";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "密码必须至少包含6个字符";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "密码必须超过6个字符，并且至少包含一个字符和一个数字字符";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "密码必须超过6个字符，并且至少包含一个字符和一个数字字符";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "密码是必需的";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "密码是必需的";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "必填项目";
+"SumcoinCard.Registration.ValidationError.requiredField" = "必填项目";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "邮编";
+"SumcoinCard.Registration.zipPostCode" = "邮编";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "您的注册有问题。 请检查您的数据，然后重试。";
+"SumcoinCard.registrationFailure" = "您的注册有问题。 请检查您的数据，然后重试。";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "您已经注册！ 请检查并确认您的电子邮件。 然后返回登录。";
+"SumcoinCard.registrationSuccess" = "您已经注册！ 请检查并确认您的电子邮件。 然后返回登录。";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "重设密码";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "重设密码";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "输入与您的Litecoin卡帐户关联的电子邮件地址，并查找包含重置说明的电子邮件。";
+"SumcoinCard.resetPasswordDetail" = "输入与您的Sumcoin卡帐户关联的电子邮件地址，并查找包含重置说明的电子邮件。";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "请访问 https://litecoin.dashboard.getblockcard.com/password/forgot 重置您的密码。";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "请访问 https://litecoin.dashboard.getblockcard.com/password/forgot 重置您的密码。";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置服务被禁用。";
@@ -517,7 +517,7 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "管理钱包";
 
-/* Buy Litecoin title */
+/* Buy Sumcoin title */
 "MenuButton.buy" = "购买莱特币";
 
 /* Menu button title */
@@ -730,7 +730,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "请先输入金额。";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "申请金额";
 
 /* Alert action button label */
@@ -772,7 +772,7 @@
 /* Warning Empty Wipe title */
 "resetTitle" = "空钱包重置";
 
-/* Scan Litecoin address camera flash toggle */
+/* Scan Sumcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "相机闪光灯";
 
 /* Complete filter label */
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "粘贴板为空";
 
 /* Enter LTC Address */
-"Send.enterLTCAddress" = "输入一个Litecoin地址";
+"Send.enterLTCAddress" = "输入一个Sumcoin地址";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "网络费：%1$@";
@@ -1018,8 +1018,8 @@
 /* Start view message */
 "StartViewController.message" = "使用莱特币最安全且最可靠的方式。";
 
-/* Support the Litecoin Foundation */
-"SupportTheFoundation.title" = "支持Litecoin基金会";
+/* Support the Sumcoin Wallet */
+"SupportTheFoundation.title" = "支持Sumcoin基金会";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "正在连线...";

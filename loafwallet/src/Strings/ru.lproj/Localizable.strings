@@ -131,13 +131,13 @@
 "BuyCenter.BitrefillTitle" = "Bitrefill";
 
 /* Changelly buy financial details */
-"BuyCenter.changellyFinancialDetails" = "• Поменять Litecoin на другие криптографии \n • Идентификатор не требуется \n • Купить с помощью кредитной карты \n • Глобальное покрытие";
+"BuyCenter.changellyFinancialDetails" = "• Поменять Sumcoin на другие криптографии \n • Идентификатор не требуется \n • Купить с помощью кредитной карты \n • Глобальное покрытие";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "Changelly";
 
 /* Buy Modal Title */
-"BuyCenter.ModalTitle" = "Купить Litecoin";
+"BuyCenter.ModalTitle" = "Купить Sumcoin";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "• Покупайте LTC с помощью множества фиатных пар\n• Оплачивайте несколькими способами\n• Глобальный платежный провайдер";
@@ -146,13 +146,13 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "• Получить Litecoin за 5 минут! \n • Купить Litecoin с помощью кредитной карты \n • Паспорт или удостоверение личности штата";
+"BuyCenter.simplexFinancialDetails" = "• Получить Sumcoin за 5 минут! \n • Купить Sumcoin с помощью кредитной карты \n • Паспорт или удостоверение личности штата";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "Simplex";
 
 /* Buy Center Title */
-"BuyCenter.title" = "Купить Litecoin";
+"BuyCenter.title" = "Купить Sumcoin";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "Поместите ваш ID-номер в центр данного поля";
@@ -208,7 +208,7 @@
 /* No comment provided by engineer. */
 "Copy" = "копия";
 
-/* Litecoin denomination picker label */
+/* Sumcoin denomination picker label */
 "DefaultCurrency.bitcoinLabel" = "Единица отображения биткойна";
 
 /* Label to pick fiat */
@@ -286,8 +286,8 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "ИСТОРИЯ";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "Текущее значение LTC в";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "Текущее значение LTC в";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Проверяем баланс по персональному ключу...";
@@ -371,127 +371,127 @@
 "JailbreakWarnings.wipe" = "Очистить";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "КАРТА";
+"SumcoinCard.barItemTitle" = "КАРТА";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "Баланс карты";
+"SumcoinCard.cardBalance" = "Баланс карты";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "- Регистрация и вход\n- Доступный баланс карты\n- Сброс пароля\n- Без перевода на Litewallet\n- Только США";
+"SumcoinCard.Disclaimer.bullets" = "- Регистрация и вход\n- Доступный баланс карты\n- Сброс пароля\n- Без перевода на Litewallet\n- Только США";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "Litecoin Card в настоящее время имеет ограниченную функциональность в Litewallet.";
+"SumcoinCard.Disclaimer.description" = "Sumcoin Card в настоящее время имеет ограниченную функциональность в Litewallet.";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "Посетите litecoin.getblockcard.com для полного доступа";
+"SumcoinCard.Disclaimer.referral" = "Посетите litecoin.getblockcard.com для полного доступа";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "Бета-версия карты Litecoin";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "Бета-версия карты Sumcoin";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "Ошибка входа";
+"SumcoinCard.failed.login" = "Ошибка входа";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "Забыли пароль?";
+"SumcoinCard.forgotPassword" = "Забыли пароль?";
 
 /* Login */
-"LitecoinCard.login" = "Авторизоваться";
+"SumcoinCard.login" = "Авторизоваться";
 
 /* Logout */
-"LitecoinCard.logout" = "Выйти";
+"SumcoinCard.logout" = "Выйти";
 
 /* Register */
-"LitecoinCard.registerCard" = "регистр";
+"SumcoinCard.registerCard" = "регистр";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "Зарегистрируйтесь для получения карты Litecoin";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "Зарегистрируйтесь для получения карты Sumcoin";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "Регистрация пользователя ...";
+"SumcoinCard.registering.user" = "Регистрация пользователя ...";
 
 /* address */
-"LitecoinCard.Registration.address" = "Адрес улицы";
+"SumcoinCard.Registration.address" = "Адрес улицы";
 
 /* city */
-"LitecoinCard.Registration.city" = "город";
+"SumcoinCard.Registration.city" = "город";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "Подтвердите Пароль";
+"SumcoinCard.Registration.confirmPassword" = "Подтвердите Пароль";
 
 /* country */
-"LitecoinCard.Registration.country" = "Страна";
+"SumcoinCard.Registration.country" = "Страна";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "Имя";
+"SumcoinCard.Registration.firstName" = "Имя";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "Идентификация";
+"SumcoinCard.Registration.identification" = "Идентификация";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "Знай своего клиента Тип ID";
+"SumcoinCard.Registration.kycIDNumber" = "Знай своего клиента Тип ID";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "Тип ID";
+"SumcoinCard.Registration.kycIDType" = "Тип ID";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "фамилия";
+"SumcoinCard.Registration.lastName" = "фамилия";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "Номер мобильного";
+"SumcoinCard.Registration.mobileNumber" = "Номер мобильного";
 
 /* password */
-"LitecoinCard.Registration.password" = "пароль";
+"SumcoinCard.Registration.password" = "пароль";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "Штат / провинция";
+"SumcoinCard.Registration.stateProvince" = "Штат / провинция";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "Эл. адрес";
+"SumcoinCard.Registration.usernameEmail" = "Эл. адрес";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "Не должно быть пустым";
+"SumcoinCard.Registration.ValidationError.empty" = "Не должно быть пустым";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "Неверный адрес электронной почты";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "Неверный адрес электронной почты";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Номер мобильного телефона должен состоять не менее чем из 10 цифр.";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "Номер мобильного телефона должен состоять не менее чем из 10 цифр.";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "Требуется номер мобильного телефона";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "Требуется номер мобильного телефона";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Пароль должен состоять не менее чем из 6 символов.";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "Пароль должен состоять не менее чем из 6 символов.";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "Пароль должен содержать более 6 символов, по крайней мере, один символ и один цифровой символ.";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "Пароль должен содержать более 6 символов, по крайней мере, один символ и один цифровой символ.";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "Необходим пароль";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "Необходим пароль";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "Обязательное поле";
+"SumcoinCard.Registration.ValidationError.requiredField" = "Обязательное поле";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "Почтовый индекс";
+"SumcoinCard.Registration.zipPostCode" = "Почтовый индекс";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "При регистрации возникла проблема. Пожалуйста, проверьте свои данные и попробуйте еще раз.";
+"SumcoinCard.registrationFailure" = "При регистрации возникла проблема. Пожалуйста, проверьте свои данные и попробуйте еще раз.";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "Вы зарегистрировались! Пожалуйста, проверьте и подтвердите свою электронную почту. Затем вернитесь к логину.";
+"SumcoinCard.registrationSuccess" = "Вы зарегистрировались! Пожалуйста, проверьте и подтвердите свою электронную почту. Затем вернитесь к логину.";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "Сброс пароля";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "Сброс пароля";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "Введите адрес электронной почты, связанный с вашей учетной записью Litecoin Card, и найдите письмо с инструкциями по сбросу.";
+"SumcoinCard.resetPasswordDetail" = "Введите адрес электронной почты, связанный с вашей учетной записью Sumcoin Card, и найдите письмо с инструкциями по сбросу.";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "Посетите https://litecoin.dashboard.getblockcard.com/password/forgot, чтобы сбросить пароль.";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "Посетите https://litecoin.dashboard.getblockcard.com/password/forgot, чтобы сбросить пароль.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Сервисы определения местоположения отключены.";
@@ -517,8 +517,8 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "Управление кошельком";
 
-/* Buy Litecoin title */
-"MenuButton.buy" = "Купить Litecoin";
+/* Buy Sumcoin title */
+"MenuButton.buy" = "Купить Sumcoin";
 
 /* Menu button title */
 "MenuButton.customer.support" = "Служба поддержки";
@@ -730,7 +730,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "Сначала введите сумму.";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "Запросить сумму";
 
 /* Alert action button label */
@@ -772,7 +772,7 @@
 /* Warning Empty Wipe title */
 "resetTitle" = "Сбросить пустой кошелек";
 
-/* Scan Litecoin address camera flash toggle */
+/* Scan Sumcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Вспышка камеры";
 
 /* Complete filter label */
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "Буфер обмена пуст";
 
 /* Enter LTC Address */
-"Send.enterLTCAddress" = "Введите адрес Litecoin";
+"Send.enterLTCAddress" = "Введите адрес Sumcoin";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "Комиссия сети: %1$@";
@@ -1018,8 +1018,8 @@
 /* Start view message */
 "StartViewController.message" = "Самый надежный и безопасный способ использования биткойна.";
 
-/* Support the Litecoin Foundation */
-"SupportTheFoundation.title" = "Поддержите фонд Litecoin";
+/* Support the Sumcoin Wallet */
+"SupportTheFoundation.title" = "Поддержите фонд Sumcoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Подключение ...";

@@ -277,7 +277,7 @@
 		C31891C326733FD400ECE25C /* TabBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31891C226733FD400ECE25C /* TabBarViewControllerTests.swift */; };
 		C32142EA25C97CD900BECCD0 /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32142E925C97CD900BECCD0 /* TransactionCellView.swift */; };
 		C32142FA25C988C800BECCD0 /* TransactionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32142F925C988C800BECCD0 /* TransactionCellViewModel.swift */; };
-		C3270B99259BF7F20073DA7B /* LitecoinCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3270B98259BF7F20073DA7B /* LitecoinCardUser.swift */; };
+		C3270B99259BF7F20073DA7B /* SumcoinCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3270B98259BF7F20073DA7B /* SumcoinCardUser.swift */; };
 		C32DAE0725925B7E003FC978 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DAE0625925B7E003FC978 /* Color+Extension.swift */; };
 		C32DAE9125929492003FC978 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DAE9025929492003FC978 /* CardViewController.swift */; };
 		C32DB42D264847FD00017D26 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DB42C264847FD00017D26 /* CardTests.swift */; };
@@ -302,7 +302,7 @@
 		C3B7C3B9255EABBF00E98A64 /* SupportSafariViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C3B8255EABBF00E98A64 /* SupportSafariViewModel.swift */; };
 		C3B7C3C2255EAF1200E98A64 /* SupportSafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */; };
 		C3B7C3EE255FF59200E98A64 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C3ED255FF59200E98A64 /* ConstantsTests.swift */; };
-		C3B7C43F25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C43E25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift */; };
+		C3B7C43F25620D4400E98A64 /* SupportSumcoinWalletViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7C43E25620D4400E98A64 /* SupportSumcoinWalletViewModelTests.swift */; };
 		C3BD49B72595420A00D97079 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49B62595420A00D97079 /* RegistrationViewModel.swift */; };
 		C3BD49C02595423400D97079 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49BF2595423400D97079 /* RegistrationView.swift */; };
 		C3BD49C925954A1B00D97079 /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD49C825954A1B00D97079 /* ForgotView.swift */; };
@@ -320,8 +320,8 @@
 		C3EFA9A12650807B005C59B5 /* LockScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFA9A02650807B005C59B5 /* LockScreenHeaderView.swift */; };
 		C3EFA9A3265080FF005C59B5 /* LockScreenHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFA9A2265080FF005C59B5 /* LockScreenHeaderViewModel.swift */; };
 		C3EFA9A62651A808005C59B5 /* LockScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFA9A52651A808005C59B5 /* LockScreenTests.swift */; };
-		C3F55645255A193D005F786F /* SupportLitecoinFoundationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F55644255A193D005F786F /* SupportLitecoinFoundationView.swift */; };
-		C3F55655255A195B005F786F /* SupportLitecoinFoundationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F55654255A195B005F786F /* SupportLitecoinFoundationViewModel.swift */; };
+		C3F55645255A193D005F786F /* SupportSumcoinWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F55644255A193D005F786F /* SupportSumcoinWalletView.swift */; };
+		C3F55655255A195B005F786F /* SupportSumcoinWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F55654255A195B005F786F /* SupportSumcoinWalletViewModel.swift */; };
 		C3F7BCDC25FEC6AD00694C28 /* FailedAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7BCD925FEC6AC00694C28 /* FailedAlertView.swift */; };
 		C3F7BCDD25FEC6AD00694C28 /* DomainResolutionFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7BCDA25FEC6AC00694C28 /* DomainResolutionFailure.swift */; };
 		C3F7BCDE25FEC6AD00694C28 /* AlertFailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7BCDB25FEC6AC00694C28 /* AlertFailureView.swift */; };
@@ -1464,7 +1464,7 @@
 		C31891C226733FD400ECE25C /* TabBarViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerTests.swift; sourceTree = "<group>"; };
 		C32142E925C97CD900BECCD0 /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
 		C32142F925C988C800BECCD0 /* TransactionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModel.swift; sourceTree = "<group>"; };
-		C3270B98259BF7F20073DA7B /* LitecoinCardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitecoinCardUser.swift; sourceTree = "<group>"; };
+		C3270B98259BF7F20073DA7B /* SumcoinCardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumcoinCardUser.swift; sourceTree = "<group>"; };
 		C32DAE0625925B7E003FC978 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C32DAE9025929492003FC978 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C32DB42C264847FD00017D26 /* CardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
@@ -1490,7 +1490,7 @@
 		C3B7C3B8255EABBF00E98A64 /* SupportSafariViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSafariViewModel.swift; sourceTree = "<group>"; };
 		C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSafariView.swift; sourceTree = "<group>"; };
 		C3B7C3ED255FF59200E98A64 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
-		C3B7C43E25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLitecoinFoundationViewModelTests.swift; sourceTree = "<group>"; };
+		C3B7C43E25620D4400E98A64 /* SupportSumcoinWalletViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSumcoinWalletViewModelTests.swift; sourceTree = "<group>"; };
 		C3BD49B62595420A00D97079 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		C3BD49BF2595423400D97079 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C3BD49C825954A1B00D97079 /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
@@ -1508,8 +1508,8 @@
 		C3EFA9A02650807B005C59B5 /* LockScreenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenHeaderView.swift; sourceTree = "<group>"; };
 		C3EFA9A2265080FF005C59B5 /* LockScreenHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenHeaderViewModel.swift; sourceTree = "<group>"; };
 		C3EFA9A52651A808005C59B5 /* LockScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenTests.swift; sourceTree = "<group>"; };
-		C3F55644255A193D005F786F /* SupportLitecoinFoundationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLitecoinFoundationView.swift; sourceTree = "<group>"; };
-		C3F55654255A195B005F786F /* SupportLitecoinFoundationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLitecoinFoundationViewModel.swift; sourceTree = "<group>"; };
+		C3F55644255A193D005F786F /* SupportSumcoinWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSumcoinWalletView.swift; sourceTree = "<group>"; };
+		C3F55654255A195B005F786F /* SupportSumcoinWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSumcoinWalletViewModel.swift; sourceTree = "<group>"; };
 		C3F7BCD925FEC6AC00694C28 /* FailedAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedAlertView.swift; sourceTree = "<group>"; };
 		C3F7BCDA25FEC6AC00694C28 /* DomainResolutionFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainResolutionFailure.swift; sourceTree = "<group>"; };
 		C3F7BCDB25FEC6AC00694C28 /* AlertFailureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFailureView.swift; sourceTree = "<group>"; };
@@ -2178,11 +2178,11 @@
 		24470E4323A6088700ADDA27 /* Class Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C345D81325A8D50600657E30 /* LitecoinCardTests */,
+				C345D81325A8D50600657E30 /* SumcoinCardTests */,
 				24470E4423A608A700ADDA27 /* AmountTests.swift */,
 				2494037523AD35C000369261 /* BuyWKWebVCTests.swift */,
 				249C570423B51F9B009CB5A9 /* TransactionsViewControllerTests.swift */,
-				C3B7C43E25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift */,
+				C3B7C43E25620D4400E98A64 /* SupportSumcoinWalletViewModelTests.swift */,
 				C3D783BF2565ECF60004FF70 /* UnstoppableDomainViewModelTests.swift */,
 				C31891C0267338D300ECE25C /* NonUSTabBarViewControllerTests.swift */,
 				C31891C226733FD400ECE25C /* TabBarViewControllerTests.swift */,
@@ -3126,7 +3126,7 @@
 		C3270B97259BF7BE0073DA7B /* CardModels */ = {
 			isa = PBXGroup;
 			children = (
-				C3270B98259BF7F20073DA7B /* LitecoinCardUser.swift */,
+				C3270B98259BF7F20073DA7B /* SumcoinCardUser.swift */,
 				C3BF74D826114969001CE2BB /* CardWalletDetails.swift */,
 			);
 			name = CardModels;
@@ -3140,7 +3140,7 @@
 			path = "Card Tests";
 			sourceTree = "<group>";
 		};
-		C345D81325A8D50600657E30 /* LitecoinCardTests */ = {
+		C345D81325A8D50600657E30 /* SumcoinCardTests */ = {
 			isa = PBXGroup;
 			children = (
 				C345D81425A8D52600657E30 /* LoginViewModelTests.swift */,
@@ -3148,7 +3148,7 @@
 				C345D83625A8D57E00657E30 /* AnimatedCardViewModelTests.swift */,
 				C345D82425A8D54200657E30 /* RegistrationViewModelTests.swift */,
 			);
-			path = LitecoinCardTests;
+			path = SumcoinCardTests;
 			sourceTree = "<group>";
 		};
 		C3543A25264AFE190005D17A /* Settings */ = {
@@ -3168,7 +3168,7 @@
 				C32142E825C97CB900BECCD0 /* Transactions */,
 				C3B7C3C1255EAF1200E98A64 /* SupportSafariView.swift */,
 				C3BD4A692597E1E900D97079 /* CardLoggedInView.swift */,
-				C3F55643255A1916005F786F /* SupportLitecoinFoundation */,
+				C3F55643255A1916005F786F /* SupportSumcoinWallet */,
 				C35ABD08257404D2002BB9BB /* Partners */,
 				C35ABD0925740518002BB9BB /* About */,
 				C3D783A52565EA1E0004FF70 /* Unstoppable */,
@@ -3222,13 +3222,13 @@
 			path = "Lock Screen Tests";
 			sourceTree = "<group>";
 		};
-		C3F55643255A1916005F786F /* SupportLitecoinFoundation */ = {
+		C3F55643255A1916005F786F /* SupportSumcoinWallet */ = {
 			isa = PBXGroup;
 			children = (
-				C3F55644255A193D005F786F /* SupportLitecoinFoundationView.swift */,
-				C3F55654255A195B005F786F /* SupportLitecoinFoundationViewModel.swift */,
+				C3F55644255A193D005F786F /* SupportSumcoinWalletView.swift */,
+				C3F55654255A195B005F786F /* SupportSumcoinWalletViewModel.swift */,
 			);
-			name = SupportLitecoinFoundation;
+			name = SupportSumcoinWallet;
 			sourceTree = "<group>";
 		};
 		C3F7BCD825FEC69B00694C28 /* Alerts */ = {
@@ -3792,7 +3792,7 @@
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Litecoin Foundation";
+				ORGANIZATIONNAME = "Sumcoin Wallet";
 				TargetAttributes = {
 					22A9A9951DF63426000F0016 = {
 						CreatedOnToolsVersion = 8.1;
@@ -4097,7 +4097,7 @@
 				24470E3023A5F55700ADDA27 /* BRHTTPServerTests.swift in Sources */,
 				24470E3A23A5FF5700ADDA27 /* TestHelpers.swift in Sources */,
 				C345D83725A8D57E00657E30 /* AnimatedCardViewModelTests.swift in Sources */,
-				C3B7C43F25620D4400E98A64 /* SupportLitecoinFoundationViewModelTests.swift in Sources */,
+				C3B7C43F25620D4400E98A64 /* SupportSumcoinWalletViewModelTests.swift in Sources */,
 				C345D82525A8D54200657E30 /* RegistrationViewModelTests.swift in Sources */,
 				24470E3623A5FDE800ADDA27 /* PhraseTests.swift in Sources */,
 				C308993F2616124800EE6A40 /* CardWalletTests.swift in Sources */,
@@ -4319,7 +4319,7 @@
 				CEC6AA441DEFCDE900EE5AFD /* ModalViewController.swift in Sources */,
 				C3F7BCDC25FEC6AD00694C28 /* FailedAlertView.swift in Sources */,
 				24313C8423820C4B00A83F69 /* ReceiveLTCViewController.swift in Sources */,
-				C3F55655255A195B005F786F /* SupportLitecoinFoundationViewModel.swift in Sources */,
+				C3F55655255A195B005F786F /* SupportSumcoinWalletViewModel.swift in Sources */,
 				CEEC70831E90C07C00EF788E /* Setting.swift in Sources */,
 				CE45C1F91E74B400002C3847 /* ManageWalletViewController.swift in Sources */,
 				CE92F9F01DED0C790046B516 /* PresentModalAnimator.swift in Sources */,
@@ -4354,7 +4354,7 @@
 				C3F7BCDD25FEC6AD00694C28 /* DomainResolutionFailure.swift in Sources */,
 				CE5E6C941EB7964900A476DB /* WalletDisabledView.swift in Sources */,
 				CEF3E8341DE57166007C0A9E /* AnimatableIcon.swift in Sources */,
-				C3F55645255A193D005F786F /* SupportLitecoinFoundationView.swift in Sources */,
+				C3F55645255A193D005F786F /* SupportSumcoinWalletView.swift in Sources */,
 				CEF61B161ED2056D00C7EA6A /* NumberFormatter+Additions.swift in Sources */,
 				CEF3E8321DE55540007C0A9E /* CheckView.swift in Sources */,
 				C3BD49C925954A1B00D97079 /* ForgotView.swift in Sources */,
@@ -4422,7 +4422,7 @@
 				CE6DCC301E6666470044257B /* NonScrollingCollectionView.swift in Sources */,
 				22A9A9471DF61945000F0016 /* BRAPIProxy.swift in Sources */,
 				CE20C9011DBBFFF800C8397A /* Actions.swift in Sources */,
-				C3270B99259BF7F20073DA7B /* LitecoinCardUser.swift in Sources */,
+				C3270B99259BF7F20073DA7B /* SumcoinCardUser.swift in Sources */,
 				CE20C9191DBE7B8200C8397A /* ReduxState.swift in Sources */,
 				CEEC70811E90C04700EF788E /* SeparatorCell.swift in Sources */,
 				CE20C8FE1DBB133A00C8397A /* SimpleRedux.swift in Sources */,

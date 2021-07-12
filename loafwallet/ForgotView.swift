@@ -1,7 +1,7 @@
 //  ForgotAlertView.swift
 //
 //  Created by Kerry Washington on 12/26/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 
 
 import SwiftUI
@@ -23,7 +23,7 @@ struct ForgotAlertView<Presenting>: View where Presenting: View {
     var mainMessage: String
     
     @State
-    var detailMessage: String = S.LitecoinCard.resetPasswordDetail
+    var detailMessage: String = S.SumcoinCard.resetPasswordDetail
     
     @State
     var didCheckEmailAddress: Bool = false
@@ -52,7 +52,7 @@ struct ForgotAlertView<Presenting>: View where Presenting: View {
                         }
                         .frame(minWidth: 0,maxWidth: .infinity, alignment: .trailing)
                         
-                        Text(S.LitecoinCard.forgotPassword)
+                        Text(S.SumcoinCard.forgotPassword)
                             .font(Font(UIFont.barlowSemiBold(size: 21.0)))
                             .padding(.bottom, 8)
                             .foregroundColor(Color.white)
@@ -85,12 +85,12 @@ struct ForgotAlertView<Presenting>: View where Presenting: View {
                                             self.isShowingForgot.toggle()
                                             UIApplication.shared.endEditing()
                                             didCheckEmailAddress = true
-                                            detailMessage = S.LitecoinCard.resetPasswordDetail
+                                            detailMessage = S.SumcoinCard.resetPasswordDetail
                                         })
                                     }
                                 }
                             }) {
-                                Text(S.LitecoinCard.resetPassword)
+                                Text(S.SumcoinCard.resetPassword)
                                     .frame(minWidth:0, maxWidth: .infinity)
                                     .font(Font(UIFont.barlowBold(size: 20.0)))
                                     .foregroundColor(Color.white)

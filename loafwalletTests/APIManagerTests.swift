@@ -3,7 +3,7 @@
 //  loafwalletTests
 //
 //  Created by Kerry Washington on 12/14/19.
-//  Copyright © 2019 Litecoin Foundation. All rights reserved.
+//  Copyright © 2019 Sumcoin Wallet. All rights reserved.
 //
 
 import XCTest
@@ -31,7 +31,7 @@ class APIManagerTests: XCTestCase {
     }
     
     
-    func testFetchLitecoinRateData() {
+    func testFetchSumcoinRateData() {
         
     }
      

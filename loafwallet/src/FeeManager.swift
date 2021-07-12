@@ -3,13 +3,13 @@
 //  litewallet
 //
 //  Created by Kerry Washington on 2/29/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 
 import Foundation
 import FirebaseAnalytics
  
 // this is the default that matches the mobile-api if the server is unavailable
-fileprivate let defaultEconomyFeePerKB: UInt64 = 2500 // From legacy minimum. default min is 1000 as Litecoin Core version v0.17.1 
+fileprivate let defaultEconomyFeePerKB: UInt64 = 2500 // From legacy minimum. default min is 1000 as Sumcoin Core version v0.17.1 
 fileprivate let defaultRegularFeePerKB: UInt64 = 25000
 fileprivate let defaultLuxuryFeePerKB: UInt64 = 66746
 fileprivate let defaultTimestamp: UInt64 = 1583015199122

@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/22/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -63,7 +63,7 @@ class CardViewController: UIViewController {
  
        // Listens for Login notification and updates the CardView
         notificationToken = NotificationCenter.default
-        .addObserver(forName: NSNotification.Name.LitecoinCardLoginNotification,
+        .addObserver(forName: NSNotification.Name.SumcoinCardLoginNotification,
                      object: nil,
                      queue: nil) { _ in
             
@@ -76,7 +76,7 @@ class CardViewController: UIViewController {
          
         // Listens for Logout notification and updates the CardView
         notificationToken = NotificationCenter.default
-        .addObserver(forName: NSNotification.Name.LitecoinCardLogoutNotification,
+        .addObserver(forName: NSNotification.Name.SumcoinCardLogoutNotification,
                      object: nil,
                      queue: nil) { _ in
             self.updateLoginStatusFromViewModel()

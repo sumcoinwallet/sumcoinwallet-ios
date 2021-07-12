@@ -131,13 +131,13 @@
 "BuyCenter.BitrefillTitle" = "Bitrefill";
 
 /* Changelly buy financial details */
-"BuyCenter.changellyFinancialDetails" = "• Litecoin wijzigen voor andere crypto's \n • Geen ID vereist \n • Kopen via creditcard \n • Wereldwijde dekking";
+"BuyCenter.changellyFinancialDetails" = "• Sumcoin wijzigen voor andere crypto's \n • Geen ID vereist \n • Kopen via creditcard \n • Wereldwijde dekking";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "Changelly";
 
 /* Buy Modal Title */
-"BuyCenter.ModalTitle" = "Koop Litecoin";
+"BuyCenter.ModalTitle" = "Koop Sumcoin";
 
 /* Moonpay buy financial details */
 "BuyCenter.moonpayFinancialDetails" = "• Koop LTC met veel fiat-paren\n• Betaal met meerdere methoden\n• Wereldwijde betalingsprovider";
@@ -146,13 +146,13 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "• Krijg Litecoin in 5 minuten! \n • Koop Litecoin via creditcard \n • Paspoort of staat ID";
+"BuyCenter.simplexFinancialDetails" = "• Krijg Sumcoin in 5 minuten! \n • Koop Sumcoin via creditcard \n • Paspoort of staat ID";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "Simplex";
 
 /* Buy Center Title */
-"BuyCenter.title" = "Koop Litecoin";
+"BuyCenter.title" = "Koop Sumcoin";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "Centreer je ID in het vak";
@@ -208,8 +208,8 @@
 /* No comment provided by engineer. */
 "Copy" = "Kopiëren";
 
-/* Litecoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Litecoin-eenheid";
+/* Sumcoin denomination picker label */
+"DefaultCurrency.bitcoinLabel" = "Sumcoin-eenheid";
 
 /* Label to pick fiat */
 "DefaultCurrency.chooseFiatLabel" = "Kiezen:";
@@ -286,14 +286,14 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "GESCHIEDENIS";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "Huidige LTC-waarde in";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "Huidige LTC-waarde in";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Persoonlijke sleutel balans checken...";
 
 /* Sweep private key confirmation message */
-"Import.confirm" = "%1$@ van deze persoonlijke sleutel naar je portemonnee sturen? Het Litecoin netwerk zal een heffing ontvangen van %2$@.";
+"Import.confirm" = "%1$@ van deze persoonlijke sleutel naar je portemonnee sturen? Het Sumcoin netwerk zal een heffing ontvangen van %2$@.";
 
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Deze persoonlijke sleutel zit al in je portemonnee.";
@@ -359,10 +359,10 @@
 "JailbreakWarnings.ignore" = "Negeren";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "APPARAAT BEVEILIGING BESCHADIGD\nElke 'jailbreak' app heeft toegang tot de sleutelhanger data van Litewallet en kan hiermee je Litecoins stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.";
+"JailbreakWarnings.messageWithBalance" = "APPARAAT BEVEILIGING BESCHADIGD\nElke 'jailbreak' app heeft toegang tot de sleutelhanger data van Litewallet en kan hiermee je Sumcoins stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "APPARAAT BEVEILIGING BESCHADIGD\nElke 'jailbreak' app heeft toegang tot de sleutelhanger data van Litewallet en kan hiermee je Litecoins stelen. Gebruik Litewallet a.u.b. alleen op een niet-gejailbreakt apparaat.";
+"JailbreakWarnings.messageWithoutBalance" = "APPARAAT BEVEILIGING BESCHADIGD\nElke 'jailbreak' app heeft toegang tot de sleutelhanger data van Litewallet en kan hiermee je Sumcoins stelen. Gebruik Litewallet a.u.b. alleen op een niet-gejailbreakt apparaat.";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "WAARSCHUWING";
@@ -371,127 +371,127 @@
 "JailbreakWarnings.wipe" = "Wissen";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "KAART";
+"SumcoinCard.barItemTitle" = "KAART";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "Kaartsaldo";
+"SumcoinCard.cardBalance" = "Kaartsaldo";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "- Registratie en inloggen\n- Beschikbaar kaartsaldo\n- Wachtwoord opnieuw instellen\n- Geen overdracht naar Litewallet\n- Alleen in de USA.";
+"SumcoinCard.Disclaimer.bullets" = "- Registratie en inloggen\n- Beschikbaar kaartsaldo\n- Wachtwoord opnieuw instellen\n- Geen overdracht naar Litewallet\n- Alleen in de USA.";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "Litecoin Card heeft momenteel beperkte functionaliteit in Litewallet.";
+"SumcoinCard.Disclaimer.description" = "Sumcoin Card heeft momenteel beperkte functionaliteit in Litewallet.";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "Bezoek litecoin.getblockcard.com voor volledige toegang";
+"SumcoinCard.Disclaimer.referral" = "Bezoek litecoin.getblockcard.com voor volledige toegang";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "Litecoin Card Beta";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "Sumcoin Card Beta";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "Inloggen mislukt";
+"SumcoinCard.failed.login" = "Inloggen mislukt";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "Wachtwoord vergeten?";
+"SumcoinCard.forgotPassword" = "Wachtwoord vergeten?";
 
 /* Login */
-"LitecoinCard.login" = "Log in";
+"SumcoinCard.login" = "Log in";
 
 /* Logout */
-"LitecoinCard.logout" = "Uitloggen";
+"SumcoinCard.logout" = "Uitloggen";
 
 /* Register */
-"LitecoinCard.registerCard" = "Registreren";
+"SumcoinCard.registerCard" = "Registreren";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "Registreer voor Litecoin Card";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "Registreer voor Sumcoin Card";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "Gebruiker registreren ...";
+"SumcoinCard.registering.user" = "Gebruiker registreren ...";
 
 /* address */
-"LitecoinCard.Registration.address" = "Woonadres";
+"SumcoinCard.Registration.address" = "Woonadres";
 
 /* city */
-"LitecoinCard.Registration.city" = "stad";
+"SumcoinCard.Registration.city" = "stad";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "bevestig wachtwoord";
+"SumcoinCard.Registration.confirmPassword" = "bevestig wachtwoord";
 
 /* country */
-"LitecoinCard.Registration.country" = "Land";
+"SumcoinCard.Registration.country" = "Land";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "Voornaam";
+"SumcoinCard.Registration.firstName" = "Voornaam";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "Identificatie";
+"SumcoinCard.Registration.identification" = "Identificatie";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "Ken uw klant ID Type";
+"SumcoinCard.Registration.kycIDNumber" = "Ken uw klant ID Type";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "ID Type";
+"SumcoinCard.Registration.kycIDType" = "ID Type";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "achternaam";
+"SumcoinCard.Registration.lastName" = "achternaam";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "Mobiele nummer";
+"SumcoinCard.Registration.mobileNumber" = "Mobiele nummer";
 
 /* password */
-"LitecoinCard.Registration.password" = "wachtwoord";
+"SumcoinCard.Registration.password" = "wachtwoord";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "Staat / Provincie";
+"SumcoinCard.Registration.stateProvince" = "Staat / Provincie";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "E-mail";
+"SumcoinCard.Registration.usernameEmail" = "E-mail";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "Mag niet leeg zijn";
+"SumcoinCard.Registration.ValidationError.empty" = "Mag niet leeg zijn";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "Ongeldig e-mailadres";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "Ongeldig e-mailadres";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Het mobiele nummer moet minimaal 10 cijfers hebben";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "Het mobiele nummer moet minimaal 10 cijfers hebben";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobiel nummer is vereist";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "Mobiel nummer is vereist";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Wachtwoord moet minimaal 6 tekens bevatten";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "Wachtwoord moet minimaal 6 tekens bevatten";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "Wachtwoord moet uit meer dan 6 tekens bestaan, met minimaal één teken en één numeriek teken";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "Wachtwoord moet uit meer dan 6 tekens bestaan, met minimaal één teken en één numeriek teken";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "Een wachtwoord is verplicht";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "Een wachtwoord is verplicht";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "verplicht veld";
+"SumcoinCard.Registration.ValidationError.requiredField" = "verplicht veld";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "Postcode";
+"SumcoinCard.Registration.zipPostCode" = "Postcode";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "Er is een probleem opgetreden met uw registratie. Controleer uw gegevens en probeer het opnieuw.";
+"SumcoinCard.registrationFailure" = "Er is een probleem opgetreden met uw registratie. Controleer uw gegevens en probeer het opnieuw.";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "U bent geregistreerd! Controleer en bevestig uw e-mail. Kom dan terug om in te loggen.";
+"SumcoinCard.registrationSuccess" = "U bent geregistreerd! Controleer en bevestig uw e-mail. Kom dan terug om in te loggen.";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "Wachtwoord opnieuw instellen";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "Wachtwoord opnieuw instellen";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "Voer het e-mailadres in dat is gekoppeld aan uw Litecoin Card-account en zoek een e-mail met resetinstructies.";
+"SumcoinCard.resetPasswordDetail" = "Voer het e-mailadres in dat is gekoppeld aan uw Sumcoin Card-account en zoek een e-mail met resetinstructies.";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "Ga naar https://litecoin.dashboard.getblockcard.com/password/forgot om uw wachtwoord te resetten.";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "Ga naar https://litecoin.dashboard.getblockcard.com/password/forgot om uw wachtwoord te resetten.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Locatievoorzieningen zijn uitgeschakeld.";
@@ -517,8 +517,8 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "Portemonnee Beheren";
 
-/* Buy Litecoin title */
-"MenuButton.buy" = "Litecoins Kopen";
+/* Buy Sumcoin title */
+"MenuButton.buy" = "Sumcoins Kopen";
 
 /* Menu button title */
 "MenuButton.customer.support" = "Klantenservice";
@@ -572,7 +572,7 @@
 "NodeSelector.statusLabel" = "Connectiestatus van de node";
 
 /* Node Selector view title */
-"NodeSelector.title" = "Litecoin-nodes";
+"NodeSelector.title" = "Sumcoin-nodes";
 
 /* Bad Payment request alert title */
 "PaymentProtocol.Errors.badPaymentRequest" = "Slecht Betalingsverzoek";
@@ -590,10 +590,10 @@
 "PaymentProtocol.Errors.smallOutputError" = "Kon de betaling niet uitvoeren";
 
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Litecoin betalingen kunnen niet minder zijn dan %1$@.";
+"PaymentProtocol.Errors.smallPayment" = "Sumcoin betalingen kunnen niet minder zijn dan %1$@.";
 
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Litecoin transactie outputs kunnen niet minder zijn dan $@.";
+"PaymentProtocol.Errors.smallTransaction" = "Sumcoin transactie outputs kunnen niet minder zijn dan $@.";
 
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "niet-ondersteund handtekening type";
@@ -730,7 +730,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "Vul alstublieft eerst een bedrag in.";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "Een bedrag aanvragen";
 
 /* Alert action button label */
@@ -746,7 +746,7 @@
 "ReScan.body1" = "20-45 minuten";
 
 /* Syncing explanation */
-"ReScan.body2" = "Als een transactie als voltooid staat op het Litecoin netwerk maar niet in je Litewallet.";
+"ReScan.body2" = "Als een transactie als voltooid staat op het Sumcoin netwerk maar niet in je Litewallet.";
 
 /* Syncing explanation */
 "ReScan.body3" = "Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.";
@@ -772,7 +772,7 @@
 /* Warning Empty Wipe title */
 "resetTitle" = "Lege portemonnee resetten";
 
-/* Scan Litecoin address camera flash toggle */
+/* Scan Sumcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Camera Flits";
 
 /* Complete filter label */
@@ -794,7 +794,7 @@
 "SecurityCenter.info" = "Activeer alle veiligheidsmaatregelen voor maximale bescherming.";
 
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "De enige manier om toegang te hebben tot je Litecoins is als je je telefoon verliest of upgrade.";
+"SecurityCenter.paperKeyDescription" = "De enige manier om toegang te hebben tot je Sumcoins is als je je telefoon verliest of upgrade.";
 
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Papieren Sleutel";
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "Plakbord is leeg";
 
 /* Enter LTC Address */
-"Send.enterLTCAddress" = "Voer een Litecoin-adres in";
+"Send.enterLTCAddress" = "Voer een Sumcoin-adres in";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "Netwerkkosten: %1$@";
@@ -854,10 +854,10 @@
 "Send.insufficientFunds" = "onvoldoende middelen";
 
 /* Invalid address alert message */
-"Send.invalidAddressMessage" = "Het bestemmingsadres is geen geldig Litecoin-adres.";
+"Send.invalidAddressMessage" = "Het bestemmingsadres is geen geldig Sumcoin-adres.";
 
 /* Invalid address on pasteboard message */
-"Send.invalidAddressOnPasteboard" = "Plakbord bevat geen geldig Litecoin adres.";
+"Send.invalidAddressOnPasteboard" = "Plakbord bevat geen geldig Sumcoin adres.";
 
 /* Invalid address alert title */
 "Send.invalidAddressTitle" = "Ongeldig Adres";
@@ -911,7 +911,7 @@
 "Send.UnstoppableDomains.udSystemError" = "Systeem opzoeken probleem. [Fout: %2$d]";
 
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Litecoin adressen zijn alleen bedoeld voor enkel gebruik.";
+"Send.UsedAddress.firstLine" = "Sumcoin adressen zijn alleen bedoeld voor enkel gebruik.";
 
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "Hergebruikt vermindert privacy voor zowel jou en de ontvanger en kan resulteren in verlies als de ontvanger niet direct het adres beheert.";
@@ -1016,10 +1016,10 @@
 "StartPaperPhrase.date" = "Je hebt voor het laatst je papieren sleutel opgeschreven op %1$@";
 
 /* Start view message */
-"StartViewController.message" = "De veiligste en betrouwbaarste manier om Litecoin te gebruiken.";
+"StartViewController.message" = "De veiligste en betrouwbaarste manier om Sumcoin te gebruiken.";
 
-/* Support the Litecoin Foundation */
-"SupportTheFoundation.title" = "Steun de Stichting Litecoin";
+/* Support the Sumcoin Wallet */
+"SupportTheFoundation.title" = "Steun de Stichting Sumcoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Verbinden...";
@@ -1208,7 +1208,7 @@
 "TransactionDetails.to" = "aan %1$@";
 
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "Litecoin Transactie-ID";
+"TransactionDetails.txHashHeader" = "Sumcoin Transactie-ID";
 
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "Ontvangen op dit adres";
@@ -1244,7 +1244,7 @@
 "UnlockScreen.unlocked" = "Portemonnee Ontgrendeld";
 
 /* Update PIN caption text */
-"UpdatePin.caption" = "Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Litecoins te kunnen.";
+"UpdatePin.caption" = "Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Sumcoins te kunnen.";
 
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "Je PIN zal worden gebruikt om je Litewallet te ontgrendelen en geld te versturen.";

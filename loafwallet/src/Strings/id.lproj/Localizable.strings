@@ -2,7 +2,7 @@
 "About.blog" = "Situs Web";
 
 /* About screen footer */
-"About.footer" = "Dibuat Oleh LiteWallet Tim \n dari \n Yayasan Litecoin \n %1$@";
+"About.footer" = "Dibuat Oleh LiteWallet Tim \n dari \n Yayasan Sumcoin \n %1$@";
 
 /* Privay Policy button label */
 "About.privacy" = "Aturan Pribadi";
@@ -131,7 +131,7 @@
 "BuyCenter.BitrefillTitle" = "Bitrefill";
 
 /* Changelly buy financial details */
-"BuyCenter.changellyFinancialDetails" = "• Ubah Litecoin untuk cryptos lainnya \n • Tidak diperlukan ID \n • Membeli dengan kartu kredit \n • Pencakupan global";
+"BuyCenter.changellyFinancialDetails" = "• Ubah Sumcoin untuk cryptos lainnya \n • Tidak diperlukan ID \n • Membeli dengan kartu kredit \n • Pencakupan global";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "Changelly";
@@ -146,13 +146,13 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "• Gunakan ID atau Paspor \n • Membeli Litecoin dengan kartu kredit \n • Membeli dengan USD atau EUR";
+"BuyCenter.simplexFinancialDetails" = "• Gunakan ID atau Paspor \n • Membeli Sumcoin dengan kartu kredit \n • Membeli dengan USD atau EUR";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "Simplex";
 
 /* Buy Center Title */
-"BuyCenter.title" = "Membeli Litecoin";
+"BuyCenter.title" = "Membeli Sumcoin";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "Pusatkan ID Anda di dalam Kotak";
@@ -208,8 +208,8 @@
 /* No comment provided by engineer. */
 "Copy" = "Salinan";
 
-/* Litecoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Unit Tampilan Litecoin";
+/* Sumcoin denomination picker label */
+"DefaultCurrency.bitcoinLabel" = "Unit Tampilan Sumcoin";
 
 /* Label to pick fiat */
 "DefaultCurrency.chooseFiatLabel" = "Memilih:";
@@ -286,14 +286,14 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "SEJARAH";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "Nilai LTC saat ini dalam";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "Nilai LTC saat ini dalam";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Memeriksa saldo kunci pribadi...";
 
 /* Sweep private key confirmation message */
-"Import.confirm" = "Kirim %1$@ dari kunci pribadi ini ke dompet Anda? Jaringan Litecoin akan menerima biaya %2$@.";
+"Import.confirm" = "Kirim %1$@ dari kunci pribadi ini ke dompet Anda? Jaringan Sumcoin akan menerima biaya %2$@.";
 
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Kunci pribadi ini sudah ada di dompet Anda.";
@@ -359,10 +359,10 @@
 "JailbreakWarnings.ignore" = "Mengabaikan";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "KEAMANAN PERANGKAT YANG KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Litewallet dan mencuri Litecoin Anda! Segera bersihkan dompet ini dan pulihkan pada perangkat yang aman.";
+"JailbreakWarnings.messageWithBalance" = "KEAMANAN PERANGKAT YANG KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Litewallet dan mencuri Sumcoin Anda! Segera bersihkan dompet ini dan pulihkan pada perangkat yang aman.";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "PERANGKAT KEAMANAN DI KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Litewallet dan mencuri Litecoin Anda. Harap hanya menggunakan Litewallet pada perangkat yang tidak dipenjara.";
+"JailbreakWarnings.messageWithoutBalance" = "PERANGKAT KEAMANAN DI KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Litewallet dan mencuri Sumcoin Anda. Harap hanya menggunakan Litewallet pada perangkat yang tidak dipenjara.";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "Peringatan";
@@ -371,127 +371,127 @@
 "JailbreakWarnings.wipe" = "Hapus";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "KARTU";
+"SumcoinCard.barItemTitle" = "KARTU";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "Saldo kartu";
+"SumcoinCard.cardBalance" = "Saldo kartu";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "- Pendaftaran & Login\n- Saldo kartu yang tersedia\n- Reset kata sandi\n- Tidak ada transfer ke Litewallet\n- AS Sudah";
+"SumcoinCard.Disclaimer.bullets" = "- Pendaftaran & Login\n- Saldo kartu yang tersedia\n- Reset kata sandi\n- Tidak ada transfer ke Litewallet\n- AS Sudah";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "Kartu Litecoin saat ini memiliki fungsi terbatas di Litewallet.";
+"SumcoinCard.Disclaimer.description" = "Kartu Sumcoin saat ini memiliki fungsi terbatas di Litewallet.";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "Kunjungi litecoin.getblockcard.com untuk akses penuh";
+"SumcoinCard.Disclaimer.referral" = "Kunjungi litecoin.getblockcard.com untuk akses penuh";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "Kartu Litecoin Beta";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "Kartu Sumcoin Beta";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "Gagal masuk";
+"SumcoinCard.failed.login" = "Gagal masuk";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "Tidak ingat kata sandi?";
+"SumcoinCard.forgotPassword" = "Tidak ingat kata sandi?";
 
 /* Login */
-"LitecoinCard.login" = "Gabung";
+"SumcoinCard.login" = "Gabung";
 
 /* Logout */
-"LitecoinCard.logout" = "Keluar";
+"SumcoinCard.logout" = "Keluar";
 
 /* Register */
-"LitecoinCard.registerCard" = "Daftar";
+"SumcoinCard.registerCard" = "Daftar";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "Daftar untuk Kartu Litecoin";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "Daftar untuk Kartu Sumcoin";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "Mendaftarkan pengguna ...";
+"SumcoinCard.registering.user" = "Mendaftarkan pengguna ...";
 
 /* address */
-"LitecoinCard.Registration.address" = "Alamat jalan";
+"SumcoinCard.Registration.address" = "Alamat jalan";
 
 /* city */
-"LitecoinCard.Registration.city" = "Kota";
+"SumcoinCard.Registration.city" = "Kota";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "konfirmasi sandi";
+"SumcoinCard.Registration.confirmPassword" = "konfirmasi sandi";
 
 /* country */
-"LitecoinCard.Registration.country" = "Negara";
+"SumcoinCard.Registration.country" = "Negara";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "nama depan";
+"SumcoinCard.Registration.firstName" = "nama depan";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "Identifikasi";
+"SumcoinCard.Registration.identification" = "Identifikasi";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "Kenali pelanggan Anda Jenis ID";
+"SumcoinCard.Registration.kycIDNumber" = "Kenali pelanggan Anda Jenis ID";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "Jenis ID";
+"SumcoinCard.Registration.kycIDType" = "Jenis ID";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "nama keluarga";
+"SumcoinCard.Registration.lastName" = "nama keluarga";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "Nomor handphone";
+"SumcoinCard.Registration.mobileNumber" = "Nomor handphone";
 
 /* password */
-"LitecoinCard.Registration.password" = "kata sandi";
+"SumcoinCard.Registration.password" = "kata sandi";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "Negara Bagian / Provinsi";
+"SumcoinCard.Registration.stateProvince" = "Negara Bagian / Provinsi";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "Surel";
+"SumcoinCard.Registration.usernameEmail" = "Surel";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "Wajib diisi";
+"SumcoinCard.Registration.ValidationError.empty" = "Wajib diisi";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "Alamat email salah";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "Alamat email salah";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Nomor ponsel setidaknya harus terdiri dari 10 digit";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "Nomor ponsel setidaknya harus terdiri dari 10 digit";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "Nomor ponsel diperlukan";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "Nomor ponsel diperlukan";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Kata sandi harus memiliki setidaknya 6 karakter";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "Kata sandi harus memiliki setidaknya 6 karakter";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "Kata sandi harus lebih dari 6 karakter, dengan setidaknya satu karakter dan satu karakter numerik";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "Kata sandi harus lebih dari 6 karakter, dengan setidaknya satu karakter dan satu karakter numerik";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "Kata sandi diperlukan";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "Kata sandi diperlukan";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "kolom yang harus diisi";
+"SumcoinCard.Registration.ValidationError.requiredField" = "kolom yang harus diisi";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "Kode Pos";
+"SumcoinCard.Registration.zipPostCode" = "Kode Pos";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "Ada masalah dengan pendaftaran Anda. Silakan periksa data Anda dan coba lagi.";
+"SumcoinCard.registrationFailure" = "Ada masalah dengan pendaftaran Anda. Silakan periksa data Anda dan coba lagi.";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "Anda telah mendaftar! Silakan periksa dan konfirmasi email Anda. Kemudian kembali untuk masuk.";
+"SumcoinCard.registrationSuccess" = "Anda telah mendaftar! Silakan periksa dan konfirmasi email Anda. Kemudian kembali untuk masuk.";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "Setel ulang kata sandi";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "Setel ulang kata sandi";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "Masukkan alamat email yang terkait dengan akun Kartu Litecoin Anda & cari email dengan instruksi reset.";
+"SumcoinCard.resetPasswordDetail" = "Masukkan alamat email yang terkait dengan akun Kartu Sumcoin Anda & cari email dengan instruksi reset.";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Layanan lokasi dinonaktifkan.";
@@ -517,8 +517,8 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "Mengelola Dompet";
 
-/* Buy Litecoin title */
-"MenuButton.buy" = "Membeli Litecoin";
+/* Buy Sumcoin title */
+"MenuButton.buy" = "Membeli Sumcoin";
 
 /* Menu button title */
 "MenuButton.customer.support" = "Dukungan pelanggan";
@@ -572,7 +572,7 @@
 "NodeSelector.statusLabel" = "Status Koneksi Node";
 
 /* Node Selector view title */
-"NodeSelector.title" = "Litecoin Nodes";
+"NodeSelector.title" = "Sumcoin Nodes";
 
 /* Bad Payment request alert title */
 "PaymentProtocol.Errors.badPaymentRequest" = "Permintaan Pembayaran salah";
@@ -590,10 +590,10 @@
 "PaymentProtocol.Errors.smallOutputError" = "Tidak dapat melakukan pembayaran";
 
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Pembayaran Litecoin tidak boleh kurang dari %1$@.";
+"PaymentProtocol.Errors.smallPayment" = "Pembayaran Sumcoin tidak boleh kurang dari %1$@.";
 
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Hasil transaksi Litecoin tidak boleh kurang dari $@.";
+"PaymentProtocol.Errors.smallTransaction" = "Hasil transaksi Sumcoin tidak boleh kurang dari $@.";
 
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "jenis tanda tangan yang tidak didukung";
@@ -730,7 +730,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "Silakan masukkan jumlah terlebih dahulu.";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "Permintaan Jumlah";
 
 /* Alert action button label */
@@ -746,7 +746,7 @@
 "ReScan.body1" = "20-45 menit";
 
 /* Syncing explanation */
-"ReScan.body2" = "Jika suatu transaksi terlihat selesai di jaringan Litecoin tetapi tidak di Litewallet Anda.";
+"ReScan.body2" = "Jika suatu transaksi terlihat selesai di jaringan Sumcoin tetapi tidak di Litewallet Anda.";
 
 /* Syncing explanation */
 "ReScan.body3" = "Anda berulang kali mendapatkan pesan kesalahan yang mengatakan transaksi Anda ditolak.";
@@ -772,7 +772,7 @@
 /* Warning Empty Wipe title */
 "resetTitle" = "Reset Dompet Kosong";
 
-/* Scan Litecoin address camera flash toggle */
+/* Scan Sumcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Flash Kamera";
 
 /* Complete filter label */
@@ -794,7 +794,7 @@
 "SecurityCenter.info" = "Aktifkan semua fitur keamanan untuk perlindungan maksimal.";
 
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "Satu-satunya cara untuk mengakses Litecoin Anda jika Anda kehilangan atau meningkatkan telepon Anda.";
+"SecurityCenter.paperKeyDescription" = "Satu-satunya cara untuk mengakses Sumcoin Anda jika Anda kehilangan atau meningkatkan telepon Anda.";
 
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Kunci Kertas";
@@ -842,7 +842,7 @@
 "Send.emptyPasteboard" = "Papan tulis kosong";
 
 /* Enter LTC Address */
-"Send.enterLTCAddress" = "Masukkan alamat Litecoin";
+"Send.enterLTCAddress" = "Masukkan alamat Sumcoin";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "Biaya Jaringan: %1$@";
@@ -854,10 +854,10 @@
 "Send.insufficientFunds" = "Dana tidak mencukupi";
 
 /* Invalid address alert message */
-"Send.invalidAddressMessage" = "Alamat tujuan bukan alamat Litecoin yang benar.";
+"Send.invalidAddressMessage" = "Alamat tujuan bukan alamat Sumcoin yang benar.";
 
 /* Invalid address on pasteboard message */
-"Send.invalidAddressOnPasteboard" = "Papan tulis tidak mengandung alamat Litecoin yang benar.";
+"Send.invalidAddressOnPasteboard" = "Papan tulis tidak mengandung alamat Sumcoin yang benar.";
 
 /* Invalid address alert title */
 "Send.invalidAddressTitle" = "Alamat tidak benar";
@@ -911,7 +911,7 @@
 "Send.UnstoppableDomains.udSystemError" = "Masalah pencarian sistem. [Kesalahan: %2$d]";
 
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Alamat Litecoin hanya ditujukan untuk penggunaan tunggal.";
+"Send.UsedAddress.firstLine" = "Alamat Sumcoin hanya ditujukan untuk penggunaan tunggal.";
 
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "Penggunaan kembali mengurangi privasi untuk Anda dan penerima dan dapat mengakibatkan kerugian jika penerima tidak secara langsung mengontrol alamat.";
@@ -1016,10 +1016,10 @@
 "StartPaperPhrase.date" = "Terakhir Anda menuliskan kunci kertas Anda di %1$@";
 
 /* Start view message */
-"StartViewController.message" = "Cara paling aman dan teraman untuk menggunakan Litecoin.";
+"StartViewController.message" = "Cara paling aman dan teraman untuk menggunakan Sumcoin.";
 
-/* Support the Litecoin Foundation */
-"SupportTheFoundation.title" = "Dukung Yayasan Litecoin";
+/* Support the Sumcoin Wallet */
+"SupportTheFoundation.title" = "Dukung Yayasan Sumcoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Menghubungkan ...";
@@ -1208,7 +1208,7 @@
 "TransactionDetails.to" = "untuk %1$@";
 
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "ID Transaksi Litecoin";
+"TransactionDetails.txHashHeader" = "ID Transaksi Sumcoin";
 
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "Diterima di Alamat ini";
@@ -1244,7 +1244,7 @@
 "UnlockScreen.unlocked" = "Dompet Tidak Terkunci";
 
 /* Update PIN caption text */
-"UpdatePin.caption" = "Ingat PIN ini. Jika Anda lupa, Anda tidak akan dapat mengakses Litecoin Anda.";
+"UpdatePin.caption" = "Ingat PIN ini. Jika Anda lupa, Anda tidak akan dapat mengakses Sumcoin Anda.";
 
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "PIN Anda akan digunakan untuk membuka kunci Litewallet Anda dan mengirim uang.";
@@ -1310,7 +1310,7 @@
 "Webview.updating" = "Memperbarui...";
 
 /* Welcome view body text */
-"Welcome.body" = "Litewallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Litecoin (Ł) = 1000 lites (ł).";
+"Welcome.body" = "Litewallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Sumcoin (Ł) = 1000 lites (ł).";
 
 /* Welcome view title */
 "Welcome.title" = "Selamat datang di Litewallet!";

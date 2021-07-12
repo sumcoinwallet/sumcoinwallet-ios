@@ -57,7 +57,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
     private var orLabelView = UIView()
     private let unstoppableCell = UIHostingController(rootView: UnstoppableDomainView(viewModel: UnstoppableDomainViewModel()))
     private let descriptionCell = DescriptionSendCell(placeholder: S.Send.descriptionLabel)
-    private var sendButton = ShadowButton(title: S.Send.sendLabel, type: .flatLitecoinBlue)
+    private var sendButton = ShadowButton(title: S.Send.sendLabel, type: .flatSumcoinBlue)
     private let currency: ShadowButton
     private let currencyBorder = UIView(color: .secondaryShadow)
     private var pinPadHeightConstraint: NSLayoutConstraint?

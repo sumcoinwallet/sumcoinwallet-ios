@@ -22,7 +22,7 @@ enum MenuButtonType {
         case .customerSupport:
             return S.MenuButton.support
         case .supportGiveToLF:
-            return S.SupportLitecoinFoundation.title
+            return S.SupportSumcoinWallet.title
         case .settings:
             return S.MenuButton.settings
         case .lock:

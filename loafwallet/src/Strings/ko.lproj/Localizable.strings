@@ -131,7 +131,7 @@
 "BuyCenter.BitrefillTitle" = "비트 리필";
 
 /* Changelly buy financial details */
-"BuyCenter.changellyFinancialDetails" = "다른 암호화를 위해 Litecoin 변경 \n • ID 불필요 \n • 신용 카드로 구매 \ n • 글로벌 범위";
+"BuyCenter.changellyFinancialDetails" = "다른 암호화를 위해 Sumcoin 변경 \n • ID 불필요 \n • 신용 카드로 구매 \ n • 글로벌 범위";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "체인지";
@@ -146,13 +146,13 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "5 분 안에 Litecoin을 받으십시오! \n • 신용 카드를 통해 Litecoin을 구매하십시오 \n • 여권 또는 주 ID";
+"BuyCenter.simplexFinancialDetails" = "5 분 안에 Sumcoin을 받으십시오! \n • 신용 카드를 통해 Sumcoin을 구매하십시오 \n • 여권 또는 주 ID";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "심플 렉스";
 
 /* Buy Center Title */
-"BuyCenter.title" = "Litecoin 구매";
+"BuyCenter.title" = "Sumcoin 구매";
 
 /* Camera plugin instruction */
 "CameraPlugin.centerInstruction" = "박스안에 귀하의 ID를 중앙에 두세요";
@@ -208,8 +208,8 @@
 /* No comment provided by engineer. */
 "Copy" = "부";
 
-/* Litecoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Litecoin Display Unit";
+/* Sumcoin denomination picker label */
+"DefaultCurrency.bitcoinLabel" = "Sumcoin Display Unit";
 
 /* Label to pick fiat */
 "DefaultCurrency.chooseFiatLabel" = "고르다:";
@@ -286,14 +286,14 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "역사";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "현재 LTC 값";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "현재 LTC 값";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "개인 열쇠 잔고 확인 중...";
 
 /* Sweep private key confirmation message */
-"Import.confirm" = "이 개인 열쇠로부터 귀하의 지갑으로 %1$@ 를 보낼까요? Litecoin 네트워크가 %2$@의 수수료를 받게 됩니다.";
+"Import.confirm" = "이 개인 열쇠로부터 귀하의 지갑으로 %1$@ 를 보낼까요? Sumcoin 네트워크가 %2$@의 수수료를 받게 됩니다.";
 
 /* Duplicate key error message */
 "Import.Error.duplicate" = "이 개인 열쇠가 이미 귀하의 지갑에 있습니다.";
@@ -359,10 +359,10 @@
 "JailbreakWarnings.ignore" = "무시";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 Litewallet의 키체인 데이터에 접속하여 귀하의 Litecoin을 훔칠 수 있습니다! 이 지갑을 바로 지우시고 안전한 장치에서 복구하세요.";
+"JailbreakWarnings.messageWithBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 Litewallet의 키체인 데이터에 접속하여 귀하의 Sumcoin을 훔칠 수 있습니다! 이 지갑을 바로 지우시고 안전한 장치에서 복구하세요.";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 Litewallet의 키체인 데이터에 접속하여 귀하의 Litecoin을 훔칠 수 있습니다! Litewallet를 비-jailbroken 장치에서만 사용해 주세요.";
+"JailbreakWarnings.messageWithoutBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 Litewallet의 키체인 데이터에 접속하여 귀하의 Sumcoin을 훔칠 수 있습니다! Litewallet를 비-jailbroken 장치에서만 사용해 주세요.";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "경고";
@@ -371,127 +371,127 @@
 "JailbreakWarnings.wipe" = "초기화";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "카드";
+"SumcoinCard.barItemTitle" = "카드";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "카드 잔액";
+"SumcoinCard.cardBalance" = "카드 잔액";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "-등록 및 로그인\n-사용 가능한 카드 잔액\n- 암호를 재설정\n-Litewallet으로 양도 불가\n-미국 만 해당";
+"SumcoinCard.Disclaimer.bullets" = "-등록 및 로그인\n-사용 가능한 카드 잔액\n- 암호를 재설정\n-Litewallet으로 양도 불가\n-미국 만 해당";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "라이트 코인 카드는 현재 라이트 월렛에서 제한된 기능을 가지고 있습니다.";
+"SumcoinCard.Disclaimer.description" = "라이트 코인 카드는 현재 라이트 월렛에서 제한된 기능을 가지고 있습니다.";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "전체 액세스를 위해 litecoin.getblockcard.com을 방문하십시오.";
+"SumcoinCard.Disclaimer.referral" = "전체 액세스를 위해 litecoin.getblockcard.com을 방문하십시오.";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "라이트 코인 카드 베타";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "라이트 코인 카드 베타";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "로그인 실패";
+"SumcoinCard.failed.login" = "로그인 실패";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "비밀번호를 잊으 셨나요?";
+"SumcoinCard.forgotPassword" = "비밀번호를 잊으 셨나요?";
 
 /* Login */
-"LitecoinCard.login" = "로그인";
+"SumcoinCard.login" = "로그인";
 
 /* Logout */
-"LitecoinCard.logout" = "로그 아웃";
+"SumcoinCard.logout" = "로그 아웃";
 
 /* Register */
-"LitecoinCard.registerCard" = "레지스터";
+"SumcoinCard.registerCard" = "레지스터";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "라이트 코인 카드 등록";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "라이트 코인 카드 등록";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "사용자 등록 중 ...";
+"SumcoinCard.registering.user" = "사용자 등록 중 ...";
 
 /* address */
-"LitecoinCard.Registration.address" = "주소";
+"SumcoinCard.Registration.address" = "주소";
 
 /* city */
-"LitecoinCard.Registration.city" = "시티";
+"SumcoinCard.Registration.city" = "시티";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "비밀번호 확인";
+"SumcoinCard.Registration.confirmPassword" = "비밀번호 확인";
 
 /* country */
-"LitecoinCard.Registration.country" = "국가";
+"SumcoinCard.Registration.country" = "국가";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "이름";
+"SumcoinCard.Registration.firstName" = "이름";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "신분증";
+"SumcoinCard.Registration.identification" = "신분증";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "고객 파악 ID 유형";
+"SumcoinCard.Registration.kycIDNumber" = "고객 파악 ID 유형";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "ID 유형";
+"SumcoinCard.Registration.kycIDType" = "ID 유형";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "성";
+"SumcoinCard.Registration.lastName" = "성";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "휴대폰 번호";
+"SumcoinCard.Registration.mobileNumber" = "휴대폰 번호";
 
 /* password */
-"LitecoinCard.Registration.password" = "암호";
+"SumcoinCard.Registration.password" = "암호";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "주 / 도";
+"SumcoinCard.Registration.stateProvince" = "주 / 도";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "ID 유형";
+"SumcoinCard.Registration.usernameEmail" = "ID 유형";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "비워 둘 수 없습니다.";
+"SumcoinCard.Registration.ValidationError.empty" = "비워 둘 수 없습니다.";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "잘못된 이메일 주소";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "잘못된 이메일 주소";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "휴대 전화 번호는 10 자리 이상이어야합니다.";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "휴대 전화 번호는 10 자리 이상이어야합니다.";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "휴대폰 번호가 필요합니다.";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "휴대폰 번호가 필요합니다.";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "비밀번호는 6 자 이상이어야합니다.";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "비밀번호는 6 자 이상이어야합니다.";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "비밀번호는 6 자 이상이어야하며 최소 1 개의 문자와 1 개의 숫자가 있어야합니다.";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "비밀번호는 6 자 이상이어야하며 최소 1 개의 문자와 1 개의 숫자가 있어야합니다.";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "비밀번호가 필요합니다";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "비밀번호가 필요합니다";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "필수 필드";
+"SumcoinCard.Registration.ValidationError.requiredField" = "필수 필드";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "우편 번호";
+"SumcoinCard.Registration.zipPostCode" = "우편 번호";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "등록에 문제가 있습니다. 데이터를 확인하고 다시 시도하십시오.";
+"SumcoinCard.registrationFailure" = "등록에 문제가 있습니다. 데이터를 확인하고 다시 시도하십시오.";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "등록하셨습니다! 이메일을 확인하고 확인하십시오. 그런 다음 다시 로그인하십시오.";
+"SumcoinCard.registrationSuccess" = "등록하셨습니다! 이메일을 확인하고 확인하십시오. 그런 다음 다시 로그인하십시오.";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "암호를 재설정";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "암호를 재설정";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "라이트 코인 카드 계정과 연결된 이메일 주소를 입력하고 재설정 지침이있는 이메일을 찾으십시오.";
+"SumcoinCard.resetPasswordDetail" = "라이트 코인 카드 계정과 연결된 이메일 주소를 입력하고 재설정 지침이있는 이메일을 찾으십시오.";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot을 방문하여 암호를 재설정하십시오.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "위치 서비스가 꺼졌습니다.";
@@ -517,8 +517,8 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "지갑 관리";
 
-/* Buy Litecoin title */
-"MenuButton.buy" = "Litecoin 구매";
+/* Buy Sumcoin title */
+"MenuButton.buy" = "Sumcoin 구매";
 
 /* Menu button title */
 "MenuButton.customer.support" = "고객 지원";
@@ -572,7 +572,7 @@
 "NodeSelector.statusLabel" = "노드 연결 상태";
 
 /* Node Selector view title */
-"NodeSelector.title" = "Litecoin 노드";
+"NodeSelector.title" = "Sumcoin 노드";
 
 /* Bad Payment request alert title */
 "PaymentProtocol.Errors.badPaymentRequest" = "틀린 결제 요청";
@@ -590,10 +590,10 @@
 "PaymentProtocol.Errors.smallOutputError" = "결제를 할 수 없습니다";
 
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Litecoin 결제는 %1$@ 보다 작을 수 없습니다.";
+"PaymentProtocol.Errors.smallPayment" = "Sumcoin 결제는 %1$@ 보다 작을 수 없습니다.";
 
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Litecoin 거래 출력들은 $@보다 작을 수 없습니다.";
+"PaymentProtocol.Errors.smallTransaction" = "Sumcoin 거래 출력들은 $@보다 작을 수 없습니다.";
 
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "지원되지 않는 서명 형태";
@@ -730,7 +730,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "먼저 금액을 입력해 주세요.";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "금액 요청";
 
 /* Alert action button label */
@@ -746,7 +746,7 @@
 "ReScan.body1" = "20-45분";
 
 /* Syncing explanation */
-"ReScan.body2" = "거래가 Litecoin 네트워크에는 완료된 것으로 표시되지만, 브레드에는 표시되지 않는 경우.";
+"ReScan.body2" = "거래가 Sumcoin 네트워크에는 완료된 것으로 표시되지만, 브레드에는 표시되지 않는 경우.";
 
 /* Syncing explanation */
 "ReScan.body3" = "거래가 거절되었음을 알리는 오류 메시지가 반복적으로 나타납니다.";
@@ -772,7 +772,7 @@
 /* Warning Empty Wipe title */
 "resetTitle" = "빈 지갑 재설정";
 
-/* Scan Litecoin address camera flash toggle */
+/* Scan Sumcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "카메라 플래시";
 
 /* Complete filter label */
@@ -794,7 +794,7 @@
 "SecurityCenter.info" = "최대한의 보호를 위해 모든 보안 기능을 사용하시기 바랍니다.";
 
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "전화를 분실하거나 업그레이드하는 경우, Litecoin에 액세스할 수 있는 유일한 방법입니다.";
+"SecurityCenter.paperKeyDescription" = "전화를 분실하거나 업그레이드하는 경우, Sumcoin에 액세스할 수 있는 유일한 방법입니다.";
 
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "페이퍼 키";
@@ -854,10 +854,10 @@
 "Send.insufficientFunds" = "부족한 자금";
 
 /* Invalid address alert message */
-"Send.invalidAddressMessage" = "해당 수취인 주소는 Litecoin에서 유효하지 않은 주소입니다.";
+"Send.invalidAddressMessage" = "해당 수취인 주소는 Sumcoin에서 유효하지 않은 주소입니다.";
 
 /* Invalid address on pasteboard message */
-"Send.invalidAddressOnPasteboard" = "클립보드가 유효한 Litecoin 주소를 가지고 있지 않습니다";
+"Send.invalidAddressOnPasteboard" = "클립보드가 유효한 Sumcoin 주소를 가지고 있지 않습니다";
 
 /* Invalid address alert title */
 "Send.invalidAddressTitle" = "유효하지 않은 주소입니다";
@@ -911,7 +911,7 @@
 "Send.UnstoppableDomains.udSystemError" = "시스템 조회 문제입니다. [오류 : %2$d]";
 
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Litecoin 주소는 일회용입니다.";
+"Send.UsedAddress.firstLine" = "Sumcoin 주소는 일회용입니다.";
 
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "주소를 재사용할 경우 귀하와 받는 사람 모두의 개인 정보 보호가 약해지며, 받는 사람이 직접 주소를 관리하지 않을 경우 분실을 초래할 수 있습니다.";
@@ -1016,9 +1016,9 @@
 "StartPaperPhrase.date" = "%1$@에 마지막으로 페이퍼 키를 작성하셨습니다.";
 
 /* Start view message */
-"StartViewController.message" = "Litecoin을 사용하는 가장 안정되고 안전한 방법.";
+"StartViewController.message" = "Sumcoin을 사용하는 가장 안정되고 안전한 방법.";
 
-/* Support the Litecoin Foundation */
+/* Support the Sumcoin Wallet */
 "SupportTheFoundation.title" = "라이트 코인 재단 지원";
 
 /* Syncing view connection state header text */
@@ -1208,7 +1208,7 @@
 "TransactionDetails.to" = "%1$@에게";
 
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "Litecoin Transaction ID";
+"TransactionDetails.txHashHeader" = "Sumcoin Transaction ID";
 
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "이 주소에서 받음";
@@ -1244,7 +1244,7 @@
 "UnlockScreen.unlocked" = "월렛의 잠금이 해제됨";
 
 /* Update PIN caption text */
-"UpdatePin.caption" = "이 PIN 코드를 기억하세요. PIN 코드를 잊어버리면 자신의 Litecoin을 사용할 수 없게 됩니다.";
+"UpdatePin.caption" = "이 PIN 코드를 기억하세요. PIN 코드를 잊어버리면 자신의 Sumcoin을 사용할 수 없게 됩니다.";
 
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "귀하의 PIN 코드는 Litewallet의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.";

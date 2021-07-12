@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/23/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import SwiftUI
@@ -140,7 +140,7 @@ struct CardView: View {
                         didTapIForgot = true
                     }) {
                         
-                        Text(S.LitecoinCard.forgotPassword)
+                        Text(S.SumcoinCard.forgotPassword)
                             .frame(minWidth:0, maxWidth: .infinity)
                             .font(Font(UIFont.barlowLight(size: 15)))
                             .foregroundColor(Color(UIColor.liteWalletBlue))
@@ -157,7 +157,7 @@ struct CardView: View {
                             if didLogin {
                                 viewModel.isLoggedIn = true
                                 shouldShowLoginModal = false
-                                 NotificationCenter.default.post(name: .LitecoinCardLoginNotification, object: nil,
+                                 NotificationCenter.default.post(name: .SumcoinCardLoginNotification, object: nil,
                                                                 userInfo: nil)
                             } else {
                                 viewModel.isLoggedIn = true
@@ -171,7 +171,7 @@ struct CardView: View {
                         
                     }) {
                         
-                        Text(S.LitecoinCard.login)
+                        Text(S.SumcoinCard.login)
                             .frame(minWidth:0, maxWidth: .infinity)
                             .padding()
                             .font(Font(UIFont.barlowMedium(size: 16.0)))
@@ -190,7 +190,7 @@ struct CardView: View {
                     Button(action: {
                         shouldShowRegistrationView = true
                     }) {
-                        Text(S.LitecoinCard.registerCard)
+                        Text(S.SumcoinCard.registerCard)
                             .frame(minWidth:0, maxWidth: .infinity)
                             .padding()
                             .font(Font(UIFont.barlowMedium(size: 15.0)))
@@ -220,10 +220,10 @@ struct CardView: View {
         .transition(.scale)       
         .forgotPasswordView(isShowingForgot: $didTapIForgot,
                             emailString: $forgotEmailAddressInput,
-                            message: S.LitecoinCard.forgotPassword)
+                            message: S.SumcoinCard.forgotPassword)
         .loginAlertView(isShowingLoginAlert: $shouldShowLoginModal,
                         didFail: $didFailToLogin,
-                        message: S.LitecoinCard.login)
+                        message: S.SumcoinCard.login)
         .registeredAlertView(shouldStartRegistering: $registrationModel.isRegistering,
                              didRegister: $registrationModel.didRegister,
                              data: registrationModel.dataDictionary,

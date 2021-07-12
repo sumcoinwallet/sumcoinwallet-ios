@@ -3,7 +3,7 @@
 //  loafwallet
 //
 //  Created by Kerry Washington on 12/24/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -28,7 +28,7 @@ class RegistrationViewModel: ObservableObject {
     var didRegister: Bool = false
     
     @Published
-    var message: String = S.LitecoinCard.registeringUser
+    var message: String = S.SumcoinCard.registeringUser
     
     var dataDictionary = [String: Any]()
     
@@ -92,7 +92,7 @@ class RegistrationViewModel: ObservableObject {
                 keychain["createdAt"] = createdAt
                 
                 DispatchQueue.main.async {
-                    self.message = S.LitecoinCard.registrationSuccess
+                    self.message = S.SumcoinCard.registrationSuccess
                     self.didRegister = true
 
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
@@ -104,7 +104,7 @@ class RegistrationViewModel: ObservableObject {
      
         if setupUserID == nil {
             DispatchQueue.main.async {
-                self.message = S.LitecoinCard.registrationFailure
+                self.message = S.SumcoinCard.registrationFailure
                 DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                     self.isRegistering = false
                 }

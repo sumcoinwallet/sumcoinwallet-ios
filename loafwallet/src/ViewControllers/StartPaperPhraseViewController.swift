@@ -14,7 +14,7 @@ class StartPaperPhraseViewController : UIViewController {
         self.store = store
         self.callback = callback
         let buttonTitle = UserDefaults.walletRequiresBackup ? S.StartPaperPhrase.buttonTitle : S.StartPaperPhrase.againButtonTitle
-        button = ShadowButton(title: buttonTitle, type: .flatLitecoinBlue)
+        button = ShadowButton(title: buttonTitle, type: .flatSumcoinBlue)
         super.init(nibName: nil, bundle: nil)
         explanation.textColor = .darkText
         footer.textColor = .secondaryGrayText

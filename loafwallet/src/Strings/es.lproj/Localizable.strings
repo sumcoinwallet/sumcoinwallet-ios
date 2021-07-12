@@ -132,7 +132,7 @@
 
 /* Changelly buy financial details */
 "BuyCenter.changellyFinancialDetails" = "
-• Cambiar Litecoin por otras criptos \n • No se requiere identificación \n • Comprar con tarjeta de crédito \n • Cobertura global";
+• Cambiar Sumcoin por otras criptos \n • No se requiere identificación \n • Comprar con tarjeta de crédito \n • Cobertura global";
 
 /* Changelly Title */
 "BuyCenter.changellyTitle" = "Changelly";
@@ -147,7 +147,7 @@
 "BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
-"BuyCenter.simplexFinancialDetails" = "• ¡Obtenga Litecoin en 5 minutos! \n • Compre Litecoin con tarjeta de crédito \n • Pasaporte o identificación del estado";
+"BuyCenter.simplexFinancialDetails" = "• ¡Obtenga Sumcoin en 5 minutos! \n • Compre Sumcoin con tarjeta de crédito \n • Pasaporte o identificación del estado";
 
 /* Simplex Title */
 "BuyCenter.simplexTitle" = "Simplex";
@@ -209,8 +209,8 @@
 /* No comment provided by engineer. */
 "Copy" = "Copiar";
 
-/* Litecoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Unidad de visualización Litecoin";
+/* Sumcoin denomination picker label */
+"DefaultCurrency.bitcoinLabel" = "Unidad de visualización Sumcoin";
 
 /* Label to pick fiat */
 "DefaultCurrency.chooseFiatLabel" = "Escoger:";
@@ -287,14 +287,14 @@
 /* History Bar Item Title */
 "History.barItemTitle" = "HISTORIA";
 
-/* History Current Litecoin Value */
-"History.currentLitecoinValue" = "Valor actual de LTC en";
+/* History Current Sumcoin Value */
+"History.currentSumcoinValue" = "Valor actual de LTC en";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Averiguando el saldo de la clave privada...";
 
 /* Sweep private key confirmation message */
-"Import.confirm" = "¿Quieres enviar %1$@ desde esta clave privada a tu monedero? La red Litecoin recibirá una comisión de  %2$@.";
+"Import.confirm" = "¿Quieres enviar %1$@ desde esta clave privada a tu monedero? La red Sumcoin recibirá una comisión de  %2$@.";
 
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Esta clave privada ya está en tu cartera.";
@@ -360,10 +360,10 @@
 "JailbreakWarnings.ignore" = "Ignorar";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de Litewallet y robar tus Litecoins. Borra esta cartera de inmediato y restáurala en un dispositivo seguro.";
+"JailbreakWarnings.messageWithBalance" = "SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de Litewallet y robar tus Sumcoins. Borra esta cartera de inmediato y restáurala en un dispositivo seguro.";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de Litewallet y robar tus Litecoins. Usa Litewallet únicamente en un dispositivo sin jailbreak.";
+"JailbreakWarnings.messageWithoutBalance" = "SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de Litewallet y robar tus Sumcoins. Usa Litewallet únicamente en un dispositivo sin jailbreak.";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "AVISO";
@@ -372,127 +372,127 @@
 "JailbreakWarnings.wipe" = "Borrar";
 
 /* Card Bar Item Title */
-"LitecoinCard.barItemTitle" = "TARJETA";
+"SumcoinCard.barItemTitle" = "TARJETA";
 
 /* Card balance */
-"LitecoinCard.cardBalance" = "Balance de tarjeta";
+"SumcoinCard.cardBalance" = "Balance de tarjeta";
 
 /* Features and limitations */
-"LitecoinCard.Disclaimer.bullets" = "- Registro e inicio de sesión\n- Saldo de tarjeta disponible\n- Restablecer contraseña\n- Sin transferencia a Litewallet\n- Estados Unidos solamente";
+"SumcoinCard.Disclaimer.bullets" = "- Registro e inicio de sesión\n- Saldo de tarjeta disponible\n- Restablecer contraseña\n- Sin transferencia a Litewallet\n- Estados Unidos solamente";
 
 /* Description of the status */
-"LitecoinCard.Disclaimer.description" = "La tarjeta Litecoin actualmente tiene una funcionalidad limitada en Litewallet.";
+"SumcoinCard.Disclaimer.description" = "La tarjeta Sumcoin actualmente tiene una funcionalidad limitada en Litewallet.";
 
 /* Referral to the website */
-"LitecoinCard.Disclaimer.referral" = "Visite litecoin.getblockcard.com para obtener acceso completo";
+"SumcoinCard.Disclaimer.referral" = "Visite litecoin.getblockcard.com para obtener acceso completo";
 
-/* Beta Testing Litecoin Card */
-"LitecoinCard.Disclaimer.title" = "Tarjeta Litecoin Beta";
+/* Beta Testing Sumcoin Card */
+"SumcoinCard.Disclaimer.title" = "Tarjeta Sumcoin Beta";
 
 /* Failed Login */
-"LitecoinCard.failed.login" = "error de inicio de sesion";
+"SumcoinCard.failed.login" = "error de inicio de sesion";
 
 /* Forgot password? */
-"LitecoinCard.forgotPassword" = "¿Se te olvidó tu contraseña?";
+"SumcoinCard.forgotPassword" = "¿Se te olvidó tu contraseña?";
 
 /* Login */
-"LitecoinCard.login" = "Iniciar sesión";
+"SumcoinCard.login" = "Iniciar sesión";
 
 /* Logout */
-"LitecoinCard.logout" = "Cerrar sesión";
+"SumcoinCard.logout" = "Cerrar sesión";
 
 /* Register */
-"LitecoinCard.registerCard" = "Registrarse";
+"SumcoinCard.registerCard" = "Registrarse";
 
-/* Register for Litecoin Card */
-"LitecoinCard.registerCardPhrase" = "Registrarse para la tarjeta Litecoin";
+/* Register for Sumcoin Card */
+"SumcoinCard.registerCardPhrase" = "Registrarse para la tarjeta Sumcoin";
 
 /* Registering user... */
-"LitecoinCard.registering.user" = "Registrando usuario ...";
+"SumcoinCard.registering.user" = "Registrando usuario ...";
 
 /* address */
-"LitecoinCard.Registration.address" = "Dirección";
+"SumcoinCard.Registration.address" = "Dirección";
 
 /* city */
-"LitecoinCard.Registration.city" = "Ciudad";
+"SumcoinCard.Registration.city" = "Ciudad";
 
 /* confirm password */
-"LitecoinCard.Registration.confirmPassword" = "Confirmar contraseña";
+"SumcoinCard.Registration.confirmPassword" = "Confirmar contraseña";
 
 /* country */
-"LitecoinCard.Registration.country" = "País";
+"SumcoinCard.Registration.country" = "País";
 
 /* First name */
-"LitecoinCard.Registration.firstName" = "primer nombre";
+"SumcoinCard.Registration.firstName" = "primer nombre";
 
 /* identification */
-"LitecoinCard.Registration.identification" = "Identificación";
+"SumcoinCard.Registration.identification" = "Identificación";
 
 /* kycIDNumber */
-"LitecoinCard.Registration.kycIDNumber" = "Conozca a su cliente Tipo de identificación";
+"SumcoinCard.Registration.kycIDNumber" = "Conozca a su cliente Tipo de identificación";
 
 /* kycIDType */
-"LitecoinCard.Registration.kycIDType" = "tipo de identificación";
+"SumcoinCard.Registration.kycIDType" = "tipo de identificación";
 
 /* SSN */
-"LitecoinCard.Registration.kycSSN" = "SSN";
+"SumcoinCard.Registration.kycSSN" = "SSN";
 
 /* Last name */
-"LitecoinCard.Registration.lastName" = "apellido";
+"SumcoinCard.Registration.lastName" = "apellido";
 
 /* mobile number */
-"LitecoinCard.Registration.mobileNumber" = "Número de teléfono móvil";
+"SumcoinCard.Registration.mobileNumber" = "Número de teléfono móvil";
 
 /* password */
-"LitecoinCard.Registration.password" = "contraseña";
+"SumcoinCard.Registration.password" = "contraseña";
 
 /* state province */
-"LitecoinCard.Registration.stateProvince" = "Provincia del estado";
+"SumcoinCard.Registration.stateProvince" = "Provincia del estado";
 
 /* registraition username / email */
-"LitecoinCard.Registration.usernameEmail" = "Email";
+"SumcoinCard.Registration.usernameEmail" = "Email";
 
 /* must not be empty */
-"LitecoinCard.Registration.ValidationError.empty" = "No debe estar vacío";
+"SumcoinCard.Registration.ValidationError.empty" = "No debe estar vacío";
 
 /* Invalid email address */
-"LitecoinCard.Registration.ValidationError.invalidEmail" = "Dirección de correo electrónico inválida";
+"SumcoinCard.Registration.ValidationError.invalidEmail" = "Dirección de correo electrónico inválida";
 
 /* Mobile number 10 digits required */
-"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "El número de móvil debe tener al menos 10 dígitos";
+"SumcoinCard.Registration.ValidationError.numberDigitsRequired" = "El número de móvil debe tener al menos 10 dígitos";
 
 /* Mobile number required */
-"LitecoinCard.Registration.ValidationError.numberRequired" = "Se requiere un número de celular";
+"SumcoinCard.Registration.ValidationError.numberRequired" = "Se requiere un número de celular";
 
 /* 6 Password characters required */
-"LitecoinCard.Registration.ValidationError.passwordCharacters" = "La contraseña debe tener al menos 6 caracteres";
+"SumcoinCard.Registration.ValidationError.passwordCharacters" = "La contraseña debe tener al menos 6 caracteres";
 
 /* Captial and numeric password characters required */
-"LitecoinCard.Registration.ValidationError.passwordComposition" = "La contraseña debe tener más de 6 caracteres, con al menos un carácter y un carácter numérico";
+"SumcoinCard.Registration.ValidationError.passwordComposition" = "La contraseña debe tener más de 6 caracteres, con al menos un carácter y un carácter numérico";
 
 /* Password required */
-"LitecoinCard.Registration.ValidationError.passwordRequired" = "Se requiere contraseña";
+"SumcoinCard.Registration.ValidationError.passwordRequired" = "Se requiere contraseña";
 
 /* Required field */
-"LitecoinCard.Registration.ValidationError.requiredField" = "Campo requerido";
+"SumcoinCard.Registration.ValidationError.requiredField" = "Campo requerido";
 
 /* zip post Code */
-"LitecoinCard.Registration.zipPostCode" = "Código postal";
+"SumcoinCard.Registration.zipPostCode" = "Código postal";
 
 /* Registration failure */
-"LitecoinCard.registrationFailure" = "Hubo un problema con tu registro. Verifique sus datos y vuelva a intentarlo.";
+"SumcoinCard.registrationFailure" = "Hubo un problema con tu registro. Verifique sus datos y vuelva a intentarlo.";
 
 /* Registration success */
-"LitecoinCard.registrationSuccess" = "¡Te has registrado! Por favor revise y confirme su correo electrónico. Luego vuelve a iniciar sesión.";
+"SumcoinCard.registrationSuccess" = "¡Te has registrado! Por favor revise y confirme su correo electrónico. Luego vuelve a iniciar sesión.";
 
-/* Reset Litecoin card password */
-"LitecoinCard.resetPassword" = "Restablecer la contraseña";
+/* Reset Sumcoin card password */
+"SumcoinCard.resetPassword" = "Restablecer la contraseña";
 
 /* Reset password detail */
-"LitecoinCard.resetPasswordDetail" = "Ingrese la dirección de correo electrónico asociada con su cuenta de tarjeta Litecoin y busque un correo electrónico con instrucciones para restablecer.";
+"SumcoinCard.resetPasswordDetail" = "Ingrese la dirección de correo electrónico asociada con su cuenta de tarjeta Sumcoin y busque un correo electrónico con instrucciones para restablecer.";
 
-/* Litecoin card visit */
-"LitecoinCard.visit.toReset" = "Visita https://litecoin.dashboard.getblockcard.com/password/forgot para restablecer tu contraseña.";
+/* Sumcoin card visit */
+"SumcoinCard.visit.toReset" = "Visita https://litecoin.dashboard.getblockcard.com/password/forgot para restablecer tu contraseña.";
 
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Los servicios de ubicación están desactivados.";
@@ -518,8 +518,8 @@
 /* Manage wallet modal title */
 "ManageWallet.title" = "Gestionar cartera";
 
-/* Buy Litecoin title */
-"MenuButton.buy" = "Comprar Litecoins";
+/* Buy Sumcoin title */
+"MenuButton.buy" = "Comprar Sumcoins";
 
 /* Menu button title */
 "MenuButton.customer.support" = "Atención al cliente";
@@ -573,7 +573,7 @@
 "NodeSelector.statusLabel" = "Estado de la conexión del nodo";
 
 /* Node Selector view title */
-"NodeSelector.title" = "Nodos Litecoin";
+"NodeSelector.title" = "Nodos Sumcoin";
 
 /* Bad Payment request alert title */
 "PaymentProtocol.Errors.badPaymentRequest" = "Solicitud de pago incorrecta";
@@ -591,10 +591,10 @@
 "PaymentProtocol.Errors.smallOutputError" = "No se ha podido realizar el pago";
 
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Los pagos en Litecoins no pueden ser inferiores a %1$@.";
+"PaymentProtocol.Errors.smallPayment" = "Los pagos en Sumcoins no pueden ser inferiores a %1$@.";
 
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "La transacción de Litecoins no puede ser inferior a $@.";
+"PaymentProtocol.Errors.smallTransaction" = "La transacción de Sumcoins no puede ser inferior a $@.";
 
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "tipo de firma no compatible";
@@ -731,7 +731,7 @@
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "Ingresa primero una cantidad.";
 
-/* Request a specific amount of Litecoin */
+/* Request a specific amount of Sumcoin */
 "RequestAnAmount.title" = "Solicitar una cantidad";
 
 /* Alert action button label */
@@ -747,7 +747,7 @@
 "ReScan.body1" = "20-45 minutos";
 
 /* Syncing explanation */
-"ReScan.body2" = "Si una transacción se muestra como completada en la red de Litecoin pero no en Litewallet.";
+"ReScan.body2" = "Si una transacción se muestra como completada en la red de Sumcoin pero no en Litewallet.";
 
 /* Syncing explanation */
 "ReScan.body3" = "Obtienes un error repetidamente que dice que tu transacción ha sido rechazada.";
@@ -773,7 +773,7 @@
 /* Warning Empty Wipe title */
 "resetTitle" = "Reinicio de billetera vacía";
 
-/* Scan Litecoin address camera flash toggle */
+/* Scan Sumcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Flash de la cámara";
 
 /* Complete filter label */
@@ -795,7 +795,7 @@
 "SecurityCenter.info" = "Activa todas las funciones de seguridad para una protección máxima.";
 
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "La única manera de acceder a tu Litecoin si pierdes o actualizas tu teléfono.";
+"SecurityCenter.paperKeyDescription" = "La única manera de acceder a tu Sumcoin si pierdes o actualizas tu teléfono.";
 
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Clave en papel";
@@ -843,7 +843,7 @@
 "Send.emptyPasteboard" = "Pasteboard está vacío";
 
 /* Enter LTC Address */
-"Send.enterLTCAddress" = "Introduzca una dirección de Litecoin";
+"Send.enterLTCAddress" = "Introduzca una dirección de Sumcoin";
 
 /* Network Fee: $0.01 */
 "Send.fee" = "Tarifa de red: %1$@";
@@ -855,10 +855,10 @@
 "Send.insufficientFunds" = "Fondos insuficientes";
 
 /* Invalid address alert message */
-"Send.invalidAddressMessage" = "La dirección de destino no es una dirección Litecoin válida.";
+"Send.invalidAddressMessage" = "La dirección de destino no es una dirección Sumcoin válida.";
 
 /* Invalid address on pasteboard message */
-"Send.invalidAddressOnPasteboard" = "Pasteboard no contiene una dirección Litecoin válida.";
+"Send.invalidAddressOnPasteboard" = "Pasteboard no contiene una dirección Sumcoin válida.";
 
 /* Invalid address alert title */
 "Send.invalidAddressTitle" = "Dirección inválida";
@@ -912,7 +912,7 @@
 "Send.UnstoppableDomains.udSystemError" = "Problema de búsqueda del sistema. [Error: %2$d]";
 
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Las direcciones Litecoin están diseñadas para un solo uso.";
+"Send.UsedAddress.firstLine" = "Las direcciones Sumcoin están diseñadas para un solo uso.";
 
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "La reutilización reduce la privacidad tanto para ti como para el destinatario y puede resultar en pérdida si el destinatario no controla la dirección directamente.";
@@ -1017,10 +1017,10 @@
 "StartPaperPhrase.date" = "La última vez que anotaste tu clave en papel fue el %1$@";
 
 /* Start view message */
-"StartViewController.message" = "La forma más segura de usar Litecoin.";
+"StartViewController.message" = "La forma más segura de usar Sumcoin.";
 
-/* Support the Litecoin Foundation */
-"SupportTheFoundation.title" = "Apoyar la Fundación Litecoin";
+/* Support the Sumcoin Wallet */
+"SupportTheFoundation.title" = "Apoyar la Fundación Sumcoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Conectando ...";
@@ -1209,7 +1209,7 @@
 "TransactionDetails.to" = "a %1$@";
 
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "Identificador de transacción de Litecoin";
+"TransactionDetails.txHashHeader" = "Identificador de transacción de Sumcoin";
 
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "Recibido en esta dirección";
@@ -1245,7 +1245,7 @@
 "UnlockScreen.unlocked" = "Cartera desbloqueada";
 
 /* Update PIN caption text */
-"UpdatePin.caption" = "Recuerda este PIN. Si lo olvidas, no podrás acceder a tu Litecoin.";
+"UpdatePin.caption" = "Recuerda este PIN. Si lo olvidas, no podrás acceder a tu Sumcoin.";
 
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "Tu PIN se usará para desbloquear Litewallet y enviar dinero.";

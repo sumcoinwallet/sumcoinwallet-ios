@@ -1,9 +1,9 @@
 //
-//  SupportLitecoinFoundationViewModel.swift
+//  SupportSumcoinWalletViewModel.swift
 //  loafwallet
 //
 //  Created by Kerry Washington on 11/9/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import SwiftUI
 import Combine
 
 
-class SupportLitecoinFoundationViewModel: ObservableObject {
+class SupportSumcoinWalletViewModel: ObservableObject {
     
     //MARK: - Combine Variables
     

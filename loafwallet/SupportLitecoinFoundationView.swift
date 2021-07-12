@@ -1,9 +1,9 @@
 //
-//  SupportLitecoinFoundationView.swift
+//  SupportSumcoinWalletView.swift
 //  loafwallet
 //
 //  Created by Kerry Washington on 11/9/20.
-//  Copyright © 2020 Litecoin Foundation. All rights reserved.
+//  Copyright © 2020 Sumcoin Wallet. All rights reserved.
 //
 
 import SwiftUI
@@ -11,11 +11,11 @@ import Foundation
 import WebKit
 
 /// This cell is under the amount view and above the Memo view in the Send VC
-struct SupportLitecoinFoundationView: View {
+struct SupportSumcoinWalletView: View {
 
     //MARK: - Combine Variables
     @ObservedObject
-    var viewModel: SupportLitecoinFoundationViewModel
+    var viewModel: SupportSumcoinWalletViewModel
     
     @State
     private var showSupportLFPage: Bool = false
@@ -24,7 +24,7 @@ struct SupportLitecoinFoundationView: View {
     var supportSafariView = SupportSafariView(url: FoundationSupport.url,
                                               viewModel: SupportSafariViewModel())
     
-    init(viewModel: SupportLitecoinFoundationViewModel) {
+    init(viewModel: SupportSumcoinWalletViewModel) {
         self.viewModel = viewModel
     }
     
@@ -76,17 +76,17 @@ struct SupportLitecoinFoundationView: View {
     }
 }
 
-struct SupportLitecoinFoundationView_Previews: PreviewProvider {
+struct SupportSumcoinWalletView_Previews: PreviewProvider {
     
-    static let viewModel = SupportLitecoinFoundationViewModel()
+    static let viewModel = SupportSumcoinWalletViewModel()
     
     static var previews: some View {
         Group {
-            SupportLitecoinFoundationView(viewModel: viewModel)
+            SupportSumcoinWalletView(viewModel: viewModel)
                 .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
                 .previewDisplayName("iPhone 12 Pro Max")
             
-            SupportLitecoinFoundationView(viewModel: viewModel)
+            SupportSumcoinWalletView(viewModel: viewModel)
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
                 .previewDisplayName("iPhone SE")
         }

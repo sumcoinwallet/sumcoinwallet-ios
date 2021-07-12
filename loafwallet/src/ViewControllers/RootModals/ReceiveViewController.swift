@@ -37,7 +37,7 @@ class ReceiveViewController : UIViewController, Subscriber, Trackable {
     private let share = ShadowButton(title: S.Receive.share, type: .tertiary, image: #imageLiteral(resourceName: "Share"))
     private let sharePopout = InViewAlert(type: .secondary)
     private let border = UIView()
-    private let request = ShadowButton(title: S.Receive.request, type: .flatLitecoinBlue)
+    private let request = ShadowButton(title: S.Receive.request, type: .flatSumcoinBlue)
     private let addressButton = UIButton(type: .system)
     private var topSharePopoutConstraint: NSLayoutConstraint?
     private let wallet: BRWallet
