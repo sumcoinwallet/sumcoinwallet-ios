@@ -35,6 +35,9 @@ extension UIColor {
     static var liteWalletBlue: UIColor { //345D9D
       return #colorLiteral(red: 0.2039215686, green: 0.3647058824, blue: 0.6156862745, alpha: 1)
     }
+    static var liteWalletDarkBlue: UIColor { //0C3475
+        return #colorLiteral(red: 0.04705882353, green: 0.2039215686, blue: 0.4588235294, alpha: 1)
+    }
     
     static var litecoinOrange: UIColor { // FE5F55
       return #colorLiteral(red: 0.9960784314, green: 0.3725490196, blue: 0.3333333333, alpha: 1)
@@ -155,4 +158,4 @@ extension UIColor {
     static var txListGreen: UIColor {
         return UIColor(red: 0.0, green: 169.0/255.0, blue: 157.0/255.0, alpha: 1.0)
     }
-}
+} 

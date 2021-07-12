@@ -1,4 +1,3 @@
-
 /* About screen website label */
 "About.blog" = "Website";
 
@@ -62,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN Set";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Domain Resolution";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Address was resolved!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Send failed";
 
@@ -79,57 +84,6 @@
 
 /* API Token error message */
 "ApiClient.tokenError" = "Unable to retrieve API token";
-
-/* Send BCH view body. */
-"BCH.body" = "Enter a destination BCH address below. All BCH in your wallet at the time of the fork (%1$@) will be sent.";
-
-/* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "Confirm sending %1$@ to %2$@";
-
-/* Confirmation alert title */
-"BCH.confirmationTitle" = "Confirmation";
-
-/* Generic bch erorr message */
-"BCH.genericError" = "Your account does not contain any BCH, or you received BCH after the fork.";
-
-/* Transaction ID copied message */
-"BCH.hashCopiedMessage" = "Transaction ID copied";
-
-/* No address error message */
-"BCH.noAddressError" = "Please enter an address";
-
-/* Attempted to scan unsupported qr code error message. */
-"BCH.paymentProtocolError" = "Payment Protocol Requests are not supported for BCH transactions";
-
-/* BCH successfully sent alert message */
-"BCH.successMessage" = "BCH was successfully sent.";
-
-/* Widthdraw BCH view title */
-"BCH.title" = "Withdraw BCH";
-
-/* Tx Hash button header */
-"BCH.txHashHeader" = "BCH Transaction ID";
-
-/* Approve button label */
-"BitID.approve" = "Approve";
-
-/* <sitename> is requesting authentication using your Litecoin wallet */
-"BitID.authenticationRequest" = "%1$@ is requesting authentication using your Litecoin wallet";
-
-/* Deny button label */
-"BitID.deny" = "Deny";
-
-/* BitID error alert title */
-"BitID.error" = "Authentication Error";
-
-/* BitID error alert messaage */
-"BitID.errorMessage" = "Please check with the service. You may need to try again.";
-
-/* BitID success alert title */
-"BitID.success" = "Successfully Authenticated";
-
-/* BitID Authentication Request alert view title */
-"BitID.title" = "BitID Authentication Request";
 
 /* buy button */
 "Button.buy" = "buy";
@@ -151,6 +105,9 @@
 
 /* receive button */
 "Button.receive" = "receive";
+
+/* resetFields */
+"Button.resetFields" = "Reset fields";
 
 /* send button */
 "Button.send" = "send";
@@ -181,6 +138,12 @@
 
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "Buy Łitecoin";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "• Buy LTC with many fiat pairs\n• Pay with multiple methods\n• Global payment provider";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "• Get Litecoin in 5 mins!\n• Buy Litecoin via credit card\n• Passport or State ID";
@@ -254,21 +217,6 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Exchange Rate";
 
-/* Donate Memo */
-"Donate.memo" = "Donation to the Litecoin Foundation";
-
-/* Donate to the Litecoin Foundation */
-"Donate.title" = "Donate to the Litecoin Foundation (%@)";
-
-/* Donate Confirmation */
-"Donate.title.confirmation" = "Confirm Donation";
-
-/* Donate to the articles */
-"Donate.toThe" = "Donate to the";
-
-/* Donate */
-"Donate.word" = "Donate";
-
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableMessage" = "This device isn't configured to send email with the iOS mail app.";
 
@@ -332,8 +280,14 @@
 /* Fee Selector title */
 "FeeSelector.title" = "Processing Speed";
 
+/* Or */
+"Fragment.or" = "or";
+
 /* History Bar Item Title */
 "History.barItemTitle" = "HISTORY";
+
+/* History Current Litecoin Value */
+"History.currentLitecoinValue" = "Current LTC value in";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Checking private key balance...";
@@ -416,6 +370,129 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Wipe";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "CARD";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "Card balance";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "- Registration & Login\n- Available card balance\n- Reset password\n- No transfer to Litewallet\n- US Only";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "Litecoin Card currently has limited functionality in Litewallet.";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "Visit litecoin.getblockcard.com for full access";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "Litecoin Card Beta";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "Login failed";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Forgot password?";
+
+/* Login */
+"LitecoinCard.login" = "Login";
+
+/* Logout */
+"LitecoinCard.logout" = "Logout";
+
+/* Register */
+"LitecoinCard.registerCard" = "Register";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "Register for Litecoin Card";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Registering user...";
+
+/* address */
+"LitecoinCard.Registration.address" = "Address";
+
+/* city */
+"LitecoinCard.Registration.city" = "City";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "Confirm password";
+
+/* country */
+"LitecoinCard.Registration.country" = "Country";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "First name";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Identification";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "ID Number";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID Type";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "Last name";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Mobile number";
+
+/* password */
+"LitecoinCard.Registration.password" = "Password";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "State / Province";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Email (Username)";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Must not be empty";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Invalid e-mail Address";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Mobile number must have at least 10 digits";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobile number is required";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Password must have at least 6 characters";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Password must be more than 6 characters, with at least one character and one numeric character";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Password is Required";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "Required field";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Zip / Postcode";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "There was a problem with your registration. \nPlease check your data and try again.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "You have registered!\nPlease check and confirm your email. Then come back to login.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Reset password";
+
+/* Reset password detail */
+"LitecoinCard.resetPasswordDetail" = "Enter the email address associated with your Litecoin Card account & look for an email with reset instructions.";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Visit https://litecoin.dashboard.getblockcard.com/password/forgot\nto reset your password.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Location services are disabled.";
 
@@ -424,6 +501,9 @@
 
 /* No comment provided by engineer. */
 "Malformed URI" = "Malformed URI";
+
+/* Balance */
+"ManageWallet.balance" = "Balance";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "You created your wallet on %1$@";
@@ -439,6 +519,9 @@
 
 /* Buy Litecoin title */
 "MenuButton.buy" = "Buy Litecoin";
+
+/* Menu button title */
+"MenuButton.customer.support" = "Customer support";
 
 /* Menu button title */
 "MenuButton.lock" = "Lock Wallet";
@@ -758,6 +841,9 @@
 /* Empty pasteboard error message */
 "Send.emptyPasteboard" = "Pasteboard is empty";
 
+/* Enter LTC Address */
+"Send.enterLTCAddress" = "Enter a Litecoin address";
+
 /* Network Fee: $0.01 */
 "Send.fee" = "Network Fee: %1$@";
 
@@ -809,6 +895,21 @@
 /* Send money to label */
 "Send.toLabel" = "To";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Lookup";
+
+/* LookupDomainError */
+"Send.UnstoppableDomains.lookupDomainError" = "Sorry, domain was not found. [Error:%2$d]";
+
+/* lookupFailureHeader */
+"Send.UnstoppableDomains.lookupFailureHeader" = "Lookup failed";
+
+/* Enter to match domain name to LTC Address */
+"Send.UnstoppableDomains.placeholder" = "Enter a .crypto or .zil domain";
+
+/* UDSystemError */
+"Send.UnstoppableDomains.udSystemError" = "System lookup problem. [Error:%2$d]";
+
 /* Adress already used alert message - first part */
 "Send.UsedAddress.firstLine" = "Litecoin addresses are intended for single use only.";
 
@@ -830,6 +931,9 @@
 /* Default currency label */
 "Settings.currency" = "Display Currency";
 
+/* Current Locale */
+"Settings.currentLocale" = "Current Locale:";
+
 /* Join Early access label */
 "Settings.earlyAccess" = "Join Early Access";
 
@@ -847,6 +951,9 @@
 
 /* Litewallet environment */
 "Settings.litewallet.environment" = "Environment:";
+
+/* Litewallet Partners */
+"Settings.litewallet.partners" = "Litewallet partners";
 
 /* Litewallet version */
 "Settings.litewallet.version" = "Litewallet version:";
@@ -910,6 +1017,9 @@
 
 /* Start view message */
 "StartViewController.message" = "The most secure and safest way to use Litecoin.";
+
+/* Support the Litecoin Foundation */
+"SupportTheFoundation.title" = "Support the Litecoin Foundation";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Connecting...";
@@ -1042,6 +1152,12 @@
 
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "Memo";
+
+/* Copied */
+"TransactionDetails.copiedAll" = "Copied";
+
+/* Copy all details */
+"TransactionDetails.copyAllDetails" = "Copy all details";
 
 /* Empty transaction list message. */
 "TransactionDetails.emptyMessage" = "Your transactions will appear here.";

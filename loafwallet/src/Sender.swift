@@ -104,7 +104,7 @@ class Sender {
                 let properties: [String: String] = ["ERROR_TX":"\(tx.txHash)","ERROR_BLOCKHEIGHT": "\(tx.blockHeight)"]
                 LWAnalytics.logEventWithParameters(itemName:._20200112_ERR, properties: properties)
 
-                let alert = UIAlertController(title: S.Alert.corruptionError, message: S.Alert.corruptionMessage, preferredStyle: .alert)
+                let alert = UIAlertController(title: S.LitewalletAlert.corruptionError, message: S.LitewalletAlert.corruptionMessage, preferredStyle: .alert)
           
                 UserDefaults.didSeeCorruption = true
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -117,7 +117,9 @@ class Sender {
 
     //TODO - remove this -- only temporary for testing
     private var topViewController: UIViewController? {
-        var viewController = UIApplication.shared.keyWindow?.rootViewController
+        
+        LWAnalytics.logEventWithParameters(itemName:._20210427_HCIEEH)
+        var viewController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController
         while viewController?.presentedViewController != nil {
             viewController = viewController?.presentedViewController
         }

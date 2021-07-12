@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import StoreKit
+import StoreKit 
  
 private let timeSinceLastExitKey = "TimeSinceLastExit"
 private let shouldRequireLoginTimeoutKey = "ShouldRequireLoginTimeoutKey"
@@ -18,7 +18,7 @@ class ApplicationController : Subscriber, Trackable {
 
     //Ideally the window would be private, but is unfortunately required
     //by the UIApplicationDelegate Protocol
-    let window = UIWindow()
+    var window: UIWindow?
     fileprivate let store = Store()
     private var startFlowController: StartFlowPresenter?
     private var modalPresenter: ModalPresenter?
@@ -31,7 +31,6 @@ class ApplicationController : Subscriber, Trackable {
     private var kvStoreCoordinator: KVStoreCoordinator?
     private var mainViewController: MainViewController?
     fileprivate var application: UIApplication?
-    private let watchSessionManager = PhoneWCSessionManager()
     private var urlController: URLController?
     private var defaultsUpdater: UserDefaultsUpdater?
     private var reachability = ReachabilityMonitor()
@@ -61,8 +60,9 @@ class ApplicationController : Subscriber, Trackable {
         }
     }
 
-    func launch(application: UIApplication, options: [UIApplicationLaunchOptionsKey: Any]?) {
+    func launch(application: UIApplication, window: UIWindow?, options: [UIApplicationLaunchOptionsKey: Any]?) {
         self.application = application
+        self.window = window
         application.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
         setup()
         handleLaunchOptions(options)
@@ -83,11 +83,9 @@ class ApplicationController : Subscriber, Trackable {
 
     private func setup() {
             setupDefaults()
-            countLaunches()
-            setupAppearance()
+            countLaunches() 
             setupRootViewController()
-            window.makeKeyAndVisible()
-            listenForPushNotificationRequest()
+            window?.makeKeyAndVisible()
             offMainInitialization()
             store.subscribe(self, name: .reinitWalletManager(nil), callback: {
                 guard let trigger = $0 else { return }
@@ -176,12 +174,12 @@ class ApplicationController : Subscriber, Trackable {
 
         private func didInitWalletManager() {
             guard let walletManager = walletManager else { assert(false, "WalletManager should exist!"); return }
-            guard let rootViewController = window.rootViewController else { return }
+            guard let rootViewController = window?.rootViewController else { return }
             
             hasPerformedWalletDependentInitialization = true
             store.perform(action: PinLength.set(walletManager.pinLength))
             walletCoordinator = WalletCoordinator(walletManager: walletManager, store: store)
-            modalPresenter = ModalPresenter(store: store, walletManager: walletManager, window: window, apiClient: noAuthApiClient)
+            modalPresenter = ModalPresenter(store: store, walletManager: walletManager, window: window!, apiClient: noAuthApiClient)
             exchangeUpdater = ExchangeUpdater(store: store, walletManager: walletManager)
             feeUpdater = FeeUpdater(walletManager: walletManager, store: store)
             startFlowController = StartFlowPresenter(store: store, walletManager: walletManager, rootViewController: rootViewController)
@@ -215,8 +213,7 @@ class ApplicationController : Subscriber, Trackable {
                     }
                 }
                 exchangeUpdater?.refresh(completion: {
-                    self.watchSessionManager.walletManager = self.walletManager
-                    self.watchSessionManager.rate = self.store.state.currentRate
+                    // Update values
                 })
             }
         }
@@ -247,17 +244,9 @@ class ApplicationController : Subscriber, Trackable {
                 UserDefaults.standard.set(NSNumber(value: 1), forKey: numberOfLitewalletLaunches)
             }
         }
-     
-        private func setupAppearance() {
-            let tabBar = UITabBar.appearance()
-            tabBar.barTintColor = .liteWalletBlue
-            tabBar.unselectedItemTintColor = #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7843137255, alpha: 0.5)
-            tabBar.tintColor = .white
-        }
-
         private func setupRootViewController() {
             mainViewController = MainViewController(store: store)
-            window.rootViewController = mainViewController
+            window?.rootViewController = mainViewController
         }
 
         private func startDataFetchers() {
@@ -267,8 +256,7 @@ class ApplicationController : Subscriber, Trackable {
             defaultsUpdater?.refresh()
             walletManager?.apiClient?.events?.up()
             exchangeUpdater?.refresh(completion: {
-                self.watchSessionManager.walletManager = self.walletManager
-                self.watchSessionManager.rate = self.store.state.currentRate
+                // Update values
             })
         }
 
@@ -369,24 +357,7 @@ class ApplicationController : Subscriber, Trackable {
         func willResignActive() {
         }
     }
-
-    //MARK: - Push notifications
+ 
     extension ApplicationController {
-        func listenForPushNotificationRequest() {
-            store.subscribe(self, name: .registerForPushNotificationToken, callback: { _ in
-            })
-        }
-
-        func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
-            if !notificationSettings.types.isEmpty {
-                application.registerForRemoteNotifications()
-            }
-        }
-
-        func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        }
-
-        func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-            print("didFailToRegisterForRemoteNotification: \(error)")
-        }
+ 
     }

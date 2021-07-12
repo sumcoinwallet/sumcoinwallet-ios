@@ -1,4 +1,3 @@
-
 /* About screen blog label */
 "About.blog" = "Blog";
 
@@ -62,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN Set.";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Domeinresolutie";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Uw adres is opgelost!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Zending mislukt";
 
@@ -79,57 +84,6 @@
 
 /* API Token error message */
 "ApiClient.tokenError" = "Niet in staat op API teken te vinden";
-
-/* Send BCH view body. */
-"BCH.body" = "Voer hieronder een BCH bestemmingsadres in. Alle BCH die op het moment van de fork  (%1$@) in in je portomonnee zitten, zullen worden gestuurd.";
-
-/* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "Sturen van %1$@ naar %2$@ bevestigen";
-
-/* Confirmation alert title */
-"BCH.confirmationTitle" = "Bevestiging";
-
-/* Generic bch erorr message */
-"BCH.genericError" = "Je account bevat geen BCH of je hebt BCH ontvangen na de fork.";
-
-/* Transaction ID copied message */
-"BCH.hashCopiedMessage" = "Transactie-ID gekopieerd";
-
-/* No address error message */
-"BCH.noAddressError" = "Voer alstublieft een adres in";
-
-/* Attempted to scan unsupported qr code error message. */
-"BCH.paymentProtocolError" = "Betalingsprotocol-aanvragen worden niet ondersteund voor tranacties met BCH";
-
-/* BCH successfully sent alert message */
-"BCH.successMessage" = "BCH succesvol verstuurd.";
-
-/* Widthdraw BCH view title */
-"BCH.title" = "BCH opnemen";
-
-/* Tx Hash button header */
-"BCH.txHashHeader" = "BCH Transactie-ID.";
-
-/* Approve button label */
-"BitID.approve" = "Keur goed";
-
-/* <sitename> is requesting authentication using your Litecoin wallet */
-"BitID.authenticationRequest" = "%1$@ vraagt om authenticatie om je Litecoin-portemonnee te gebruiken";
-
-/* Deny button label */
-"BitID.deny" = "Weigeren";
-
-/* BitID error alert title */
-"BitID.error" = "Authenticatie Fout";
-
-/* BitID error alert messaage (The payment service you are trying to use isn't working. Please contact them, as you may need to try again) */
-"BitID.errorMessage" = "Vraag het na bij de service. Je moet het mogelijk opnieuw proberen.";
-
-/* BitID success alert title */
-"BitID.success" = "Succesvol geautenticeerd";
-
-/* BitID Authentication Request alert view title */
-"BitID.title" = "BitID Authenticatieverzoek";
 
 /* buy button */
 "Button.buy" = "kopen";
@@ -151,6 +105,9 @@
 
 /* receive button */
 "Button.receive" = "ontvangen";
+
+/* resetFields */
+"Button.resetFields" = "Reset velden";
 
 /* send button */
 "Button.send" = "versturen";
@@ -181,6 +138,12 @@
 
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "Koop Litecoin";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "• Koop LTC met veel fiat-paren\n• Betaal met meerdere methoden\n• Wereldwijde betalingsprovider";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "• Krijg Litecoin in 5 minuten! \n • Koop Litecoin via creditcard \n • Paspoort of staat ID";
@@ -254,21 +217,6 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Wisselkoers";
 
-/* Donate Memo */
-"Donate.memo" = "Donatie aan de Litecoin Foundation";
-
-/* Donate to the Litecoin Foundation */
-"Donate.title" = "Tik om te doneren aan de Litecoin Foundation (%@)";
-
-/* Donate Confirmation */
-"Donate.title.confirmation" = "Bevestig donatie";
-
-/* Donate articles to the */
-"Donate.toThe" = "Doneer aan de";
-
-/* Donate */
-"Donate.word" = "schenken";
-
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableMessage" = "Dit apparaat is niet geconfigureerd om e-mails te sturen via de iOS Mail app.";
 
@@ -332,8 +280,14 @@
 /* Fee Selector title */
 "FeeSelector.title" = "Verwerkingssnelheid";
 
+/* Or */
+"Fragment.or" = "of";
+
 /* History Bar Item Title */
 "History.barItemTitle" = "GESCHIEDENIS";
+
+/* History Current Litecoin Value */
+"History.currentLitecoinValue" = "Huidige LTC-waarde in";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Persoonlijke sleutel balans checken...";
@@ -416,6 +370,129 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Wissen";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "KAART";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "Kaartsaldo";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "- Registratie en inloggen\n- Beschikbaar kaartsaldo\n- Wachtwoord opnieuw instellen\n- Geen overdracht naar Litewallet\n- Alleen in de USA.";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "Litecoin Card heeft momenteel beperkte functionaliteit in Litewallet.";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "Bezoek litecoin.getblockcard.com voor volledige toegang";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "Litecoin Card Beta";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "Inloggen mislukt";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Wachtwoord vergeten?";
+
+/* Login */
+"LitecoinCard.login" = "Log in";
+
+/* Logout */
+"LitecoinCard.logout" = "Uitloggen";
+
+/* Register */
+"LitecoinCard.registerCard" = "Registreren";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "Registreer voor Litecoin Card";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Gebruiker registreren ...";
+
+/* address */
+"LitecoinCard.Registration.address" = "Woonadres";
+
+/* city */
+"LitecoinCard.Registration.city" = "stad";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "bevestig wachtwoord";
+
+/* country */
+"LitecoinCard.Registration.country" = "Land";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "Voornaam";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Identificatie";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "Ken uw klant ID Type";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "ID Type";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "achternaam";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Mobiele nummer";
+
+/* password */
+"LitecoinCard.Registration.password" = "wachtwoord";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "Staat / Provincie";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "E-mail";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Mag niet leeg zijn";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Ongeldig e-mailadres";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Het mobiele nummer moet minimaal 10 cijfers hebben";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Mobiel nummer is vereist";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Wachtwoord moet minimaal 6 tekens bevatten";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Wachtwoord moet uit meer dan 6 tekens bestaan, met minimaal één teken en één numeriek teken";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Een wachtwoord is verplicht";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "verplicht veld";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Postcode";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "Er is een probleem opgetreden met uw registratie. Controleer uw gegevens en probeer het opnieuw.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "U bent geregistreerd! Controleer en bevestig uw e-mail. Kom dan terug om in te loggen.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Wachtwoord opnieuw instellen";
+
+/* Reset password detail */
+"LitecoinCard.resetPasswordDetail" = "Voer het e-mailadres in dat is gekoppeld aan uw Litecoin Card-account en zoek een e-mail met resetinstructies.";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Ga naar https://litecoin.dashboard.getblockcard.com/password/forgot om uw wachtwoord te resetten.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Locatievoorzieningen zijn uitgeschakeld.";
 
@@ -424,6 +501,9 @@
 
 /* No comment provided by engineer. */
 "Malformed URI" = "Misvormde URI";
+
+/* Balance */
+"ManageWallet.balance" = "Saldo";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Je hebt je portemonnee gecreëerd op %1$@";
@@ -439,6 +519,9 @@
 
 /* Buy Litecoin title */
 "MenuButton.buy" = "Litecoins Kopen";
+
+/* Menu button title */
+"MenuButton.customer.support" = "Klantenservice";
 
 /* Menu button title */
 "MenuButton.lock" = "Portemonnee Vergrendelen";
@@ -758,6 +841,9 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "Plakbord is leeg";
 
+/* Enter LTC Address */
+"Send.enterLTCAddress" = "Voer een Litecoin-adres in";
+
 /* Network Fee: $0.01 */
 "Send.fee" = "Netwerkkosten: %1$@";
 
@@ -809,6 +895,21 @@
 /* Send money to label */
 "Send.toLabel" = "Naar";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Opzoeken";
+
+/* LookupDomainError */
+"Send.UnstoppableDomains.lookupDomainError" = "Sorry, het domein is niet gevonden. [Fout: %2$d]";
+
+/* lookupFailureHeader */
+"Send.UnstoppableDomains.lookupFailureHeader" = "Opzoeken mislukt";
+
+/* Enter to match domain name to LTC Address */
+"Send.UnstoppableDomains.placeholder" = "Voer een .crypto- of .zil-domein in";
+
+/* UDSystemError */
+"Send.UnstoppableDomains.udSystemError" = "Systeem opzoeken probleem. [Fout: %2$d]";
+
 /* Adress already used alert message - first part */
 "Send.UsedAddress.firstLine" = "Litecoin adressen zijn alleen bedoeld voor enkel gebruik.";
 
@@ -830,6 +931,9 @@
 /* i.e. the currency which will be displayed */
 "Settings.currency" = "Toon valuta";
 
+/* Current Locale */
+"Settings.currentLocale" = "Huidige landinstelling:";
+
 /* Join Early access label */
 "Settings.earlyAccess" = "Doe Mee aan Early Access";
 
@@ -847,6 +951,9 @@
 
 /* Litewallet environment */
 "Settings.litewallet.environment" = "Milieu:";
+
+/* Litewallet Partners */
+"Settings.litewallet.partners" = "Litewallet-partners";
 
 /* Litewallet version */
 "Settings.litewallet.version" = "Litewallet-versie:";
@@ -910,6 +1017,9 @@
 
 /* Start view message */
 "StartViewController.message" = "De veiligste en betrouwbaarste manier om Litecoin te gebruiken.";
+
+/* Support the Litecoin Foundation */
+"SupportTheFoundation.title" = "Steun de Stichting Litecoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Verbinden...";
@@ -1042,6 +1152,12 @@
 
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "Memo";
+
+/* Copied */
+"TransactionDetails.copiedAll" = "Gekopieerd";
+
+/* Copy all details */
+"TransactionDetails.copyAllDetails" = "Kopieer alle details";
 
 /* Empty transaction list message. */
 "TransactionDetails.emptyMessage" = "Je transacties zullen hier verschijnen.";

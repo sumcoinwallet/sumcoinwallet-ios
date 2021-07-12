@@ -1,4 +1,3 @@
-
 /* About screen blog label */
 "About.blog" = "Блог";
 
@@ -62,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN-код задан";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Разрешение домена";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Ваш адрес решен!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Ошибка отправки";
 
@@ -79,57 +84,6 @@
 
 /* API Token error message */
 "ApiClient.tokenError" = "Не удалось извлечь токен API";
-
-/* Send BCH view body. */
-"BCH.body" = "Введите адрес адресата BCH ниже. Вся сумма BCH в вашем кошельке во время форка (%1$@) будет отправлена.";
-
-/* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "Подтвердить отправку %1$@ на %2$@";
-
-/* Confirmation alert title */
-"BCH.confirmationTitle" = "Подтверждение";
-
-/* Generic bch erorr message */
-"BCH.genericError" = "На Вашем аккаунте нет BCH, или вы получили BCH после форка.";
-
-/* Transaction ID copied message */
-"BCH.hashCopiedMessage" = "Идентификатор транзакции скопирован";
-
-/* No address error message */
-"BCH.noAddressError" = "Пожалуйста, введите и адрес";
-
-/* Attempted to scan unsupported qr code error message. */
-"BCH.paymentProtocolError" = "Запросы протокола платежей не поддерживаются для транзакций BCH";
-
-/* BCH successfully sent alert message */
-"BCH.successMessage" = "BCH был успешно отправлен.";
-
-/* Widthdraw BCH view title */
-"BCH.title" = "Снять BCH";
-
-/* Tx Hash button header */
-"BCH.txHashHeader" = "Идентификатор транзакции BCH";
-
-/* Approve button label */
-"BitID.approve" = "Одобрить";
-
-/* <sitename> is requesting authentication using your Litecoin wallet */
-"BitID.authenticationRequest" = "%1$@ запрашивает аутентификацию, используя ваш биткойн-кошелек";
-
-/* Deny button label */
-"BitID.deny" = "Отказаться";
-
-/* BitID error alert title */
-"BitID.error" = "Ошибка аутентификации";
-
-/* BitID error alert messaage (The payment service you are trying to use isn't working. Please contact them, as you may need to try again) */
-"BitID.errorMessage" = "Пожалуйста, обратитесь в эту службу. Возможно, вам придется попробовать еще раз.";
-
-/* BitID success alert title */
-"BitID.success" = "Аутентификация пройдена успешно";
-
-/* BitID Authentication Request alert view title */
-"BitID.title" = "Запрос на аутентификацию BitID";
 
 /* buy button */
 "Button.buy" = "купить";
@@ -151,6 +105,9 @@
 
 /* receive button */
 "Button.receive" = "получить";
+
+/* resetFields */
+"Button.resetFields" = "Очистить поля";
 
 /* send button */
 "Button.send" = "отправить";
@@ -181,6 +138,12 @@
 
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "Купить Litecoin";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "• Покупайте LTC с помощью множества фиатных пар\n• Оплачивайте несколькими способами\n• Глобальный платежный провайдер";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "• Получить Litecoin за 5 минут! \n • Купить Litecoin с помощью кредитной карты \n • Паспорт или удостоверение личности штата";
@@ -254,21 +217,6 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Обменный курс";
 
-/* Donate Memo */
-"Donate.memo" = "Пожертвование в фонд Litecoin";
-
-/* Donate to the Litecoin Foundation */
-"Donate.title" = "Нажмите, чтобы пожертвовать в фонд Litecoin (%@)";
-
-/* Donate Confirmation */
-"Donate.title.confirmation" = "Подтвердите Пожертвование";
-
-/* Donate articles to the */
-"Donate.toThe" = "Пожертвовать";
-
-/* Donate */
-"Donate.word" = "жертвовать";
-
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableMessage" = "Для этого устройства не настроена отправка электронных писем через почтовое приложение iOS.";
 
@@ -332,8 +280,14 @@
 /* Fee Selector title */
 "FeeSelector.title" = "Скорость обработки";
 
+/* Or */
+"Fragment.or" = "или";
+
 /* History Bar Item Title */
 "History.barItemTitle" = "ИСТОРИЯ";
+
+/* History Current Litecoin Value */
+"History.currentLitecoinValue" = "Текущее значение LTC в";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Проверяем баланс по персональному ключу...";
@@ -416,6 +370,129 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Очистить";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "КАРТА";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "Баланс карты";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "- Регистрация и вход\n- Доступный баланс карты\n- Сброс пароля\n- Без перевода на Litewallet\n- Только США";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "Litecoin Card в настоящее время имеет ограниченную функциональность в Litewallet.";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "Посетите litecoin.getblockcard.com для полного доступа";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "Бета-версия карты Litecoin";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "Ошибка входа";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Забыли пароль?";
+
+/* Login */
+"LitecoinCard.login" = "Авторизоваться";
+
+/* Logout */
+"LitecoinCard.logout" = "Выйти";
+
+/* Register */
+"LitecoinCard.registerCard" = "регистр";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "Зарегистрируйтесь для получения карты Litecoin";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Регистрация пользователя ...";
+
+/* address */
+"LitecoinCard.Registration.address" = "Адрес улицы";
+
+/* city */
+"LitecoinCard.Registration.city" = "город";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "Подтвердите Пароль";
+
+/* country */
+"LitecoinCard.Registration.country" = "Страна";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "Имя";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Идентификация";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "Знай своего клиента Тип ID";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "Тип ID";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "фамилия";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Номер мобильного";
+
+/* password */
+"LitecoinCard.Registration.password" = "пароль";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "Штат / провинция";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Эл. адрес";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Не должно быть пустым";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Неверный адрес электронной почты";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Номер мобильного телефона должен состоять не менее чем из 10 цифр.";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Требуется номер мобильного телефона";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Пароль должен состоять не менее чем из 6 символов.";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Пароль должен содержать более 6 символов, по крайней мере, один символ и один цифровой символ.";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Необходим пароль";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "Обязательное поле";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Почтовый индекс";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "При регистрации возникла проблема. Пожалуйста, проверьте свои данные и попробуйте еще раз.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "Вы зарегистрировались! Пожалуйста, проверьте и подтвердите свою электронную почту. Затем вернитесь к логину.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Сброс пароля";
+
+/* Reset password detail */
+"LitecoinCard.resetPasswordDetail" = "Введите адрес электронной почты, связанный с вашей учетной записью Litecoin Card, и найдите письмо с инструкциями по сбросу.";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Посетите https://litecoin.dashboard.getblockcard.com/password/forgot, чтобы сбросить пароль.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Сервисы определения местоположения отключены.";
 
@@ -424,6 +501,9 @@
 
 /* No comment provided by engineer. */
 "Malformed URI" = "Неверно сформированный URI";
+
+/* Balance */
+"ManageWallet.balance" = "Баланс";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Вы создали ваш кошелек %1$@";
@@ -439,6 +519,9 @@
 
 /* Buy Litecoin title */
 "MenuButton.buy" = "Купить Litecoin";
+
+/* Menu button title */
+"MenuButton.customer.support" = "Служба поддержки";
 
 /* Menu button title */
 "MenuButton.lock" = "Заблокировать кошелек";
@@ -758,6 +841,9 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "Буфер обмена пуст";
 
+/* Enter LTC Address */
+"Send.enterLTCAddress" = "Введите адрес Litecoin";
+
 /* Network Fee: $0.01 */
 "Send.fee" = "Комиссия сети: %1$@";
 
@@ -809,6 +895,21 @@
 /* Send money to label */
 "Send.toLabel" = "На";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Искать";
+
+/* LookupDomainError */
+"Send.UnstoppableDomains.lookupDomainError" = "К сожалению, домен не найден. [Ошибка: %2$d]";
+
+/* lookupFailureHeader */
+"Send.UnstoppableDomains.lookupFailureHeader" = "Ошибка поиска";
+
+/* Enter to match domain name to LTC Address */
+"Send.UnstoppableDomains.placeholder" = "Введите домен .crypto или .zil";
+
+/* UDSystemError */
+"Send.UnstoppableDomains.udSystemError" = "Проблема с поиском в системе. [Ошибка: %2$d]";
+
 /* Adress already used alert message - first part */
 "Send.UsedAddress.firstLine" = "Биткойн-адреса предназначены исключительно для однократного использования.";
 
@@ -830,6 +931,9 @@
 /* i.e. the currency which will be displayed */
 "Settings.currency" = "Отображать валюту";
 
+/* Current Locale */
+"Settings.currentLocale" = "Текущая локаль:";
+
 /* Join Early access label */
 "Settings.earlyAccess" = "Присоединитесь к пользователям с ранним доступом";
 
@@ -847,6 +951,9 @@
 
 /* Litewallet environment */
 "Settings.litewallet.environment" = "Окружающая среда:";
+
+/* Litewallet Partners */
+"Settings.litewallet.partners" = "Партнеры Litewallet";
 
 /* Litewallet version */
 "Settings.litewallet.version" = "Litewallet версия:";
@@ -910,6 +1017,9 @@
 
 /* Start view message */
 "StartViewController.message" = "Самый надежный и безопасный способ использования биткойна.";
+
+/* Support the Litecoin Foundation */
+"SupportTheFoundation.title" = "Поддержите фонд Litecoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Подключение ...";
@@ -1042,6 +1152,12 @@
 
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "Записка";
+
+/* Copied */
+"TransactionDetails.copiedAll" = "Скопировано";
+
+/* Copy all details */
+"TransactionDetails.copyAllDetails" = "Скопируйте все детали";
 
 /* Empty transaction list message. */
 "TransactionDetails.emptyMessage" = "Ваши транзакции будут отображаться здесь.";

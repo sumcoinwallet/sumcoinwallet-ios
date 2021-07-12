@@ -1,4 +1,3 @@
-
 /* About screen blog label */
 "About.blog" = "部落格";
 
@@ -62,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN 已設定";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "域解析";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "您的地址已解決";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "寄出失敗";
 
@@ -79,57 +84,6 @@
 
 /* API Token error message */
 "ApiClient.tokenError" = "無法擷取 API 權杖";
-
-/* Send BCH view body. */
-"BCH.body" = "在下方輸入目的地 BCH 地址。分叉（%1$@）之時錢包內所有的 BCH 都會送出。";
-
-/* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "確定送出 %1$@ 至 %2$@";
-
-/* Confirmation alert title */
-"BCH.confirmationTitle" = "確認";
-
-/* Generic bch erorr message */
-"BCH.genericError" = "您的帳戶內沒有任何 BCH，或您是在分叉後取得 BCH。";
-
-/* Transaction ID copied message */
-"BCH.hashCopiedMessage" = "已複制交易 ID";
-
-/* No address error message */
-"BCH.noAddressError" = "請輸入地位";
-
-/* Attempted to scan unsupported qr code error message. */
-"BCH.paymentProtocolError" = "BCH 交易不支援付款組合要求";
-
-/* BCH successfully sent alert message */
-"BCH.successMessage" = "BCH 已成功寄送。";
-
-/* Widthdraw BCH view title */
-"BCH.title" = "提取 BCH";
-
-/* Tx Hash button header */
-"BCH.txHashHeader" = "BCH 交易 ID";
-
-/* Approve button label */
-"BitID.approve" = "許可";
-
-/* <sitename> is requesting authentication using your Litecoin wallet */
-"BitID.authenticationRequest" = "%1$@ 要求認證使用您的萊特幣錢包";
-
-/* Deny button label */
-"BitID.deny" = "拒絕";
-
-/* BitID error alert title */
-"BitID.error" = "認證錯誤";
-
-/* BitID error alert messaage (The payment service you are trying to use isn't working. Please contact them, as you may need to try again) */
-"BitID.errorMessage" = "請檢查服務。您可能必須重試一次。";
-
-/* BitID success alert title */
-"BitID.success" = "認證成功。";
-
-/* BitID Authentication Request alert view title */
-"BitID.title" = "要求認證比特 ID";
 
 /* buy button */
 "Button.buy" = "購買";
@@ -151,6 +105,9 @@
 
 /* receive button */
 "Button.receive" = "接收";
+
+/* resetFields */
+"Button.resetFields" = "resetFields";
 
 /* send button */
 "Button.send" = "寄出";
@@ -181,6 +138,12 @@
 
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "購買萊特幣";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "•購買具有許多法定貨幣對的LTC\n•以多種方式支付\n•全球支付提供商";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "•5分鐘內獲得Litecoin！\n •通過信用卡購買Litecoin \n •護照或州ID";
@@ -254,21 +217,6 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "匯率";
 
-/* Donate Memo */
-"Donate.memo" = "捐贈給萊特幣基金會";
-
-/* Donate to the Litecoin Foundation */
-"Donate.title" = "點擊捐贈給萊特幣基金會 (%@)";
-
-/* Donate Confirmation */
-"Donate.title.confirmation" = "確認捐贈";
-
-/* Donate to the articles */
-"Donate.toThe" = "捐贈給";
-
-/* Donate */
-"Donate.word" = "捐";
-
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableMessage" = "本裝置並非設定來以 iOS 郵件應用程式傳送電子郵件。";
 
@@ -332,8 +280,14 @@
 /* Fee Selector title */
 "FeeSelector.title" = "處理速度";
 
+/* Or */
+"Fragment.or" = "要么";
+
 /* History Bar Item Title */
 "History.barItemTitle" = "歷史";
+
+/* History Current Litecoin Value */
+"History.currentLitecoinValue" = "當前的LTC值";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "正在檢查私密金鑰餘額…";
@@ -416,6 +370,129 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "抹除";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "卡";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "卡餘額";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "-註冊和登錄\n-可用卡餘額\n-重置密碼\n-不能轉移到Litewallet\n-僅限美國";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "Litecoin卡當前在Litewallet中具有有限的功能。";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "訪問litecoin.getblockcard.com以獲取完全訪問權限";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "Litecoin卡測試版";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "登錄失敗";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "忘記密碼？";
+
+/* Login */
+"LitecoinCard.login" = "登錄";
+
+/* Logout */
+"LitecoinCard.logout" = "登出";
+
+/* Register */
+"LitecoinCard.registerCard" = "寄存器";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "註冊萊特幣卡";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "正在註冊用戶...";
+
+/* address */
+"LitecoinCard.Registration.address" = "街道地址";
+
+/* city */
+"LitecoinCard.Registration.city" = "市";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "確認密碼";
+
+/* country */
+"LitecoinCard.Registration.country" = "國家";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "名字";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "身份證明";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "了解你的顧客 證件類型";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "證件類型";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "姓";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "手機號碼";
+
+/* password */
+"LitecoinCard.Registration.password" = "密碼";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "州/省";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "電子郵件";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "必填項目";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "無效的郵件地址";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "手機號碼必須至少有10位數字";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "手機號碼為必填項";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "密碼必須至少包含6個字符";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "密碼必須超過6個字符，並且至少包含一個字符和一個數字字符";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "密碼是必需的";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "不能為空";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "郵編";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "您的註冊有問題。 請檢查您的數據，然後重試。";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "您已經註冊！ 請檢查並確認您的電子郵件。 然後返回登錄。";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "重設密碼";
+
+/* Reset password detail */
+"LitecoinCard.resetPasswordDetail" = "輸入與您的Litecoin卡帳戶關聯的電子郵件地址，並查找包含重置說明的電子郵件。";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "訪問https://litecoin.dashboard.getblockcard.com/password/forgot重設密碼。";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "定位服務已停用。";
 
@@ -424,6 +501,9 @@
 
 /* No comment provided by engineer. */
 "Malformed URI" = "URI格式錯誤";
+
+/* Balance */
+"ManageWallet.balance" = "平衡";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "您在 %1$@ 建立了電子錢包";
@@ -439,6 +519,9 @@
 
 /* Buy Litecoin title */
 "MenuButton.buy" = "購買萊特幣";
+
+/* Menu button title */
+"MenuButton.customer.support" = "客戶支持";
 
 /* Menu button title */
 "MenuButton.lock" = "鎖定電子錢包";
@@ -758,6 +841,9 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "剪貼板是空的";
 
+/* Enter LTC Address */
+"Send.enterLTCAddress" = "輸入萊特幣地址";
+
 /* Network Fee: $0.01 */
 "Send.fee" = "網路費：%1$@";
 
@@ -809,6 +895,21 @@
 /* Send money to label */
 "Send.toLabel" = "給";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "抬頭";
+
+/* LookupDomainError */
+"Send.UnstoppableDomains.lookupDomainError" = "抱歉，找不到域。 [錯誤: %2$d]";
+
+/* lookupFailureHeader */
+"Send.UnstoppableDomains.lookupFailureHeader" = "查找失敗";
+
+/* Enter to match domain name to LTC Address */
+"Send.UnstoppableDomains.placeholder" = "輸入.crypto或.zil域";
+
+/* UDSystemError */
+"Send.UnstoppableDomains.udSystemError" = "系統查找問題。 [錯誤: %2$d]";
+
 /* Adress already used alert message - first part */
 "Send.UsedAddress.firstLine" = "萊特幣位址專供一次性使用。";
 
@@ -830,6 +931,9 @@
 /* i.e. the currency which will be displayed */
 "Settings.currency" = "顯示貨幣";
 
+/* Current Locale */
+"Settings.currentLocale" = "當前語言環境：";
+
 /* Join Early access label */
 "Settings.earlyAccess" = "參加「先行體驗」";
 
@@ -847,6 +951,9 @@
 
 /* Litewallet environment */
 "Settings.litewallet.environment" = "環境：";
+
+/* Litewallet Partners */
+"Settings.litewallet.partners" = "Litewallet合作夥伴";
 
 /* Litewallet version */
 "Settings.litewallet.version" = "Litewallet版本：";
@@ -910,6 +1017,9 @@
 
 /* Start view message */
 "StartViewController.message" = "使用萊特幣最安全、最有保障的方式。";
+
+/* Support the Litecoin Foundation */
+"SupportTheFoundation.title" = "支持萊特幣基金會";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "正在連線...";
@@ -1042,6 +1152,12 @@
 
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "備註";
+
+/* Copied */
+"TransactionDetails.copiedAll" = "複製的";
+
+/* Copy all details */
+"TransactionDetails.copyAllDetails" = "複製所有詳細信息";
 
 /* Empty transaction list message. */
 "TransactionDetails.emptyMessage" = "您的交易會顯示於此。";

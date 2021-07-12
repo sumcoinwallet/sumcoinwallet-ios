@@ -1,4 +1,3 @@
-
 /* About screen blog label */
 "About.blog" = "ブログ";
 
@@ -62,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PINコードのセット";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "ドメイン解決";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "あなたの住所は解決されました！";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "送金に失敗しました";
 
@@ -79,57 +84,6 @@
 
 /* API Token error message */
 "ApiClient.tokenError" = "APIトークンを取得できません";
-
-/* Send BCH view body. */
-"BCH.body" = "送金先のBCHアドレスを入力してください。フォーク時（%1$@）にウォレット内にあった全てのBCHが送られます。";
-
-/* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "%1$@を%2$@に送金することを確認する";
-
-/* Confirmation alert title */
-"BCH.confirmationTitle" = "承認";
-
-/* Generic bch erorr message */
-"BCH.genericError" = "アカウントにBCHがない、またはフォークの後にBCHを受け取っています。";
-
-/* Transaction ID copied message */
-"BCH.hashCopiedMessage" = "トランザクションIDをコピー済み";
-
-/* No address error message */
-"BCH.noAddressError" = "アドレスを入力してください";
-
-/* Attempted to scan unsupported qr code error message. */
-"BCH.paymentProtocolError" = "BCHのトランザクションでペイメントプロトコルリクエストはサポートされていません。";
-
-/* BCH successfully sent alert message */
-"BCH.successMessage" = "BCHの送金に成功しました。";
-
-/* Widthdraw BCH view title */
-"BCH.title" = "BCHを引き出す";
-
-/* Tx Hash button header */
-"BCH.txHashHeader" = "BCHのトランザクションID";
-
-/* Approve button label */
-"BitID.approve" = "承認する";
-
-/* <sitename> is requesting authentication using your Litecoin wallet */
-"BitID.authenticationRequest" = "%1$@がリテコインウォレットを使っての認証を求めています";
-
-/* Deny button label */
-"BitID.deny" = "拒否する";
-
-/* BitID error alert title */
-"BitID.error" = "認証エラー";
-
-/* BitID error alert messaage (The payment service you are trying to use isn't working. Please contact them, as you may need to try again) */
-"BitID.errorMessage" = "サービスを確認してください。やり直さなければいけない可能性もあります。";
-
-/* BitID success alert title */
-"BitID.success" = "認証成功";
-
-/* BitID Authentication Request alert view title */
-"BitID.title" = "BitID認証リクエスト";
 
 /* buy button */
 "Button.buy" = "購入";
@@ -151,6 +105,9 @@
 
 /* receive button */
 "Button.receive" = "受取";
+
+/* resetFields */
+"Button.resetFields" = "フィールドをリセット";
 
 /* send button */
 "Button.send" = "送金する";
@@ -181,6 +138,12 @@
 
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "Litecoin を購入する";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "•多くの法定紙幣ペアでLTCを購入する\n•複数の方法で支払う\n•グローバル決済プロバイダー";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "•5分でLitecoinを入手！\n •クレジットカードでLitecoinを購入 \n•パスポートまたは州ID";
@@ -254,21 +217,6 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "為替レート";
 
-/* Donate Memo */
-"Donate.memo" = "ライトコイン財団への寄付";
-
-/* Donate to the Litecoin Foundation */
-"Donate.title" = "ライトコイン財団に寄付してください (%@)";
-
-/* Donate Confirmation */
-"Donate.title.confirmation" = "寄付を確認する";
-
-/* Donate articles to the */
-"Donate.toThe" = "に寄付する";
-
-/* Donate */
-"Donate.word" = "寄付";
-
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableMessage" = "この端末は、iOSのメールアプリを使用してメールを送信する設定がされていません。";
 
@@ -332,8 +280,14 @@
 /* Fee Selector title */
 "FeeSelector.title" = "処理速度";
 
+/* Or */
+"Fragment.or" = "或いは";
+
 /* History Bar Item Title */
 "History.barItemTitle" = "歴史";
+
+/* History Current Litecoin Value */
+"History.currentLitecoinValue" = "現在のLTC値";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "秘密鍵の残高確認中...";
@@ -416,6 +370,129 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "完全削除";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "カード";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "カード残高";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "-登録とログイン\n-利用可能なカード残高\n- パスワードを再設定する\n-Litewalletへの転送なし\n-米国のみ";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "ライトコインカードは現在、ライトウォレットの機能が制限されています。";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "フルアクセスについては、litecoin.getblockcard.comにアクセスしてください";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "ライトコインカードベータ";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "ログインに失敗しました";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "パスワードをお忘れですか？";
+
+/* Login */
+"LitecoinCard.login" = "ログインする";
+
+/* Logout */
+"LitecoinCard.logout" = "ログアウト";
+
+/* Register */
+"LitecoinCard.registerCard" = "登録";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "ライトコインカードに登録";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "ユーザーを登録しています...";
+
+/* address */
+"LitecoinCard.Registration.address" = "住所";
+
+/* city */
+"LitecoinCard.Registration.city" = "市";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "パスワードを認証する";
+
+/* country */
+"LitecoinCard.Registration.country" = "国";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "ファーストネーム";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "識別";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "顧客を知る IDタイプ";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "IDタイプ";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "苗字";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "携帯電話番号";
+
+/* password */
+"LitecoinCard.Registration.password" = "パスワード";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "州/県";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Eメール";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "空であってはなりません";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "無効なメールアドレス";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "携帯電話番号は10桁以上である必要があります";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "携帯電話番号が必要です";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "パスワードは6文字以上である必要があります";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "パスワードは6文字を超え、少なくとも1文字と1つの数字を使用する必要があります";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "パスワードが必要";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "必須フィールド";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "郵便番号";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "登録に問題がありました。 データを確認して、もう一度お試しください。";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "登録しました！ メールを確認してください。 その後、ログインに戻ります。";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "パスワードを再設定する";
+
+/* Reset password detail */
+"LitecoinCard.resetPasswordDetail" = "ライトコインカードアカウントに関連付けられているメールアドレスを入力し、リセット手順が記載されたメールを探します。";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "https://litecoin.dashboard.getblockcard.com/password/forgot にアクセスしてパスワードをリセットしてください。";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置情報サービスが無効化されています。";
 
@@ -424,6 +501,9 @@
 
 /* No comment provided by engineer. */
 "Malformed URI" = "不正なURI";
+
+/* Balance */
+"ManageWallet.balance" = "残高";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "あなたは%1$@でご自身のウォレットを作成しました";
@@ -439,6 +519,9 @@
 
 /* Buy Litecoin title */
 "MenuButton.buy" = "リテコインを購入";
+
+/* Menu button title */
+"MenuButton.customer.support" = "顧客サポート";
 
 /* Menu button title */
 "MenuButton.lock" = "ウォレットにロックを設定する";
@@ -758,6 +841,9 @@
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "ペーストボードが空です";
 
+/* Enter LTC Address */
+"Send.enterLTCAddress" = "Litecoinのアドレスを入力してください。";
+
 /* Network Fee: $0.01 */
 "Send.fee" = "ネットワーク手数料: %1$@";
 
@@ -809,6 +895,21 @@
 /* Send money to label */
 "Send.toLabel" = "宛先";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "調べる";
+
+/* LookupDomainError */
+"Send.UnstoppableDomains.lookupDomainError" = "申し訳ありませんが、ドメインが見つかりませんでした。 [エラー: %2$d]";
+
+/* lookupFailureHeader */
+"Send.UnstoppableDomains.lookupFailureHeader" = "ルックアップに失敗しました";
+
+/* Enter to match domain name to LTC Address */
+"Send.UnstoppableDomains.placeholder" = ".cryptoまたは.zilドメインを入力してください";
+
+/* UDSystemError */
+"Send.UnstoppableDomains.udSystemError" = "システムルックアップの問題。 [エラー: %2$d]";
+
 /* Adress already used alert message - first part */
 "Send.UsedAddress.firstLine" = "リテコインアドレスは、個人利用のみを想定しています。";
 
@@ -830,6 +931,9 @@
 /* i.e. the currency which will be displayed */
 "Settings.currency" = "表示される通貨";
 
+/* Current Locale */
+"Settings.currentLocale" = "現在のロケール：";
+
 /* Join Early access label */
 "Settings.earlyAccess" = "早期アクセスに参加";
 
@@ -847,6 +951,9 @@
 
 /* Litewallet environment */
 "Settings.litewallet.environment" = "環境：";
+
+/* Litewallet Partners */
+"Settings.litewallet.partners" = "Litewalletパートナー";
 
 /* Litewallet version */
 "Settings.litewallet.version" = "Litewalletバージョン：";
@@ -910,6 +1017,9 @@
 
 /* Start view message */
 "StartViewController.message" = "最も安全にリテコインを使う手段。";
+
+/* Support the Litecoin Foundation */
+"SupportTheFoundation.title" = "Litecoin基金を支援する";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "接続しています...";
@@ -1042,6 +1152,12 @@
 
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "メモ";
+
+/* Copied */
+"TransactionDetails.copiedAll" = "コピー";
+
+/* Copy all details */
+"TransactionDetails.copyAllDetails" = "すべての詳細をコピーする";
 
 /* Empty transaction list message. */
 "TransactionDetails.emptyMessage" = "あなたの取引はこちらに表示されます。";

@@ -48,7 +48,7 @@ class StartFlowPresenter : Subscriber {
                         callback: { _ in self.presentLoginFlow(isPresentedForLock: true) })
     }
 
-    private func handleStartFlowChange(state: State) {
+    private func handleStartFlowChange(state: ReduxState) {
         if state.isStartFlowVisible {
             guardProtected(queue: DispatchQueue.main) { [weak self] in
                 self?.presentStartFlow()
@@ -58,7 +58,7 @@ class StartFlowPresenter : Subscriber {
         }
     }
 
-    private func handleLoginRequiredChange(state: State) {
+    private func handleLoginRequiredChange(state: ReduxState) {
         if state.isLoginRequired {
             presentLoginFlow(isPresentedForLock: false)
         } else {
@@ -74,7 +74,6 @@ class StartFlowPresenter : Subscriber {
                                                       didTapRecover: { [weak self] in
             guard let myself = self else { return }
             let recoverIntro = RecoverWalletIntroViewController(didTapNext: myself.pushRecoverWalletView)
-            myself.navigationController?.setTintableBackArrow()
             myself.navigationController?.setClearNavbar()
             myself.navigationController?.modalPresentationStyle = .fullScreen
             myself.navigationController?.setNavigationBarHidden(false, animated: false)
@@ -169,7 +168,7 @@ class StartFlowPresenter : Subscriber {
             confirmVC?.pin = pin
             confirmVC?.didCompleteConfirmation = { [weak self] in
                 guard let myself = self else { return }
-                myself.store.perform(action: Alert.Show(.paperKeySet(callback: {
+                myself.store.perform(action: SimpleReduxAlert.Show(.paperKeySet(callback: {
                     self?.store.perform(action: HideStartFlow())
                 })))
             }
@@ -192,7 +191,7 @@ class StartFlowPresenter : Subscriber {
     }
     
     private func handleWalletCreationError() {
-        let alert = UIAlertController(title: S.Alert.error, message: "Could not create wallet", preferredStyle: .alert)
+        let alert = UIAlertController(title: S.LitewalletAlert.error, message: "Could not create wallet", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: S.Button.ok, style: .default, handler: nil))
         navigationController?.present(alert, animated: true, completion: nil)
     }

@@ -1,34 +1,39 @@
-# Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
 workspace 'loafwallet.xcworkspace'
 project 'loafwallet.xcodeproj', 'Debug' => :debug,'Release' => :release
 use_frameworks!
+platform :ios, '13.0'
 
-
-#Shared Cocopods
+#Shared Cocoapods
 def shared_pods
-  pod 'Alamofire', '~> 4.7'
-  pod 'SwiftyJSON', '~> 4.0'
-  pod 'CryptoSwift', '~> 1.0'
-  pod 'Firebase/Crashlytics'
-  pod 'FirebaseAnalytics', '~> 6.2'
-
-  # add after v2.6.0 pod 'SwiftLint'
+  pod 'UnstoppableDomainsResolution', '~> 0.3.6'
+  pod 'KeychainAccess', '~> 4.2'
+  pod 'Firebase/Analytics', '~> 6.0'
+  pod 'Firebase/Crashlytics', '~> 6.0'
+  # add pod 'SwiftLint'
 end
 
-def shared_watchOS_pods
-end
-
+#Main targets
 target 'loafwallet' do
-  platform :ios, '12.0'
-  shared_pods
+    shared_pods
+    target 'loafwalletTests' do
+      inherit! :search_paths
+    end
+end
+
+#Setting the Cocoapods config
+post_install do |installer|
   
-  target 'loafwalletTests' do
-    inherit! :search_paths
+  #Removes the arm64 models from the sim / test .  May be removed when iOS can handle.
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
   end
   
-  target 'loafwalletUITests' do
-    inherit! :search_paths
+  #Sets all pods to iOS 10.0 or greater
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+    end
   end
   
 end

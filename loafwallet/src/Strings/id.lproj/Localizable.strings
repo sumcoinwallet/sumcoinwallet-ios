@@ -1,4 +1,3 @@
-
 /* About screen website label */
 "About.blog" = "Situs Web";
 
@@ -62,6 +61,12 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "Set PIN";
 
+/* Resolved Success */
+"Alerts.resolvedSuccess" = "Resolusi Domain";
+
+/* No comment provided by engineer. */
+"Alerts.resolvedSuccessSubheader" = "Alamatnya sudah teratasi!";
+
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Pengiriman gagal";
 
@@ -79,57 +84,6 @@
 
 /* API Token error message */
 "ApiClient.tokenError" = "Tidak mampu mendapatkan kembali bukti API";
-
-/* Send BCH view body. */
-"BCH.body" = "Masukan tujuan alamat BCH dibawah. Semua BCH di dompet Anda pada waktu untuk percabangan (%1$@) akan dikirim.";
-
-/* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "Konfirmasi pengiriman %1$@ to %2$@";
-
-/* Confirmation alert title */
-"BCH.confirmationTitle" = "Mengkonfirmasi";
-
-/* Generic bch erorr message */
-"BCH.genericError" = "Akun Anda tidak mengandung BCH, atau Anda menerima BCH setelah percabangan.";
-
-/* Transaction ID copied message */
-"BCH.hashCopiedMessage" = "ID Transaksi tersalin";
-
-/* No address error message */
-"BCH.noAddressError" = "Silahkan masukkan alamat";
-
-/* Attempted to scan unsupported qr code error message. */
-"BCH.paymentProtocolError" = "Permintaan Protokol Pembayaran tidak didukung untuk transaksi BCH";
-
-/* BCH successfully sent alert message */
-"BCH.successMessage" = "BCH berhasil terkirim.";
-
-/* Widthdraw BCH view title */
-"BCH.title" = "Mengambil BCH";
-
-/* Tx Hash button header */
-"BCH.txHashHeader" = "ID transaksi BCH";
-
-/* Approve button label */
-"BitID.approve" = "Menyetujui";
-
-/* <sitename> is requesting authentication using your Litecoin wallet */
-"BitID.authenticationRequest" = "%1$@ meminta otentikasi menggunakan dompet Litecoin Anda";
-
-/* Deny button label */
-"BitID.deny" = "Menyangkal";
-
-/* BitID error alert title */
-"BitID.error" = "Salah Otentikasi";
-
-/* BitID error alert messaage */
-"BitID.errorMessage" = "Silahkan periksa dengan layanan. Anda mungkin perlu coba lagi.";
-
-/* BitID success alert title */
-"BitID.success" = "Berhasil diotentikasi";
-
-/* BitID Authentication Request alert view title */
-"BitID.title" = "Permintaan Otentikasi BitID";
 
 /* buy button */
 "Button.buy" = "membeli";
@@ -151,6 +105,9 @@
 
 /* receive button */
 "Button.receive" = "menerima";
+
+/* resetFields */
+"Button.resetFields" = "Setel ulang bidang";
 
 /* send button */
 "Button.send" = "kirim";
@@ -181,6 +138,12 @@
 
 /* Buy Modal Title */
 "BuyCenter.ModalTitle" = "Membeli Łitecoin";
+
+/* Moonpay buy financial details */
+"BuyCenter.moonpayFinancialDetails" = "• Beli LTC dengan banyak pasangan fiat\n• Bayar dengan berbagai metode\n• Penyedia pembayaran global";
+
+/* Moonpay Title */
+"BuyCenter.moonpayTitle" = "Moonpay";
 
 /* Simplex buy financial details */
 "BuyCenter.simplexFinancialDetails" = "• Gunakan ID atau Paspor \n • Membeli Litecoin dengan kartu kredit \n • Membeli dengan USD atau EUR";
@@ -254,21 +217,6 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Kurs";
 
-/* Donate Memo */
-"Donate.memo" = "Sumbangan untuk Yayasan Litecoin";
-
-/* Donate to the Litecoin Foundation */
-"Donate.title" = "Ketuk untuk Menyumbang ke Yayasan Litecoin (%@)";
-
-/* Donate Confirmation */
-"Donate.title.confirmation" = "Konfirmasi Sumbangan";
-
-/* Donate to the articles */
-"Donate.toThe" = "Donasi ke";
-
-/* Donate */
-"Donate.word" = "Menyumbangkan";
-
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableMessage" = "Perangkat ini tidak dikonfigurasikan untuk mengirim email dengan aplikasi surat iOS.";
 
@@ -332,8 +280,14 @@
 /* Fee Selector title */
 "FeeSelector.title" = "Kecepatan pemrosesan";
 
+/* Or */
+"Fragment.or" = "atau";
+
 /* History Bar Item Title */
 "History.barItemTitle" = "SEJARAH";
+
+/* History Current Litecoin Value */
+"History.currentLitecoinValue" = "Nilai LTC saat ini dalam";
 
 /* Checking private key balance progress view text */
 "Import.checking" = "Memeriksa saldo kunci pribadi...";
@@ -416,6 +370,129 @@
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Hapus";
 
+/* Card Bar Item Title */
+"LitecoinCard.barItemTitle" = "KARTU";
+
+/* Card balance */
+"LitecoinCard.cardBalance" = "Saldo kartu";
+
+/* Features and limitations */
+"LitecoinCard.Disclaimer.bullets" = "- Pendaftaran & Login\n- Saldo kartu yang tersedia\n- Reset kata sandi\n- Tidak ada transfer ke Litewallet\n- AS Sudah";
+
+/* Description of the status */
+"LitecoinCard.Disclaimer.description" = "Kartu Litecoin saat ini memiliki fungsi terbatas di Litewallet.";
+
+/* Referral to the website */
+"LitecoinCard.Disclaimer.referral" = "Kunjungi litecoin.getblockcard.com untuk akses penuh";
+
+/* Beta Testing Litecoin Card */
+"LitecoinCard.Disclaimer.title" = "Kartu Litecoin Beta";
+
+/* Failed Login */
+"LitecoinCard.failed.login" = "Gagal masuk";
+
+/* Forgot password? */
+"LitecoinCard.forgotPassword" = "Tidak ingat kata sandi?";
+
+/* Login */
+"LitecoinCard.login" = "Gabung";
+
+/* Logout */
+"LitecoinCard.logout" = "Keluar";
+
+/* Register */
+"LitecoinCard.registerCard" = "Daftar";
+
+/* Register for Litecoin Card */
+"LitecoinCard.registerCardPhrase" = "Daftar untuk Kartu Litecoin";
+
+/* Registering user... */
+"LitecoinCard.registering.user" = "Mendaftarkan pengguna ...";
+
+/* address */
+"LitecoinCard.Registration.address" = "Alamat jalan";
+
+/* city */
+"LitecoinCard.Registration.city" = "Kota";
+
+/* confirm password */
+"LitecoinCard.Registration.confirmPassword" = "konfirmasi sandi";
+
+/* country */
+"LitecoinCard.Registration.country" = "Negara";
+
+/* First name */
+"LitecoinCard.Registration.firstName" = "nama depan";
+
+/* identification */
+"LitecoinCard.Registration.identification" = "Identifikasi";
+
+/* kycIDNumber */
+"LitecoinCard.Registration.kycIDNumber" = "Kenali pelanggan Anda Jenis ID";
+
+/* kycIDType */
+"LitecoinCard.Registration.kycIDType" = "Jenis ID";
+
+/* SSN */
+"LitecoinCard.Registration.kycSSN" = "SSN";
+
+/* Last name */
+"LitecoinCard.Registration.lastName" = "nama keluarga";
+
+/* mobile number */
+"LitecoinCard.Registration.mobileNumber" = "Nomor handphone";
+
+/* password */
+"LitecoinCard.Registration.password" = "kata sandi";
+
+/* state province */
+"LitecoinCard.Registration.stateProvince" = "Negara Bagian / Provinsi";
+
+/* registraition username / email */
+"LitecoinCard.Registration.usernameEmail" = "Surel";
+
+/* must not be empty */
+"LitecoinCard.Registration.ValidationError.empty" = "Wajib diisi";
+
+/* Invalid email address */
+"LitecoinCard.Registration.ValidationError.invalidEmail" = "Alamat email salah";
+
+/* Mobile number 10 digits required */
+"LitecoinCard.Registration.ValidationError.numberDigitsRequired" = "Nomor ponsel setidaknya harus terdiri dari 10 digit";
+
+/* Mobile number required */
+"LitecoinCard.Registration.ValidationError.numberRequired" = "Nomor ponsel diperlukan";
+
+/* 6 Password characters required */
+"LitecoinCard.Registration.ValidationError.passwordCharacters" = "Kata sandi harus memiliki setidaknya 6 karakter";
+
+/* Captial and numeric password characters required */
+"LitecoinCard.Registration.ValidationError.passwordComposition" = "Kata sandi harus lebih dari 6 karakter, dengan setidaknya satu karakter dan satu karakter numerik";
+
+/* Password required */
+"LitecoinCard.Registration.ValidationError.passwordRequired" = "Kata sandi diperlukan";
+
+/* Required field */
+"LitecoinCard.Registration.ValidationError.requiredField" = "kolom yang harus diisi";
+
+/* zip post Code */
+"LitecoinCard.Registration.zipPostCode" = "Kode Pos";
+
+/* Registration failure */
+"LitecoinCard.registrationFailure" = "Ada masalah dengan pendaftaran Anda. Silakan periksa data Anda dan coba lagi.";
+
+/* Registration success */
+"LitecoinCard.registrationSuccess" = "Anda telah mendaftar! Silakan periksa dan konfirmasi email Anda. Kemudian kembali untuk masuk.";
+
+/* Reset Litecoin card password */
+"LitecoinCard.resetPassword" = "Setel ulang kata sandi";
+
+/* Reset password detail */
+"LitecoinCard.resetPasswordDetail" = "Masukkan alamat email yang terkait dengan akun Kartu Litecoin Anda & cari email dengan instruksi reset.";
+
+/* Litecoin card visit */
+"LitecoinCard.visit.toReset" = "Kunjungi https://litecoin.dashboard.getblockcard.com/password/forgot untuk mengatur ulang kata sandi Anda.";
+
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Layanan lokasi dinonaktifkan.";
 
@@ -424,6 +501,9 @@
 
 /* Http error code */
 "Malformed URI" = "URI cacat";
+
+/* Balance */
+"ManageWallet.balance" = "Saldo";
 
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Anda membuat dompet Anda di %1$@";
@@ -439,6 +519,9 @@
 
 /* Buy Litecoin title */
 "MenuButton.buy" = "Membeli Litecoin";
+
+/* Menu button title */
+"MenuButton.customer.support" = "Dukungan pelanggan";
 
 /* Menu button title */
 "MenuButton.lock" = "Dompet Kunci";
@@ -758,6 +841,9 @@
 /* Empty pasteboard error message */
 "Send.emptyPasteboard" = "Papan tulis kosong";
 
+/* Enter LTC Address */
+"Send.enterLTCAddress" = "Masukkan alamat Litecoin";
+
 /* Network Fee: $0.01 */
 "Send.fee" = "Biaya Jaringan: %1$@";
 
@@ -809,6 +895,21 @@
 /* Send money to label */
 "Send.toLabel" = "Untuk";
 
+/* Lookup */
+"Send.UnstoppableDomains.lookup" = "Lihatlah";
+
+/* LookupDomainError */
+"Send.UnstoppableDomains.lookupDomainError" = "Masalah sistem, domain tidak ditemukan. [Kesalahan: %2$d]";
+
+/* lookupFailureHeader */
+"Send.UnstoppableDomains.lookupFailureHeader" = "Pencarian gagal";
+
+/* Enter to match domain name to LTC Address */
+"Send.UnstoppableDomains.placeholder" = "Masukkan domain .crypto atau .zil";
+
+/* UDSystemError */
+"Send.UnstoppableDomains.udSystemError" = "Masalah pencarian sistem. [Kesalahan: %2$d]";
+
 /* Adress already used alert message - first part */
 "Send.UsedAddress.firstLine" = "Alamat Litecoin hanya ditujukan untuk penggunaan tunggal.";
 
@@ -830,6 +931,9 @@
 /* Default currency label */
 "Settings.currency" = "Mata uang tampilan";
 
+/* Current Locale */
+"Settings.currentLocale" = "Lokal Saat Ini:";
+
 /* Join Early access label */
 "Settings.earlyAccess" = "Bergabunglah dengan Akses Dini";
 
@@ -847,6 +951,9 @@
 
 /* Litewallet environment */
 "Settings.litewallet.environment" = "Lingkungan Hidup:";
+
+/* Litewallet Partners */
+"Settings.litewallet.partners" = "Mitra Litewallet";
 
 /* Litewallet version */
 "Settings.litewallet.version" = "Versi litewallet:";
@@ -910,6 +1017,9 @@
 
 /* Start view message */
 "StartViewController.message" = "Cara paling aman dan teraman untuk menggunakan Litecoin.";
+
+/* Support the Litecoin Foundation */
+"SupportTheFoundation.title" = "Dukung Yayasan Litecoin";
 
 /* Syncing view connection state header text */
 "SyncingHeader.connecting" = "Menghubungkan ...";
@@ -1042,6 +1152,12 @@
 
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "Memo";
+
+/* Copied */
+"TransactionDetails.copiedAll" = "Disalin";
+
+/* Copy all details */
+"TransactionDetails.copyAllDetails" = "Salin semua detail";
 
 /* Empty transaction list message. */
 "TransactionDetails.emptyMessage" = "Transaksi Anda akan muncul di sini.";
