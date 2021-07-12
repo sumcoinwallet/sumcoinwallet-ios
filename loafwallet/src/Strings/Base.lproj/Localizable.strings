@@ -808,7 +808,7 @@
 /* Touch Id screen label */
 "TouchIdSettings.label" = "Use your fingerprint to unlock your Sumcoin Wallet and send money up to a set limit.";
 
-/*  ł100,000 ($100) */
+/*  𝜮100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
 
 /* Link Text (see TouchIdSettings.customizeText) */
@@ -1022,7 +1022,7 @@
 "Webview.updating" = "Updating...";
 
 /* Welcome view body text */
-"Welcome.body" = "Sumcoin Wallet now has a brand new look and some new features.\n\nAll coins are displayed in lites (ł). 1 Sumcoin (𝚺) = 1000 lites (ł).";
+"Welcome.body" = "Sumcoin Wallet now has a brand new look and some new features.\n\nAll coins are displayed in lites (𝜮). 1 Sumcoin (𝚺) = 1000 lites (𝜮).";
 
 /* Welcome view title */
 "Welcome.title" = "Welcome to Sumcoin Wallet!";

@@ -1057,7 +1057,7 @@
 /* Touch Id screen label */
 "TouchIdSettings.label" = "以您的指紋解鎖 Sumcoin Wallet，並在設定好的限額內寄送款項。";
 
-/*  ł100,000 ($100) */
+/*  𝜮100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
 
 /* Link Text (see TouchIdSettings.customizeText) */

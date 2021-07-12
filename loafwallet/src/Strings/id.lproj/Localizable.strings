@@ -1057,7 +1057,7 @@
 /* Touch Id screen label */
 "TouchIdSettings.label" = "Gunakan sidik jari Anda untuk membuka kunci Sumcoin Wallet Anda dan mengirim uang hingga batas yang ditentukan.";
 
-/*  ł100,000 ($100) */
+/*  𝜮100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
 
 /* Link Text (see TouchIdSettings.customizeText) */
@@ -1310,7 +1310,7 @@
 "Webview.updating" = "Memperbarui...";
 
 /* Welcome view body text */
-"Welcome.body" = "Sumcoin Wallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Sumcoin (𝚺) = 1000 lites (ł).";
+"Welcome.body" = "Sumcoin Wallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(𝜮). 1 Sumcoin (𝚺) = 1000 lites (𝜮).";
 
 /* Welcome view title */
 "Welcome.title" = "Selamat datang di Sumcoin Wallet!";

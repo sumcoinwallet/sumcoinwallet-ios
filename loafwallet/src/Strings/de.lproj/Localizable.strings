@@ -1057,7 +1057,7 @@
 /* Touch Id screen label */
 "TouchIdSettings.label" = "Nutze deinen Fingerabdruck, um dein Sumcoin Wallet zu entsperren und Geld bis zu einer festlegbaren Höchstgrenze zu versenden.";
 
-/*  ł100,000 ($100) */
+/*  𝜮100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
 
 /* Link Text (see TouchIdSettings.customizeText) */

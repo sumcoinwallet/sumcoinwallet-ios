@@ -1057,7 +1057,7 @@
 /* Touch Id screen label */
 "TouchIdSettings.label" = "Brug dit fingeraftryk til at låse op for dit Sumcoin Wallet og sende penge op til en vis grænse.";
 
-/*  ł100,000 ($100) */
+/*  𝜮100,000 ($100) */
 "TouchIdSettings.limitValue" = "1$@ (%2$@)";
 
 /* Link Text (see TouchIdSettings.customizeText) */

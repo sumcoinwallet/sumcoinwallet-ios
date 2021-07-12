@@ -1058,7 +1058,7 @@
 /* Touch Id screen label */
 "TouchIdSettings.label" = "Utiliza tu huella digital para desbloquear Sumcoin Wallet y enviar dinero hasta un límite establecido.";
 
-/*  ł100,000 ($100) */
+/*  𝜮100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
 
 /* Link Text (see TouchIdSettings.customizeText) */
