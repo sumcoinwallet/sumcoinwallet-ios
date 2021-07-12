@@ -11,7 +11,7 @@ import Foundation
 enum S {
 
     enum Symbols {
-        static let photons = "mł"
+        static let millisums = "mł"
         static let lites = "ł"
         static let ltc = "𝚺"
         static let narrowSpace = "\u{2009}"
@@ -20,7 +20,7 @@ enum S {
         static func currencyButtonTitle(maxDigits: Int) -> String {
             switch maxDigits {
             case 2:
-                return "photons\(S.Symbols.narrowSpace)(m\(S.Symbols.lites))"
+                return "millisums\(S.Symbols.narrowSpace)(m\(S.Symbols.lites))"
             case 5:
                 return "lites\(S.Symbols.narrowSpace)(\(S.Symbols.lites))"
             case 8:

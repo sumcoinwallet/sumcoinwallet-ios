@@ -83,7 +83,7 @@ extension UserDefaults {
     }
     
     //
-    // 2 - photons
+    // 2 - millisums
     // 5 - lites
     // 8 - SUM
     //

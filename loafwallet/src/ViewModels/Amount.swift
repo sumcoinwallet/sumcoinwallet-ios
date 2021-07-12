@@ -64,7 +64,7 @@ struct Amount {
         format.currencyCode = "SUM"
 
         switch maxDigits {
-        case 2: // photons
+        case 2: // millisums
             format.currencySymbol = "m\(S.Symbols.lites)\(S.Symbols.narrowSpace)"
             format.maximum = (C.maxMoney/C.satoshis)*100000 as NSNumber
         case 5: // lites
