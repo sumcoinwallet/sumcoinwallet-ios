@@ -14,7 +14,7 @@ struct WalletAddressData {
     var balance: Double
     var balanceText: String  {
         get {
-            String(self.balance) + " Ł"
+            String(self.balance) + " 𝚺"
         }
     }
 }

@@ -84,7 +84,7 @@ struct CardLoggedInView: View {
                     .onReceive(viewModel.$walletDetails) { newWalletDetails in
                         
                         guard let availableBalance = newWalletDetails?.availableBalance else { return }
-                        self.balanceText = "Ł" + String(format:"%6.4f",availableBalance)
+                        self.balanceText = "𝚺" + String(format:"%6.4f",availableBalance)
                     }
                 
                 Spacer()

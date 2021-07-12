@@ -1310,7 +1310,7 @@
 "Webview.updating" = "Memperbarui...";
 
 /* Welcome view body text */
-"Welcome.body" = "Litewallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Sumcoin (Ł) = 1000 lites (ł).";
+"Welcome.body" = "Litewallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Sumcoin (𝚺) = 1000 lites (ł).";
 
 /* Welcome view title */
 "Welcome.title" = "Selamat datang di Litewallet!";
