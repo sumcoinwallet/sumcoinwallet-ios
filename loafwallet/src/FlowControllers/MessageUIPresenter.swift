@@ -49,7 +49,7 @@ class MessageUIPresenter: NSObject, Trackable {
         originalTitleTextAttributes = UINavigationBar.appearance().titleTextAttributes
         UINavigationBar.appearance().titleTextAttributes = nil
         let emailView = MFMailComposeViewController()
-        emailView.setSubject("Litewallet Support")
+        emailView.setSubject("Sumcoin Wallet Support")
         emailView.setToRecipients([C.supportEmail])
         emailView.setMessageBody(C.troubleshootingQuestions, isHTML: true)
         emailView.mailComposeDelegate = self

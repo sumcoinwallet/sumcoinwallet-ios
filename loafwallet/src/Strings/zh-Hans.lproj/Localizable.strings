@@ -2,7 +2,7 @@
 "About.blog" = "博客";
 
 /* About screen footer */
-"About.footer" = "由全球 Litewallet 团队制作。版本%1$@";
+"About.footer" = "由全球 Sumcoin Wallet 团队制作。版本%1$@";
 
 /* Privay Policy button label */
 "About.privacy" = "隐私政策";
@@ -26,7 +26,7 @@
 "Account.loadingMessage" = "正在加载钱包";
 
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "我的 Litewallet";
+"AccountHeader.defaultWalletName" = "我的 Sumcoin Wallet";
 
 /* Manage wallet button title */
 "AccountHeader.manageButtonName" = "管理";
@@ -320,7 +320,7 @@
 "Import.leftCaption" = "待导入钱包";
 
 /* Import wallet intro screen message */
-"Import.message" = "导入钱包，利用单笔交易将您其他钱包里的所有钱转移到您的 Litewallet  钱包。";
+"Import.message" = "导入钱包，利用单笔交易将您其他钱包里的所有钱转移到您的 Sumcoin Wallet  钱包。";
 
 /* Enter password alert view title */
 "Import.password" = "本私钥受到密码保护。";
@@ -329,7 +329,7 @@
 "Import.passwordPlaceholder" = "密码";
 
 /* Caption for graphics */
-"Import.rightCaption" = "您的 Litewallet 钱包";
+"Import.rightCaption" = "您的 Sumcoin Wallet 钱包";
 
 /* Scan Private key button label */
 "Import.scan" = "扫描私钥";
@@ -359,10 +359,10 @@
 "JailbreakWarnings.ignore" = "忽略";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "设备安全性受损\n任何'越狱'应用都可能访问 Litewallet 的密钥链数据并盗取您的莱特币！立即擦除这个钱包并在一台安全设备上进行恢复。";
+"JailbreakWarnings.messageWithBalance" = "设备安全性受损\n任何'越狱'应用都可能访问 Sumcoin Wallet 的密钥链数据并盗取您的莱特币！立即擦除这个钱包并在一台安全设备上进行恢复。";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "设备安全性受损\n任何'越狱'应用都可能访问 Litewallet 的密钥链数据并盗取您的莱特币！请您仅在未越狱设备上使用 Litewallet 。";
+"JailbreakWarnings.messageWithoutBalance" = "设备安全性受损\n任何'越狱'应用都可能访问 Sumcoin Wallet 的密钥链数据并盗取您的莱特币！请您仅在未越狱设备上使用 Sumcoin Wallet 。";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "警告";
@@ -377,10 +377,10 @@
 "SumcoinCard.cardBalance" = "卡余额";
 
 /* Features and limitations */
-"SumcoinCard.Disclaimer.bullets" = "-注册和登录\n-可用卡余额\n-重置密码\n-不能转移到Litewallet\n-仅限美国";
+"SumcoinCard.Disclaimer.bullets" = "-注册和登录\n-可用卡余额\n-重置密码\n-不能转移到Sumcoin Wallet\n-仅限美国";
 
 /* Description of the status */
-"SumcoinCard.Disclaimer.description" = "Sumcoin卡当前在Litewallet中具有有限的功能。";
+"SumcoinCard.Disclaimer.description" = "Sumcoin卡当前在Sumcoin Wallet中具有有限的功能。";
 
 /* Referral to the website */
 "SumcoinCard.Disclaimer.referral" = "访问litecoin.getblockcard.com以获取完全访问权限";
@@ -497,7 +497,7 @@
 "LocationPlugin.disabled" = "位置服务被禁用。";
 
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "Litewallet 无权限访问位置服务。";
+"LocationPlugin.notAuthorized" = "Sumcoin Wallet 无权限访问位置服务。";
 
 /* No comment provided by engineer. */
 "Malformed URI" = "URI格式错误";
@@ -638,13 +638,13 @@
 "Prompts.RecommendRescan.title" = "交易被拒";
 
 /* Upgrade PIN prompt body. */
-"Prompts.SetPin.body" = "Litewallet 已升级到使用 6 位 PIN。点击此处升级。";
+"Prompts.SetPin.body" = "Sumcoin Wallet 已升级到使用 6 位 PIN。点击此处升级。";
 
 /* Upgrade PIN prompt title. */
 "Prompts.SetPin.title" = "升级 PIN";
 
 /* Share data prompt body */
-"Prompts.ShareData.body" = "与我们分享您的匿名数据来帮助改善 Litewallet。";
+"Prompts.ShareData.body" = "与我们分享您的匿名数据来帮助改善 Sumcoin Wallet。";
 
 /* Share data prompt title */
 "Prompts.ShareData.title" = "分享匿名数据";
@@ -656,7 +656,7 @@
 "Prompts.TouchId.title" = "启用触摸 ID";
 
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "打开推送通知，以便将来从 Litewallet 接收特殊消息。";
+"PushNotifications.body" = "打开推送通知，以便将来从 Sumcoin Wallet 接收特殊消息。";
 
 /* Push notifications toggle switch label */
 "PushNotifications.label" = "推送通知";
@@ -704,7 +704,7 @@
 "RecoverWallet.instruction" = "输入纸键";
 
 /* Recover wallet intro */
-"RecoverWallet.intro" = "用您的纸键恢复您的 Litewallet。";
+"RecoverWallet.intro" = "用您的纸键恢复您的 Sumcoin Wallet。";
 
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "您输入的纸键无效。请仔细检查每个单词并重试。";
@@ -746,7 +746,7 @@
 "ReScan.body1" = "20-45 分钟";
 
 /* Syncing explanation */
-"ReScan.body2" = "如果某次交易在莱特币网络上显示为已完成，却不在您的 Litewallet 里。";
+"ReScan.body2" = "如果某次交易在莱特币网络上显示为已完成，却不在您的 Sumcoin Wallet 里。";
 
 /* Syncing explanation */
 "ReScan.body3" = "你反复得到交易被拒绝的出错信息。";
@@ -800,7 +800,7 @@
 "SecurityCenter.paperKeyTitle" = "纸键";
 
 /* PIN button description */
-"SecurityCenter.pinDescription" = "保护您的 Litewallet 免遭未授权用户盗用。";
+"SecurityCenter.pinDescription" = "保护您的 Sumcoin Wallet 免遭未授权用户盗用。";
 
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6 位 PIN";
@@ -809,7 +809,7 @@
 "SecurityCenter.title" = "安全中心";
 
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "方便地解锁 Litewallet，在设定限额下汇钱。";
+"SecurityCenter.touchIdDescription" = "方便地解锁 Sumcoin Wallet，在设定限额下汇钱。";
 
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "触摸 ID";
@@ -827,7 +827,7 @@
 "Send.cameraunavailableMessage" = "前往“设置”以允许访问照相机。";
 
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "Litewallet 不允许访问照相机";
+"Send.cameraUnavailableTitle" = "Sumcoin Wallet 不允许访问照相机";
 
 /* Warning when sending to self. */
 "Send.containsAddress" = "目标是您自己的地址。您不能发送给您自己。";
@@ -937,8 +937,8 @@
 /* Join Early access label */
 "Settings.earlyAccess" = "加入早期访问";
 
-/* Are you enjoying Litewallet alert message body */
-"Settings.enjoying" = "您喜欢 Litewallet 吗？";
+/* Are you enjoying Sumcoin Wallet alert message body */
+"Settings.enjoying" = "您喜欢 Sumcoin Wallet 吗？";
 
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "PLACEHOLDER";
@@ -949,14 +949,14 @@
 /* Languages label */
 "Settings.languages" = "语言能力";
 
-/* Litewallet environment */
+/* Sumcoin Wallet environment */
 "Settings.litewallet.environment" = "环境：";
 
-/* Litewallet Partners */
-"Settings.litewallet.partners" = "Litewallet合作伙伴";
+/* Sumcoin Wallet Partners */
+"Settings.litewallet.partners" = "Sumcoin Wallet合作伙伴";
 
-/* Litewallet version */
-"Settings.litewallet.version" = "Litewallet版本：";
+/* Sumcoin Wallet version */
+"Settings.litewallet.version" = "Sumcoin Wallet版本：";
 
 /* Manage settings section header */
 "Settings.manage" = "管理";
@@ -970,7 +970,7 @@
 /* Share anonymous data label */
 "Settings.shareData" = "分享匿名数据";
 
-/* Litewallet Social links */
+/* Sumcoin Wallet Social links */
 "Settings.socialLinks" = "社会的";
 
 /* Support settings section header */
@@ -992,7 +992,7 @@
 "Settings.wipe" = "开始/恢复另一钱包";
 
 /* Share data view body */
-"ShareData.body" = "同我们分享您的匿名数据来帮助改善 Litewallet。这不包括任何财务信息。我们尊重您的财务隐私。";
+"ShareData.body" = "同我们分享您的匿名数据来帮助改善 Sumcoin Wallet。这不包括任何财务信息。我们尊重您的财务隐私。";
 
 /* Share data header */
 "ShareData.header" = "共享数据？";
@@ -1007,7 +1007,7 @@
 "StartPaperPhrase.againButtonTitle" = "再次书写纸键";
 
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "如果您的手机丢失、被盗、损坏或升级，纸上密钥是恢复 Litewallet 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。";
+"StartPaperPhrase.body" = "如果您的手机丢失、被盗、损坏或升级，纸上密钥是恢复 Sumcoin Wallet 的唯一方法。\n\n\n我们将向您显示一张单词表，请将其写在纸上并保存在安全的地方。";
 
 /* button label */
 "StartPaperPhrase.buttonTitle" = "写下纸键";
@@ -1055,7 +1055,7 @@
 "TouchIdSettings.customizeText" = "你可以自定义从 %1$@ 的 Touch ID 支出限额。";
 
 /* Touch Id screen label */
-"TouchIdSettings.label" = "请用指纹解锁 Litewallet 并在设定限额下汇钱。";
+"TouchIdSettings.label" = "请用指纹解锁 Sumcoin Wallet 并在设定限额下汇钱。";
 
 /*  ł100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
@@ -1067,7 +1067,7 @@
 "TouchIdSettings.spendingLimit" = "支出限制：%1$@ (%2$@)";
 
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "针对 Litewallet 启用触摸 ID";
+"TouchIdSettings.switchLabel" = "针对 Sumcoin Wallet 启用触摸 ID";
 
 /* Touch ID settings view title */
 "TouchIdSettings.title" = "触摸 ID";
@@ -1235,7 +1235,7 @@
 "UnlockScreen.scan" = "扫描";
 
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "解锁您的 Litewallet。";
+"UnlockScreen.touchIdPrompt" = "解锁您的 Sumcoin Wallet。";
 
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "使用 TouchID 解锁";
@@ -1247,7 +1247,7 @@
 "UpdatePin.caption" = "请牢记此 PIN 码。如果您忘记，您将无法访问您的莱特币。";
 
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "您的 PIN 码将用于解锁您的 Litewallet 并发送款项。";
+"UpdatePin.createInstruction" = "您的 PIN 码将用于解锁您的 Sumcoin Wallet 并发送款项。";
 
 /* Update PIN title */
 "UpdatePin.createTitle" = "设置 PIN 码";
@@ -1298,7 +1298,7 @@
 "VerifyPin.touchIdMessage" = "授权此交易";
 
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "打开 Litewallet iPhone app 以设置您的钱包。";
+"Watch.noWalletWarning" = "打开 Sumcoin Wallet iPhone app 以设置您的钱包。";
 
 /* Dismiss button label */
 "Webview.dismiss" = "忽略";
@@ -1310,10 +1310,10 @@
 "Webview.updating" = "正在更新...";
 
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "欢迎使用Litewallet！";
+"Welcome.body" = "欢迎使用Sumcoin Wallet！";
 
 /* Top title of welcome screen */
-"Welcome.title" = "欢迎使用Litewallet！";
+"Welcome.title" = "欢迎使用Sumcoin Wallet！";
 
 /* Delete database title */
 "WipeWallet.alertDeleteTitle" = "删除数据库";
@@ -1346,10 +1346,10 @@
 "WipeWallet.instruction" = "输入此钱包的恢复短语以擦除并启动或恢复另一钱包。您的当前余额将保留。";
 
 /* Start wipe wallet view message */
-"WipeWallet.startMessage" = "开始或恢复另一个钱包能让你在这个设备上管理和使用不同的Litewallet钱包";
+"WipeWallet.startMessage" = "开始或恢复另一个钱包能让你在这个设备上管理和使用不同的Sumcoin Wallet钱包";
 
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "您无法再在这个设备上使用现在的Litewallet钱包。 现在的一切资金都留在纸键上。";
+"WipeWallet.startWarning" = "您无法再在这个设备上使用现在的Sumcoin Wallet钱包。 现在的一切资金都留在纸键上。";
 
 /* Wipe wallet navigation item title. */
 "WipeWallet.title" = "启动或恢复另一钱包";

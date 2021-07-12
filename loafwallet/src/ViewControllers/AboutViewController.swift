@@ -95,10 +95,10 @@ class AboutViewController : UIViewController {
             myself.presentURL(string: "https://lite-wallet.org")
         }
         twitter.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://twitter.com/Litewallet_App")
+            myself.presentURL(string: "https://twitter.com/Sumcoin Wallet_App")
         }
         reddit.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://www.reddit.com/r/Litewallet/")
+            myself.presentURL(string: "https://www.reddit.com/r/Sumcoin Wallet/")
         }
         privacy.tap = strongify(self) { myself in
             myself.presentURL(string: "http://lite-wallet.org/policy.html")

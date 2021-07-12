@@ -2,8 +2,8 @@
   "object": {
     "pins": [
       {
-        "package": "LitewalletPartnerAPI",
-        "repositoryURL": "https://github.com/litecoin-foundation/LitewalletPartnerAPI.git",
+        "package": "Sumcoin WalletPartnerAPI",
+        "repositoryURL": "https://github.com/litecoin-foundation/Sumcoin WalletPartnerAPI.git",
         "state": {
           "branch": null,
           "revision": "945c891c9606c48de2266daf87e0303f8cf39ea8",

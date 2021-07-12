@@ -26,7 +26,7 @@
 "Account.loadingMessage" = "Muatan Dompet";
 
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "Litewallet Saya";
+"AccountHeader.defaultWalletName" = "Sumcoin Wallet Saya";
 
 /* Manage wallet button title */
 "AccountHeader.manageButtonName" = "MENGATUR";
@@ -233,13 +233,13 @@
 "FaceIDSettings.customizeText" = "Anda dapat menyesuaikan batas pengeluaran ID Wajah dari %1$@.";
 
 /* Face ID screen label */
-"FaceIDSettings.label" = "Gunakan wajah Anda untuk membuka kunci Litewallet Anda dan mengirim uang hingga batas yang ditentukan.";
+"FaceIDSettings.label" = "Gunakan wajah Anda untuk membuka kunci Sumcoin Wallet Anda dan mengirim uang hingga batas yang ditentukan.";
 
 /* Link Text (see TouchIdSettings.customizeText) */
 "FaceIDSettings.linkText" = "Layar Batas Pengeluaran ID Wajah";
 
 /* Face id switch label. */
-"FaceIDSettings.switchLabel" = "Aktifkan ID Wajah untuk Litewallet";
+"FaceIDSettings.switchLabel" = "Aktifkan ID Wajah untuk Sumcoin Wallet";
 
 /* Face ID settings view title */
 "FaceIDSettings.title" = "ID Wajah";
@@ -320,7 +320,7 @@
 "Import.leftCaption" = "Dompet yang diimpor";
 
 /* Import wallet intro screen message */
-"Import.message" = "Mengimpor dompet mentransfer semua uang dari dompet Anda yang lain ke dompet Litewallet Anda menggunakan satu transaksi.";
+"Import.message" = "Mengimpor dompet mentransfer semua uang dari dompet Anda yang lain ke dompet Sumcoin Wallet Anda menggunakan satu transaksi.";
 
 /* Enter password alert view title */
 "Import.password" = "Kunci pribadi ini dilindungi kata sandi.";
@@ -329,7 +329,7 @@
 "Import.passwordPlaceholder" = "kata sandi";
 
 /* Caption for graphics */
-"Import.rightCaption" = "Dompet Litewallet Anda";
+"Import.rightCaption" = "Dompet Sumcoin Wallet Anda";
 
 /* Scan Private key button label */
 "Import.scan" = "Pemindaian Kunci Pribadi";
@@ -359,10 +359,10 @@
 "JailbreakWarnings.ignore" = "Mengabaikan";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "KEAMANAN PERANGKAT YANG KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Litewallet dan mencuri Sumcoin Anda! Segera bersihkan dompet ini dan pulihkan pada perangkat yang aman.";
+"JailbreakWarnings.messageWithBalance" = "KEAMANAN PERANGKAT YANG KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Sumcoin Wallet dan mencuri Sumcoin Anda! Segera bersihkan dompet ini dan pulihkan pada perangkat yang aman.";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "PERANGKAT KEAMANAN DI KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Litewallet dan mencuri Sumcoin Anda. Harap hanya menggunakan Litewallet pada perangkat yang tidak dipenjara.";
+"JailbreakWarnings.messageWithoutBalance" = "PERANGKAT KEAMANAN DI KOMPROMISASI\n Setiap aplikasi 'jailbreak' dapat mengakses data gantungan kunci Sumcoin Wallet dan mencuri Sumcoin Anda. Harap hanya menggunakan Sumcoin Wallet pada perangkat yang tidak dipenjara.";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "Peringatan";
@@ -377,10 +377,10 @@
 "SumcoinCard.cardBalance" = "Saldo kartu";
 
 /* Features and limitations */
-"SumcoinCard.Disclaimer.bullets" = "- Pendaftaran & Login\n- Saldo kartu yang tersedia\n- Reset kata sandi\n- Tidak ada transfer ke Litewallet\n- AS Sudah";
+"SumcoinCard.Disclaimer.bullets" = "- Pendaftaran & Login\n- Saldo kartu yang tersedia\n- Reset kata sandi\n- Tidak ada transfer ke Sumcoin Wallet\n- AS Sudah";
 
 /* Description of the status */
-"SumcoinCard.Disclaimer.description" = "Kartu Sumcoin saat ini memiliki fungsi terbatas di Litewallet.";
+"SumcoinCard.Disclaimer.description" = "Kartu Sumcoin saat ini memiliki fungsi terbatas di Sumcoin Wallet.";
 
 /* Referral to the website */
 "SumcoinCard.Disclaimer.referral" = "Kunjungi litecoin.getblockcard.com untuk akses penuh";
@@ -497,7 +497,7 @@
 "LocationPlugin.disabled" = "Layanan lokasi dinonaktifkan.";
 
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "Litewallet tidak memiliki izin untuk mengakses layanan lokasi.";
+"LocationPlugin.notAuthorized" = "Sumcoin Wallet tidak memiliki izin untuk mengakses layanan lokasi.";
 
 /* Http error code */
 "Malformed URI" = "URI cacat";
@@ -638,13 +638,13 @@
 "Prompts.RecommendRescan.title" = "Transaksi Ditolak";
 
 /* Upgrade PIN prompt body. */
-"Prompts.SetPin.body" = "Litewallet telah ditingkatkan untuk menggunakan PIN 6-digit. Ketuk di sini untuk meningkatkan.";
+"Prompts.SetPin.body" = "Sumcoin Wallet telah ditingkatkan untuk menggunakan PIN 6-digit. Ketuk di sini untuk meningkatkan.";
 
 /* Upgrade PIN prompt title. */
 "Prompts.SetPin.title" = "Tingkatkan PIN";
 
 /* Share data prompt body */
-"Prompts.ShareData.body" = "Bantu tingkatkan Litewallet dengan membagikan data anonim Anda kepada kami";
+"Prompts.ShareData.body" = "Bantu tingkatkan Sumcoin Wallet dengan membagikan data anonim Anda kepada kami";
 
 /* Share data prompt title */
 "Prompts.ShareData.title" = "Bagikan Data Anonim";
@@ -656,7 +656,7 @@
 "Prompts.TouchId.title" = "Aktifkan Sentuh ID";
 
 /* Push notifications settings view body */
-"PushNotifications.body" = "Aktifkan pemberitahuan untuk menerima pesan khusus dari Litewallet di masa mendatang.";
+"PushNotifications.body" = "Aktifkan pemberitahuan untuk menerima pesan khusus dari Sumcoin Wallet di masa mendatang.";
 
 /* Push notifications toggle switch label */
 "PushNotifications.label" = "Notifikasi dorongan";
@@ -704,7 +704,7 @@
 "RecoverWallet.instruction" = "Masukkan Kunci Kertas";
 
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Pulihkan Litewallet Anda dengan kunci kertas Anda.";
+"RecoverWallet.intro" = "Pulihkan Sumcoin Wallet Anda dengan kunci kertas Anda.";
 
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "Kunci kertas yang Anda masukkan tidak benar. Periksa ulang setiap kata dan coba lagi.";
@@ -746,7 +746,7 @@
 "ReScan.body1" = "20-45 menit";
 
 /* Syncing explanation */
-"ReScan.body2" = "Jika suatu transaksi terlihat selesai di jaringan Sumcoin tetapi tidak di Litewallet Anda.";
+"ReScan.body2" = "Jika suatu transaksi terlihat selesai di jaringan Sumcoin tetapi tidak di Sumcoin Wallet Anda.";
 
 /* Syncing explanation */
 "ReScan.body3" = "Anda berulang kali mendapatkan pesan kesalahan yang mengatakan transaksi Anda ditolak.";
@@ -800,7 +800,7 @@
 "SecurityCenter.paperKeyTitle" = "Kunci Kertas";
 
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Melindungi Litewallet Anda dari pengguna yang tidak sah.";
+"SecurityCenter.pinDescription" = "Melindungi Sumcoin Wallet Anda dari pengguna yang tidak sah.";
 
 /* PIN button title */
 "SecurityCenter.pinTitle" = "PIN 6-Digit";
@@ -809,7 +809,7 @@
 "SecurityCenter.title" = "Pusat Keamanan";
 
 /* Touch ID/FaceID button description */
-"SecurityCenter.touchIdDescription" = "Buka kunci Litewallet Anda dengan mudah dan kirim uang hingga batas yang ditentukan.";
+"SecurityCenter.touchIdDescription" = "Buka kunci Sumcoin Wallet Anda dengan mudah dan kirim uang hingga batas yang ditentukan.";
 
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Sentuh ID";
@@ -827,7 +827,7 @@
 "Send.cameraunavailableMessage" = "Buka Pengaturan untuk mengizinkan akses kamera.";
 
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "Litewallet tidak diizinkan untuk mengakses kamera";
+"Send.cameraUnavailableTitle" = "Sumcoin Wallet tidak diizinkan untuk mengakses kamera";
 
 /* Warning when sending to self. */
 "Send.containsAddress" = "Tujuannya adalah alamat Anda sendiri. Anda tidak dapat mengirim ke diri sendiri.";
@@ -937,8 +937,8 @@
 /* Join Early access label */
 "Settings.earlyAccess" = "Bergabunglah dengan Akses Dini";
 
-/* Are you enjoying Litewallet alert message body */
-"Settings.enjoying" = "Apakah Anda menikmati Litewallet?";
+/* Are you enjoying Sumcoin Wallet alert message body */
+"Settings.enjoying" = "Apakah Anda menikmati Sumcoin Wallet?";
 
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Batas Pengeluaran Wajah ID";
@@ -949,13 +949,13 @@
 /* Languages label */
 "Settings.languages" = "Bahasa";
 
-/* Litewallet environment */
+/* Sumcoin Wallet environment */
 "Settings.litewallet.environment" = "Lingkungan Hidup:";
 
-/* Litewallet Partners */
-"Settings.litewallet.partners" = "Mitra Litewallet";
+/* Sumcoin Wallet Partners */
+"Settings.litewallet.partners" = "Mitra Sumcoin Wallet";
 
-/* Litewallet version */
+/* Sumcoin Wallet version */
 "Settings.litewallet.version" = "Versi litewallet:";
 
 /* Manage settings section header */
@@ -970,7 +970,7 @@
 /* Share anonymous data label */
 "Settings.shareData" = "Bagikan Data Anonim";
 
-/* Litewallet Social links */
+/* Sumcoin Wallet Social links */
 "Settings.socialLinks" = "Sosial";
 
 /* Support settings section header */
@@ -992,7 +992,7 @@
 "Settings.wipe" = "Mulai/Pulihkan Dompet Lainnya";
 
 /* Share data view body */
-"ShareData.body" = "Bantu meningkatkan Litewallet dengan membagikan data anonim Anda kepada kami. Ini tidak termasuk informasi keuangan apa pun. Kami menghargai privasi finansial Anda.";
+"ShareData.body" = "Bantu meningkatkan Sumcoin Wallet dengan membagikan data anonim Anda kepada kami. Ini tidak termasuk informasi keuangan apa pun. Kami menghargai privasi finansial Anda.";
 
 /* Share data header */
 "ShareData.header" = "Bagikan Data?";
@@ -1007,7 +1007,7 @@
 "StartPaperPhrase.againButtonTitle" = "Tuliskan Kunci Kertas Lagi";
 
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Kunci kertas Anda adalah satu-satunya cara untuk mengembalikan Litewallet Anda jika ponsel Anda hilang, dicuri, rusak, atau ditingkatkan. \n\n Kami akan menunjukkan kepada Anda daftar kata-kata untuk dituliskan di selembar kertas dan tetap aman.";
+"StartPaperPhrase.body" = "Kunci kertas Anda adalah satu-satunya cara untuk mengembalikan Sumcoin Wallet Anda jika ponsel Anda hilang, dicuri, rusak, atau ditingkatkan. \n\n Kami akan menunjukkan kepada Anda daftar kata-kata untuk dituliskan di selembar kertas dan tetap aman.";
 
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Tuliskan Kunci Kertas";
@@ -1055,7 +1055,7 @@
 "TouchIdSettings.customizeText" = "Anda dapat menyesuaikan batas pengeluaran ID Sentuh Anda dari %1$@.";
 
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Gunakan sidik jari Anda untuk membuka kunci Litewallet Anda dan mengirim uang hingga batas yang ditentukan.";
+"TouchIdSettings.label" = "Gunakan sidik jari Anda untuk membuka kunci Sumcoin Wallet Anda dan mengirim uang hingga batas yang ditentukan.";
 
 /*  ł100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
@@ -1067,7 +1067,7 @@
 "TouchIdSettings.spendingLimit" = "Batas pengeluaran: %1$@ (%2$@)";
 
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "Aktifkan Sentuh ID untuk Litewallet";
+"TouchIdSettings.switchLabel" = "Aktifkan Sentuh ID untuk Sumcoin Wallet";
 
 /* Touch ID settings view title */
 "TouchIdSettings.title" = "Sentuh ID";
@@ -1235,7 +1235,7 @@
 "UnlockScreen.scan" = "Memindai";
 
 /* TouchID/FaceID prompt text */
-"UnlockScreen.touchIdPrompt" = "Buka kunci Litewallet Anda.";
+"UnlockScreen.touchIdPrompt" = "Buka kunci Sumcoin Wallet Anda.";
 
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Buka kunci dengan TouchID";
@@ -1247,7 +1247,7 @@
 "UpdatePin.caption" = "Ingat PIN ini. Jika Anda lupa, Anda tidak akan dapat mengakses Sumcoin Anda.";
 
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "PIN Anda akan digunakan untuk membuka kunci Litewallet Anda dan mengirim uang.";
+"UpdatePin.createInstruction" = "PIN Anda akan digunakan untuk membuka kunci Sumcoin Wallet Anda dan mengirim uang.";
 
 /* Update PIN title */
 "UpdatePin.createTitle" = "Tetapkan PIN";
@@ -1298,7 +1298,7 @@
 "VerifyPin.touchIdMessage" = "Otorisasi transaksi ini";
 
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Buka aplikasi iPhone Litewallet untuk mengatur dompet Anda.";
+"Watch.noWalletWarning" = "Buka aplikasi iPhone Sumcoin Wallet untuk mengatur dompet Anda.";
 
 /* Dismiss button label */
 "Webview.dismiss" = "Memberhentikan";
@@ -1310,10 +1310,10 @@
 "Webview.updating" = "Memperbarui...";
 
 /* Welcome view body text */
-"Welcome.body" = "Litewallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Sumcoin (𝚺) = 1000 lites (ł).";
+"Welcome.body" = "Sumcoin Wallet sekarang memiliki tampilan baru dan beberapa fitur baru.\n\nJika Anda butuh bantuan, cari (?) Di kanan atas sebagian besar layar. Semua koin ditampilkan dalam lites(ł). 1 Sumcoin (𝚺) = 1000 lites (ł).";
 
 /* Welcome view title */
-"Welcome.title" = "Selamat datang di Litewallet!";
+"Welcome.title" = "Selamat datang di Sumcoin Wallet!";
 
 /* Delete database title */
 "WipeWallet.alertDeleteTitle" = "Kesalahan Korupsi Lokal";
@@ -1346,7 +1346,7 @@
 "WipeWallet.instruction" = "Untuk memulai dompet baru atau mengembalikan dompet yang ada, Anda harus terlebih dahulu menghapus dompet yang saat ini dipasang. Untuk melanjutkan, masukkan Kunci Kertas dompet saat ini.";
 
 /* Start wipe wallet view message */
-"WipeWallet.startMessage" = "Memulai atau memulihkan dompet lain memungkinkan Anda mengakses dan mengelola dompet Litewallet berbeda di perangkat ini.";
+"WipeWallet.startMessage" = "Memulai atau memulihkan dompet lain memungkinkan Anda mengakses dan mengelola dompet Sumcoin Wallet berbeda di perangkat ini.";
 
 /* Start wipe wallet view warning */
 "WipeWallet.startWarning" = "Dompet Anda saat ini akan dihapus dari perangkat ini. Jika Anda ingin mengembalikannya di masa mendatang, Anda harus memasukkan Kunci Kertas Anda.";

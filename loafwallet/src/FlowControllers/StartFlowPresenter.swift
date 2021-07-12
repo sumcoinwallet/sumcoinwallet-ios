@@ -191,7 +191,7 @@ class StartFlowPresenter : Subscriber {
     }
     
     private func handleWalletCreationError() {
-        let alert = UIAlertController(title: S.LitewalletAlert.error, message: "Could not create wallet", preferredStyle: .alert)
+        let alert = UIAlertController(title: S.Sumcoin WalletAlert.error, message: "Could not create wallet", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: S.Button.ok, style: .default, handler: nil))
         navigationController?.present(alert, animated: true, completion: nil)
     }

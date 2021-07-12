@@ -16,7 +16,7 @@
         <!--Animated Launch View Controller-->
         <scene sceneID="oee-gf-NRa">
             <objects>
-                <viewController storyboardIdentifier="AnimatedLaunchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GIt-PS-8VS" customClass="AnimatedLaunchViewController" customModule="Litewallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimatedLaunchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GIt-PS-8VS" customClass="AnimatedLaunchViewController" customModule="Sumcoin Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5aq-E0-4hP"/>
                         <viewControllerLayoutGuide type="bottom" id="3NJ-G3-iZY"/>

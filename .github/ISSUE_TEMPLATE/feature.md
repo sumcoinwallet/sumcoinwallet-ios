@@ -1,6 +1,6 @@
 ---
 name: 🥳[Feature] 
-about: An issue that improves Litewallet:iOS
+about: An issue that improves Sumcoin Wallet:iOS
 title: '🥳[Feature]'
 labels: 'enhancement'
 assignees: 'kcw-grunt'

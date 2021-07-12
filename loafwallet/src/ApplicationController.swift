@@ -11,7 +11,7 @@ import StoreKit
  
 private let timeSinceLastExitKey = "TimeSinceLastExit"
 private let shouldRequireLoginTimeoutKey = "ShouldRequireLoginTimeoutKey"
-private let numberOfLitewalletLaunches = "NumberOfLitewalletLaunches"
+private let numberOfSumcoin WalletLaunches = "NumberOfSumcoin WalletLaunches"
  
 
 class ApplicationController : Subscriber, Trackable {
@@ -232,16 +232,16 @@ class ApplicationController : Subscriber, Trackable {
         }
     
         private func countLaunches() {
-            if var launchNumber = UserDefaults.standard.object(forKey: numberOfLitewalletLaunches) as? Int {
+            if var launchNumber = UserDefaults.standard.object(forKey: numberOfSumcoin WalletLaunches) as? Int {
                 launchNumber += 1
-                UserDefaults.standard.set(NSNumber(value: launchNumber), forKey: numberOfLitewalletLaunches)
+                UserDefaults.standard.set(NSNumber(value: launchNumber), forKey: numberOfSumcoin WalletLaunches)
                 if launchNumber == 5 {
                     SKStoreReviewController.requestReview()
                     LWAnalytics.logEventWithParameters(itemName:._20200125_DSRR)
                 }
                 
             } else {
-                UserDefaults.standard.set(NSNumber(value: 1), forKey: numberOfLitewalletLaunches)
+                UserDefaults.standard.set(NSNumber(value: 1), forKey: numberOfSumcoin WalletLaunches)
             }
         }
         private func setupRootViewController() {

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import LitewalletPartnerAPI
+import Sumcoin WalletPartnerAPI
 
 class PartnerAPI: NSObject {
     

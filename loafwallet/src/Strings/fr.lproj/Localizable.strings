@@ -2,7 +2,7 @@
 "About.blog" = "Blogue";
 
 /* About screen footer */
-"About.footer" = "Fait par l'équipe mondiale de Litewallet. Version %1$@";
+"About.footer" = "Fait par l'équipe mondiale de Sumcoin Wallet. Version %1$@";
 
 /* Privay Policy button label */
 "About.privacy" = "Politique de confidentialité";
@@ -26,7 +26,7 @@
 "Account.loadingMessage" = "Chargement du portefeuille";
 
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "Mon Litewallet";
+"AccountHeader.defaultWalletName" = "Mon Sumcoin Wallet";
 
 /* Manage wallet button title */
 "AccountHeader.manageButtonName" = "GÉRER";
@@ -320,7 +320,7 @@
 "Import.leftCaption" = "Portefeuille à importer";
 
 /* Import wallet intro screen message */
-"Import.message" = "L'importation d'un portefeuille transfère tout l'argent de votre autre portefeuille vers votre portefeuille Litewallet avec une seule transaction.";
+"Import.message" = "L'importation d'un portefeuille transfère tout l'argent de votre autre portefeuille vers votre portefeuille Sumcoin Wallet avec une seule transaction.";
 
 /* Enter password alert view title */
 "Import.password" = "Cette clé privée est protégée par mot de passe.";
@@ -329,7 +329,7 @@
 "Import.passwordPlaceholder" = "mot de passe";
 
 /* Caption for graphics */
-"Import.rightCaption" = "Votre portefeuille de Litewallet";
+"Import.rightCaption" = "Votre portefeuille de Sumcoin Wallet";
 
 /* Scan Private key button label */
 "Import.scan" = "Scanner la clé privée";
@@ -359,10 +359,10 @@
 "JailbreakWarnings.ignore" = "Ignorer";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de Litewallet et voler vos Sumcoins ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.";
+"JailbreakWarnings.messageWithBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de Sumcoin Wallet et voler vos Sumcoins ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.";
 
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de Litewallet et voler vos Sumcoins. N'utilisez Litewallet que sur un appareil non évasif.";
+"JailbreakWarnings.messageWithoutBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de Sumcoin Wallet et voler vos Sumcoins. N'utilisez Sumcoin Wallet que sur un appareil non évasif.";
 
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "AVERTISSEMENT";
@@ -377,10 +377,10 @@
 "SumcoinCard.cardBalance" = "Solde de la carte";
 
 /* Features and limitations */
-"SumcoinCard.Disclaimer.bullets" = "- Inscription et connexion\n- Solde de la carte disponible\n- Réinitialiser le mot de passe\n- Aucun transfert vers Litewallet\n- États-Unis uniquement";
+"SumcoinCard.Disclaimer.bullets" = "- Inscription et connexion\n- Solde de la carte disponible\n- Réinitialiser le mot de passe\n- Aucun transfert vers Sumcoin Wallet\n- États-Unis uniquement";
 
 /* Description of the status */
-"SumcoinCard.Disclaimer.description" = "La carte Sumcoin a actuellement des fonctionnalités limitées dans Litewallet.";
+"SumcoinCard.Disclaimer.description" = "La carte Sumcoin a actuellement des fonctionnalités limitées dans Sumcoin Wallet.";
 
 /* Referral to the website */
 "SumcoinCard.Disclaimer.referral" = "Visitez litecoin.getblockcard.com pour un accès complet";
@@ -497,7 +497,7 @@
 "LocationPlugin.disabled" = "Les services de localisation sont désactivés.";
 
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "Litewallet n'a pas l'autorisation d'accéder aux services de localisation.";
+"LocationPlugin.notAuthorized" = "Sumcoin Wallet n'a pas l'autorisation d'accéder aux services de localisation.";
 
 /* No comment provided by engineer. */
 "Malformed URI" = "URI mal formé";
@@ -638,13 +638,13 @@
 "Prompts.RecommendRescan.title" = "Transaction rejetée";
 
 /* Upgrade PIN prompt body. */
-"Prompts.SetPin.body" = "Litewallet a été mis à niveau pour utiliser un code PIN à six chiffres. Appuyez ici pour mettre à niveau.";
+"Prompts.SetPin.body" = "Sumcoin Wallet a été mis à niveau pour utiliser un code PIN à six chiffres. Appuyez ici pour mettre à niveau.";
 
 /* Upgrade PIN prompt title. */
 "Prompts.SetPin.title" = "Mettre à jour le code PIN";
 
 /* Share data prompt body */
-"Prompts.ShareData.body" = "Aidez à améliorer Litewallet en partageant vos données anonymes avec nous";
+"Prompts.ShareData.body" = "Aidez à améliorer Sumcoin Wallet en partageant vos données anonymes avec nous";
 
 /* Share data prompt title */
 "Prompts.ShareData.title" = "Partager les données anonymes";
@@ -656,7 +656,7 @@
 "Prompts.TouchId.title" = "Activer Touch ID";
 
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "Activez les notifications pour recevoir des messages spéciaux de Litewallet à l'avenir.";
+"PushNotifications.body" = "Activez les notifications pour recevoir des messages spéciaux de Sumcoin Wallet à l'avenir.";
 
 /* Push notifications toggle switch label */
 "PushNotifications.label" = "Notifications push";
@@ -704,7 +704,7 @@
 "RecoverWallet.instruction" = "Entrez la clé de papier";
 
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Récupérez votre Litewallet avec votre clé de papier.";
+"RecoverWallet.intro" = "Récupérez votre Sumcoin Wallet avec votre clé de papier.";
 
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "La clé de papier saisie n'est pas valide. Revérifiez chaque mot et réessayez.";
@@ -746,7 +746,7 @@
 "ReScan.body1" = "20-45 minutes";
 
 /* Syncing explanation */
-"ReScan.body2" = "Si une transaction apparaît comme achevée sur le réseau de Sumcoin mais pas dans votre Litewallet.";
+"ReScan.body2" = "Si une transaction apparaît comme achevée sur le réseau de Sumcoin mais pas dans votre Sumcoin Wallet.";
 
 /* Syncing explanation */
 "ReScan.body3" = "Vous recevez de manière répétée un message d'erreur vous informant du rejet de votre transaction.";
@@ -800,7 +800,7 @@
 "SecurityCenter.paperKeyTitle" = "Clé de papier";
 
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Protège votre Litewallet contre les utilisateurs non autorisés.";
+"SecurityCenter.pinDescription" = "Protège votre Sumcoin Wallet contre les utilisateurs non autorisés.";
 
 /* PIN button title */
 "SecurityCenter.pinTitle" = "PIN à six chiffres";
@@ -809,7 +809,7 @@
 "SecurityCenter.title" = "Centre de sécurité";
 
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "Débloquez convenablement votre Litewallet et envoyez de l'argent jusqu'à une limite définie.";
+"SecurityCenter.touchIdDescription" = "Débloquez convenablement votre Sumcoin Wallet et envoyez de l'argent jusqu'à une limite définie.";
 
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
@@ -827,7 +827,7 @@
 "Send.cameraunavailableMessage" = "Accédez à Paramètres pour autoriser l'accès à la caméra.";
 
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "Litewallet n'est pas autorisé à accéder à la caméra";
+"Send.cameraUnavailableTitle" = "Sumcoin Wallet n'est pas autorisé à accéder à la caméra";
 
 /* Warning when sending to self. */
 "Send.containsAddress" = "La destination est votre propre adresse. Vous ne pouvez pas envoyer à vous même.";
@@ -937,8 +937,8 @@
 /* Join Early access label */
 "Settings.earlyAccess" = "Rejoignez l'accès anticipé";
 
-/* Are you enjoying Litewallet alert message body */
-"Settings.enjoying" = "Vous aimez Litewallet ?";
+/* Are you enjoying Sumcoin Wallet alert message body */
+"Settings.enjoying" = "Vous aimez Sumcoin Wallet ?";
 
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "PLACEHOLDER";
@@ -949,14 +949,14 @@
 /* Languages label */
 "Settings.languages" = "Les langues";
 
-/* Litewallet environment */
+/* Sumcoin Wallet environment */
 "Settings.litewallet.environment" = "Environnement:";
 
-/* Litewallet Partners */
-"Settings.litewallet.partners" = "Partenaires Litewallet";
+/* Sumcoin Wallet Partners */
+"Settings.litewallet.partners" = "Partenaires Sumcoin Wallet";
 
-/* Litewallet version */
-"Settings.litewallet.version" = "Version Litewallet:";
+/* Sumcoin Wallet version */
+"Settings.litewallet.version" = "Version Sumcoin Wallet:";
 
 /* Manage settings section header */
 "Settings.manage" = "Gérer";
@@ -970,7 +970,7 @@
 /* Share anonymous data label */
 "Settings.shareData" = "Partager des données anonymes";
 
-/* Litewallet Social links */
+/* Sumcoin Wallet Social links */
 "Settings.socialLinks" = "Social";
 
 /* Support settings section header */
@@ -992,7 +992,7 @@
 "Settings.wipe" = "Démarrer/récupérer un autre portefeuille";
 
 /* Share data view body */
-"ShareData.body" = "Aidez à améliorer Litewallet en partageant vos données anonymes avec nous. Cela n'inclut aucune information financière. Nous respectons votre confidentialité financière.";
+"ShareData.body" = "Aidez à améliorer Sumcoin Wallet en partageant vos données anonymes avec nous. Cela n'inclut aucune information financière. Nous respectons votre confidentialité financière.";
 
 /* Share data header */
 "ShareData.header" = "Partager les données ?";
@@ -1007,7 +1007,7 @@
 "StartPaperPhrase.againButtonTitle" = "Enregistrez la clé de papier à nouveau";
 
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Votre clé de papier est la seule façon de restaurer votre Litewallet si votre téléphone est perdu, volé, cassé ou mis à niveau.\n\nNous vous montrerons une liste de mots à écrire sur un morceau de papier et à garder en sécurité.";
+"StartPaperPhrase.body" = "Votre clé de papier est la seule façon de restaurer votre Sumcoin Wallet si votre téléphone est perdu, volé, cassé ou mis à niveau.\n\nNous vous montrerons une liste de mots à écrire sur un morceau de papier et à garder en sécurité.";
 
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Écrire la clé de papier";
@@ -1055,7 +1055,7 @@
 "TouchIdSettings.customizeText" = "Vous pouvez personnaliser votre plafond de dépenses Touch ID à partir de %1$@.";
 
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Utilisez votre empreinte digitale pour débloquer votre Litewallet et envoyer de l'argent jusqu'à une limite définie.";
+"TouchIdSettings.label" = "Utilisez votre empreinte digitale pour débloquer votre Sumcoin Wallet et envoyer de l'argent jusqu'à une limite définie.";
 
 /*  ł100,000 ($100) */
 "TouchIdSettings.limitValue" = "%1$@ (%2$@)";
@@ -1067,7 +1067,7 @@
 "TouchIdSettings.spendingLimit" = "Limite de dépenses : %1$@ (%2$@)";
 
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "Activer Touch ID pour Litewallet";
+"TouchIdSettings.switchLabel" = "Activer Touch ID pour Sumcoin Wallet";
 
 /* Touch ID settings view title */
 "TouchIdSettings.title" = "Touch ID";
@@ -1235,7 +1235,7 @@
 "UnlockScreen.scan" = "Scanner";
 
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "Déverrouillez votre Litewallet.";
+"UnlockScreen.touchIdPrompt" = "Déverrouillez votre Sumcoin Wallet.";
 
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Déverrouiller avec TouchID";
@@ -1247,7 +1247,7 @@
 "UpdatePin.caption" = "Souvenez-vous de ce code PIN. Si vous l'oubliez, vous ne pourrez pas accéder à votre Sumcoin.";
 
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Votre NIP sera utilisé pour débloquer votre Litewallet et envoyer de l'argent.";
+"UpdatePin.createInstruction" = "Votre NIP sera utilisé pour débloquer votre Sumcoin Wallet et envoyer de l'argent.";
 
 /* Update PIN title */
 "UpdatePin.createTitle" = "Définir PIN";
@@ -1298,7 +1298,7 @@
 "VerifyPin.touchIdMessage" = "Autoriser cette transaction";
 
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Ouvrez l'application Litewallet pour iPhone pour configurer votre portefeuille.";
+"Watch.noWalletWarning" = "Ouvrez l'application Sumcoin Wallet pour iPhone pour configurer votre portefeuille.";
 
 /* Dismiss button label */
 "Webview.dismiss" = "Rejeter";
@@ -1310,10 +1310,10 @@
 "Webview.updating" = "Mise à jour...";
 
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "Bienvenue chez Litewallet !";
+"Welcome.body" = "Bienvenue chez Sumcoin Wallet !";
 
 /* Top title of welcome screen */
-"Welcome.title" = "Bienvenue chez Litewallet !";
+"Welcome.title" = "Bienvenue chez Sumcoin Wallet !";
 
 /* Delete database title */
 "WipeWallet.alertDeleteTitle" = "Supprimer la base de données";
@@ -1346,10 +1346,10 @@
 "WipeWallet.instruction" = "Soumettez la phrase de récupération de ce portefeuille pour l'effacer et commencer à en récupérer un autre. Votre solde actuel demeure sur cette phrase.";
 
 /* Start wipe wallet view message */
-"WipeWallet.startMessage" = "L'ouverture ou la récupération d'un autre portefeuille vous permet d'accéder et de gérer différents portefeuilles Litewallet depuis cet appareil.";
+"WipeWallet.startMessage" = "L'ouverture ou la récupération d'un autre portefeuille vous permet d'accéder et de gérer différents portefeuilles Sumcoin Wallet depuis cet appareil.";
 
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "Vous ne pourrez plus accéder à votre portefeuille Litewallet depuis cet appareil. Le solde restera inchangé.";
+"WipeWallet.startWarning" = "Vous ne pourrez plus accéder à votre portefeuille Sumcoin Wallet depuis cet appareil. Le solde restera inchangé.";
 
 /* Wipe wallet navigation item title. */
 "WipeWallet.title" = "Commencer un nouveau portefeuille ou récupérer un autre portefeuille";

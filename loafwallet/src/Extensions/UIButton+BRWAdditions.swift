@@ -62,7 +62,7 @@ extension UIButton {
         })
     }
     
-    static func stylizeLitewalletBlueButton(title: String, frame: CGRect) -> UIButton {
+    static func stylizeSumcoin WalletBlueButton(title: String, frame: CGRect) -> UIButton {
         
         let button = UIButton()
         button.frame = frame

@@ -1,6 +1,6 @@
 ---
 name: 💡[Request] 
-about: An issue that asks the Litewallet:iOS team if they could change the app.
+about: An issue that asks the Sumcoin Wallet:iOS team if they could change the app.
 title: '💡[Request]'
 labels: 'request'
 assignees: 'kcw-grunt'

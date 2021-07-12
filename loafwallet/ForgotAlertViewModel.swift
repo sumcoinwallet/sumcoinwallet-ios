@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftUI
-import LitewalletPartnerAPI
+import Sumcoin WalletPartnerAPI
 
 class ForgotAlertViewModel: ObservableObject {
     

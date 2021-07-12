@@ -44,7 +44,7 @@ The list of changes are below:
     
 ### Improvements
     * Add copy data labels and localizations
-    * Added Litewallett Customer support portal in place of the email
+    * Added Sumcoin Wallett Customer support portal in place of the email
     * Added animation for the latest SUM price
     * Added balance label
 	* Added Sumcoin Card disclaimer

@@ -1,6 +1,6 @@
 ---
 name: 🦺[Tech Debt] 
-about: An issue that maintains/strengthens the Litewallet:iOS code or system and **not** necessarily visible in the UI
+about: An issue that maintains/strengthens the Sumcoin Wallet:iOS code or system and **not** necessarily visible in the UI
 title: '🦺[Tech Debt]'
 labels: 'tech debt'
 assignees: 'kcw-grunt'

@@ -1,6 +1,6 @@
 ---
 name: 🦟[Bug Report] 
-about: An issue for when Litewallet:iOS is not operating as expected.
+about: An issue for when Sumcoin Wallet:iOS is not operating as expected.
 title: '🦟[Bug Report]'
 labels: 'bug'
 assignees: 'kcw-grunt'
@@ -24,7 +24,7 @@ Steps to reproduce the behavior:
 
 **Observed Environment**
  - OS version [e.g. _iOS 13.0_]:
- - Litewallet Version [e.g. _v3.4.0_]:
+ - Sumcoin Wallet Version [e.g. _v3.4.0_]:
  - Device model:[e.g. _iPhone 11_]:
 
 **Additional context or information**

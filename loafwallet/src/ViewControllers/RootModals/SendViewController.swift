@@ -246,7 +246,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
     
     @objc private func pasteTapped() {
         guard let pasteboard = UIPasteboard.general.string, pasteboard.utf8.count > 0 else {
-            return showAlert(title: S.LitewalletAlert.error, message: S.Send.emptyPasteboard, buttonLabel: S.Button.ok)
+            return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.emptyPasteboard, buttonLabel: S.Button.ok)
         }
         guard let request = PaymentRequest(string: pasteboard) else {
             return showAlert(title: S.Send.invalidAddressTitle, message: S.Send.invalidAddressOnPasteboard, buttonLabel: S.Button.ok)
@@ -270,29 +270,29 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
         
         if sender.transaction == nil {
             guard let address = addressCell.address else {
-                return showAlert(title: S.LitewalletAlert.error, message: S.Send.noAddress, buttonLabel: S.Button.ok)
+                return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.noAddress, buttonLabel: S.Button.ok)
             }
             guard address.isValidAddress else {
                 return showAlert(title: S.Send.invalidAddressTitle, message: S.Send.invalidAddressMessage, buttonLabel: S.Button.ok)
             }
             guard let amount = amount else {
-                return showAlert(title: S.LitewalletAlert.error, message: S.Send.noAmount, buttonLabel: S.Button.ok)
+                return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.noAmount, buttonLabel: S.Button.ok)
             }
             if let minOutput = walletManager.wallet?.minOutputAmount {
                 guard amount.rawValue >= minOutput else {
                     let minOutputAmount = Amount(amount: minOutput, rate: Rate.empty, maxDigits: store.state.maxDigits)
                     let message = String(format: S.PaymentProtocol.Errors.smallPayment, minOutputAmount.string(isLtcSwapped: store.state.isLtcSwapped))
-                    return showAlert(title: S.LitewalletAlert.error, message: message, buttonLabel: S.Button.ok)
+                    return showAlert(title: S.Sumcoin WalletAlert.error, message: message, buttonLabel: S.Button.ok)
                 }
             }
             guard !(walletManager.wallet?.containsAddress(address) ?? false) else {
-                return showAlert(title: S.LitewalletAlert.error, message: S.Send.containsAddress, buttonLabel: S.Button.ok)
+                return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.containsAddress, buttonLabel: S.Button.ok)
             }
             guard amount.rawValue <= (walletManager.wallet?.maxOutputAmount ?? 0) else {
-                return showAlert(title: S.LitewalletAlert.error, message: S.Send.insufficientFunds, buttonLabel: S.Button.ok)
+                return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.insufficientFunds, buttonLabel: S.Button.ok)
             }
             guard sender.createTransaction(amount: amount.rawValue, to: address) else {
-                return showAlert(title: S.LitewalletAlert.error, message: S.Send.createTransactionError, buttonLabel: S.Button.ok)
+                return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.createTransactionError, buttonLabel: S.Button.ok)
             }
         }
         
@@ -412,10 +412,10 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
         }
         
         if wallet.containsAddress(address) {
-            return showAlert(title: S.LitewalletAlert.warning, message: S.Send.containsAddress, buttonLabel: S.Button.ok)
+            return showAlert(title: S.Sumcoin WalletAlert.warning, message: S.Send.containsAddress, buttonLabel: S.Button.ok)
         } else if wallet.addressIsUsed(address) && !didIgnoreUsedAddressWarning {
             let message = "\(S.Send.UsedAddress.title)\n\n\(S.Send.UsedAddress.firstLine)\n\n\(S.Send.UsedAddress.secondLine)"
-            return showError(title: S.LitewalletAlert.warning, message: message, ignore: { [weak self] in
+            return showError(title: S.Sumcoin WalletAlert.warning, message: message, ignore: { [weak self] in
                 self?.didIgnoreUsedAddressWarning = true
                 self?.confirmProtocolRequest(protoReq: protoReq)
             })
@@ -446,7 +446,7 @@ class SendViewController : UIViewController, Subscriber, ModalPresentable, Track
         if requestAmount == 0 {
             if let amount = amount {
                 guard sender.createTransaction(amount: amount.rawValue, to: address) else {
-                    return showAlert(title: S.LitewalletAlert.error, message: S.Send.createTransactionError, buttonLabel: S.Button.ok)
+                    return showAlert(title: S.Sumcoin WalletAlert.error, message: S.Send.createTransactionError, buttonLabel: S.Button.ok)
                 }
             }
         } else {

@@ -321,7 +321,7 @@ class ModalPresenter : Subscriber, Trackable {
     
     private func makeSendView() -> UIViewController? {
         guard !store.state.walletState.isRescanning else {
-            let alert = UIAlertController(title: S.LitewalletAlert.error, message: S.Send.isRescanning, preferredStyle: .alert)
+            let alert = UIAlertController(title: S.Sumcoin WalletAlert.error, message: S.Send.isRescanning, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: S.Button.ok, style: .cancel, handler: nil))
             topViewController?.present(alert, animated: true, completion: nil)
             return nil
@@ -794,7 +794,7 @@ class ModalPresenter : Subscriber, Trackable {
             }
             //TODO - handle payment type
         } else {
-            let alert = UIAlertController(title: S.LitewalletAlert.error, message: S.PaymentProtocol.Errors.corruptedDocument, preferredStyle: .alert)
+            let alert = UIAlertController(title: S.Sumcoin WalletAlert.error, message: S.PaymentProtocol.Errors.corruptedDocument, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: S.Button.ok, style: .cancel, handler: nil))
             topViewController?.present(alert, animated: true, completion: nil)
         }
@@ -915,7 +915,7 @@ class ModalPresenter : Subscriber, Trackable {
     
     private func showNotReachable() {
         guard notReachableAlert == nil else { return }
-        let alert = InAppAlert(message: S.LitewalletAlert.noInternet, image: #imageLiteral(resourceName: "BrokenCloud"))
+        let alert = InAppAlert(message: S.Sumcoin WalletAlert.noInternet, image: #imageLiteral(resourceName: "BrokenCloud"))
         notReachableAlert = alert
         guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else {
             saveEvent("ERROR: Window not found in the UIApplication window stack")

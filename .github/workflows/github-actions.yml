@@ -22,11 +22,11 @@ jobs:
         # Required mail server password:
         password: ${{secrets.MAIL_AGENT_PASSWORD}}
         # Required mail subject:
-        subject: Litewallet iOS Release almost ready
+        subject: Sumcoin Wallet iOS Release almost ready
         # Required recipients' addresses:
         to: ${{secrets.MAIL_ORI}},${{secrets.MAIL_KERRY}}
         # Required sender full name (address can be skipped):
-        from:  <litecoin.foundation.mobile.agent@gmail.com> # <user@example.com> Litewallet iOS Github Repo 
+        from:  <litecoin.foundation.mobile.agent@gmail.com> # <user@example.com> Sumcoin Wallet iOS Github Repo 
         # Optional whether this connection use TLS (default is true if server_port is 465)
         secure: true
         # Optional plain body:

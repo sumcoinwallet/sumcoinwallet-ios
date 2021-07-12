@@ -68,7 +68,7 @@ struct RegistrationView: View {
     var body: some View {
 
         GeometryReader { geometry in
-            // Litewallet Blue Background
+            // Sumcoin Wallet Blue Background
             VStack {
 
                 Text(S.SumcoinCard.Registration.registerCardPhrase)

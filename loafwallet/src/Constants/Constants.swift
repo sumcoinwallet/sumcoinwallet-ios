@@ -207,12 +207,12 @@ struct C {
             <tr>
                 <td colspan="2" align="left" style="padding-top:7px; padding-bottom:7px; border-top: 3px solid #777; border-bottom: 1px dotted #777;">
                     <span style="font-size: 13; line-height: 16px;" face="'Lucida Grande',Verdana,Arial,sans-serif">
-                        <div>Please reply to this email with the following information so that we can prepare to help you solve your Litewallet issue.</div>
+                        <div>Please reply to this email with the following information so that we can prepare to help you solve your Sumcoin Wallet issue.</div>
                       <br>
                          <div>1. What version of software running on your mobile device (e.g.; iOS 13.7 or iOS 14)?</div>
                           <br>
                           <br>
-                            <div>2. What version of Litewallet software is on your mobile device (found on the login view)?</div>
+                            <div>2. What version of Sumcoin Wallet software is on your mobile device (found on the login view)?</div>
                           <br>
                           <br>
                             <div>3. What type of iPhone do you have?</div>

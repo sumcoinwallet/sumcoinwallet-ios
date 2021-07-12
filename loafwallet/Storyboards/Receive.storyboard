@@ -11,7 +11,7 @@
         <!--ReceiveLTC View Controller-->
         <scene sceneID="US0-cv-wGc">
             <objects>
-                <viewController storyboardIdentifier="ReceiveLTCViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lod-kf-Sep" customClass="ReceiveLTCViewController" customModule="Litewallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReceiveLTCViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lod-kf-Sep" customClass="ReceiveLTCViewController" customModule="Sumcoin Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4t5-Ry-yqe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
