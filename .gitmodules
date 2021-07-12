@@ -6,4 +6,4 @@
 	url = https://github.com/breadwallet/nettle.git
 [submodule "Modules/loafwallet-core"]
 	path = Modules/loafwallet-core
-	url = https://github.com/litecoin-foundation/loafwallet-core.git
+	url = https://github.com/sumcoinwallet/loafwallet-core.git
