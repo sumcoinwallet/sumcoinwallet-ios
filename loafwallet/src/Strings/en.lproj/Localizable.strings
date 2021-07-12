@@ -2,7 +2,7 @@
 "About.blog" = "Website";
 
 /* About screen footer */
-"About.footer" = "Made by the LiteWallet Team\nof the\nSumcoin Wallet\n%1$@";
+"About.footer" = "Made by the SumcoinWallet Team\nof the\nSumcoin Wallet\n%1$@";
 
 /* Privay Policy button label */
 "About.privacy" = "Privacy Policy";
@@ -1358,7 +1358,7 @@
 "WipeWallet.warningAlert" = "DO NOT LOSE IT!";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "Your LiteWallet is empty. Resetting will delete the old private key and wipe the app data.\n\nAfter the reset, be prepared to record the new 12 words and keep them in a very secure place.\n\nNo LiteWallet developers can retrieve this seed for you.";
+"WipeWallet.warningDescription" = "Your SumcoinWallet is empty. Resetting will delete the old private key and wipe the app data.\n\nAfter the reset, be prepared to record the new 12 words and keep them in a very secure place.\n\nNo SumcoinWallet developers can retrieve this seed for you.";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "PLEASE READ!";

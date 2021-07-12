@@ -1358,7 +1358,7 @@
 "WipeWallet.warningAlert" = "FÖRLORA DET INTE!";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "Din LiteWallet är tom. Återställning kommer att ta bort den gamla privata nyckeln och torka av appdata. \n\n Efter återställningen, var beredd att spela in de nya 12 orden och hålla dem på en mycket säker plats. \n\n Inga LiteWallet-utvecklare kan hämta detta frö åt dig.";
+"WipeWallet.warningDescription" = "Din SumcoinWallet är tom. Återställning kommer att ta bort den gamla privata nyckeln och torka av appdata. \n\n Efter återställningen, var beredd att spela in de nya 12 orden och hålla dem på en mycket säker plats. \n\n Inga SumcoinWallet-utvecklare kan hämta detta frö åt dig.";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "VÄNLIGEN LÄS!";

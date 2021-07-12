@@ -1358,7 +1358,7 @@
 "WipeWallet.warningAlert" = "負けないでください！";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "LiteWalletは空です。リセットすると、古い秘密キーが削除され、アプリのデータが消去されます。\n\n リセット後、新しい12単語を記録して非常に安全な場所に保管する準備をしてください。\n \n LiteWallet開発者はこのシードを取得できません";
+"WipeWallet.warningDescription" = "SumcoinWalletは空です。リセットすると、古い秘密キーが削除され、アプリのデータが消去されます。\n\n リセット後、新しい12単語を記録して非常に安全な場所に保管する準備をしてください。\n \n SumcoinWallet開発者はこのシードを取得できません";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "読んでください！";

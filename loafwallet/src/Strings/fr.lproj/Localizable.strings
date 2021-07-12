@@ -1358,7 +1358,7 @@
 "WipeWallet.warningAlert" = "NE LE PERDS PAS!";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "Votre LiteWallet est vide. La réinitialisation supprimera l'ancienne clé privée et effacera les données de l'application. \n\nAprès la réinitialisation, préparez-vous à enregistrer les 12 nouveaux mots et à les conserver dans un endroit très sécurisé. \n\nAucun développeur LiteWallet ne peut récupérer cette graine pour vous.";
+"WipeWallet.warningDescription" = "Votre SumcoinWallet est vide. La réinitialisation supprimera l'ancienne clé privée et effacera les données de l'application. \n\nAprès la réinitialisation, préparez-vous à enregistrer les 12 nouveaux mots et à les conserver dans un endroit très sécurisé. \n\nAucun développeur SumcoinWallet ne peut récupérer cette graine pour vous.";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "LISEZ S'IL VOUS PLAÎT!";

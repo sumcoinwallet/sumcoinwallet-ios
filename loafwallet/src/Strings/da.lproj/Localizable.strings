@@ -1358,7 +1358,7 @@
 "WipeWallet.warningAlert" = "Mister IKKE DET!";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "Din LiteWallet er tom. Nulstilling nulstiller den gamle private nøgle og sletter appdataene. \n\n Efter nulstillingen, skal du være parat til at registrere de nye 12 ord og holde dem på et meget sikkert sted. \n\n Ingen LiteWallet-udviklere kan hente dette frø til dig.";
+"WipeWallet.warningDescription" = "Din SumcoinWallet er tom. Nulstilling nulstiller den gamle private nøgle og sletter appdataene. \n\n Efter nulstillingen, skal du være parat til at registrere de nye 12 ord og holde dem på et meget sikkert sted. \n\n Ingen SumcoinWallet-udviklere kan hente dette frø til dig.";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "LÆS VENLIGST!";

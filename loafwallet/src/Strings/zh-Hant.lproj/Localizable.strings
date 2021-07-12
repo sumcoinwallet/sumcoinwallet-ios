@@ -1358,7 +1358,7 @@
 "WipeWallet.warningAlert" = "不要失去它！";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "您的LiteWallet是空的。重置將刪除舊的私鑰並擦除應用程序數據。\n \n 重置後，請準備好記錄新的12個單詞並將其保存在非常安全的位置。\n \n 沒有LiteWallet開發人員可以為您獲取此種子。";
+"WipeWallet.warningDescription" = "您的SumcoinWallet是空的。重置將刪除舊的私鑰並擦除應用程序數據。\n \n 重置後，請準備好記錄新的12個單詞並將其保存在非常安全的位置。\n \n 沒有SumcoinWallet開發人員可以為您獲取此種子。";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "請閱讀！";

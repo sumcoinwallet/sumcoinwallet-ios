@@ -1359,7 +1359,7 @@
 "WipeWallet.warningAlert" = "¡NO LO PIERDAS!";
 
 /* Warning description */
-"WipeWallet.warningDescription" = "Su LiteWallet está vacío. El restablecimiento eliminará la clave privada anterior y borrará los datos de la aplicación.\n\nDespués del restablecimiento, prepárese para registrar las nuevas 12 palabras y mantenerlas en un lugar muy seguro. \n\nNingún desarrollador de LiteWallet puede recuperar esta semilla por usted.";
+"WipeWallet.warningDescription" = "Su SumcoinWallet está vacío. El restablecimiento eliminará la clave privada anterior y borrará los datos de la aplicación.\n\nDespués del restablecimiento, prepárese para registrar las nuevas 12 palabras y mantenerlas en un lugar muy seguro. \n\nNingún desarrollador de SumcoinWallet puede recuperar esta semilla por usted.";
 
 /* Warning title */
 "WipeWallet.warningTitle" = "¡POR FAVOR LEE!";

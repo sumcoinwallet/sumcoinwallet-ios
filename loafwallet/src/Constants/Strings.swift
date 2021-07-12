@@ -407,7 +407,7 @@ enum S {
         static let twitter = NSLocalizedString("About.twitter", value: "**Twitter**", comment: "About screen twitter label")
         static let reddit = NSLocalizedString("About.reddit", value: "**Reddit**", comment: "About screen reddit label")
         static let privacy = NSLocalizedString("About.privacy", value: "**Privacy Policy**", comment: "Privay Policy button label")
-        static let footer = NSLocalizedString("About.footer", value: "**Made by the LiteWallet Team\nof the\nSumcoin Wallet\n%1$@**", comment: "About screen footer")
+        static let footer = NSLocalizedString("About.footer", value: "**Made by the SumcoinWallet Team\nof the\nSumcoin Wallet\n%1$@**", comment: "About screen footer")
     }
 
     enum PushNotifications {
@@ -662,7 +662,7 @@ enum S {
         static let resetTitle = NSLocalizedString("resetTitle", value: "**Empty Wallet Reset**", comment: "Warning Empty Wipe title")
         static let resetButton = NSLocalizedString("resetButton", value: "**Yes, reset wallet**", comment: "Reset walet button  title")
         static let warningTitle = NSLocalizedString("WipeWallet.warningTitle", value: "**PLEASE READ!**", comment: "Warning title")
-        static let warningDescription = NSLocalizedString("WipeWallet.warningDescription", value: "**Your LiteWallet is empty. Resetting will delete the old private key and wipe the app data.\n\nAfter the reset, be prepared to record the new 12 words and keep them in a very secure place.\n\nNo LiteWallet developers can retrieve this seed for you.**", comment: "Warning description")
+        static let warningDescription = NSLocalizedString("WipeWallet.warningDescription", value: "**Your SumcoinWallet is empty. Resetting will delete the old private key and wipe the app data.\n\nAfter the reset, be prepared to record the new 12 words and keep them in a very secure place.\n\nNo SumcoinWallet developers can retrieve this seed for you.**", comment: "Warning description")
         static let warningAlert = NSLocalizedString("WipeWallet.warningAlert", value: "**DO NOT LOSE IT!**", comment: "Warning Alert")
         static let deleteDatabase = NSLocalizedString("WipeWallet.deleteDatabase", value: "**Delete database**", comment: "Delete db")
         static let alertDeleteTitle = NSLocalizedString("WipeWallet.alertDeleteTitle", value: "**Delet Database**", comment: "Delete database title")
